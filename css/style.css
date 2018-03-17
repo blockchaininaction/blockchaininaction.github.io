@@ -84,6 +84,7 @@ header p sup {
 
 a #medialablogo {
     fill: white;
+    transition: 500ms fill;
 }
 a:hover #medialablogo {
     fill: #ffe100;
@@ -135,6 +136,7 @@ a {
     background-color: black;
     padding: 2px 3px;
     color: white;
+    transition: 300ms color;
     text-decoration: none;
 }
 
@@ -178,4 +180,8 @@ footer {
     font-size: 15px;
     color: #aaaaaa;
     margin-top: 20px;
+}
+
+#site-by-case {
+    float: right;
 }

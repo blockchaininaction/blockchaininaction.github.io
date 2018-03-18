@@ -54,6 +54,7 @@ p.info {
 }
 
 p.info strong {
+    color: #ffe100;
     font-size: 20px;
     font-weight: 700;
 }
@@ -137,7 +138,8 @@ h5 {
 
 a {
     background-color: black;
-    padding: 2px 3px;
+    padding: 5px 5px;
+    margin: 0 -2px;
     color: white;
     transition: 300ms color;
     text-decoration: none;
@@ -169,6 +171,14 @@ section.speaker img {
 }
 
 section.speaker h4 {
+    position: relative;
+    top: -2px;
+    left: -5px;
+}
+
+section.speaker h4 a {
+    padding: 10px;
+    background: transparent;
     position: relative;
     left: -5px;
 }

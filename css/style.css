@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -170,11 +168,15 @@ section.speaker h4 {
     left: -5px;
 }
 
-section.speaker p {
+section.speaker p, section.speaker ul {
     margin: 20px 0 20px 340px;
     font-size: 13px;
     line-height: 20px;
     color: #c5c5c5;
+}
+
+section.speaker ul {
+    margin-left: 360px
 }
 
 footer {

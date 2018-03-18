@@ -58,12 +58,17 @@ p.info strong {
     font-weight: 700;
 }
 
+#logo {
+    margin: -10px 0 0 -50px;
+    position: absolute;
+}
+
 header {
-    margin: 10px 0 50px 0;
+    margin: 31px 0 50px 150px;
 }
 
 header p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-align: right;
 }

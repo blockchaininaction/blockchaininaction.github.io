@@ -45,6 +45,13 @@ table {
 	border-spacing: 0;
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 /* END RESET */
 
 p.info {
@@ -57,6 +64,20 @@ p.info strong {
     color: #ffe100;
     font-size: 20px;
     font-weight: 700;
+}
+
+a.cta {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 13px 30px;
+    margin: 0 auto 30px auto;
+    border: 3px solid #ffe100;
+}
+
+a.cta:hover {
+    color: black;
+    background: #ffe100;
 }
 
 #logo {
@@ -142,6 +163,7 @@ a {
     margin: 0 -2px;
     color: white;
     transition: 300ms color;
+    transition: 300ms background-color;
     text-decoration: none;
 }
 

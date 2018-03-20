@@ -96,7 +96,23 @@ header p {
 }
 
 header p sup {
-    font-size: 20px;
+    font-size: 17px;
+}
+
+header p.partner {
+    font-size: 80%;
+    color: #c5c5c5;
+}
+
+header p.partner a {
+    position: relative;
+    top: 20px;
+    left: 9px;
+    background: transparent;
+}
+
+header p.partner a:hover {
+    background: black;
 }
 
 #at {

@@ -173,12 +173,12 @@ h5 {
     margin-top: 10px;
 }
 
-.speaker-thumbs {
-    padding: 20px 0;
+.person-thumbs {
+    padding: 10px 0 40px 0;
     display: flex;
     flex-wrap: wrap;
 }
-.speaker-thumbs a {
+.person-thumbs a {
     display: block;
     flex-shrink: 0;
     width: 76px;
@@ -190,7 +190,7 @@ h5 {
     transition: 300ms filter;
 }
 
-.speaker-thumbs a:hover {
+.person-thumbs a:hover {
     filter: grayscale(100%) brightness(120%);
 }
 
@@ -209,11 +209,11 @@ a:hover {
     text-decoration: underline;
 }
 
-section.speaker {
+section.person {
     padding: 30px 0 0 0;
     border-bottom: 1px solid #747474;
 }
-section.speaker:after {
+section.person:after {
     content: "";
     clear: both;
     display: table;
@@ -223,12 +223,12 @@ section.speaker:after {
     0%   {background: rgb(80, 80, 80);}
     100%  {background: transparent;}
 }
-section.speaker:target {
+section.person:target {
     animation: flashTarget 1s;
     -webkit-animation: flashTarget 1s;
 }
 
-section.speaker img {
+section.person img {
     float: left;
     width: 300px;
     margin-right: 40px;
@@ -238,31 +238,31 @@ section.speaker img {
     object-fit: cover;
 }
 
-section.speaker h4 {
+section.person h4 {
     position: relative;
     top: -2px;
     left: -5px;
 }
 
-section.speaker h4 a {
+section.person h4 a {
     padding: 10px;
     background: transparent;
     position: relative;
     left: -5px;
 }
 
-section.speaker p, section.speaker ul {
+section.person p, section.person ul {
     margin: 20px 0 20px 340px;
     font-size: 13px;
     line-height: 20px;
     color: #c5c5c5;
 }
 
-section.speaker ul ul {
+section.person ul ul {
     margin: 0 0 0 20px;
 }
 
-section.speaker ul {
+section.person ul {
     margin-left: 360px
 }
 

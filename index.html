@@ -240,13 +240,7 @@
             //     "bio": ""}
         ];
 
-        people = people.sort(function(a, b){
-            var aParts = a.name.split(' ');
-            var bParts = b.name.split(' ');
-            var aLast = aParts[aParts.length - 1];
-            var bLast = bParts[bParts.length - 1];
-            return aLast.localeCompare(bLast);
-        }).map(function(person) {
+        people = people.map(function(person) {
             person.id = person.name.split(' ').join('_').toLocaleLowerCase();
             return person;
         })

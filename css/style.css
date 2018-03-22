@@ -258,6 +258,10 @@ section.speaker p, section.speaker ul {
     color: #c5c5c5;
 }
 
+section.speaker ul ul {
+    margin: 0 0 0 20px;
+}
+
 section.speaker ul {
     margin-left: 360px
 }

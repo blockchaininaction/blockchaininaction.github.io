@@ -45,6 +45,8 @@ table {
 	border-spacing: 0;
 }
 
+/* END RESET */
+
 html {
     box-sizing: border-box;
 }
@@ -52,7 +54,10 @@ html {
     box-sizing: inherit;
 }
 
-/* END RESET */
+i {
+    font-style: italic;
+}
+
 
 p.info {
     font-size: 18px;

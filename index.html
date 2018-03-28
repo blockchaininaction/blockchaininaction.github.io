@@ -61,7 +61,8 @@
             <div v-for="section in $options.sections"
                  v-bind:class="'section ' + section.id"
                  v-bind:style="{ 'border-color': section.color }">
-                <h4><a v-bind:href="'#' + section.id">{{section.title}}</a></h4>
+                <!-- <h4><a v-bind:href="'#' + section.id">{{section.title}}</a></h4> -->
+                <h4>{{section.title}}</h4>
                 <p v-html="section.dsc"></p>
                 <div class="sm-thumbs">
                     <a v-for="person in section.people"

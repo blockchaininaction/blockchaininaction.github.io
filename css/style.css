@@ -91,7 +91,7 @@ a.cta:hover {
 }
 
 header {
-    margin: 31px 0 50px 150px;
+    margin: 11px 0 50px 150px;
 }
 
 header p {
@@ -154,6 +154,7 @@ h1, h2, h3 {
 h1 {
     font-size: 50px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 h2 {
     font-size: 40px;
@@ -165,8 +166,12 @@ h3 {
     background: #ffe100;
     color: black;
     font-weight: 700;
-    padding: 10px;
+    padding: 10px 20px;
     letter-spacing: -1px;
+}
+h3#sections {
+    background-color: #6a29ff;
+    text-align: right;
 }
 h4 {
     font-size: 30px;
@@ -214,11 +219,42 @@ a:hover {
     text-decoration: underline;
 }
 
-section.person {
+.sections {
+    padding: 10px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section {
+    margin: 20px 0;
+    width: 50%;
+    border-left: 5px solid;
+    padding: 0 30px 0 20px;
+}
+.section p {
+    margin: 10px 0 0;
+}
+.section .sm-thumbs {
+    display: flex;
+    margin-top: 10px;
+}
+.section .sm-thumbs a {
+    display: block;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(90%);
+    transition: 300ms filter;
+}
+
+.person {
     padding: 30px 0 0 0;
     border-bottom: 1px solid #747474;
 }
-section.person:after {
+.person:after {
     content: "";
     clear: both;
     display: table;
@@ -228,36 +264,38 @@ section.person:after {
     0%   {background: rgb(80, 80, 80);}
     100%  {background: transparent;}
 }
-section.person:target {
+.person:target {
     animation: flashTarget 1s;
     -webkit-animation: flashTarget 1s;
 }
 
-section.person img {
-    float: left;
-    width: 300px;
-    margin-right: 40px;
-    margin-bottom: 30px;
+.person img, .section .sm-thumbs a {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     object-fit: cover;
 }
 
-section.person h4 {
+.person img {
+    float: left;
+    width: 300px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.person h4 {
     position: relative;
     top: -2px;
     left: -5px;
 }
 
-section.person h4 a {
+.person h4 a {
     padding: 10px;
     background: transparent;
     position: relative;
     left: -5px;
 }
 
-section.person p, section.person ul {
-    margin: 20px 0 20px 340px;
+.section p, .person p, .person ul {
     font-size: 13px;
     line-height: 20px;
     color: #c5c5c5;
@@ -265,12 +303,16 @@ section.person p, section.person ul {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.person p, .person ul {
+    margin: 20px 0 20px 0;
+    margin-left: 340px;
+}
 
-section.person ul ul {
+.person ul ul {
     margin: 0 0 0 20px;
 }
 
-section.person ul {
+.person ul {
     margin-left: 360px
 }
 

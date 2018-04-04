@@ -14,7 +14,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, session, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, session {
 	display: block;
 }
 body {
@@ -71,16 +71,18 @@ p.info strong {
     font-weight: 700;
 }
 
-a.cta {
-    display: inline-block;
+.cta {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.cta a {
     font-size: 20px;
     font-weight: 700;
     padding: 13px 30px;
     margin: 0 auto 30px auto;
     border: 3px solid #ffe100;
 }
-
-a.cta:hover {
+.cta a:hover {
     color: black;
     background: #ffe100;
 }
@@ -169,7 +171,7 @@ h3 {
     padding: 10px 20px;
     letter-spacing: -1px;
 }
-h3#sections {
+h3#sessions {
     background-color: #6a29ff;
     text-align: right;
 }
@@ -219,25 +221,28 @@ a:hover {
     text-decoration: underline;
 }
 
-.sections {
-    padding: 10px 0 30px 0;
-    display: flex;
-    flex-wrap: wrap;
+.sessions {
+    margin: 30px 0;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-auto-flow: column;
 }
-.section {
-    margin: 20px 0;
-    width: 50%;
+
+.session {
     border-left: 5px solid;
-    padding: 0 30px 0 20px;
+    padding: 0 0 0 20px;
 }
-.section p {
+.session p {
     margin: 10px 0 0;
 }
-.section .sm-thumbs {
+.session .sm-thumbs {
     display: flex;
     margin-top: 10px;
 }
-.section .sm-thumbs a {
+.session .sm-thumbs a {
     display: block;
     flex-shrink: 0;
     width: 40px;
@@ -269,7 +274,7 @@ a:hover {
     -webkit-animation: flashTarget 1s;
 }
 
-.person img, .section .sm-thumbs a {
+.person img, .session .sm-thumbs a {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     object-fit: cover;
@@ -295,7 +300,7 @@ a:hover {
     left: -5px;
 }
 
-.section p, .person p, .person ul {
+.session p, .person p, .person ul {
     font-size: 13px;
     line-height: 20px;
     color: #c5c5c5;
@@ -324,4 +329,37 @@ footer {
 
 #site-by-case {
     float: right;
+}
+
+
+@media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
+    p.info {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .cta {
+        margin: 80px 0 90px 0;
+    }
+    .cta a {
+        font-size: 30px;
+        padding: 20px 50px;
+    }
+    .sessions {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-row-gap: 50px;
+    }
+    .person-thumbs a {
+        width: 146px;
+        height: 146px;
+    }
+
+    .session .sm-thumbs {
+        margin-top: 30px;
+    }
+    .session .sm-thumbs a {
+        margin-right: 30px;
+        width: 120px;
+        height: 120px;
+    }
 }

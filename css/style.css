@@ -68,7 +68,6 @@ i {
     font-style: italic;
 }
 
-
 p.info {
     font-size: 18px;
     line-height: 1.67;
@@ -192,14 +191,13 @@ h5 {
 
 .person-thumbs {
     padding: 10px 0 30px 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 78px 78px 78px;
 }
 .person-thumbs a {
     display: block;
-    flex-shrink: 0;
-    width: 76px;
-    height: 76px;
+    margin: 0;
     background-size: cover;
     background-position: 50% 50%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -377,9 +375,11 @@ footer {
         grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
         grid-row-gap: 50px;
     }
-    .person-thumbs a {
-        width: 146px;
-        height: 146px;
+    .person-thumbs {
+        padding: 10px 0 30px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 130px 130px 130px 130px;
     }
 
     .block .sm-thumbs {

@@ -216,7 +216,7 @@
                 "name":  "Michael Casey",
                 "block": "fin",
                 "titles":  "Senior Advisor, <a href=\"http://dci.mit.edu/\">MIT DCI</a>, Chairman of <a href=\"https://www.coindesk.com/\">CoinDesk</a> Advisory Board",
-                "bio":  "<p>Michael Casey is a Senior Advisor at MIT Media Labs's <a href=\"http://dci.mit.edu/\">Digital Currency Initiative</a>, where he conducts research into how blockchain technology can improve economic and environmental efficiency and boost financial inclusion. He is also Chairman of the Advisory Board at <a href=\"https://www.coindesk.com/\">CoinDesk</a>, a leadings provider of news, data and events for the blockchain and digital asset industry. He also consult for businesses on the challenges and opportunities in this emerging technology. Formerly a reporter, editor and, ultimately, columnist at The Wall Street Journal, Casey has authored five books, including <a href=\"https://smile.amazon.com/Age-Cryptocurrency-Blockchain-Challenging-Economic/dp/1250081556?sa-no-redirect=1\"><i>The Age of Cryptocurrency: How Bitcoin and Digital Money are Challenging the Global Economic Order</i></a>, published in 2015, and its follow-up, <a href=\"https://smile.amazon.com/Truth-Machine-Blockchain-Future-Everything/dp/1250114578/ref=sr_1_4?s=books&ie=UTF8&qid=1521763794&sr=1-4&keywords=The+Truth+Machine%3A+the+Blockchain+and+the+Future+of+Everything\"><i>The Truth Machine: The Blockchain and the Future of Everything</i></a>, which was released in February of 2018. Both were co-authored with Paul Vigna of The Wall Street Journal. </p>"},
+                "bio":  "<p>Michael Casey is a Senior Advisor at MIT Media Labs's <a href=\"http://dci.mit.edu/\">Digital Currency Initiative</a>, where he conducts research into how blockchain technology can improve economic and environmental efficiency and boost financial inclusion. He is also Chairman of the Advisory Board at <a href=\"https://www.coindesk.com/\">CoinDesk</a>, a leadings provider of news, data and events for the blockchain and digital asset industry. He also consult for businesses on the challenges and opportunities in this emerging technology. Formerly a reporter, editor and, ultimately, columnist at The Wall Street Journal, Casey has authored five books, including <a href=\"https://amzn.to/2Hp6KCL\"><i>The Age of Cryptocurrency: How Bitcoin and Digital Money are Challenging the Global Economic Order</i></a>, published in 2015, and its follow-up, <a href=\"https://amzn.to/2GN1g81\"><i>The Truth Machine: The Blockchain and the Future of Everything</i></a>, which was released in February of 2018. Both were co-authored with Paul Vigna of The Wall Street Journal. </p>"},
             {
                 "img": "https://dam-prod.media.mit.edu/thumb/2017/03/23/headshot.jpg.800x800.jpg",
                 "href": "https://www.media.mit.edu/people/narula/overview/",
@@ -349,6 +349,14 @@
                 "titles":  "Principal &amp; Global Innovation Leader, BlockChain Technology, <a href=\"https://webforms.ey.com/\">Ernst &amp; Young</a>",
                 "bio":  "<p>I am responsible for driving EY’s initiatives and investments in blockchain technology across consulting, audit, and tax business lines.</p><p>I have held number of leadership positions in the areas of IoT, supply chain and operations and business strategy, working with client organizations such as HP, Samsung, LG, Huawei, Apple, Canon, Toshiba, Sony, Panasonic, Ericsson, Nokia, Alcatel, FIAT, Honeywell, and Raytheon, to name a few.</p><p>I'm a member of the open linked-in network and I enjoy hearing about new ideas and technologies that will re-shape our industry or create opportunities (and challenges) for EY.</p><p>Specialties: Consumer electronics business strategy, mobile telecommunications, product design, supply chain and operations management.</p>"},
 
+            {
+                "img": "http://www.jilliebushell.com/wp-content/uploads/2017/10/Max-Tegmark-Headshot.jpg",
+                "href": "https://en.wikipedia.org/wiki/Max_Tegmark",
+                "name": "Max Tegmark",
+                "block": "soc",
+                "titles": "Professor at MIT and a founder of the <a href=\"https://futureoflife.org/\">Future of Life Institute</a>",
+                "bio": "<p>Swedish-American cosmologist Tegmark is known as “Mad Max” for his unorthodox ideas and passion for adventure.</p><p>He is fascinated by AI and the the future of life. There’s been much talk about AI disrupting the job market and enabling new weapons, but very few scientists talk seriously about the elephant in the room: what will happen once machines outsmart us at all tasks? That’s why he wrote his most recent book, <a href=\"https://amzn.to/2Ez5w4R\"><i>Life 3.0 Being Human in the Age of Artificial Intelligence&nbsp;</i></a> to help all of us join in the most important conversation of our time.</p>"},
+
             // {
             //     "img": "",
             //     "href": "",
@@ -387,6 +395,8 @@
         var tbd = people.filter(function (person) {
             return !person.block;
         });
+
+        //console.log('people without blocks: '+tbd.map(p => p.name));
 
         var app = new Vue({
             el: '#app',

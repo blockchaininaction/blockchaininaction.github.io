@@ -190,6 +190,11 @@ h5 {
     margin-left: 340px;
 }
 
+hr {
+    border-color: #747474;
+    margin: 30px 0;
+}
+
 .person-thumbs {
     padding: 10px 0 30px 0;
     display: grid;
@@ -215,14 +220,27 @@ a {
     padding: 4px 3px;
     margin: 0 -1px;
     color: white;
-    transition: 300ms color;
-    transition: 300ms background-color;
+    transition: 350ms color;
+    transition: 200ms background-color;
     text-decoration: none;
 }
 
 a:hover {
     color: #ffe100;
     text-decoration: underline;
+}
+
+a.video-link {
+    padding: 10px 15px 9px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a.video-link:hover {
+    background-color: #ffe100;
+    color: black;
+    text-decoration: none;
 }
 
 .schedule p {

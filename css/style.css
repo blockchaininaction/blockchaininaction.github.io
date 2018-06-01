@@ -215,6 +215,10 @@ hr {
     filter: grayscale(100%) brightness(120%);
 }
 
+.hero-video {
+    max-width: 100%;
+}
+
 a {
     background-color: black;
     padding: 4px 3px;
@@ -232,7 +236,7 @@ a:hover {
 
 a.video-link {
     padding: 10px 15px 9px;
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: bold;
     display: inline-block;
 }
@@ -411,5 +415,9 @@ footer {
     }
     .block .time {
         font-size: 35px;
+    }
+    a.video-link {
+        padding: 30px 25px 29px;
+        font-size: 40px;
     }
 }

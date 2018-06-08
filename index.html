@@ -465,18 +465,18 @@
             return !person.block;
         });
 
-        console.log('people without blocks: '+tbd.map(p => p.name));
+        //console.log('people without blocks: '+tbd.map(p => p.name));
 
         var app = new Vue({
             el: '#app',
             data: {
                 message: 'Hello Vue!'
             },
-            people,
-            speakers,
-            organizers,
-            tbd,
-            schedule
+            people: people,
+            speakers: speakers,
+            organizers: organizers,
+            tbd: tbd,
+            schedule: schedule
         })
 
     </script>

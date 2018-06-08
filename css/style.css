@@ -421,3 +421,18 @@ footer {
         font-size: 40px;
     }
 }
+
+/* MVP IE compatibility */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .person-thumbs {
+        display: none;
+    }
+
+    .schedule .block {
+        margin-top: 15px;
+    }
+
+    .schedule .block .time {
+        padding-top: 2px;
+    }
+}

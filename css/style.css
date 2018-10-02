@@ -453,3 +453,18 @@ footer {
         padding-top: 2px;
     }
 }
+
+.white-paper {
+    height:100px;
+    margin: -2px 15px 0 -12px;
+    float: left;
+}
+
+.white-paper path {
+    fill: white;
+}
+
+.white-paper:hover path {
+    fill: #ffe100;
+    transition: 500ms fill;
+}

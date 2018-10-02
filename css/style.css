@@ -55,17 +55,27 @@ html {
 }
 
 body {
-    background: #1e1e1e;
+    background: black;
     color: #fff;
-    padding: 30px;
+    padding: 30px 0;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1023px;
-    margin: 0 auto;
     text-rendering: optimizeLegibility;
 }
 
 i {
     font-style: italic;
+}
+
+.max-width, footer {
+    max-width: 1043px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.sessions {
+    /* border-top: 1px solid #747474; */
+    padding-top: 30px;
+    background: #1e1e1e;
 }
 
 p.info {
@@ -97,7 +107,7 @@ p.info strong {
 }
 
 #logo {
-    margin: -10px 0 0 -50px;
+    margin: -30px 0 0 -50px;
     position: absolute;
 }
 
@@ -131,6 +141,10 @@ header p.partner a:hover {
     background: black;
 }
 
+header h1 {
+    margin: 15px 0;
+}
+
 #at {
     font-size: 70%;
     color: #c5c5c5;
@@ -161,11 +175,13 @@ h1 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 15px;
+    letter-spacing: -1px;
 }
 h2 {
     font-size: 40px;
     font-weight: 700;
     color: #ffe100;
+    margin-top: 15px;
 }
 h3 {
     font-size: 40px;
@@ -192,7 +208,6 @@ h5 {
 
 hr {
     border-color: #747474;
-    margin: 30px 0;
 }
 
 .person-thumbs {
@@ -280,6 +295,8 @@ a.video-link:hover {
 }
 .block p {
     margin: 10px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .block .sm-thumbs {
     display: flex;
@@ -306,6 +323,8 @@ a.video-link:hover {
 
 .person {
     padding: 30px 0 0 0;
+}
+.person:not(:last-child) {
     border-bottom: 1px solid #747474;
 }
 .person:after {
@@ -353,9 +372,6 @@ a.video-link:hover {
     font-size: 13px;
     line-height: 20px;
     color: #c5c5c5;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .person p, .person ul {
     margin: 20px 0 20px 0;
@@ -374,6 +390,7 @@ footer {
     font-size: 15px;
     color: #aaaaaa;
     margin-top: 20px;
+    padding-top: 10px;
 }
 
 #site-by-case {

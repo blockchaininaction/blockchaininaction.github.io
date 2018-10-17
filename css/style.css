@@ -72,22 +72,45 @@ i {
     padding: 0 40px;
 }
 
-.sessions {
+.main {
     /* border-top: 1px solid #747474; */
-    padding-top: 30px;
+    padding: 30px 0;
     background: #1e1e1e;
 }
 
-p.info {
+p.info, dl {
     font-size: 18px;
     line-height: 1.67;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 p.info strong {
     color: #ffe100;
     font-size: 20px;
     font-weight: 700;
+}
+
+ul.info {
+    padding-bottom: 30px;
+}
+
+ul.info li {
+    font-size: 17px;
+    line-height: 1.67;
+    margin-left: 30px;
+}
+
+dl dt {
+    float: left;
+    width: 7em;
+    text-align: right;
+    padding-right: 10px;
+    color: #ababab;
+    padding-top: 8px;
+}
+dl dd {
+    padding-left: 7em;
+    padding-top: 8px;
 }
 
 .cta {
@@ -107,12 +130,12 @@ p.info strong {
 }
 
 #logo {
-    margin: -30px 0 0 -50px;
+    margin: -7px 0 0 -50px;
     position: absolute;
 }
 
 header {
-    margin: 11px 0 50px 150px;
+    margin: 11px 0 15px 150px;
 }
 
 header p {
@@ -190,6 +213,12 @@ h3 {
     font-weight: 700;
     padding: 10px 20px;
     letter-spacing: -1px;
+}
+h3#now {
+    background-color: #00c2ff87;
+}
+h3#now span {
+    float: right;
 }
 h3#schedule {
     background-color: #6a29ff;

@@ -382,6 +382,7 @@ a.video-link:hover {
     width: 300px;
     margin-right: 40px;
     margin-bottom: 30px;
+    max-height: 200px;
 }
 
 .person h4 {

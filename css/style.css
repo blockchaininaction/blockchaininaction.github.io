@@ -220,6 +220,10 @@ h3#now {
 h3#now span {
     float: right;
 }
+h3#now span.small {
+    font-size: 25px;
+    line-height: 39px;
+}
 h3#schedule {
     background-color: #6a29ff;
     text-align: right;

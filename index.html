@@ -73,8 +73,10 @@
 
             <div class="max-width">
                 <div class="person" v-for="person in $options.demosDavos" v-bind:id="person.id">
-                    <img v-bind:src="person.img" />
-                    <h4><a v-bind:href="person.href">{{person.name}}</a></h4>
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank">{{person.name}}</a></h4>
                     <h5 v-html="person.titles"></h5>
                     <div v-html="person.bio"></div>
                 </div>
@@ -159,8 +161,10 @@
             <h3>Speakers ↴</h3>
 
             <div class="person" v-for="person in $options.speakers" v-bind:id="person.id">
-                <img v-bind:src="person.img" />
-                <h4><a v-bind:href="person.href">{{person.name}}</a></h4>
+                <a v-bind:href="person.href" target="_blank">
+                    <img v-bind:src="person.img" />
+                </a>
+                <h4><a v-bind:href="person.href" target="_blank">{{person.name}}</a></h4>
                 <h5 v-html="person.titles"></h5>
                 <div v-html="person.bio"></div>
                 <p v-if="person.youtube">

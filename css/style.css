@@ -47,6 +47,10 @@ table {
 
 /* END RESET */
 
+[v-cloak] {
+    display: none;
+}
+
 html {
     box-sizing: border-box;
 }

@@ -76,7 +76,7 @@
                     <a v-bind:href="person.href" target="_blank">
                         <img v-bind:src="person.img" />
                     </a>
-                    <h4><a v-bind:href="person.href" target="_blank">{{person.name}}</a></h4>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
                     <h5 v-html="person.titles"></h5>
                     <div v-html="person.bio"></div>
                 </div>

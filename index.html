@@ -62,12 +62,36 @@
                     <img style="float: left; margin-right: 40px;" src="images/davosDome.jpg" width="50%" >
                     This will be a spectacular venue, a great group of people, and a very special opportunity to share your ideas and learn from others.  We hope you can join us.<br><br>Talk to John Werner (<a href="mailto:jwerner@mit.edu">jwerner@mit.edu</a>)<br>or Prof. Alex Pentand (<a href="mailto:pentland@mit.eu">pentland@mit.eu</a>) for details and official invitation.
                 </p>
+
+                <div class="person-thumbs person-thumbs-davos">
+                    <a v-for="person in $options.peopleAndDemosDavos"
+                        v-bind:title="person.name"
+                        v-bind:href="'#' + person.id"
+                        v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                </div>
             </div>
             <br><br>
 
             <h3 id="now">
                 <div class="max-width">
-                    Demos @ Davos ↴<span class="small">(Speakers coming soon)</span>
+                    Speakers @ Davos ↴
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <div class="person" v-for="person in $options.peopleDavos" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                </div>
+            </div>
+
+            <h3 id="now">
+                <div class="max-width">
+                    Demos @ Davos ↴
                 </div>
             </h3>
 
@@ -508,10 +532,13 @@
             //     "bio": ""},
         ];
 
-        people = people.map(function(person) {
+        var setId = function(person) {
             person.id = person.name.split(' ').join('_').toLocaleLowerCase();
             return person;
-        });
+        }
+
+
+        people = people.map(setId);
 
         var blockNum = 1;
         schedule = schedule.map(function(block) {
@@ -540,15 +567,20 @@
             return !person.block;
         });
 
+
         //console.log('people without blocks: '+tbd.map(p => p.name));
 
+        var alphabetize = function(a, b){
+            var namePartsA = a.name.split(' ');
+            var lastNameA = namePartsA[namePartsA.length - 1];
+            var namePartsB = b.name.split(' ');
+            var lastNameB = namePartsB[namePartsB.length - 1];
+            if(lastNameA < lastNameB) { return -1; }
+            if(lastNameA > lastNameB) { return 1; }
+            return 0;
+        }
+
         var peopleDavos = [
-            {
-                "img": "images/David_Kenny.jpg",
-                "href": "https://www.linkedin.com/in/davidkenny1/",
-                "name": "David Kenny",
-                "titles": "CEO, Nielsen Holdings",
-                "bio": "<p>Transformational President and CEO at Digitas, Akamai, Publicis, The Weather Company, IBM, and Nielsen. Three decades of consumer and media focused experience in Big Data, Analytics, AI/ML, and Cloud Technologies. Transformation skills include strategic focus, team development, client and partner development, marketing, and technical innovation.</p>"},
             {
                 "img": "images/davos_speakers/Alan_Trefler.jpg",
                 "href": "https://www.pega.com/about/leadership/alan-trefler",
@@ -574,31 +606,208 @@
                 "titles": "Chairman of Link Ventures, and Vestmak",
                 "bio": "<p>Dave has co-founded over a dozen companies at least 5 of which have achieved $100 million+ valuations. He has served on 21 private and public boards. His successes include the founding and sale of web analytics company DataSage in a stock deal of Unicorn scale, the co-founding of Vestmark (the leading innovator of wealth management technology with 2 million accounts and almost $1 trillion in managed assets), and being the lead seed-stage investor in at least 14 consumer internet, analytics, fintech, and big-data companies.</p><p>In 1999, Dave was named to MIT Technology Review’s List of Innovators under 35. Venture capitalist Duncan McCallum of One Liberty Ventures called Dave \"the most visionary person I have ever met\" in the field of decision-support software.</p><p>Prior to 1997, Dave was the President and CEO of Cirrus Recognition Systems, a data mining software company. Previously, he was among the first ten employees at MicroStrategy and, subsequently, served on Microstrategy's board of directors in 2003 and 2004.</p><p>He currently serves as the Chairman of Link’s technology-incubation company, Cogo Labs, and on the boards of most of Link’s investments. He is also the chairman of Vestmark and a general partner at Vestigo Ventures, a strictly Fintech focused fund.</p><p>Dave received a BS in Computer Science degree from MIT where he researched neural network technology at the AI lab.</p>"},
             {
-                "img": "images/davos_speakers/",
-                "href": "",
-                "name": "",
-                "titles": "",
-                "bio": ""},
+                "img": "images/David_Kenny.jpg",
+                "href": "https://www.linkedin.com/in/davidkenny1/",
+                "name": "David Kenny",
+                "titles": "CEO, Nielsen Holdings",
+                "bio": "<p>Transformational President and CEO at Digitas, Akamai, Publicis, The Weather Company, IBM, and Nielsen. Three decades of consumer and media focused experience in Big Data, Analytics, AI/ML, and Cloud Technologies. Transformation skills include strategic focus, team development, client and partner development, marketing, and technical innovation.</p>"},
             {
-                "img": "images/davos_speakers/",
-                "href": "",
-                "name": "",
-                "titles": "",
-                "bio": ""},
+                "img": "images/davos_speakers/Drue_Kataoka.jpg",
+                "href": "http://www.drue.net/",
+                "name": "Drue Kataoka",
+                "titles": "Artist at Google VR, CEO at Drue Kataoka Studios",
+                "bio": "<p>Artist Drue Kataoka (www.Drue.Net) creates at the crossroads of art and technology. Born in Tokyo, she began her art training in Japan, graduated from Stanford University and is based in Silicon Valley. Her work spans disciplines, integrating ancient Japanese ink painting techniques with brainwaves, mirrors, time dilation, digital image processing and mobile technologies. In 2008, she exhibited at the first zero gravity art exhibit in space at the International Space Station.</p><p>Kataoka has been named both a Cultural Leader and a Young Global Leader of the World Economic Forum, & had a solo exhibition at the WEF’s Annual Meeting in Davos. She has spoken at the WEF Annual Meeting in Davos (4 times) and at WEF meetings in Dalian, Yangon, Ulaanbaatar, and Geneva. She created the logo for the World Arts Forum. Her web/mobile installation TouchOurFuture.org was recently showcased at TEDWomen in Monterey.</p><p>Her art has been featured on CNN, The Wall Street Journal, CNBC, CBS, ABC, FoxNews, NY1, Telemundo, Barrons, Wired, Blackbook, Flaunt, Gentry and others. She is a recipient of the annual Martin Luther King, Jr. Research & Education Institute Award & the Womensphere Global Award. After 9/11/01, she endowed the Drue Kataoka Art Scholarship for Youth (18 recipients to-date). Drue is a graduate of the Harvard Kennedy School Global Leadership & Public Policy Program and Yale University's Foundations for Leadership Program at the Jackson Institute for Global Affairs. Drue sits on the board of the Djerassi Residents Artist Program, the oldest and largest artist residency on the West Coast. She is an Academy Member (Judge) for the Varkey Foundation’s $1M Global Teacher’s Prize.</p>"},
             {
-                "img": "images/davos_speakers/",
-                "href": "",
-                "name": "",
-                "titles": "",
-                "bio": ""},
+                "img": "images/davos_speakers/Elizabeth_Heller.jpg",
+                "href": "http://bethheller.com/",
+                "name": "Elizabeth Heller",
+                "titles": "CEO & Founder, Beth Heller Consulting",
+                "bio": "<p>A veteran marketing executive and life-long Chicagoan, Beth Heller brings close to 25 years of experience to BH Consulting. Beth’s expertise includes strategic planning, executing high-profile events, influencer relations, public relations and other facets of brand marketing. At BH Consulting, she develops marketing strategies and athlete partnerships for select companies, obtains media exposure and creates pathways to give back to the community.</p><p>Prior to founding her consulting agency, Beth was the Executive Vice President and VP of Marketing for Harry Caray’s Restaurant Group, where she worked for over 22 years. She helped the company grow from a single restaurant into one of Chicago’s largest restaurant groups and most iconic institutions. At the time of her departure, HCRG, where she continues to stay involved as a partner, included seven restaurants, a catering company and the Chicago Sports Museum.</p>"},
             {
-                "img": "images/davos_speakers/",
-                "href": "",
-                "name": "",
-                "titles": "",
-                "bio": ""},
+                "img": "images/davos_speakers/Jennifer_Blanke.jpg",
+                "href": "https://www.linkedin.com/in/jennifer-blanke-b8377b4/",
+                "name": "Jennifer Blanke",
+                "titles": "Former Chief Economist for WEF, VP Agriculture, Human & Social Development at African Development Bank",
+                "bio": "<p>Jennifer Blanke is Vice-President Agriculture, Human and Social Development at the African Development Bank Group, responsible for overseeing the Bank's strategy and activities in this area.</p><p>She was previously Chief Economist at the World Economic Forum, overseeing economic research activities and projects. She has written and lectured extensively on issues related to national competitiveness.</p><p>Jennifer holds a Master's degree in International Affairs from Columbia University, New York, and an MA and PhD in International Economics from the Graduate Institute of International Studies, Geneva. She is presently member of the Canadian government's Council of Economic Growth and holds a number of non-executive board responsibilities in the not-for-profit sector.</p>"},
 
+                        {
+                "img": "images/davos_speakers/Jim_Moran.jpg",
+                "href": "https://www.crunchbase.com/person/jim-moran-2",
+                "name": "Jim Moran",
+                "titles": "Founder & CEO",
+                "bio": "<p>Jim Moran joined North Bridge Venture Partners in mid-2009. Prior to joining North Bridge, Jim was Chief Executive Officer of Covergence Networks, a developer of leading edge software-based session border controllers and Unified Communications applications to global 1000 enterprises. Jim successfully engineered the acquisition of Covergence by Acme Packet (NASDAQ:APKT) in May of 2009, which yielded a 6X return to investors in the subsequent 12 months. Prior to Covergence, Jim was a co-Founder of edocs, Inc which became the leading provider of web self-service and online billing & payment solutions to the Fortune 500, and was acquired by Siebel Systems in 2005. Additionally, Jim was an early investor, board member & Chief Operating Officer of Virtusa (NASDAQ:VRTU) which grew from a standstill in 1998 to a global leader of information technology services and over $450 million in revenue.</p><p>Prior to his entrepreneurial career, Jim was Senior Vice President of Sales at CheckFree Corporation where he played a key role in growing revenues from approximately $28 million to over $200 million leading to a successful IPO in 1995. Prior to CheckFree Jim held various sales positions at EMC, XL/Datacomp and Software 2000.</p><p>Current boards include WP Engine, erecruit, Outsystems, and Carbon Black. Prior boards include BankFirst National (NASDAQ:BFOH), edocs, Virtusa (Nasdaq:VRTU), Covergence, County Savings Bank, Paydiant, Confer (acquired by Carbon Black), SpringCM, Antenna, Active Endpoints (sold to Informatica), Currensee, Awareness, Firm58, Surge Trading, and Big Brothers Big Sisters of Central Ohio. Jim is also a Founding Member of the Ohio Tech Angels. Jim received his Bachelor of Arts in Communications from Northeastern University in 1987.</p>"},
+            {
+                "img": "images/davos_speakers/John_Calian.jpg",
+                "href": "https://www.linkedin.com/in/johncalian/",
+                "name": "John Calian",
+                "titles": "SVP, Head of Telekom Labs & Deutsche Telekom’s Blockchain Group",
+                "bio": "<p>John is the Head of the Telekom Innovation Laboratories (T-Labs) in Berlin, a group of some 300 experts & scientists (+ entrepreneurs) from a variety of disciplines, from more than 25 nations all working together at T-Labs. Additionally, John co-founded and leads all product development for the T-Labs Blockchain Group, a team dedicated to decentralization research and development. In this dual role, John is responsible for developing and leading innovation topics, including blockchain strategies and initiatives, machine learning techniques and customer experiences, for Deutsche Telekom and its partners.</p>"},
+            {
+                "img": "images/davos_speakers/Jonas_Prising.jpg",
+                "href": "https://www.manpowergroup.com/about/leadership/executive-management/jonas-prising",
+                "name": "Jonas Prising",
+                "titles": "Chairman & CEO, Manpower Group",
+                "bio": "<p>Jonas Prising was named ManpowerGroup Chairman in December of 2015 and Chief Executive Officer (CEO) in May of 2014. He leads all aspects of ManpowerGroup’s $21 billion business in 80 countries and territories worldwide. Prior to being elected CEO, Prising served as ManpowerGroup President from 2012 to 2014, leading the company’s operations in the Americas and Southern Europe, and overseeing the global Right Management and ManpowerGroup Solutions businesses. Prising joined ManpowerGroup in 1999 and has also served as managing director of Manpower Italy; director of Manpower Global Accounts — Europe, Middle East and Africa; President of North America; and President of the Americas.</p><p>A recognized expert on the labor market and world of work trends, Prising regularly speaks at conferences and summits globally, and provides commentary on jobs and employment trends for media. He is actively engaged in the World Economic Forum, including as a Steward of the Future of Education, Gender and Work Global System; Co-Chair of the Regional Business Council on Europe and CEO Champion of the Digital Transformation Initiative.</p><p>Before joining ManpowerGroup, Prising worked for Electrolux, a Swedish multinational. During his 10-year tenure with Electrolux, he held various international positions within the consumer goods and business-to-business divisions, including regional manager for Asia Pacific, managing director of Sales Companies in France and the United Kingdom, and finally head of Global Sales and Marketing for one of its business-to-business divisions.</p><p>Prising is passionate about preparing the workforce of tomorrow. He is Vice Chairman of Junior Achievement (JA) Worldwide and is a former Chairman of the Board and a current board member of Junior Achievement (JA) USA. In addition, he serves as a co-chair of Innovation in Milwaukee, an organization focused on supporting entrepreneurial leadership, and is a member of the board of directors of Kohl's Corporation.</p><p>Prising holds an MBA (equivalent) from the Stockholm School of Economics and has participated in executive programs at Harvard, INSEAD, Stanford and Yale. He speaks five languages: English, French, German, Swedish and Italian and has lived in nine countries across Asia, Europe and North America. Prising and his family reside in the Milwaukee area.</p>"},
+            {
+                "img": "images/davos_speakers/Kathy_Calvin.jpg",
+                "href": "https://en.wikipedia.org/wiki/Kathy_Calvin",
+                "name": "Kathy Calvin",
+                "titles": "President & CEO, United Nations Foundatio",
+                "bio": "<p>Kathy Calvin is President and CEO of the United Nations Foundation. She is a passionate advocate for multi-sector problem-solving, U.S. leadership on global issues, and the inclusion of women at all levels and in all sectors. The UN Foundation, created in 1998 with entrepreneur and philanthropist Ted Turner's historic $1 billion gift to support UN causes, advocates for the UN and connects people, ideas and resources to help the UN solve global problems.</p><p>Kathy's career has spanned the public, private and nonprofit sectors. Before joining the UN Foundation as Chief Operating Officer in 2003, she served as President of the AOL Time Warner Foundation. She previously served in senior positions at AOL, Hill and Knowlton, and U.S. News & World Report. From 1976 through 1984 she was Senator Gary Hart's press secretary.</p><p>She is a graduate of Purdue University.</p>"},
+            {
+                "img": "images/davos_speakers/Khaliya.jpg",
+                "href": "https://www.khaliya.net/",
+                "name": "Khaliya",
+                "titles": "Mental Health Futurist, Neuro-technologist, Co-founder Falkora & Tell Your Story",
+                "bio": "<p>Khaliya is a public health specialist and neuro-technologist focused on developing radical solutions to the global mental health crisis.</p><p>The youngest member of The World Economic Forum’s Expert Advisory on the Future of Health and Healthcare, Khaliya is also an active advocate and humanitarian.</p><p>Khaliya was the recipient of both the 2016 Middelthon-Candler Peace Prize and the 2017 Clare Booth Luce Award for International Service. It is her belief that lasting peace and prosperity can only be achieved if the fundamental requirements for health, both physical and mental, are made available to those in need. In 2013, she co-founded Falkora, a non-for-profit mental health and neurotech initiative, as well as the soon to be released app, Tell Your Story.</p><p>Actively involved with numerous social ventures, Khaliya is an investor in, and head of strategic partnerships for, Guardian Circle, an app that uses the power of crowdsourcing and social networks to keep individuals safe. She is currently working on a book on the future of mental health with a particular emphasis on new modalities, such as psychedelics and neurotech.</p>"},
+            {
+                "img": "images/michael_hamilton.jpg",
+                "href": "https://www.linkedin.com/in/michael-hamilton-b387159/",
+                "name":  "Michael Hamilton",
+                "titles":  "Partner at <a href\"https://www.dlapiper.com/en/us/\">DLA Piper</a>",
+                "bio":  "<p>Michael Hamilton is an advisor to clients in real estate, finance and corporate restructuring transactions. Michael is nationally recognized for his borrower-side real estate finance practice, representing numerous institutional borrowers in loans of all shapes and sizes across the nation (the largest being a $16.1 billion loan). Michael also represents corporate and institutional owners of large property portfolios, and is highly experienced in crafting unconventional solutions for challenged assets, such as environmentally contaminated properties.</p>"},
+            {
+                "img": "images/davos_speakers/Michael_Federle.jpg",
+                "href": "https://www.linkedin.com/in/michaelfederle/",
+                "name": "Mike Federle",
+                "titles": "CEO at Forbes & sharing video on “Blockchain”",
+                "bio": "<p>Mr. Michael Federle, also known as Mike, has been President of Forbes Media LLC since July 2016 and as its Chief Operating Officer since October 2011. Mr. Federle is overseeing circulation, manufacturing and distribution operations as well as global licensing and new business development. He is the Chief Operating Officer at Forbes.com Inc. He is a 25-year veteran of the media industry. He co-founded and served as the President and Chief Operating Officer of Techonomy Media Inc. Mr. Federle oversaw Techonomy's strategic partnerships, sponsorships and the Techonomy Fellows Program. He served as Publisher of Fortune magazine from 1998 to 2007 and has invested in a wide range of media companies. Mr. Federle served as Group Publisher of the Time Inc Business & Finance Network, Group Publisher of the Bonnier Mountain Group in Boulder, Colorado, and Chief Executive Officer of Advertising & Marketing at Next Jump, a privately held Silicon Valley internet company.</p>"},
+            {
+                "img": "images/davos_speakers/Mira_Wilczek.jpg",
+                "href": "https://www.cogolabs.com/person/mira-wilczek",
+                "name": "Mira Wilczek",
+                "titles": "CEO & President of Cogo Labs",
+                "bio": "<p>Mira Wilczek is President and CEO of Cogo Labs and a Senior Partner at Link Ventures. She serves on the Board of Directors at EverQuote, CareDash, and Hopjump, and the Advisory Board of Vestigo Ventures. She is also a Co-Director at the Brahe Educational Foundation. In 2017 Mira was named Top 40 Under 40 by the Boston Business Journal.</p><p>Prior to joining Cogo, Mira was founder and CEO of Red Panda Security, Principal Investigator under the DARPA CFT program, and Director of Business Development at Lyric Semiconductor, where she garnered industry recognition including TR50, Silicon 60, and an EE Times ACE Award and led the successful sale of the company to Analog Devices. She started her career as an ethical hacker at IBM, architecting their first automated penetration testing platform.</p><p>Mira holds patents both granted and pending in the fields of cyber security and sensor data fusion. She has an S.B. in Electrical Engineering and Computer Science from MIT, as well as an MBA from the MIT Sloan School of Management.</p>"},
+            {
+                "img": "images/davos_speakers/Olivier_Oullier.jpg",
+                "href": "https://www.linkedin.com/in/oullier",
+                "name": "Olivier Oullier",
+                "titles": "President at EMOTIV, Neuroscientist, DJ, Speaker, Author",
+                "bio": "<p>President of EMOTIV, the world leader in mobile neuroinformatics.</p><p>Former Global Head of Strategy, Health and Healthcare and Member of the Executive Committee of the World Economic Forum.</p><p>15 + years of experience as a strategist advising global companies and executives in healthcare, PR, communication & consumer industries.</p><p>Contributor to Fortune Magazine & The Wall Street Journal.</p><p>Former Head of program at the French Prime Minister's Center for Strategic Analysis.</p><p>Professor of Behavioral and Brain Sciences.</p><p>Public and corporate speaker.</p>"},
+            {
+                "img": "images/davos_speakers/R_Jesse_McWaters.jpg",
+                "href": "https://www.linkedin.com/in/r-jesse-mcwaters-8319347",
+                "name": "R. Jesse McWaters",
+                "titles": "Financial Innovation Lead, World Economic Forum ",
+                "bio": "<p>R. Jesse McWaters leads the World Economic Forum’s exploration of fintech and financial innovation. His work focuses on bringing together senior financial services executives, leading fintech players, and global regulators to understand how new technologies and innovative new entrants are transforming the competitive dynamics of the global financial ecosystem.</p><p>He is the lead author of the World Economic Forum’s groundbreaking “Future of Financial Services” report which charted a taxonomy of fintech innovation, and their more recent publication “Beyond Fintech” which explores the potential risks large technology firms pose to incumbent financial institutions. He has also lead the Forum’s work exploring the potential impacts of blockchain (“The Future of Financial Infrastructure”) and digital identity (“A Blueprint for Digital Identity”) on the financial system.</p><p>Jesse’s insights have been featured in the New York Times, the Wall Street Journal, Bloomberg, and Wired among others and he has appeared as a commentator on CNBC’s Closing Bell. He is also a frequent speaker to boards, executives committees, and a range of leading policy-makers including the Financial Stability Board, the Basel Committee on Banking Supervision, The Federal Reserve Board, The Bank of England, The Peoples Bank of China, The European Parliament, and the UK Financial Conduct Authority.</p>"},
+            {
+                "img": "images/davos_speakers/Randall_Lane.jpg",
+                "href": "https://www.forbes.com/sites/randalllane",
+                "name": "Randall Lane",
+                "titles": "Forbes Managing Editor",
+                "bio": "<p>Randall is the editor of Forbes Magazine, and believe strongly that entrepreneurial capitalism and market-based thinking can solve the world's problems. This is his second stint at Forbes -- between 1991 and 1997, he was a reporter, a staff writer (five cover stories), associate editor and Washington bureau chief.</p><p>In between, he caught the start-up bug: he co-founded P.O.V. Magazine (Adweek's Startup of the Year), and then launched Doubledown Media (Trader Monthly, Dealmaker, Private Air, etc.). As a fattening hobby, he has reviewed restaurants for various magazines since college (and was a National Magazine Award finalist for my wine writing). He used to think chronicling the world's greatest business minds made him a great entrepreneur, but he now realizes his time as an entrepreneur made him an acute business journalist. He just published a new book, The Zeroes: My Misadventures In the Decade Wall Street Went Insane.</p>"},
+            {
+                "img": "images/davos_speakers/Ric_Fulop.jpg",
+                "href": "https://www.linkedin.com/in/ricfulop/",
+                "name": "Ric Fulop",
+                "titles": "Founder & CEO at Desktop Metal",
+                "bio": "<p>Ric Fulop is the founder and CEO of Desktop Metal, a new company reinventing the way design and manufacturing teams 3D print with metal.</p><p>Prior to founding DM, Ric was a General Partner at North Bridge for five years following a fifteen-year career as an entrepreneur that spanned hands-on experience from seed to IPO. He is the founder of six technology companies including A123Systems, Boston's largest IPO in the past decade.</p><p>At North Bridge Ric led the Series A rounds in Onshape, MarkForged, Salsify, Gridco Systems and Dyn (acq. Oracle) as well as the Series B for Disqus. Ric led the North Bridge software and 3D investing practices. North Bridge was the original Series A investor in several of the companies that have changed the 3D and CAD/CAM landscape including SolidWorks (acq. by Dassault Systemes), ProtoLabs (NASDAQ: PRLB), SpaceClaim (acq. by Ansys) and Revit (acq. by Autodesk).</p><p>In 2001, he founded A123 Systems, to commercialize technology developed at the Material Sciences and Engineering Department of MIT. At his departure the company had a public market capitalization of $1.5 billion, 1,800 employees with production facilities around the world and had shipped hundred of millions of dollars in state-of-the-art energy storage systems.</p><p>Ric is a former Board Member of the Electric Drive Transportation Association, is an avid pilot and holds an MBA from the MIT Sloan School where he was a Sloan Fellow.</p>"},
+            {
+                "img": "images/davos_speakers/Rick_Haythornthwaite.jpg",
+                "href": "https://en.wikipedia.org/wiki/Richard_Haythornthwaite",
+                "name": "Rick Haythornthwaite",
+                "titles": "Chairman of Mastercard",
+                "bio": "<p>Rick Haythornthwaite currently serves as the Chairman of MasterCard Inc., Chairman of Centrica PLC, and Chairman and Founder of QiO Technologies Ltd. He has nearly 40 years of executive and non-executive experience, and has led numerous companies through mergers, acquisitions, and other complex transactions at nearly every stage of the business life cycle. He began his career at BP PLC, having held various executive roles throughout his 17-year tenure, including Chief Geologist at BP France, General Manager of Magnus Oilfield and President of BP Venezuela.  Following his work at BP, Mr. Haythornthwaite continued to build leadership experience in the energy and industrials sectors as Corporate and Commercial Director of Premier Oil PLC for two years and four years at Blue Circle Industries, latterly as CEO until its merger with Lafarge in 2001. He went on to serve as CEO of Invensys PLC between 2001 and 2005 and most recently as a Partner at Star Capital Partners Ltd. Mr. Haythornthwaite is an Advisory Partner at Moelis & Company, where he specializes in advising companies across the energy, industrial, and technology sectors.</p><p>Mr. Haythornthwaite holds a Bachelor’s degree in Geology from The Queen’s College at Oxford and a Master’s degree in Management from the Sloan School of Management at MIT.</p>"},
+            {
+                "img": "images/davos_speakers/Rob_Chaplinsky.jpg",
+                "href": "https://www.linkedin.com/in/rchaplinsky/",
+                "name": "Robert Chaplinshy",
+                "titles": "CEO Venture Capital Investor",
+                "bio": "<p>Venture capitalist for 25 years in silicon valley having invested in over 100 companies with numerous exits either by IPO (Ceridian, Proofpoint, Xactly, Shutterfly..) or selling to some of silicon valley’s best companies like Apple and Salesforce.com. I too am an entrepreneur co-founding my own VC firm Bridgescale Partners, co-founded and CEO of Dryft (acquired by Apple in 2014), and co-founded sales coaching company Kiita.ai.</p>"},
+            {
+                "img": "images/davos_speakers/Sandra_Ro.jpg",
+                "href": "https://www.linkedin.com/in/sandraro/",
+                "name": "Sandra Ro",
+                "titles": "CEO, Global Blockchain Business Council",
+                "bio": "<p>Sandra Ro Executive Director, Digitization at CME Group. Ro is responsible for the company’s digital asset and blockchain/distributed ledger technology (DLT) initiatives. Previously as Executive Director Foreign Exchange (FX) Research and Product Development she was responsible for the global development of CME Group FX solutions within listed and cleared OTC products.</p><p> Ro is a core member of the Post Trade Distributed Ledger Group (PTDL), an industry group focused on bringing together regulators with sell-side and buy-side firms to collaborate and discuss the impact of blockchain / DLT. The PTDL is based in London with over 40 institutional members.</p><p> Prior to joining CME Group in 2011, Ro led the EMEA M&A FX and interest rates derivatives advisory group at Morgan Stanley, London and worked at Deutsche Bank as a FX structurer on the London trading floor. Ro holds a M.B.A. in Finance from London Business School and a double B.A. Degree in History and Studies in the Environment from Yale University.</p>"},
+            {
+                "img": "images/davos_speakers/Sanford_Climan.jpg",
+                "href": "https://www.crunchbase.com/person/sanford-r-climan",
+                "name": "Sanford Climan",
+                "titles": "President, Entertainment Media Ventures",
+                "bio": "<p>Sanford R. (Sandy) Climan is President of Entertainment Media Ventures, Inc.  Founded in 1999 by Mr. Climan, EMV is active in media investment and strategic advisory work, with a particular focus on disruptive technologies and entities currently impacting the traditional boundaries of business, media, and entertainment.  He is an investor, producer and considered a media visionary.</p><p>Throughout his career, Mr. Climan has held senior management positions in the media and entertainment industry.  Mr. Climan served as Corporate Executive Vice President and President of Worldwide Business Development of Universal Studios, where Mr. Climan oversaw corporate international strategy, strategic marketing, and five studio operating divisions.</p><p>Mr. Climan was the founding head of the corporate practice at Creative Artists Agency, working with global companies including Sony Corporation on its acquisition of Columbia Pictures, Matsushita Electric on its acquisition of MCA/Universal, Credit Lyonnais on its restructuring of MGM, Coca-Cola, NYNEX, Bell Atlantic, Pacific Telesis and other Fortune 500 companies.  While at CAA, Mr. Climan was part of the senior management team for 12 years, representing talent including Robert De Niro, Robert Redford, Kevin Costner, Danny DeVito and Michael Mann, as well as many prominent film and television production companies.</p><p>Mr. Climan served as the first CEO of 3ality Digital, a pioneering company in the development and commercialization of technologies which enable perfect 3D image capture, broadcast, and software, and led the company to be recognized as a global leader in 3D technology.</p><p>Mr. Climan started his entertainment career at MGM, holding executive positions in motion picture production and the distribution of films and television.</p><p>Notable achievements include Executive Producer of the first digital live-action 3D feature film, “U2 3D,” and Producer of “The Aviator,” directed by Martin Scorsese and starring Leonardo DiCaprio, for which Mr. Climan was awarded a British Academy Award and a Golden Globe Award.  Mr. Climan received an Ellis Island Medal of Honor in 2018.</p><p>In addition, Mr. Climan has been an active investor in, and advisor to, venture capital firms and early-stage companies in media, technology, and healthcare.  In 2016, Mr. Climan launched SleepScore Labs, an industry leader in the measurement of sleep and providing guidance on healthy sleep.</p><p>Mr. Climan serves on several charitable boards, including The American Cinematheque, the UCLA School of Theater, Film & Television, and the UCLA Longevity Center of the Semel Institute for Neurosciences and Human Behavior.  From 2000-2012, Mr. Climan served as a member of the Advisory Committee to the Director of the U.S. Centers for Disease Control and Prevention.  For over twenty years, Mr. Climan served on the board of The Fulfillment Fund, the leading organization for mentoring at-risk public high school students in Los Angeles.  Mr. Climan serves as an advisor on entertainment and media to the World Economic Forum and its Annual Gathering in Davos, Switzerland, as a member of the Reuters Editorial Advisory Board, and as a member of the Advisory Board of the Yale CEO Leadership Institute of the Yale School of Management.</p><p>Mr. Climan holds a Master of Business Administration degree from Harvard Business School, a Master of Science in Health Policy and Management from the Harvard T.H. Chan School of Public Health and a Bachelor of Arts degree from Harvard College.</p>"},
+            {
+                "img": "images/davos_speakers/Seth_Berkley.jpg",
+                "href": "https://www.linkedin.com/in/sethberkley/",
+                "name": "Seth F. Berkley",
+                "titles": "CEO at Gavi, the Vaccine Alliance",
+                "bio": "<p>Seth Berkley is Gavi’s CEO. A medical doctor specialising in infectious disease epidemiology, Dr Berkley founded the International AIDS Vaccine Initiative (IAVI) in 1996, where he served as President and CEO.</p><p>Prior to founding IAVI, he worked for the Health Sciences Division at The Rockefeller Foundation. He has also held posts at the Center for Infectious Diseases, the US Centers for Disease Control; the Massachusetts Department of Public Health; and the Carter Center, where he was assigned as an epidemiologist to the Ministry of Health in Uganda. Dr Berkley played a key role in Uganda’s national HIV sero-survey and helped develop its National AIDS Control programmes. He has consulted or worked in more than 25 countries in Asia, Africa and Latin America.</p><p>Dr Berkley has been featured on the cover of Newsweek, and recognised by Time magazine as one of the “100 Most Influential People in the World”. He was also included in “The Wired 25”, Wired’s “salute to dreamers, inventors, mavericks and leaders”.</p><p>Dr Berkley received his undergraduate and medical degrees from Brown University and trained in internal medicine at Harvard University (USA).</p>"},
+            {
+                "img": "images/davos_speakers/Stephane_Bancel.jpg",
+                "href": "https://www.linkedin.com/in/stephan-bancel-8185251/",
+                "name": "Stephane Bancel",
+                "titles": "CEO & President at Modena",
+                "bio": "<p>Stéphane Bancel, has served as Moderna's Chief Executive Officer since October 2011 and as a member of Moderna’s board of directors since March 2011. Before joining the Company, Mr. Bancel served for five years as Chief Executive Officer of the French diagnostics company bioMérieux SA. From July 2000 to March 2006, he served in various roles at Eli Lilly and Company, including as Managing Director, Belgium and as Executive Director, Global Manufacturing Strategy and Supply Chain. Prior to Lilly, Mr. Bancel served as Asia-Pacific Sales and Marketing Director for bioMérieux.</p><p>Mr. Bancel currently serves on the board of directors of Qiagen N.V. and previously served on the board of directors of BG Medicine, Inc. and Syros Pharmaceuticals, Inc. (Nasdaq: SYRS). He is currently a Venture Partner at Flagship Pioneering and a trustee of the Museum of Science in Boston. Mr. Bancel holds a Master of Engineering degree from École Centrale Paris (ECP), a Master of Science in chemical engineering from the University of Minnesota, and an M.B.A. from Harvard Business School.</p>"},
+            {
+                "img": "images/davos_speakers/Svetlana_Dotsenko.jpg",
+                "href": "https://twitter.com/svetlanadots",
+                "name": "Svetlana Dotsenko",
+                "titles": "Founder & CEO of Project Lever",
+                "bio": "<p>Svetlana is the Founder and CEO of Adian (formerly Project Lever), where she leads a research network allowing corporate researchers connect with top academics to develop product faster. Adian started as an international network of elite universities to engage students in scientific research and connect them to faculty members. As a founder, Svetlana persuaded major American universities to join Adian as partners, including Harvard, MIT, Boston College, University of Notre Dame; as well as Columbia, Tufts, Johns Hopkins, and Yeshiva universities for pilot projects. Svetlana also led the Lever partnership with HarvardX to support the first online course offered by Harvard Business School. Her mission is to create opportunities for real scientific advancement for talented students from all backgrounds around the world.</p><p>Svetlana also regularly contributes opinion pieces on education and healthcare to the major US media, such as Forbes, TechCrunch, FastCompany, Boston.com, Huffington Post, as well as Der Spiegel and Idealist.ru, internationally. Her work has been profiled in Bloomberg Businessweek, BostInno, USA Today, Entrepreneur.com, SAP blog, Channel One (Russia), MoskvaFM, as well as in higher education industry papers.</p><p>Previously, Svetlana was devising solutions to global health challenges with organizations such as Partners in Health and the World Health Organization. At PIH, Svetlana has been supporting the qualitative arm of the tuberculosis research study, having traveled heavily between Boston and Tomsk, Siberia. At the World Health Organization, Svetlana researched the political context of disease, and published the resulting research paper in the British Medical Journal.</p><p>Svetlana started her career in management consulting at the Berlin office of Roland Berger, Europe’s largest management consulting company. She holds a BA degree in Government and Neurobiology from Harvard College.</p>"},
+            {
+                "img": "images/davos_speakers/Thoma_Ermacora.jpg",
+                "href": "https://www.linkedin.com/in/termacora",
+                "name": "Thomas Ermacora",
+                "titles": "Urbanist, Technologist & Futurist",
+                "bio": "<p>Thomas Ermacora FRSA, is a Danish-Italian regeneration architect, impact entrepreneur and futures thinker, helping communities, developers and local authorities making better and happier places. He is the producer, design director and co-author of Recoded City: Co-Creating Urban Futures, due for release fall 2015 by Routledge International, exploring the potential of distributed and participatory placemaking to balance cities.</p><p>Founder and creative director of strategic regeneration non-profit Clear Village, he has delivered initiatives catalysing the recovery of neighbourhoods in the UK and across Europe. The tools and processes he has invented and developed have received numerous peer accolades and been nominated for the INDEX award 2013 and Placemaking Awards 2014 & 2015.</p><p>In 2012 he restored a complex of warehouses from reclaimed elements in Hackney, east London, to create the Limewharf cultural innovation hub which houses the Machines Room fablab. Prototyping space and futures laboratory for both artistic and technological projects, Ermacora has curated groundbreaking shows such as Adhocracy with Joseph Grima and supported the incubation of hardware start-ups like Technology Will Save Us. Today the Machines Room has become a circular economy testbed for institutions such as NESTA, the Crafts Council, the British Council’s Maker Library Network, the Royal Society of Arts and various universities such as the RCA and CSM.</p><p>Inspired in his multi-faceted career by project work with Gehl Architects and Gehry Partners among others, and now working closely with Carmody Groarke, his works and observations on how to make more resilient cities has made him a pioneering actor in the relation between the DIY/open-source urbanism and maker technologies.</p>"},
+            {
+                "img": "images/davos_speakers/Thomas_Friedman.jpg",
+                "href": "http://www.thomaslfriedman.com/",
+                "name": "Thomas Friedman",
+                "titles": "Foreign Affairs Columnist at The New York Times",
+                "bio": "<p>Thomas Friedman was born in Minneapolis in 1953, and grew up in the middle-class Minneapolis suburb of St. Louis Park. He graduated from Brandeis University in 1975 with a degree in Mediterranean studies, attended St. Antony's College, Oxford, on a Marshall Scholarship, and received an M.Phil. degree in modern Middle East studies from Oxford.</p><p>After three years with United Press International, he joined The New York Times, where he has worked ever since as a reporter, correspondent, bureau chief, and columnist. At the Times, he has won three Pulitzer Prizes: in 1983 for international reporting (from Lebanon), in 1988 for international reporting (from Israel), and in 2002 for his columns after the September 11th attacks.</p><p>Friedman’s first book, From Beirut to Jerusalem, won the National Book Award in 1989. His second book, The Lexus and the Olive Tree: Understanding Globalization (1999), won the Overseas Press Club Award for best book on foreign policy in 2000. In 2002 FSG published a collection of his Pulitzer Prize-winning columns, along with a diary he kept after 9/11, as Longitudes and Attitudes: Exploring the World After September 11. His fourth book, The World Is Flat: A Brief History of the Twenty-first Century (2005) became a #1 New York Times bestseller and received the inaugural Financial Times/Goldman Sachs Business Book of the Year Award in November 2005. A revised and expanded edition was published in hardcover in 2006 and in 2007. The World Is Flat has sold more than 4 million copies in thirty-seven languages.</p><p>In 2008 he brought out Hot, Flat, and Crowded, which was published in a revised edition a year later. His sixth book, That Used to Be Us: How American Fell Behind in the World We Invented and How We Can Come Back, co-written with Michael Mandelbaum, was published in September 2011.</p>"},
+            {
+                "img": "images/davos_speakers/Yobie_Benjamin.jpg",
+                "href": "https://www.linkedin.com/in/yobie",
+                "name": "Yobie Benjamin",
+                "titles": "Co-founder & CTO Emeritus at Token.io, Fellow @4iNNO",
+                "bio": "<p>Yobie Benjamin is a venture investor and innovator in autonomous mobility, advanced materials, life sciences, IoT, fintech, telecomm, sustainability and retail/consumer products. In recognition of his technology achievements in virtual reality, the World Economic Forum named him as a 2015 Technology Pioneer. Mr. Benjamin is an active member of the World Economic Forum’s Expert Network.</p><p>Currently Mr. Benjamin is an Innovation Fellow at 4iNNO, working on consumer product innovation with several Fortune 100 firms.</p><p>He is also co-founder, senior advisor and/or mentor to several startups in the technology and synthetic biology space. In the ICO space, Benjamin is advisor and/or Consulting CEO to Blockchip, Inc. (Games), HPEC (healthcare) and DBrain (AI).</p><p>He is co-founder and CTO Emeritus of Token.io, providing software to banks that enable them to issue a new payment types. Mr. Benjamin is a member of the U.S. Federal Reserve Bank Faster Payments Task Force. He is also a co-lecturer (with Dr. Gino Yu) at Hong Kong Polytechnic University, teaching a course on Global Angel Investing.</p><p>Previously, Mr. Benjamin was Global Chief Technology Officer for Citibank. Institutional Clients Group/Global Transaction Services. At Citi, Mr. Benjamin was responsible for global money flows of $3 trillion to $9 trillion per day ($1.25 quadrillion/year). He was also Chairman of Citi’s Research Development Innovation & Learning Center. Mr. Benjamin was a Partner and Chief of Global Strategy at Ernst & Young, LLP (now EY, LLP) for five years and Partner.</p><p>He was a co-founder of Avegant. (Mr. Benjamin was winner of a 2014 CNN Top 10 Technology Products award for the Avegant Glyph and Skully Systems AR1 Helmet). Avegant’s work on Light Field Technology is poised to reinvent the way we all interact with computing devices.</p><p>Mr. Benjamin was former chair for a civilian volunteer group NASA AMES Collaboration Labs. He held this position at NASA AMES for 10 years.</p>"},
+            {
+                "img": "images/davos_speakers/Dakota_Gruener.jpg",
+                "href": "https://www.linkedin.com/in/dakotagruener",
+                "name": "Dakota Gruener",
+                "titles": "Executive Director at ID2020",
+                "bio": "<p>Dakota Gruener is the Executive Director of ID2020, a public-private partnership working to ensure that everyone on the planet has access to an officially recognized identity. As Executive Director, she leads overall strategy, builds critical partnerships with public and private-sector stakeholders, and continually focuses the organization on reaching the \"last girl.\"</p><p>Dakota comes to ID2020 from Gavi, the Vaccine Alliance, where she served as an aide-de-camp to the CEO. Gavi is an innovative global public-private partnership that acts as the central coordinating body for childhood vaccinations in the developing world, and which reaches nearly 60% of the world's children with live-saving vaccines. Dakota graduated magna cum laude from Brown University in Providence, RI with dual degrees in Biology and Political Science, is a former management consultant with Oliver Wyman, and is a proud Californian.</p>"},
+            {
+                "img": "images/davos_speakers/David_Autor.jpg",
+                "href": "https://economics.mit.edu/faculty/dautor",
+                "name": "David Autor",
+                "titles": "Leading Economist in Blockchain, Professor at MIT",
+                "bio": "<p>David Autor is a Professor and Associate Department Head of the Massachusetts Institute of Technology Department of Economics. He is also a Faculty Research Associate of the National Bureau of Economic Research and Editor in Chief of the Journal of Economic Perspectives (published by the American Economic Association), and has served on the Board of Editors at the American Economic Journal: Applied Economics and the Journal of Labor Economics.</p><p>Professor Autor received a B.A. in Psychology from Tufts University in 1989 and a Ph.D. in Public Policy at Harvard University’s Kennedy School of Government in 1999. His current fields of specialization include human capital and earnings inequality, labor market impacts of technological change and globalization, disability insurance and labor supply, and temporary help and other intermediated work arrangements.</p><p>Professor Autor is the recipient of an NSF CAREER award for his research on labor market intermediation, the Alfred P. Sloan Foundation Fellowship, and the Sherwin Rosen Prize in 2008 for outstanding contributions in the field of Labor Economics. He is also a Fellow of the Society of Labor Economists and was a recipient of both the John T. Dunlop Outstanding Scholar Award given by the Labor and Employment Relations Association (2006) and MIT Undergraduate Economics Association Teaching Award (2005). Professor Autor is currently a member of the American Economic Association’s Standing Committee on Oversight and Operation of Programs (SCOOP).</p>"},
+            {
+                "img": "images/davos_speakers/Cynthia_Breazeal.jpg",
+                "href": "http://cynthiabreazeal.media.mit.edu/",
+                "name": "Cynthia Breazeal",
+                "titles": "Founder & Chief Scientist at Jibo, Inc.",
+                "bio": "<p>Cynthia Breazeal is an Associate Professor of Media Arts and Sciences at the Massachusetts Institute of Technology where she founded and directs the Personal Robots Group at the Media Lab. She is a pioneer of social robotics and Human Robot Interaction. She has authored the book “Designing Sociable Robots”, has published over 100 peer-reviewed articles in journals and conferences on the topics of autonomous robotics, artificial intelligence, human robot interaction, and robot learning. She serves on several editorial boards in the areas of autonomous robots, affective computing, entertainment technology and multi-agent systems. She is also a member of the advisory board for the Science Channel and an Overseer at the Museum of Science, Boston.</p><p>Her research focuses on developing the principles, techniques, and technologies for personal robots that are socially intelligent, interact and communicate with people in human-centric terms, work with humans as peers, and learn from people as an apprentice. She has developed some of the world’s most famous robotic creatures ranging from small hexapod robots, to embedding robotic technologies into familiar everyday artifacts, to creating highly expressive humanoid robots and robot characters. Her recent work is investigates the impact of social robots on helping people of all ages to achieve personal goals that contribute to quality of life, in domains such as physical performance, learning and education, health, and family communication and play over distance.</p><p>Dr. Breazeal is recognized as a prominent young innovator. She is a recipient of the National Academy of Engineering’s Gilbreth Lecture Award, Technology Review’s TR35 Award, and TIME magazine’s Best Inventions of 2008. She has won numerous best paper and best technology inventions at top academic conferences. She has also been awarded an ONR Young Investigator Award, and was honored as finalist in the National Design Awards in Communication.</p><p>She received her S.B. (1989) in Electrical and Computer Engineering from the University of California, Santa Barbara. She did her graduate work at the MIT Artificial Intelligence Lab, and received her SM (1993) and ScD (2000) in Electrical Engineering and Computer Science from the Massachusetts Institute of Technology.</p>"},
+            {
+                "img": "images/davos_speakers/Sarah_Cummings.jpg",
+                "href": "http://demandinstitute.org/team/sarah-cummings/",
+                "name": "Sarah Cummings",
+                "titles": "Associate Client Manager at The Demand Institute",
+                "bio": "<p>Sarah Cummings is an Associate Client Manager at The Demand Institute. Prior to this role, Sarah worked in Shanghai in Nielsen China’s Innovation Practice, a division of Nielsen focused on new product innovation. She led pricing and portfolio studies for major consumer packaged goods companies in China.</p><p>She has also worked in Beijing and Washington, DC, and has traveled to more than 65 countries. Sarah received her BA in China in the Global Economy from Hobart and William Smith Colleges in Geneva, New York.</p>"},
+            {
+                "img": "images/davos_speakers/Jessica_Espey.jpg",
+                "href": "http://unsdsn.org/about-us/people/jessica-espey/",
+                "name": "Jessica Espey",
+                "titles": "Head of UN Sustainable Development Solutions Network & Director of TReNDS",
+                "bio": "<p>Jessica is a Senior Advisor to the United Nations Sustainable Development Solutions Network (SDSN), based in Cambridge, Massachusetts. Before moving to Cambridge she was Associate Director and Head of SDSN’s New York Office. In her current role Jessica directs SDSN’s TReNDS program on data for sustainable development. She also manages SDSN’s work on sustainable cities.</p><p>Current projects include overseeing four data-oriented Solution Initiatives which are attempting to trial new technologies and approaches for data collection, management, storage and dissemination and managing a body of work on subnational implementation of the SDGs (including SDSN’s Sustainable Cities Initiative). Jessica is official liaison for the Scientific Steering Committee of the IPCC Conference on Cities and Climate Change, is a member of the Global Partnership for Sustainable Development Data’s Technical Advisory Group, and is a member of the Group on Earth Observation’s Expert Advisory Board.</p><p>Prior to joining SDSN, Jessica served as a special adviser on the post-2015 agenda within the Office of the President of Liberia, supporting the work of The High Level Panel of Eminent Persons (of which President Sirleaf was co-chair) and the development of the Common African Position on the Post-2015 Agenda. She has also worked as a senior researcher at Save the Children UK, the Overseas Development Institute (ODI), and the British Institute in Eastern Africa (BIEA). She has particular expertise in the study of inequality, age and gender discrimination, as well as data systems for sustainable development.</p><p>Jessica holds a Bachelor of Arts degree with Honours in Modern History from the University of Oxford and a Master of Sciences degree in the Political Economy of Development from the School of Oriental and African Studies, University of London. She has lived and worked in Liberia, Kenya, Rwanda, the UK and the US.</p>"},
+            {
+                "img": "images/davos_speakers/Stefaan_Verhulst.jpg",
+                "href": "http://www.thegovlab.org/stefaan-verhulst.html",
+                "name": "Stefaan Verhulst",
+                "titles": "Co-Founder & Chief R&D Officer at The GovLab at NYU",
+                "bio": "<p>Stefaan G. Verhulst is Co-Founder and Chief Research and Development Officer of the Governance Laboratory @NYU (GovLab) where he is responsible for building a research foundation on how to transform governance using advances in science and technology.</p><p>He is the Curator and Editor of the Living Library and The Digest.</p><p>Verhulst’s latest scholarship centers on how technology can improve people’s lives and the creation of more effective and collaborative forms of governance. Specifically, he is interested in the perils and promise of collaborative technologies and how to harness the unprecedented volume of information to advance the public good.</p><p>Before joining NYU full time, Verhulst spent more than a decade as Chief of Research for the Markle Foundation, where he continues to serve as Senior Advisor. At Markle, an operational foundation based in New York, he was responsible for overseeing strategic research on all the priority areas of the Foundation including, for instance: transforming health care using information and technology, re-engineering government to respond to new national security threats, improving people’s lives in developing countries by connecting them to information networks, developing multi-stakeholder networks to tackle global governance challenges, changing education through information technology et al. Many of Markle’s reports have been translated into legislation and executive orders, and have informed the creation of new organizations and businesses.</p><p>He is also an Adjunct Professor in the Department of Culture and Communications at New York University, Senior Research Fellow for the Center for Media and Communications Studies at Central European University in Budapest; and an Affiliated Senior Research Fellow at the Center for Global Communications Studies at the University of Pennsylvania’s Annenberg School for Communications.</p>"},
+            {
+                "img": "images/davos_speakers/Steven_Ramage.jpg",
+                "href": "https://twitter.com/Steven_Ramage",
+                "name": "Steven Ramage",
+                "titles": "Head of External Relations at Group on Earth Observations (GEO)",
+                "bio": "<p>Prof. Dr. Gilberto Camara joined GEO as Secretariat Director in July 2018. He is well-known in the GEO community as a leading researcher in Geoinformatics, Geographical Information Science, and Land Use Change, and he has been recognised internationally for promoting free access and open source software for Earth observation data.</p><p>Under his guidance, as Director for Earth observation (2001-2005) and Director General (2006-2012), Brazil's National Institute for Space Research (INPE) made significant advances in land change monitoring using remote sensing, which contributed to Brazil achieving 80% decrease in deforestation in the Amazon rainforest, supporting Brazil’s commitment made at the UNFCCC COP15. This achievement was hailed as “the biggest environmental success story in a decade” by the scientific journal Nature. In support of Brazil's pledge to the 2015 Paris Agreement, Gilberto lead a team that projected Brazil’s future emissions from land use and agriculture.</p><p>Gilberto has advised 25 PhD dissertations and 31 Master thesis and published more than 250 scholarly papers that have been cited more than 10000 times (Google Scholar, June 2018). He was a member of the Scientific Steering Committee of Global Land Project from 2006 to 2011. From June 2013 to May 2015, he was the Brazil Chair at the University of Münster (Germany). From December 2016 to June 2018, he served as be one of the two co-chairs of the Belmont Forum, an international group of funding agencies for global change research.</p><p>As recognition for his work, he was inducted as a Doctor honoris causa from the University of Münster (Germany) and as a Chevalier (Knight) of the Ordre National du Mérite of France. He received the Global Citizen Award of the Global Spatial Data Infrastructure Association. He is also a Fellow of the Faculty of Geoinformation Science and Earth Observation (ITC) of the University of Twente (Netherlands) and a Senior Member of the Association for Computing Machinery (ACM). He is a member of the Scientific Advisory Board of Creative Commons and received the William T. Pecora award from NASA and USGS for \"leadership to the broad and open access to remote sensing data\".</p><p>Gilberto has been involved in GEO since its early days, and lead the Brazilian delegations that helped initiate GEO and GEOSS.</p>"}
         ]
+
+        peopleDavos = peopleDavos.map(setId).sort(alphabetize);;
+
 
         var demosDavos = [
             {
@@ -675,12 +884,18 @@
                 "name": "Anne Kim",
                 "titles": "CTO at <a href=\"https://genetank.xyz/\">Secure AI Labs</a>",
                 "bio": "<p><a href=\"https://genetank.xyz/\">Secure AI Labs</a>. Data sharing for health systems built on <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a> blockchain and AI technology, to produce federated Q&amp;A systems that allow insights across separate companies or departments without sharing data.</p>"},
+            // {
+            //     "img": "images/davos_demos/ramesh-raskar-mit-spectrum_0.jpeg",
+            //     "href": "http://web.media.mit.edu/~raskar/",
+            //     "name": "Ramesh Raskar",
+            //     "titles": "Head of the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture research group</a>.",
+            //     "bio": "<p>Privacy Aware Health Data for AI and Blockchain.</p>"},
             {
                 "img": "images/davos_demos/ramesh-raskar-mit-spectrum_0.jpeg",
-                "href": "http://web.media.mit.edu/~raskar/",
+                "href": "https://www.media.mit.edu/people/raskar/overview/",
                 "name": "Ramesh Raskar",
-                "titles": "Head of the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture research group</a>.",
-                "bio": "<p>Privacy Aware Health Data for AI and Blockchain.</p>"},
+                "titles": "Assoc. Prof MIT Media Lab, Facebook, Google[X], REDX.io",
+                "bio": "<p>Ramesh Raskar is an Associate Professor at MIT Media Lab and directs the Camera Culture research group. His focus is on building interfaces between social systems and autonomous systems. These society-autonomy interfaces (SAI) span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award (2016), ACM SIGGRAPH Achievement Award (2017), DARPA Young Faculty Award (2009), Alfred P. Sloan Research Fellowship (2009), TR100 Award from MIT Technology Review (2004) and Global Indus Technovator Award (2003). He has worked on special research projects at Google [X] and Facebook and co-founded/advised several companies.</p><p>In his recent role at Facebook, he launched and led innovation teams in Digital Health, Health-tech, Satellite Imaging, TV bandwidth for Connectivity, VR/AR and 'Emerging Worlds' initiative for FB.</p><p>His new focus is on building world-scale interfaces between societal systems and cyber-physical systems. They span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award 2016, ACM SIGGRAPH Achievement Award 2017, Technology Review TR100 award 2004, Global Indus Technovator Award, top 20 Indian technology innovators worldwide 2003, Alfred P. Sloan Research Fellowship award 2009 and Darpa Young Faculty award 2010. Others include Marr Prize honorable mention 2009, LAUNCH Health Innovation Award, presented by NASA, USAID, US State Dept+ NIKE, 2010, Vodafone WirelessInnovationAward (first place) 2011. He has received four MitsubishiElectricInventionAwards.</p><p>His work has appeared in NYTimes, CNN, BBC, NewScientist, TechnologyReview etc. He holds 82+ US patents.</p>"},
             {
                 "img": "images/davos_demos/Fei_Zou.png",
                 "href": "https://www.linkedin.com/in/fei-zou-39590886/",
@@ -692,7 +907,7 @@
                 "href": "https://www.linkedin.com/in/fabio-zoffi-127b743/",
                 "name": "Fabio Zoffi",
                 "titles": "President & Executive Chairman at <a href=\"http://www.ors.ai\">ORS GROUP</a>",
-                "bio": "<p><a href=\"http://www.ors.ai\">ORS</a> is a leading enterprise software company with over 20 years of experience in delivering applied-AI solutions to global corporations and SMEs across sectors</p>"},
+                "bio": "<p><a href=\"http://www.ors.ai\">ORS</a> is a leading enterprise software company with over 20 years of experience in delivering applied-AI solutions to global corporations and SMEs across sectors</p><p>Fabio is an international serial entrepreneur and investor born in Venice and living in Germany.</p><p>After spending several years as executive at the Benetton Group, Fabio was partner and managing director of a pan-European early stage technology investment fund and founded Germany’s largest Wimax telecommunications venture.</p><p>As investor and board member, Fabio is currently supporting a portfolio of privately-held companies based in Italy and Germany. Fabio has a degree in business administration at the University of Ca’ Foscari in Venice</p>."},
             {
                 "img": "images/davos_demos/Daniel_Peled.jpg",
                 "href": "https://www.linkedin.com/in/dpeled/?originalSubdomain=il",
@@ -724,7 +939,9 @@
             //     "titles": "",
             //     "bio": "<p></p>"},
         ]
+        demosDavos = demosDavos.map(setId).sort(alphabetize);
 
+        var peopleAndDemosDavos = peopleDavos.concat(demosDavos).sort(alphabetize);
 
         var app = new Vue({
             el: '#app',
@@ -732,9 +949,11 @@
                 message: 'Hello Vue!'
             },
             people: people,
+            peopleDavos: peopleDavos,
+            peopleAndDemosDavos: peopleAndDemosDavos,
+            demosDavos: demosDavos,
             speakers: speakers,
             organizers: organizers,
-            demosDavos: demosDavos,
             tbd: tbd,
             schedule: schedule
         })

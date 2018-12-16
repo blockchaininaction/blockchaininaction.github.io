@@ -63,7 +63,7 @@
                     This will be a spectacular venue, a great group of people, and a very special opportunity to share your ideas and learn from others.  We hope you can join us.<br><br>Talk to John Werner (<a href="mailto:jwerner@mit.edu">jwerner@mit.edu</a>)<br>or Prof. Alex Pentand (<a href="mailto:pentland@mit.eu">pentland@mit.eu</a>) for details and official invitation.
                 </p>
 
-                <div class="person-thumbs person-thumbs-davos">
+                <div class="person-thumbs person-thumbs-davos" v-cloak>
                     <a v-for="person in $options.peopleAndDemosDavos"
                         v-bind:title="person.name"
                         v-bind:href="'#' + person.id"
@@ -72,7 +72,7 @@
             </div>
             <br><br>
 
-            <h3 id="now">
+            <h3 id="now" v-cloak>
                 <div class="max-width">
                     Speakers @ Davos ↴
                 </div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <h3 id="now">
+            <h3 id="now" v-cloak>
                 <div class="max-width">
                     Demos @ Davos ↴
                 </div>
@@ -109,7 +109,7 @@
         </div>
 
 
-        <h3 id="now">
+        <h3 id="now" v-cloak>
             <div class="max-width">
                 Future ⮥<span>Past ↴</span>
             </div>
@@ -144,7 +144,7 @@
                     M280.965,103.37h-82.999V20.371L280.965,103.37z M54.701,332.152V11.934h131.331v97.403c0,3.294,2.667,5.967,5.967,5.967h97.403
                    v216.854H54.701V332.152z"/></svg></a><a href="http://blockchaininaction.org/blockchain+AI+Humans.pdf">Discussions have been synthesized</a> (under <a href="https://www.chathamhouse.org/chatham-house-rule">Chatham House rules</a>) into an MIT publication and distributed to thought leaders at Davos and elsewhere. The discussion will also lead to a collection of visionary papers authored by speakers, to be published by MIT Press in our <a href="https://mitpress.mit.edu/books/imprint/mit-connection-science-and-engineering">Connection Science Imprint series</a>.</p>
 
-            <div class="person-thumbs">
+            <div class="person-thumbs" v-cloak>
                 <a v-for="person in $options.people"
                     v-bind:title="person.name"
                     v-bind:href="'#' + person.id"

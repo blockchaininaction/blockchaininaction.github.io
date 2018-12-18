@@ -293,12 +293,14 @@ hr {
 
 a {
     background-color: black;
-    padding: 4px 3px;
-    margin: 0 -1px;
     color: white;
     transition: 350ms color;
     transition: 200ms background-color;
     text-decoration: none;
+}
+p a {
+    padding: 4px 3px;
+    margin: 0 -1px;
 }
 
 a:hover {

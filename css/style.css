@@ -94,6 +94,14 @@ p.info strong {
     font-weight: 700;
 }
 
+.davos-logos {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+
 ul.info {
     padding-bottom: 30px;
 }

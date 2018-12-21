@@ -94,12 +94,20 @@ p.info strong {
     font-weight: 700;
 }
 
+p.info.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .davos-logos {
     float: right;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 55%;
+}
+.davos-logos img {
+    margin-left: 20px;
 }
 
 ul.info {
@@ -121,9 +129,10 @@ dl dt {
     padding-top: 8px;
 }
 dl dd {
-    padding-left: 7em;
+    /* padding-left: 7em; */
     padding-top: 8px;
-
+    overflow: auto;
+    padding-top: 8px;
 }
 dl dd .time {
     color: #ababab;
@@ -491,6 +500,11 @@ footer {
         grid-template-rows: 130px 130px 130px 130px;
     }
 
+    .person-thumbs-davos {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px 130px;
+    }
+
     .block .sm-thumbs {
         margin-top: 30px;
     }
@@ -536,4 +550,10 @@ footer {
 .white-paper:hover path {
     fill: #ffe100;
     transition: 500ms fill;
+}
+
+.davos-dome-map {
+    float: left;
+    margin-right: 20px;
+    margin: 6px 20px 6px 0;
 }

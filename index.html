@@ -1284,7 +1284,7 @@
                 block.people = block.people.map(setId).map(function(person) {
                     console.log(person.id)
                     person.img = peopleById[person.id].img;
-                    var minutes = min.toString().length == 2 ? min : min + "0";
+                    var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                     person.time = hour + ":" + minutes;
                     min += 5;
                     if (min == 60) {
@@ -1303,7 +1303,7 @@
                     hour++;
                 }
             } else {
-                var minutes = min.toString().length == 2 ? min : min + "0";
+                var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                 block.time = hour + ":" + minutes;
                 min += 5;
                 if (min == 60) {

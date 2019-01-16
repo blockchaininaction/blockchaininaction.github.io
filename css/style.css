@@ -306,6 +306,9 @@ hr {
 .davos-schedule .people {
     margin-top: 15px;
 }
+.davos-schedule .people2 {
+    margin-left: 66px;
+}
 .davos-block-title {
     display: flex;
     align-items: center;

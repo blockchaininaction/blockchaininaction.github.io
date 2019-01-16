@@ -90,6 +90,54 @@
             </div>
             <br><br>
 
+            <h3 id="scheduleDavos" v-cloak>
+                <div class="max-width">
+                    ↵ Schedule @ Davos
+                </div>
+            </h3>
+
+            <div class="max-width davos-schedule">
+                <div class="blocks">
+                    <div v-if="!block.transition" v-for="block in $options.davosSchedule"
+                        v-bind:class="'block ' + block.class"
+                        v-bind:style="{ 'border-color': block.color }">
+                        <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                            <div class="time">{{block.time}}</div>
+                            <h4><span class="block-num">Block {{block.blockNum}}</span>{{block.title}}</h4>
+                        </div>
+                        <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
+                            <div class="time">{{block.time}}</div>
+                            <h4>{{block.title}}</h4>
+                        </div>
+                        <div v-if="block.people" class="people">
+                            <div v-for="person in block.people" class="davos-speaker">
+                                <div class="time">{{person.time}}</div>
+                                <a
+                                class="sm-thumb"
+                                v-bind:title="person.name"
+                                v-bind:href="'#' + person.id"
+                                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                <div>
+                                    <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                    <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
             <h3 id="now" v-cloak>
                 <div class="max-width">
                     Speakers @ Davos ↴
@@ -314,6 +362,104 @@
                 "time": "04:30 PM",
                 "title": "Closing"
             }
+        ];
+
+        var davosSchedule = [
+            {title: "Introduction"},
+
+            {title: "Transformation", color: "#7000be", people: [
+                {name: "David Kenny", title: "Insight into Data Science and Artificial Intelligence will transform various industries including retail, marketing, and media"},
+                {name: "Brian Behlendorf", title: "How software stacks participate in a blockchain project and a distributed ledger to do business securely with several organizations"},
+                {name: "Johannes Höhener", title: "The Digital Asset Ecosystem"}
+            ]},
+
+            {title: "Sustainability", color: "#3600be", people: [
+                {name: "Jessica Espey", title: "Sharing is Caring: Building Trust in Public-Private Data Sharing for Sustainable Development"},
+                {name: "Tabitha Goldstaub", title: "AI for the UN Sustainable Development Global Goals"},
+                {name: "Sumair Sayani", title: "Preparing for a world of 8 billion and beyond"},
+                {name: "Steven Ramage", title: "Importance of evidence-based policy"}
+            ]},
+
+            {title: "Welcome from CEO, TCS"},
+
+            {transition: 5},
+
+            {title: "Foundations for Policy", color: "#001bbe", people: [
+                {name: "Dakota Gruener", title: "Why it is so critical that we get digital ID right?"},
+                {name: "Navroop Sahdev", title: "Technological adoption and the new world economic order & perspective on Financial Services industry, vertical technologies like Blockchain) and Economic theory."},
+                {name: "Michael Hamilton", title: "The Future of Transactions:  Commercial Contracts in the [Coming] Age of Artificial Intelligence, Smart Contracts, Blockchain and the Rule of Code"},
+                {name: "Sandra Ro", title: "Blockchain, the Inspiration Technology: Re-Imagining a Better, Fairer Society"}
+            ]},
+
+            {transition: 5},
+
+            {title: "Fueling Adoption", color: "#005ebe", people: [
+                {name: "Tim Berners-Lee", title: "Open source technology and empowerment through data"},
+                {name: "Mira Wilczek", title: "Data, AI & the future of work"},
+                {name: "John Calian", title: "The Machine 2 Machine Economy is Coming"},
+                {name: "Alan Trefler", title: "The Democratization of Blockchain:  How AI can drive the use of Blockchain into the hands of business people"}
+            ]},
+
+            {transition: 5},
+
+            {title: "Solutions for Everyday People", color: "#0086be", people: [
+                {name: "Sanford Climan", title: "Role of blockchain in Financing the Future of Entertainment "},
+                {name: "Josh McHugh", title: "Sport and Blockchain: Fair Play for a More Stable Future"},
+                {name: "Panos A. Panay", title: "Future of Music Rights: Founded by Berklee College of Music and MIT Trust Data, Open Music Initiative is developing a global open protocol for uniform identification of music rights owners and creators"},
+                {name: "Jonnie Penn", title: "Creating personal data co-ops that allow workers and trade unions to leverage their personal data through collective bargaining"}
+            ]},
+
+            {transition: 5},
+
+            {title: "Chairman Panel", color: "#00bea5", people: [
+                {name: "Alex 'Sandy' Pentland", title: "HOST/MC"},
+                {name: "N. Ganapathy Subramaniam", title: ""},
+                {name: "Rick Haythornthwaite", title: "Imagination in the coming decades"},
+                {name: "Smadar Itzkovich", title: "The Israel Smart Mobility Living Lab is changing the way nations innovate through its unique approach to rethinking smart cities."},
+                {name: "Claire Melamed", title: "The most invisible humans – who is not in the data?"},
+                {name: "Mike Federle", title: "The most invisible humans – who is not in the data?"}
+            ]},
+
+            {transition: 5},
+
+            {title: "New Technologies", color: "#5ebe00", people: [
+                {name: "Yaniv Altshuler", title: "Endor is the first automated predictions platform which analyzes Big Data using AI and Social Physics technology to find patterns in human behavior. Endor's industry first ability to analyze encrypted data guarantees the security of sensitive data and GDPR compliance"},
+                {name: "Daniel Peled", title: "Orbs is the hybrid blockchain, enabling businesses, governments and developers to create high impact solutions by combining performance and security"},
+                {name: "Fei Zou", title: "Enabling AI powered, privacy conscious CLEAN data economy for enterprise data monetization and securitization"},
+                {name: "Fabio Zoffi", title: "Applied-AI enterprise software for optimizing business end-to-end"},
+                {name: "David Shrier", title: "AI-driven biometrics software that builds better identity profiles for financial services institutions, improving how they handle risk, fraud, and credit"}
+            ]},
+
+            {transition: 5},
+
+            {title: "World-Wide Systems", color: "#b5a200", people: [
+                {name: "Emmanuel Letouzé", title: "Building open, national-scale data systems for better government incorporating private data from telcos, banks and government, using blockchain and AI technology"},
+                {name: "Alejandro Campero", title: "SociAi: Fair and Efficient Targeting for Social Prosperity. Fairness in national Social systems. Interamerican Development Bank and MIT Trust Data are building tools for guaranteeing Fairness in national Social systems"},
+                {name: "Hao Chen", title: "We are building data-driven decision systems for Inclusive and Green Innovation in city planning and management, incorporating both private company data and government data, and based on blockchain and AI technology"},
+                {name: "Thomas Hardjono", title: "MIT Personal Infomediary: Establishing Fiduciary Relationships for Personal Data"}
+            ]},
+
+            {transition: 5},
+
+            {title: "Transforming Social Systems", color: "#be5500", people: [
+                {name: "César Hidalgo", title: "Collective learning for innovation"},
+                {name: "Ramesh Raskar", title: "Health Grid: Distributed secure computing and Blockchain based Data Marketplace for Nationwide Learning Health Systems"},
+                {name: "Michiel Bakker", title: "Building tools to study the social integration of refugees using mobile phone metadata"},
+                {name: "Anne Kim", title: "Data sharing for health systems built on MIT Trust Data blockchain and AI technology, to produce federated Q&A systems that allow insights across separate companies or departments without sharing data"},
+                {name: "Jeffrey Saviano", title: "How blockchain and AI will contribute to enterprise tax solutions that enable a fair and just  tax system"}
+            ]},
+
+            {transition: 5},
+
+            {title: "Changing Society", color: "#be0000", people: [
+                {name: "Joscha Bach", title: "Beyond cryptocurrencies: AI enabled financial technologies, possible existential risks and a need for reorganization of financial infrastructure"},
+                {name: "Svetlana Dotsenko", title: "Using Blockchain / AI to revolutionize how fast university innovations get implemented in the real world"},
+                {name: "Marin Soljacic", title: "Training AI scientist"},
+                {name: "Karl Muth", title: "Proof as Pedigree, Network as Lineage"}
+            ]},
+
+            {title: "Closing"},
+
         ];
 
         var people = [
@@ -568,7 +714,7 @@
         ];
 
         var setId = function(person) {
-            person.id = person.name.split(' ').join('_').toLocaleLowerCase();
+            person.id = person.name.split('.').join('').split(' ').join('_').toLocaleLowerCase();
             return person;
         }
 
@@ -992,7 +1138,7 @@
             {
                 "img": "images/davos_demos/Alejandro_Noriega_Campero.jpg",
                 "href": "https://www.media.mit.edu/people/noriega/overview/",
-                "name": "Alejandro Noriega Campero",
+                "name": "Alejandro Campero",
                 "titles": "Human Dynamics, Research Assistant",
                 "bio": "<p><a href=\"https://www.trust.mit.edu/\">MIT Trust Data Consortium</a>. Fairness in national social systems. Interamerican Development Bank and MIT Trust Data are building tools for guaranteeing fairness in national social systems. Test cases include Mexico’s Prospera conditional cash transfer system. Funding from Interamerican Development Bank.</p>"},
             {
@@ -1108,7 +1254,7 @@
             //     "href": "",
             //     "name": "",
             //     "titles": "",
-            //     "bio": "<p></p>"},
+            //     "bidanieo": "<p></p>"},
         ]
         demosDavos = demosDavos.map(setId).sort(alphabetize);
 
@@ -1117,17 +1263,65 @@
 
         var peopleAndOrganizersDavos = davosOrganizers.concat(peopleDavos);
 
+
+        var peopleById = {};
+        davosOrganizers.concat(peopleAndDemosDavos).forEach(function(person) {
+            peopleById[person.id] = person;
+        });
+
+
+
+        var hour = 9;
+        var min = 20;
+        var blockNum = 1;
+        davosSchedule = davosSchedule.map(function(block) {
+            if (block.people) {
+                block.people = block.people.map(setId).map(function(person) {
+                    console.log(person.id)
+                    person.img = peopleById[person.id].img;
+                    var minutes = min.toString().length == 2 ? min : min + "0";
+                    person.time = hour + ":" + minutes;
+                    min += 5;
+                    if (min == 60) {
+                        min = 0;
+                        hour++;
+                    }
+                    return person;
+                });
+                block.blockNum = blockNum;
+                blockNum++
+            } else if (block.transition) {
+                block.time = hour + ":" + minutes;
+                min += 5;
+                if (min == 60) {
+                    min = 0;
+                    hour++;
+                }
+            } else {
+                var minutes = min.toString().length == 2 ? min : min + "0";
+                block.time = hour + ":" + minutes;
+                min += 5;
+                if (min == 60) {
+                    min = 0;
+                    hour++;
+                }
+            }
+            return block;
+        })
+
         var app = new Vue({
             el: '#app',
             data: {
                 message: 'Hello Vue!'
             },
             people: people,
+
             peopleDavos: peopleDavos,
             peopleAndDemosDavos: peopleAndDemosDavos,
             peopleAndOrganizersDavos: peopleAndOrganizersDavos,
             demosDavos: demosDavos,
             chefDavos: chefDavos,
+            davosSchedule: davosSchedule,
 
             speakers: speakers,
             organizers: organizers,

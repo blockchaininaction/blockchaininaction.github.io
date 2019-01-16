@@ -96,7 +96,7 @@
                 </div>
             </h3>
 
-            <div class="max-width davos-schedule">
+            <div class="max-width davos-schedule" v-cloak>
                 <div class="blocks">
                     <div v-if="!block.transition" v-for="block in $options.davosSchedule"
                         v-bind:class="'block ' + block.class"
@@ -370,8 +370,11 @@
             {title: "Transformation", color: "#7000be", people: [
                 {name: "David Kenny", title: "Insight into Data Science and Artificial Intelligence will transform various industries including retail, marketing, and media"},
                 {name: "Brian Behlendorf", title: "How software stacks participate in a blockchain project and a distributed ledger to do business securely with several organizations"},
-                {name: "Johannes Höhener", title: "The Digital Asset Ecosystem"}
+                {name: "Johannes Höhener", title: "The Digital Asset Ecosystem"},
+                {name: "Amy Wilkinson", title: "CEO & Founder of Ingenuity, Author, Lecturer at Stanford"}
             ]},
+
+            {transition: 5},
 
             {title: "Sustainability", color: "#3600be", people: [
                 {name: "Jessica Espey", title: "Sharing is Caring: Building Trust in Public-Private Data Sharing for Sustainable Development"},
@@ -379,6 +382,8 @@
                 {name: "Sumair Sayani", title: "Preparing for a world of 8 billion and beyond"},
                 {name: "Steven Ramage", title: "Importance of evidence-based policy"}
             ]},
+
+            {transition: 5},
 
             {title: "Welcome from CEO, TCS"},
 
@@ -1272,7 +1277,7 @@
 
 
         var hour = 9;
-        var min = 20;
+        var min = 25;
         var blockNum = 1;
         davosSchedule = davosSchedule.map(function(block) {
             if (block.people) {

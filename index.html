@@ -146,10 +146,22 @@
 
 
 
+            <h3 id="facilitators" v-cloak>
+                <div class="max-width">
+                    ⭍&nbsp; Facilitators
+                </div>
+            </h3>
 
-
-
-
+            <div class="max-width">
+                <div class="person" v-for="person in $options.davosFacilitators" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                </div>
+            </div>
 
             <h3 id="now" v-cloak>
                 <div class="max-width">
@@ -376,6 +388,13 @@
                 "title": "Closing"
             }
         ];
+
+        // var davosFacilitators = [
+        //     {name: "John Werner"},
+        //     {name: "Randall Lane"},
+        //     {name: "Amy Wilkinson"},
+        //     {name: "Navroop Sahdev"}
+        // ];
 
         var davosSchedule = [
             {title: "Introduction"},
@@ -785,6 +804,34 @@
             return 0;
         }
 
+        var davosFacilitators = [
+            {
+                "img": "http://tedxunplaza.com/wp-content/uploads/2013/06/John-light.jpg",
+                "href": "https://www.linkedin.com/in/johnwerner1/",
+                "name": "John Werner",
+                "titles": "Chief Network Officer/SVP at <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>; Managing Director at <a href=\"http://www.linkventures.com/\">Link Ventures</a>; Fellow at MIT Connection Science; Mobilizer, Human Connector, &amp; <a href=\"http://www.johnwernerphotography.com/\">avid photographer</a> ",
+                "bio": "<p>John Werner has created a career out of bringing ideas, networks and people together to generate powerful results. Currently, John serves as the Chief Network Officer, SVP Corporate Development of Cogo Labs and as Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. Before joining Link Ventures and <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>, John’s deep curiosity and penchant for problem-solving led him to a diverse set of roles spanning many fields and interests. Previously, John was a VP at a <a href=\"https://www.ycombinator.com/\">Y Combinator</a> augmented reality startup based in Silicon Valley. John’s also served as the Head of Innovation and New Ventures at the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture Group</a>, and the Managing Director of <a href=\"https://www.media.mit.edu/groups/emerging-worlds/overview/\">Emerging Worlds SIG</a>, where he led the launch of collaborative innovation centers in Mumbai, Nashik, and Hyderabad.</p><p>John also channels his passion and curiosity into cultivating platforms for thought and exchange. John is the Founder &amp; CEO of <a href=\"http://arinaction.org/\">ARIA</a>, a community focused on the potential of augmented reality and the <a href=\"http://blockchaininaction.org/\">Blockchain+AI+Human</a>, which takes place at MIT and the World Economic Forum in Davos with MIT Professor Sandy Pentland. John also founded Ideas in Action Inc., a non-profit that creates and produces <a href=\"https://tedxbeaconstreet.com/\">TEDxBeaconStreet</a>, whose talks have accumulated 250+ million YouTube views.</p><p>John was also a co-Founder of <a href=\"https://www.citizenschools.org/\">Citizen Schools</a>, an advisor for <a href=\"https://www.photobutler.com/\">PhotoButler</a>, <a href=\"https://www.vestigoventures.com/\">Vestigo Ventures</a> and <a href=\"https://ff.co/#/\">Founders Forum</a> (Boston), an <a href=\"http://connection.mit.edu/\">MIT Connection Science Fellow</a>, a <a href=\"https://loebfellowship.gsd.harvard.edu/\">Loeb Fellow at the Harvard University’s Graduate School of Design</a> and a graduate of <a href=\"https://www.hamilton.edu/\">Hamilton College</a>. John was recognized by Harvard Business Review for his leadership; by BostonInno in 2014 as a top 50 on Fire in Boston; Boston Chamber with a TOYL (Ten Outstanding Young Leaders) Award in 2006. In his free time, John is a passionate <a href=\"https://www.johnwernerphotography.com/\">photographer</a> and an accomplished triathlete (qualified for the worlds and 4x nationals). John and his family live in Brookline, MA.</p>"},
+            {
+                "img": "images/davos_speakers/Randall_Lane.jpg",
+                "href": "https://www.forbes.com/sites/randalllane",
+                "name": "Randall Lane",
+                "titles": "Forbes Managing Editor",
+                "bio": "<p>Randall is the editor of Forbes Magazine, and believe strongly that entrepreneurial capitalism and market-based thinking can solve the world's problems. This is his second stint at Forbes -- between 1991 and 1997, he was a reporter, a staff writer (five cover stories), associate editor and Washington bureau chief.</p><p>In between, he caught the start-up bug: he co-founded P.O.V. Magazine (Adweek's Startup of the Year), and then launched Doubledown Media (Trader Monthly, Dealmaker, Private Air, etc.). As a fattening hobby, he has reviewed restaurants for various magazines since college (and was a National Magazine Award finalist for my wine writing). He used to think chronicling the world's greatest business minds made him a great entrepreneur, but he now realizes his time as an entrepreneur made him an acute business journalist. He just published a new book, The Zeroes: My Misadventures In the Decade Wall Street Went Insane.</p>"},
+            {
+                "img": "images/davos_speakers/AmyWilkinson_300.jpg",
+                "href": "https://www.amywilkinson.com/",
+                "name": "Amy Wilkinson",
+                "titles": "CEO & Founder of Ingenuity, Author, Lecturer at Stanford",
+                "bio": "<p>Amy Wilkinson is CEO and founder of Ingenuity, Lecturer at Stanford Graduate School of Business and author of The Creator’s Code: The Six Essential Skills of Extraordinary Entrepreneurs. She advises executives and emerging leaders around the world on how to master the skills that underlie entrepreneurial success.</p><p>Wilkinson’s career spans leadership roles at McKinsey & Company, J.P. Morgan and as founder of Alegre, a foreign-based export company. She has also served in the White House as a senior policy advisor to the United States Trade Representative and a White House Fellow.</p><p>Fascinated by how leaders must reinvent their approaches to excel in an entrepreneurial age, Wilkinson interviewed 200 of today’s top entrepreneurs including the founders of Airbnb, LinkedIn, eBay, PayPal, Yelp, Dropbox, Tesla Motors, SpaceX, Chipotle, Under Armour, Spanx, Jetblue, and Revolution Foods to distill what it takes to go from start-up to scale in our rapidly changing economy. She conducted this work while a senior fellow at Harvard University and public policy scholar at the Woodrow Wilson Center. The Ewing Marian Kauffman Foundation awarded Wilkinson a grant for her groundbreaking research on high growth entrepreneurs.</p><p>Wilkinson has been a keynote speaker for corporations, institutes, and universities around the world. Recent speaking events include the World Economic Forum at Davos, Consumer Electronics Show, NASSCOM (India’s Leadership Forum), Microsoft, IBM, TD Ameritrade, National Governor’s Association, and Federal Reserve Board of Governors.</p><p>She is an expert for The Wall Street Journal. Wilkinson and her work have been featured by CNN, Fox News, CNBC, Bloomberg TV & Radio, NPR, The Wall Street Journal, The Economist, Fortune, Forbes, Inc. TIME, The Washington Post, and USA Today.</p><p>Wilkinson earned BA, MA, and MBA degrees from Stanford University. She is a member of the Council on Foreign Relations and an Eisenhower Fellow.</p>"},
+            {
+                "img": "images/Navroop-Sahdev2.jpg",
+                "href": "https://www.linkedin.com/in/navroopsahdev",
+                "name": "Navroop Sahdev",
+                "titles": "Head of Economic Strategy, <a href=\"http://www.five-fifty-foundry.com/\">The Fifty Five Foundry</a>",
+                "bio": "<p>Navroop is a Fellow at <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and holds a host of leadership roles in the DLT space, both as a practitioner as well as a researcher. An economist by training, Navroop is currently building a FinTech company that seeks to leverage blockchain technology. She is also a Research Associate at the <a href=\"http://blockchain.cs.ucl.ac.uk/\">Centre for Blockchain Technologies</a> (CBT) at University College London and holds three masters in IP Management, Economics of Innovation and Applied Economics.</p><p>A United Nations Youth Delegate, Navroop is frequently interviewed by Forbes as a subject matter expert on the economics of emerging tech. She has co-authored <a href=\"https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x\">Hyperledger’s Blockchain for Business online course</a> online course and is frequently requested as a keynote speaker at industry conferences. Previously, she has worked at Harvard University and <a href=\"https://www.unenvironment.org/\">United Nations Environment Programme</a>. Her research interests are focused on Distributed Ledger Technologies, Game Theory, Networks Theory and Complex Systems Science.</p>"},
+        ]
+        davosFacilitators = davosFacilitators.map(setId);
+
         var davosOrganizers = [
             // {
             //     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/N._Chandrasekaran_CEO_Tata_Consultancy_Services.jpg/220px-N._Chandrasekaran_CEO_Tata_Consultancy_Services.jpg",
@@ -805,13 +852,6 @@
                 "name": "Alex 'Sandy' Pentland",
                 "titles": "Professor of Media Arts and Sciences<br/>Toshiba Professor<br/>Media Lab Entrepreneurship Program Director",
                 "bio": "<p>Professor Alex \"Sandy\" Pentland directs the <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and <a href=\"https://www.media.mit.edu/groups/human-dynamics/overview/\">Human Dynamics</a> labs and previously helped create and direct the <a href=\"https://www.media.mit.edu/\">MIT Media Lab</a> and the <a href=\"https://www.medialabasia.in/\">Media Lab Asia</a> in India. He is one of the most-cited scientists in the world, and Forbes recently declared him one of the \"7 most powerful data scientists in the world\" along with Google founders and the Chief Technical Officer of the United States. He has received numerous awards and prizes such as the McKinsey Award from Harvard Business Review, the 40th Anniversary of the Internet from DARPA, and the Brandeis Award for work in privacy.</p><p>He is a founding member of advisory boards for Google, AT&amp;T, Nissan, and the UN Secretary General, a serial entrepreneur who has co-founded more than a dozen companies including social enterprises such as the <a href=\"http://datatransparencylab.org/\">Data Transparency Lab</a>, the Harvard-ODI-MIT <a href=\"http://datapopalliance.org/\">DataPop Alliance</a> and the <a href=\"https://idcubed.org/\">Institute for Data Driven Design</a>. He is a member of the U.S. National Academy of Engineering and leader within the World Economic Forum.</p>",
-                "organizer": true},
-            {
-                "img": "http://tedxunplaza.com/wp-content/uploads/2013/06/John-light.jpg",
-                "href": "https://www.linkedin.com/in/johnwerner1/",
-                "name": "John Werner",
-                "titles": "Chief Network Officer/SVP at <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>; Managing Director at <a href=\"http://www.linkventures.com/\">Link Ventures</a>; Fellow at MIT Connection Science; Mobilizer, Human Connector, &amp; <a href=\"http://www.johnwernerphotography.com/\">avid photographer</a> ",
-                "bio": "<p>John Werner has created a career out of bringing ideas, networks and people together to generate powerful results. Currently, John serves as the Chief Network Officer, SVP Corporate Development of Cogo Labs and as Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. Before joining Link Ventures and <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>, John’s deep curiosity and penchant for problem-solving led him to a diverse set of roles spanning many fields and interests. Previously, John was a VP at a <a href=\"https://www.ycombinator.com/\">Y Combinator</a> augmented reality startup based in Silicon Valley. John’s also served as the Head of Innovation and New Ventures at the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture Group</a>, and the Managing Director of <a href=\"https://www.media.mit.edu/groups/emerging-worlds/overview/\">Emerging Worlds SIG</a>, where he led the launch of collaborative innovation centers in Mumbai, Nashik, and Hyderabad.</p><p>John also channels his passion and curiosity into cultivating platforms for thought and exchange. John is the Founder &amp; CEO of <a href=\"http://arinaction.org/\">ARIA</a>, a community focused on the potential of augmented reality and the <a href=\"http://blockchaininaction.org/\">Blockchain+AI+Human</a>, which takes place at MIT and the World Economic Forum in Davos with MIT Professor Sandy Pentland. John also founded Ideas in Action Inc., a non-profit that creates and produces <a href=\"https://tedxbeaconstreet.com/\">TEDxBeaconStreet</a>, whose talks have accumulated 250+ million YouTube views.</p><p>John was also a co-Founder of <a href=\"https://www.citizenschools.org/\">Citizen Schools</a>, an advisor for <a href=\"https://www.photobutler.com/\">PhotoButler</a>, <a href=\"https://www.vestigoventures.com/\">Vestigo Ventures</a> and <a href=\"https://ff.co/#/\">Founders Forum</a> (Boston), an <a href=\"http://connection.mit.edu/\">MIT Connection Science Fellow</a>, a <a href=\"https://loebfellowship.gsd.harvard.edu/\">Loeb Fellow at the Harvard University’s Graduate School of Design</a> and a graduate of <a href=\"https://www.hamilton.edu/\">Hamilton College</a>. John was recognized by Harvard Business Review for his leadership; by BostonInno in 2014 as a top 50 on Fire in Boston; Boston Chamber with a TOYL (Ten Outstanding Young Leaders) Award in 2006. In his free time, John is a passionate <a href=\"https://www.johnwernerphotography.com/\">photographer</a> and an accomplished triathlete (qualified for the worlds and 4x nationals). John and his family live in Brookline, MA.</p>",
                 "organizer": true},
             {
                 "img": "images/davos_speakers/Michael_Federle.jpg",
@@ -912,12 +952,6 @@
                 "titles": "President at EMOTIV, Neuroscientist, DJ, Speaker, Author",
                 "bio": "<p>President of EMOTIV, the world leader in mobile neuroinformatics.</p><p>Former Global Head of Strategy, Health and Healthcare and Member of the Executive Committee of the World Economic Forum.</p><p>15 + years of experience as a strategist advising global companies and executives in healthcare, PR, communication & consumer industries.</p><p>Contributor to Fortune Magazine & The Wall Street Journal.</p><p>Former Head of program at the French Prime Minister's Center for Strategic Analysis.</p><p>Professor of Behavioral and Brain Sciences.</p><p>Public and corporate speaker.</p>"},
             {
-                "img": "images/davos_speakers/Randall_Lane.jpg",
-                "href": "https://www.forbes.com/sites/randalllane",
-                "name": "Randall Lane",
-                "titles": "Forbes Managing Editor",
-                "bio": "<p>Randall is the editor of Forbes Magazine, and believe strongly that entrepreneurial capitalism and market-based thinking can solve the world's problems. This is his second stint at Forbes -- between 1991 and 1997, he was a reporter, a staff writer (five cover stories), associate editor and Washington bureau chief.</p><p>In between, he caught the start-up bug: he co-founded P.O.V. Magazine (Adweek's Startup of the Year), and then launched Doubledown Media (Trader Monthly, Dealmaker, Private Air, etc.). As a fattening hobby, he has reviewed restaurants for various magazines since college (and was a National Magazine Award finalist for my wine writing). He used to think chronicling the world's greatest business minds made him a great entrepreneur, but he now realizes his time as an entrepreneur made him an acute business journalist. He just published a new book, The Zeroes: My Misadventures In the Decade Wall Street Went Insane.</p>"},
-            {
                 "img": "images/davos_speakers/Rick_Haythornthwaite.jpg",
                 "href": "https://en.wikipedia.org/wiki/Richard_Haythornthwaite",
                 "name": "Rick Haythornthwaite",
@@ -1001,12 +1035,6 @@
             //     "name": "Stefaan Verhulst",
             //     "titles": "Co-Founder & Chief R&D Officer at The GovLab at NYU",
             //     "bio": "<p>Stefaan G. Verhulst is Co-Founder and Chief Research and Development Officer of the Governance Laboratory @NYU (GovLab) where he is responsible for building a research foundation on how to transform governance using advances in science and technology.</p><p>He is the Curator and Editor of the Living Library and The Digest.</p><p>Verhulst’s latest scholarship centers on how technology can improve people’s lives and the creation of more effective and collaborative forms of governance. Specifically, he is interested in the perils and promise of collaborative technologies and how to harness the unprecedented volume of information to advance the public good.</p><p>Before joining NYU full time, Verhulst spent more than a decade as Chief of Research for the Markle Foundation, where he continues to serve as Senior Advisor. At Markle, an operational foundation based in New York, he was responsible for overseeing strategic research on all the priority areas of the Foundation including, for instance: transforming health care using information and technology, re-engineering government to respond to new national security threats, improving people’s lives in developing countries by connecting them to information networks, developing multi-stakeholder networks to tackle global governance challenges, changing education through information technology et al. Many of Markle’s reports have been translated into legislation and executive orders, and have informed the creation of new organizations and businesses.</p><p>He is also an Adjunct Professor in the Department of Culture and Communications at New York University, Senior Research Fellow for the Center for Media and Communications Studies at Central European University in Budapest; and an Affiliated Senior Research Fellow at the Center for Global Communications Studies at the University of Pennsylvania’s Annenberg School for Communications.</p>"},
-            {
-                "img": "images/davos_speakers/AmyWilkinson_300.jpg",
-                "href": "https://www.amywilkinson.com/",
-                "name": "Amy Wilkinson",
-                "titles": "CEO & Founder of Ingenuity, Author, Lecturer at Stanford",
-                "bio": "<p>Amy Wilkinson is CEO and founder of Ingenuity, Lecturer at Stanford Graduate School of Business and author of The Creator’s Code: The Six Essential Skills of Extraordinary Entrepreneurs. She advises executives and emerging leaders around the world on how to master the skills that underlie entrepreneurial success.</p><p>Wilkinson’s career spans leadership roles at McKinsey & Company, J.P. Morgan and as founder of Alegre, a foreign-based export company. She has also served in the White House as a senior policy advisor to the United States Trade Representative and a White House Fellow.</p><p>Fascinated by how leaders must reinvent their approaches to excel in an entrepreneurial age, Wilkinson interviewed 200 of today’s top entrepreneurs including the founders of Airbnb, LinkedIn, eBay, PayPal, Yelp, Dropbox, Tesla Motors, SpaceX, Chipotle, Under Armour, Spanx, Jetblue, and Revolution Foods to distill what it takes to go from start-up to scale in our rapidly changing economy. She conducted this work while a senior fellow at Harvard University and public policy scholar at the Woodrow Wilson Center. The Ewing Marian Kauffman Foundation awarded Wilkinson a grant for her groundbreaking research on high growth entrepreneurs.</p><p>Wilkinson has been a keynote speaker for corporations, institutes, and universities around the world. Recent speaking events include the World Economic Forum at Davos, Consumer Electronics Show, NASSCOM (India’s Leadership Forum), Microsoft, IBM, TD Ameritrade, National Governor’s Association, and Federal Reserve Board of Governors.</p><p>She is an expert for The Wall Street Journal. Wilkinson and her work have been featured by CNN, Fox News, CNBC, Bloomberg TV & Radio, NPR, The Wall Street Journal, The Economist, Fortune, Forbes, Inc. TIME, The Washington Post, and USA Today.</p><p>Wilkinson earned BA, MA, and MBA degrees from Stanford University. She is a member of the Council on Foreign Relations and an Eisenhower Fellow.</p>"},
             {
                 "img": "images/davos_speakers/Claire_Melamed.jpg",
                 "href": "https://www.linkedin.com/in/claire-melamed-54853b31/",
@@ -1097,12 +1125,6 @@
                 "name": "Joscha Bach",
                 "titles": "Cognitive Scientist at <a href=\"https://ped.fas.harvard.edu/\">Harvard Program for Evolutionary Dynamics</a>",
                 "bio": "<p>Joscha Bach, Ph.D. is an AI researcher who worked and published about cognitive architectures, mental representation, emotion, social modeling, and multi-agent systems. He earned his Ph.D. in cognitive science from the University of Osnabrück, Germany, and has built computational models of motivated decision making, perception, categorization, and concept-formation. He is especially interested in the philosophy of AI and in the augmentation of the human mind.</p><p>Joscha has taught computer science, AI, and cognitive science at the Humboldt-University of Berlin and the Institute for Cognitive Science at Osnabrück. His book “Principles of Synthetic Intelligence” (Oxford University Press) is to appear later this year.</p><p>Joscha authored Seven Principles of Synthetic Intelligence, Representations for a Complex World: Combining Distributed and Localist Representations for Learning and Planning, Enhancing Perception and Planning of Software Agents with Emotion and Acquired Hierarchical Categories, and MiniPsi, der Mac-Roboter, and coauthored MicroPsi: Contributions to a Broad Architecture of Cognition, The AEP Toolkit for Agent Design and Simulation, The Artificial Emotion Project Handbook, Mental Models for Robot Control, Designing Agent Behavior with the Extensible Agent Behavior Specification Language XABSL, and Using pattern matching on a flexible, horizon-aligned grid for robotic vision.</p><p>Currently, he is working as an entrepreneur in Berlin, Germany.</p>"},
-            {
-                "img": "images/Navroop-Sahdev2.jpg",
-                "href": "https://www.linkedin.com/in/navroopsahdev",
-                "name": "Navroop Sahdev",
-                "titles": "Head of Economic Strategy, <a href=\"http://www.five-fifty-foundry.com/\">The Fifty Five Foundry</a>",
-                "bio": "<p>Navroop is a Fellow at <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and holds a host of leadership roles in the DLT space, both as a practitioner as well as a researcher. An economist by training, Navroop is currently building a FinTech company that seeks to leverage blockchain technology. She is also a Research Associate at the <a href=\"http://blockchain.cs.ucl.ac.uk/\">Centre for Blockchain Technologies</a> (CBT) at University College London and holds three masters in IP Management, Economics of Innovation and Applied Economics.</p><p>A United Nations Youth Delegate, Navroop is frequently interviewed by Forbes as a subject matter expert on the economics of emerging tech. She has co-authored <a href=\"https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x\">Hyperledger’s Blockchain for Business online course</a> online course and is frequently requested as a keynote speaker at industry conferences. Previously, she has worked at Harvard University and <a href=\"https://www.unenvironment.org/\">United Nations Environment Programme</a>. Her research interests are focused on Distributed Ledger Technologies, Game Theory, Networks Theory and Complex Systems Science.</p>"},
             {
                 "img": "images/davos_speakers/Marin_Soljacic.jpg",
                 "href": "https://web.mit.edu/physics/people/faculty/soljacic_marin.html",
@@ -1294,7 +1316,7 @@
         ]
         demosDavos = demosDavos.map(setId).sort(alphabetize);
 
-        var peopleAndDemosDavos = peopleDavos.concat(demosDavos).sort(alphabetize);
+        var peopleAndDemosDavos = peopleDavos.concat(demosDavos, davosFacilitators).sort(alphabetize);
         peopleAndDemosDavos = davosOrganizers.concat(chefDavos).concat(peopleAndDemosDavos);
 
         var peopleAndOrganizersDavos = davosOrganizers.concat(peopleDavos);
@@ -1367,6 +1389,7 @@
             people: people,
 
             peopleDavos: peopleDavos,
+            davosFacilitators: davosFacilitators,
             peopleAndDemosDavos: peopleAndDemosDavos,
             peopleAndOrganizersDavos: peopleAndOrganizersDavos,
             demosDavos: demosDavos,

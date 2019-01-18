@@ -261,6 +261,9 @@ h3#scheduleDavos {
     background-color: #6a29ff;
     text-align: right;
 }
+h3#facilitators {
+    text-align: right;
+}
 h3#now {
     background-color: #00a1d4
 }

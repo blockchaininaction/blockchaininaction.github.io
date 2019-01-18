@@ -436,6 +436,8 @@
         var davosSchedule = [
             {title: "Introduction"},
 
+            {transition: 5},
+
             {title: "Transformation", color: "#7000be", people: [
                 {name: "David Kenny", title: "Insight into Data Science and Artificial Intelligence will transform various industries including retail, marketing, and media"},
                 {name: "Brian Behlendorf", title: "How software stacks participate in a blockchain project and a distributed ledger to do business securely with several organizations"},
@@ -443,7 +445,13 @@
                 {name: "Sanford Climan", title: "Role of blockchain in Financing the Future of Entertainment "}
             ]},
 
-            {transition: 5},
+            {transition: 10},
+
+            {title: "Welcome from CEO, TCS", people2: [
+                {name: "Rajesh Gopinathan", minutes: 10}
+            ]},
+
+            {transition: 10},
 
             {title: "Sustainability", color: "#3600be", people: [
                 {name: "Jessica Espey", title: "Sharing is Caring: Building Trust in Public-Private Data Sharing for Sustainable Development"},
@@ -453,12 +461,6 @@
             ]},
 
             {transition: 5},
-
-            {title: "Welcome from CEO, TCS", people2: [
-                {name: "Rajesh Gopinathan", minutes: 10}
-            ]},
-
-            {transition: 10},
 
             {title: "Foundations for Policy", color: "#001bbe", people: [
                 {name: "Dakota Gruener", title: "Why it is so critical that we get digital ID right?"},
@@ -500,6 +502,7 @@
             {transition: 5},
 
             {title: "New Technologies", color: "#5ebe00", people: [
+                {name: "Gautam Shroff", title: "Learning to Learn with (almost) no Data"},
                 {name: "Yaniv Altshuler", title: "Endor is the first automated predictions platform which analyzes Big Data using AI and Social Physics technology to find patterns in human behavior. Endor's industry first ability to analyze encrypted data guarantees the security of sensitive data and GDPR compliance"},
                 {name: "Daniel Peled", title: "Orbs is the hybrid blockchain, enabling businesses, governments and developers to create high impact solutions by combining performance and security"},
                 {name: "Fei Zou", title: "Enabling AI powered, privacy conscious CLEAN data economy for enterprise data monetization and securitization"},
@@ -519,7 +522,7 @@
             {transition: 5},
 
             {title: "Transforming Social Systems", color: "#be5500", people: [
-                {name: "César Hidalgo", title: "Collective learning for innovation"},
+                {name: "César Hidalgo", title: "Collective Learning Group"},
                 {name: "Ramesh Raskar", title: "Health Grid: Distributed secure computing and Blockchain based Data Marketplace for Nationwide Learning Health Systems"},
                 {name: "Michiel Bakker", title: "Building tools to study the social integration of refugees using mobile phone metadata"},
                 {name: "Anne Kim", title: "Data sharing for health systems built on MIT Trust Data blockchain and AI technology, to produce federated Q&A systems that allow insights across separate companies or departments without sharing data"},
@@ -1214,13 +1217,12 @@
                 "name": "Tomicah Tillemann",
                 "titles": "Co-founder and Director of the <a href=\"https://www.newamerica.org/bretton-woods-ii/blockchain-trust-accelerator/\">Blockchain Trust Accelerator at New America</a>",
                 "bio": "<p>The <a href=\"https://www.newamerica.org/bretton-woods-ii/blockchain-trust-accelerator/\">Blockchain Trust Accelerator at New America</a> works with organizations including the Rockefeller Foundation, State Department, Coca-cola, Harvard and Levi Strauss to deploy blockchain solutions in governance and social impact applications worldwide. He chairs the Global Blockchain Business Council and advises Bitfury and other leading technology companies. He previously served at the State Department and Senate Foreign Relations Committee as a speechwriter and advisor to Hillary Clinton, John Kerry, and Joe Biden. He was educated at Yale and Johns Hopkins and is a  co-holder of four patents.</p>"},
-
-            // {
-            //     "img": "images/davos_speakers/",
-            //     "href": "",
-            //     "name": "",
-            //     "titles": "",
-            //     "bio": "<p></p>"},
+            {
+                "img": "images/davos_speakers/Gautam_Shroff.jpg",
+                "href": "https://www.linkedin.com/in/gautam-shroff-066901/",
+                "name": "Gautam Shroff",
+                "titles": "VP at TCS & Chief Scientist at TCS Research",
+                "bio": "<p>Dr. Gautam Shroff is a Vice President and Chief Scientist in Tata Consultancy Services and heads TCS Research. He has published 90 research papers in the areas of computational mathematics, parallel computation, distributed systems, software architecture, software engineering, big data, information fusion, virtual reality as well as artificial intelligence including machine learning, deep learning, Bayesian inference and natural language processing. He has written two books “Enterprise Cloud Computing” published by Cambridge University Press, UK, in October 2010, and “The Intelligent Web”, published by Oxford University Press, UK, in 2013 (paperback ed. 2015).</p><p>Prior to joining TCS in 1998, Dr. Shroff had been on the faculty of the California Institute of Technology, Pasadena, USA (1990 - 91) and thereafter of the Department of Computer Science and Engineering at Indian Institute of Technology, Delhi, India (1991 - 1997). He has also held visiting positions at NASA Ames Research Center in Mountain View, CA, and at Argonne National Labs in Chicago. He completed his B.Tech degree in Electrical Engineering from IIT Kanpur in 1985, and Ph.D in Computer Science from Rensselaer Polytechnic Institute Troy, NY in 1990.</p>"},
 
             // {
             //     "img": "images/davos_speakers/",
@@ -1383,7 +1385,7 @@
 
 
         var hour = 9;
-        var min = 25;
+        var min = 20;
         var blockNum = 1;
 
         var scheduleBlockMapper = function(block) {
@@ -1394,8 +1396,8 @@
                     var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                     person.time = hour + ":" + minutes;
                     min += 5;
-                    if (min == 60) {
-                        min = 0;
+                    if (min >= 60) {
+                        min -= 60;
                         hour++;
                     }
                     return person;
@@ -1410,23 +1412,24 @@
                 var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                 block.time = hour + ":" + minutes;
                 min += 5;
-                if (min == 60) {
-                    min = 0;
+                if (min >= 60) {
+                    min -= 60;
                     hour++;
                 }
             } else if (block.transition) {
                 block.time = hour + ":" + minutes;
-                min += block.transition;
-                if (min == 60) {
-                    min = 0;
+                min += Number(block.transition);
+                console.log("foo "+min)
+                if (min >= 60) {
+                    min -= 60;
                     hour++;
                 }
             } else {
                 var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                 block.time = hour + ":" + minutes;
                 min += 5;
-                if (min == 60) {
-                    min = 0;
+                if (min >= 60) {
+                    min -= 60;
                     hour++;
                 }
             }

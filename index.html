@@ -122,7 +122,6 @@
                                     <p v-if="person.title" v-html="person.title"></pv-if></p>
                                 </div>
                             </div>
-
                         </div>
                         <div v-if="block.people2" class="people people2">
                                 <div v-for="person in block.people2" class="davos-speaker">
@@ -141,7 +140,42 @@
                 </div>
             </div>
 
+            <h3 id="scheduleDavos" v-cloak>
+                <div class="max-width">
+                    ↵ 2nd Stage @ Davos
+                </div>
+            </h3>
 
+            <div class="max-width davos-schedule" v-cloak>
+                <div class="blocks">
+                    <div v-if="!block.transition" v-for="block in $options.davos2ndStage"
+                        v-bind:class="'block ' + block.class"
+                        v-bind:style="{ 'border-color': block.color }">
+                        <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                            <div class="time">{{block.time}}</div>
+                            <h4><span class="block-num">Block {{block.blockNum}}</span>{{block.title}}</h4>
+                        </div>
+                        <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
+                            <div class="time">{{block.time}}</div>
+                            <h4>{{block.title}}</h4>
+                        </div>
+                        <div v-if="block.people" class="people">
+                            <div v-for="person in block.people" class="davos-speaker">
+                                <div class="time">{{person.time}}</div>
+                                <a
+                                class="sm-thumb"
+                                v-bind:title="person.name"
+                                v-bind:href="'#' + person.id"
+                                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                <div>
+                                    <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                    <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -504,6 +538,21 @@
                 {name: "Randall Lane"}
             ]},
 
+        ];
+
+        var davos2ndStage = [
+            {title: "Innovation Frontier – Host: Josh McHugh", color: "#7000be", people: [
+                {name: "Yobie Benjamin", title: "Fear and Loathing In AI"},
+                {name: "Mercina Tillemann", title: "Building Blockchain Solutions for the Real World"},
+                {name: "Dave Blundin", title: "Power of blockchain and start-ups"},
+                {name: "Robert Chaplinshy", title: "How startups will fuel the adoption of Blockchain"},
+                {name: "Khaliya", title: "Mental Health Futurist, Neuro-technologist, Co-founder Falkora & Tell Your Story"},
+                {name: "Olivier Oullier", title: "Personalized Neuroinformatics to Improve Productivity, Safety and Wellness in the Workplace"},
+                {name: "Thomas Ermacora", title: "Urbanist, Technologist & Futurist"},
+                {name: "Tomicah Tillemann", title: "Co-founder and Director of the Blockchain Trust Accelerator at New America"},
+                {name: "Liz Heller", title: "Managing Partner at memBrain"},
+                {name: "Susan Alzner", title: "Co-founder - Chief of Strategy & Ops, shift7"},
+            ]}
         ];
 
         var people = [
@@ -1324,7 +1373,7 @@
 
 
         var peopleById = {};
-        davosOrganizers.concat(peopleAndDemosDavos).forEach(function(person) {
+        davosOrganizers.concat(peopleAndDemosDavos, davosFacilitators).forEach(function(person) {
             peopleById[person.id] = person;
         });
 
@@ -1333,7 +1382,8 @@
         var hour = 9;
         var min = 25;
         var blockNum = 1;
-        davosSchedule = davosSchedule.map(function(block) {
+
+        var scheduleBlockMapper = function(block) {
             if (block.people) {
                 block.people = block.people.map(setId).map(function(person) {
                     console.log(person.id)
@@ -1378,7 +1428,15 @@
                 }
             }
             return block;
-        })
+        }
+
+        davosSchedule = davosSchedule.map(scheduleBlockMapper);
+
+        hour = 13;
+        min = 0;
+        blockNum = 1;
+        davos2ndStage = davos2ndStage.map(scheduleBlockMapper);
+        davos2ndStage[0].blockNum = "";
 
         var app = new Vue({
             el: '#app',
@@ -1394,6 +1452,7 @@
             demosDavos: demosDavos,
             chefDavos: chefDavos,
             davosSchedule: davosSchedule,
+            davos2ndStage: davos2ndStage,
 
             speakers: speakers,
             organizers: organizers,

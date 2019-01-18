@@ -418,10 +418,10 @@
             {transition: 5},
 
             {title: "Welcome from CEO, TCS", people2: [
-                {name: "Rajesh Gopinathan"}
+                {name: "Rajesh Gopinathan", minutes: 10}
             ]},
 
-            {transition: 5},
+            {transition: 10},
 
             {title: "Foundations for Policy", color: "#001bbe", people: [
                 {name: "Dakota Gruener", title: "Why it is so critical that we get digital ID right?"},
@@ -433,7 +433,8 @@
             {transition: 5},
 
             {title: "Fueling Adoption", color: "#005ebe", people: [
-                {name: "Tim Berners-Lee", title: "Open source technology and empowerment through data"},
+                //{name: "Tim Berners-Lee", title: "Open source technology and empowerment through data"},
+                {name: "Randall Lane", title: "Forbes Managing Editor"},
                 {name: "Mira Wilczek", title: "Data, AI & the future of work"},
                 {name: "John Calian", title: "The Machine 2 Machine Economy is Coming"},
                 {name: "Alan Trefler", title: "The Democratization of Blockchain:  How AI can drive the use of Blockchain into the hands of business people"}
@@ -491,10 +492,10 @@
             {transition: 5},
 
             {title: "Changing Society", color: "#be0000", people: [
-                {name: "Joscha Bach", title: "Beyond cryptocurrencies: AI enabled financial technologies, possible existential risks and a need for reorganization of financial infrastructure"},
                 {name: "Svetlana Dotsenko", title: "Using Blockchain / AI to revolutionize how fast university innovations get implemented in the real world"},
                 {name: "Marin Soljacic", title: "Training AI scientist"},
-                {name: "Karl Muth", title: "Proof as Pedigree, Network as Lineage"}
+                {name: "Karl Muth", title: "Proof as Pedigree, Network as Lineage"},
+                {name: "Joscha Bach", title: "Beyond cryptocurrencies: AI enabled financial technologies, possible existential risks and a need for reorganization of financial infrastructure"}
             ]},
 
             {title: "Closing", people2: [
@@ -1350,9 +1351,7 @@
                 blockNum++
             } else if (block.people2) {
                 block.people2 = block.people2.map(setId).map(function(person) {
-
                     person.img = peopleById[person.id].img;
-
                     return person;
                 });
                 var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
@@ -1364,7 +1363,7 @@
                 }
             } else if (block.transition) {
                 block.time = hour + ":" + minutes;
-                min += 5;
+                min += block.transition;
                 if (min == 60) {
                     min = 0;
                     hour++;

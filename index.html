@@ -252,6 +252,23 @@
                 </div>
             </div>
 
+            <h3 id="producers" v-cloak>
+                <div class="max-width">
+                    ⭍&nbsp; Event Producers
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <div class="person" v-for="person in $options.producersDavos" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                </div>
+            </div>
+
         </div>
 
 
@@ -1357,22 +1374,27 @@
             //     "name": "",
             //     "titles": "",
             //     "bio": "<p></p>"},
-            // {
-            //     "img": "images/davos_demos/",
-            //     "href": "",
-            //     "name": "",
-            //     "titles": "",
-            //     "bio": "<p></p>"},
-            // {
-            //     "img": "images/davos_demos/",
-            //     "href": "",
-            //     "name": "",
-            //     "titles": "",
-            //     "bidanieo": "<p></p>"},
         ]
+
+        var producersDavos = [
+            {
+                "img": "images/davos_speakers/Tommy_Liem.jpg",
+                "href": "https://www.linkedin.com/in/tommy-kau-liem-516aa0/",
+                "name": "Tommy Liem",
+                "titles": "Senior Associate at <a href=\"http://www.thl.com/\">Thomas H. Lee Partners</a>",
+                "bio": "<p>Thomas K. Liem is a senior associate at Thomas H. Lee Partners in the firm's Investor Relations group. Mr. Liem earned a B.A., cum laude in Economics, Mathematics and Asian Studies from Hamilton College, an MBA from Babson College and a Masters in Taxation from Suffolk University where he was a graduate fellow.</p>"},
+            {
+                "img": "images/davos_speakers/Chris_Sanders.jpg",
+                "href": "https://www.linkedin.com/in/clsanders/",
+                "name": "Chris Sanders",
+                "titles": "Co-Founder <a href=\"http://arinaction.org/\">AR in Action</a>",
+                "bio": "<p>Chris Sanders is a health innovator, entrepreneur, and Ironman Triathlete. He co-founded AR in Action to accelerate the development of real-world Augmented Reality Solutions in healthcare through curation of one of the most important communities and gatherings on the planet. Chris is also helping startups commercialize digital health solutions that push the needle forward exponentially in what we know about health and disease.</p>"},
+        ];
+        producersDavos = producersDavos.map(setId);
+
         demosDavos = demosDavos.map(setId).sort(alphabetize);
 
-        var peopleAndDemosDavos = peopleDavos.concat(demosDavos, davosFacilitators).sort(alphabetize);
+        var peopleAndDemosDavos = peopleDavos.concat(demosDavos, davosFacilitators, producersDavos).sort(alphabetize);
         peopleAndDemosDavos = davosOrganizers.concat(chefDavos).concat(peopleAndDemosDavos);
 
         var peopleAndOrganizersDavos = davosOrganizers.concat(peopleDavos);
@@ -1460,6 +1482,7 @@
             chefDavos: chefDavos,
             davosSchedule: davosSchedule,
             davos2ndStage: davos2ndStage,
+            producersDavos: producersDavos,
 
             speakers: speakers,
             organizers: organizers,

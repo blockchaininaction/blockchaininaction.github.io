@@ -452,7 +452,10 @@
         // ];
 
         var davosSchedule = [
-            {title: "Introduction"},
+            {title: "Introduction", people2: [
+                {name: "John Werner"},
+                {name: "Alex 'Sandy' Pentland"},
+            ]},
 
             {transition: 5},
 
@@ -1435,7 +1438,7 @@
         var scheduleBlockMapper = function(block) {
             if (block.people) {
                 block.people = block.people.map(setId).map(function(person) {
-                    console.log(person.id)
+                    //console.log(person.id)
                     person.img = peopleById[person.id].img;
                     var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                     person.time = hour + ":" + minutes;
@@ -1450,6 +1453,7 @@
                 blockNum++
             } else if (block.people2) {
                 block.people2 = block.people2.map(setId).map(function(person) {
+                    //console.log(person.id)
                     person.img = peopleById[person.id].img;
                     return person;
                 });

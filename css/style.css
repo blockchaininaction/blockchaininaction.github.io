@@ -110,6 +110,9 @@ p strong {
     font-weight: bold;
     color: #ffe100;
 }
+p strong a {
+    color: #ffe100;
+}
 
 .davos-logos {
     float: right;

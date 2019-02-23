@@ -43,7 +43,6 @@
         <br/><br/>
 
         <div class="max-width">
-
             <div style="display: flex">
                 <div style="flex-basis: 35%; flex-shrink: 0; padding-right: 20px;">
                     <img style="width: 100%; height: auto; margin-bottom: 10px;" src="images/MIT_Media_Lab.png"/><br>
@@ -96,9 +95,7 @@
                 <li>White Paper <a target="_blank" href="https://www.google.com/url?q=http://imaginationinaction.xyz/blockchain%2BAI%2BHumans.pdf&sa=D&ust=1550883261940000&usg=AFQjCNHv__sVJv1GAwAPxkDuQ-HyL8b0_w">HERE</a></li>
             </ul>
 
-
             <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">Register</a></p>
-
         </div>
 
 
@@ -270,6 +267,7 @@
                     <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
                     <h5 v-html="person.titles"></h5>
                     <div v-html="person.bio"></div>
+                    <p><a v-if="person.deck" class="video-link" v-bind:href="person.deck" target="_blank">Presentation</a></p>
                 </div>
             </div>
 
@@ -1328,7 +1326,8 @@
                 "href": "http://datapopalliance.org/bio/emmanuel-letouze/",
                 "name": "Emmanuel Letouzé",
                 "titles": "Director and Co-Founder of <a href=\"http://datapopalliance.org/\">Datapopalliance.org</a>",
-                "bio": "<p>We are building open, national-scale data systems for better government incorporating private data from telcos, banks and government, using blockhain and AI technology. Test cases are the countries of Senegal and Colombia, with funding from France, Orange and several multilaterals. MIT Trust Data, Orange, Telefonica, and BBVA are participating. See <a href=\"http://opalproject.org\">opalproject.org</a></p>"},
+                "bio": "<p>We are building open, national-scale data systems for better government incorporating private data from telcos, banks and government, using blockhain and AI technology. Test cases are the countries of Senegal and Colombia, with funding from France, Orange and several multilaterals. MIT Trust Data, Orange, Telefonica, and BBVA are participating. See <a href=\"http://opalproject.org\">opalproject.org</a></p>",
+                "deck": "https://drive.google.com/file/d/1CFMVpvf2tMnfx2cQyYwCO3r91r6v2BuS/view?usp=sharing"},
             {
                 "img": "images/davos_demos/Alejandro_Noriega_Campero.jpg",
                 "href": "https://www.media.mit.edu/people/noriega/overview/",
@@ -1340,49 +1339,57 @@
                 "href": "https://www.linkedin.com/in/hao-chen-602a1b3/",
                 "name": "Hao Chen",
                 "titles": "Managing Director City Innovation Lab, Beijing (a cooperation with MIT Trust Data), Research Professor at Clark University, Senior System Architect for IDRIS Geospatial management systems.",
-                "bio": "<p>We are building data systems for Inclusive and Green Innovation in city planning, incorporating both private company data and government data, and based on blockchain and AI technology. The test case is Beijing, and the effort is funded by Government and several large companies, hosted in Beijing Normal University.</p>"},
+                "bio": "<p>We are building data systems for Inclusive and Green Innovation in city planning, incorporating both private company data and government data, and based on blockchain and AI technology. The test case is Beijing, and the effort is funded by Government and several large companies, hosted in Beijing Normal University.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTMm9Eb29IYVNzdHljamt2VW1ONG5lX2NINjVN/view?usp=sharing"},
             {
                 "img": "images/davos_demos/Panos-Panay.jpg",
                 "href": "https://www.berklee.edu/people/panos-panay",
                 "name": "Panos A. Panay",
                 "titles": "Vice President, Innovation and Strategy, <a href=\"https://www.berklee.edu/\">Berklee College of Music</a>.",
-                "bio": "<p><a href=\"http://open-music.org/\">Open Music Initiative</a> is developing a global open protocol for uniform identification of music rights owners and creators. Led by Berklee College of Music and <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a>, and supported by over 250 companies including all three major record labels, major streaming companies, big tech companies and hundreds of blockchain startups.</p>"},
+                "bio": "<p><a href=\"http://open-music.org/\">Open Music Initiative</a> is developing a global open protocol for uniform identification of music rights owners and creators. Led by Berklee College of Music and <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a>, and supported by over 250 companies including all three major record labels, major streaming companies, big tech companies and hundreds of blockchain startups.</p>",
+                "deck": "https://drive.google.com/open?id=1KEeKDQO2MRbPINUQVbCdva4qGZ43rbKL"},
             {
                 "img": "images/davos_demos/David_Shrier.jpg",
                 "href": "https://www.linkedin.com/in/david-shrier",
                 "name": "David Shrier",
                 "titles": "Oxford & MIT futurist | author | CEO <a href=\"https://distilledanalytics.com/\">Distilled Analytics</a>",
-                "bio": "<p><a href=\"https://distilledanalytics.com/\">Distilled Analytics</a>. AI and blockchain methods for inclusive digital identity. An MIT Trust Data startup working with a wide variety of large financial companies.</p>"},
+                "bio": "<p><a href=\"https://distilledanalytics.com/\">Distilled Analytics</a>. AI and blockchain methods for inclusive digital identity. An MIT Trust Data startup working with a wide variety of large financial companies.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTQVk4N1B6RUQwa3NWUlpZbjNIZXQxX0hmajdr/view?usp=sharing"},
             {
                 "img": "images/davos_demos/YanivHeadshot.jpg",
                 "href": "http://web.media.mit.edu/~yanival/",
                 "name": "Yaniv Altshuler",
                 "titles": "Co-Founder and CEO at <a href=\"https://www.endor.com/\">Endor</a>",
-                "bio": "<p><a href=\"https://www.endor.com/\">Endor</a> pioneered AI analytics on encrypted data to discover and map out suspicious patterns of activity. Example cases include crime rings in cryptocurrencies, terrorist cells in social media. Endor.com is a MIT Trust Data spin-off company used by Mastercard, Israeli Defense Force, Walmart, Coke, and others.</p>"},
+                "bio": "<p><a href=\"https://www.endor.com/\">Endor</a> pioneered AI analytics on encrypted data to discover and map out suspicious patterns of activity. Example cases include crime rings in cryptocurrencies, terrorist cells in social media. Endor.com is a MIT Trust Data spin-off company used by Mastercard, Israeli Defense Force, Walmart, Coke, and others.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTVkI1T21uaklxSllVWUt1b2xYOFRPRm1fMTBN/view?usp=sharing"},
             {
                 "img": "images/Jeffrey_Saviano.jpg",
                 "href": "www.linkedin.com/in/jeffrey-saviano-1398775/",
                 "name": "Jeffrey Saviano",
                 "titles": "<a href=\"https://webforms.ey.com/\">EY</a> Global Tax Innovation Leader",
-                "bio": "<p><strong>How blockchain and AI will contribute to enterprise tax solutions that enable a fair and just tax system.</strong></p><p>Based in Cambridge, Massachusetts, Jeff is a principal of <a href=\"https://webforms.ey.com/\">EY</a> and a member of EY’s global innovation leadership team. Jeff leads teams in the discovery, design, and commercialization of new tax services. In collaboration with MIT, Jeff also leads the <a href=\"https://www.ey.com/en_gl/news/2018/11/ey-announces-the-opening-of-global-ey-advanced-technology-tax-lab\">EY Global Advanced Technology Tax Lab</a>, a leading team of computer scientists and solution architects solving complex tax issues through the application of advanced technologies. The EY Tax Lab is an instrument of tax industry transformation, with an emphasis on the convergence of disruptive technologies that are driving business growth, such as blockchain, advanced data analytics and AI- with a particular focus on machine learning and natural language processing.</p><p>Jeff’s teams are examining the relationship between people and computers to understand how machines can boost the effectiveness of tax professionals, resulting in a collective intelligence. Pinpointing the emerging technology developments that will have the greatest impact on the tax industry – and taking new, innovative approaches to address them – is a major focus of the Tax Lab. Furthering the EY purpose of building a better working world, the Tax Lab will develop a governance model of AI systems for tax purposes, and help government better understand the externalities of tax policy with AI systems.</p><p>In his talk, Jeff will discuss the application of AI and blockchain to the global administration of tax; how advanced technologies can address the global tax fraud dilemma and better enable fair and just taxing systems for the benefit of society.</p>"},
+                "bio": "<p><strong>How blockchain and AI will contribute to enterprise tax solutions that enable a fair and just tax system.</strong></p><p>Based in Cambridge, Massachusetts, Jeff is a principal of <a href=\"https://webforms.ey.com/\">EY</a> and a member of EY’s global innovation leadership team. Jeff leads teams in the discovery, design, and commercialization of new tax services. In collaboration with MIT, Jeff also leads the <a href=\"https://www.ey.com/en_gl/news/2018/11/ey-announces-the-opening-of-global-ey-advanced-technology-tax-lab\">EY Global Advanced Technology Tax Lab</a>, a leading team of computer scientists and solution architects solving complex tax issues through the application of advanced technologies. The EY Tax Lab is an instrument of tax industry transformation, with an emphasis on the convergence of disruptive technologies that are driving business growth, such as blockchain, advanced data analytics and AI- with a particular focus on machine learning and natural language processing.</p><p>Jeff’s teams are examining the relationship between people and computers to understand how machines can boost the effectiveness of tax professionals, resulting in a collective intelligence. Pinpointing the emerging technology developments that will have the greatest impact on the tax industry – and taking new, innovative approaches to address them – is a major focus of the Tax Lab. Furthering the EY purpose of building a better working world, the Tax Lab will develop a governance model of AI systems for tax purposes, and help government better understand the externalities of tax policy with AI systems.</p><p>In his talk, Jeff will discuss the application of AI and blockchain to the global administration of tax; how advanced technologies can address the global tax fraud dilemma and better enable fair and just taxing systems for the benefit of society.</p>",
+                "deck": "https://drive.google.com/file/d/1Jq3LJ5W2LluFOL0T1XDd6ujOAzcCVviy/view?usp=sharing"},
             {
                 "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
                 "href": "https://hardjono.mit.edu/",
                 "name": "Thomas Hardjono",
                 "titles": "Futurist & Architect-Urbanist, Founder of Recode Institute - Advisor to WEF & G7 i7</a>",
-                "bio": "<p><a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a>. Data sharing for better government. Blockchain and AI systems for providing sophisticated digital government infrastructure that increases effectiveness while reducing cost and corruption. Pilots with Israel, Colombia, Senegal, China.</p>"},
+                "bio": "<p><a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a>. Data sharing for better government. Blockchain and AI systems for providing sophisticated digital government infrastructure that increases effectiveness while reducing cost and corruption. Pilots with Israel, Colombia, Senegal, China.</p>",
+                "deck": "https://drive.google.com/file/d/1JSI7XZ5Eylytkw0RnwzDEsdgWS8PYZEg/view?usp=sharing"},
             {
                 "img": "images/davos_demos/Jonnie_Penn.jpg",
                 "href": "https://jonniepenn.com/",
                 "name": "Jonnie Penn",
                 "titles": "Harvard University | University of Cambridge | New York Times Bestselling Author",
-                "bio": "<p>Creation of personal data banks, allowing unions to represent and bargain for the digital resources of members. An alliance between MIT Trust Data, Cooperative Banks, and world-wide labor unions to allow large number of people to hold and leverage their personal data through collective bargaining.</p><p>Jonnie Penn is a #1 New York Times Bestselling author, public speaker, and Rausing, Williamson, and Lipton Trust doctoral scholar researching artificial intelligence at the University of Cambridge. He is an affiliate at Harvard University’s Berkman Klein Center for Internet & Society, a Fellow of the Royal Society of the Arts, and Project Development Lead at the Leverhulme Center for the Future of Intelligence. He has held fellowships at the MIT Media Lab, Google, and the British National Academy of Writing (via Pembroke College). He volunteers on the IEEE’s P7004 Working Group and on MIT Media Lab/IEEE’s Council on Extended Intelligence (CXI).</p><p>Jonnie is passionate about helping others discover purpose in their work by (re)contextualizing seemingly rapid civic, technological, and economic trends. His latest research applies to the Future of Work for Millenials and Post-Millennials in the Fourth Industrial Revolution. He has served as an expert speaker at the United Nations, European Parliament, and UK House of Lords, as well as for global corporations and NGOs. He co-organized the AI for Social Good workshop at NeurIPS 2018 and will co-organize the same event at ICLR 2019. His thoughts on the future of AI research have been featured most recently in The Economist, IBM Think Leaders, and PwC.</p><p>As a teenager, Jonnie founded <a href=\"https://theburiedlife.com/\">The Buried Life</a>, a popular online community that asks, “What do you want to do before you die?” His work has been featured on The Today Show, The Oprah Winfrey Show, CNN, FOX, CBS, ABC, and NBC News. Oprah Winfrey called Jonnie’s vision “truly inspiring.”</p>"},
+                "bio": "<p>Creation of personal data banks, allowing unions to represent and bargain for the digital resources of members. An alliance between MIT Trust Data, Cooperative Banks, and world-wide labor unions to allow large number of people to hold and leverage their personal data through collective bargaining.</p><p>Jonnie Penn is a #1 New York Times Bestselling author, public speaker, and Rausing, Williamson, and Lipton Trust doctoral scholar researching artificial intelligence at the University of Cambridge. He is an affiliate at Harvard University’s Berkman Klein Center for Internet & Society, a Fellow of the Royal Society of the Arts, and Project Development Lead at the Leverhulme Center for the Future of Intelligence. He has held fellowships at the MIT Media Lab, Google, and the British National Academy of Writing (via Pembroke College). He volunteers on the IEEE’s P7004 Working Group and on MIT Media Lab/IEEE’s Council on Extended Intelligence (CXI).</p><p>Jonnie is passionate about helping others discover purpose in their work by (re)contextualizing seemingly rapid civic, technological, and economic trends. His latest research applies to the Future of Work for Millenials and Post-Millennials in the Fourth Industrial Revolution. He has served as an expert speaker at the United Nations, European Parliament, and UK House of Lords, as well as for global corporations and NGOs. He co-organized the AI for Social Good workshop at NeurIPS 2018 and will co-organize the same event at ICLR 2019. His thoughts on the future of AI research have been featured most recently in The Economist, IBM Think Leaders, and PwC.</p><p>As a teenager, Jonnie founded <a href=\"https://theburiedlife.com/\">The Buried Life</a>, a popular online community that asks, “What do you want to do before you die?” His work has been featured on The Today Show, The Oprah Winfrey Show, CNN, FOX, CBS, ABC, and NBC News. Oprah Winfrey called Jonnie’s vision “truly inspiring.”</p>",
+                "deck": "https://drive.google.com/open?id=1NPKZ1W2kJQOj4narcr88XtY-VPIMvlv_"},
             {
                 "img": "images/davos_demos/Anne_Kim.jpg",
                 "href": "https://www.linkedin.com/in/herroannekim/",
                 "name": "Anne Kim",
                 "titles": "CTO at <a href=\"hhttp://secureailabs.com/\">Secure AI Labs</a>",
-                "bio": "<p><a href=\"http://secureailabs.com/\">Secure AI Labs</a>. Data sharing for health systems built on <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a> blockchain and AI technology, to produce federated Q&amp;A systems that allow insights across separate companies or departments without sharing data.</p>"},
+                "bio": "<p><a href=\"http://secureailabs.com/\">Secure AI Labs</a>. Data sharing for health systems built on <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a> blockchain and AI technology, to produce federated Q&amp;A systems that allow insights across separate companies or departments without sharing data.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTcmNwcmRhdENEMWVUUFZqaVZhTTJYVWt2cXBJ/view?usp=sharing"},
             // {
             //     "img": "images/davos_demos/ramesh-raskar-mit-spectrum_0.jpeg",
             //     "href": "http://web.media.mit.edu/~raskar/",
@@ -1394,13 +1401,15 @@
                 "href": "https://www.media.mit.edu/people/raskar/overview/",
                 "name": "Ramesh Raskar",
                 "titles": "Assoc. Prof MIT Media Lab, Facebook, Google[X], REDX.io",
-                "bio": "<p>Ramesh Raskar is an Associate Professor at MIT Media Lab and directs the Camera Culture research group. His focus is on building interfaces between social systems and autonomous systems. These society-autonomy interfaces (SAI) span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award (2016), ACM SIGGRAPH Achievement Award (2017), DARPA Young Faculty Award (2009), Alfred P. Sloan Research Fellowship (2009), TR100 Award from MIT Technology Review (2004) and Global Indus Technovator Award (2003). He has worked on special research projects at Google [X] and Facebook and co-founded/advised several companies.</p><p>In his recent role at Facebook, he launched and led innovation teams in Digital Health, Health-tech, Satellite Imaging, TV bandwidth for Connectivity, VR/AR and 'Emerging Worlds' initiative for FB.</p><p>His new focus is on building world-scale interfaces between societal systems and cyber-physical systems. They span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award 2016, ACM SIGGRAPH Achievement Award 2017, Technology Review TR100 award 2004, Global Indus Technovator Award, top 20 Indian technology innovators worldwide 2003, Alfred P. Sloan Research Fellowship award 2009 and Darpa Young Faculty award 2010. Others include Marr Prize honorable mention 2009, LAUNCH Health Innovation Award, presented by NASA, USAID, US State Dept+ NIKE, 2010, Vodafone WirelessInnovationAward (first place) 2011. He has received four MitsubishiElectricInventionAwards.</p><p>His work has appeared in NYTimes, CNN, BBC, NewScientist, TechnologyReview etc. He holds 82+ US patents.</p>"},
+                "bio": "<p>Ramesh Raskar is an Associate Professor at MIT Media Lab and directs the Camera Culture research group. His focus is on building interfaces between social systems and autonomous systems. These society-autonomy interfaces (SAI) span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award (2016), ACM SIGGRAPH Achievement Award (2017), DARPA Young Faculty Award (2009), Alfred P. Sloan Research Fellowship (2009), TR100 Award from MIT Technology Review (2004) and Global Indus Technovator Award (2003). He has worked on special research projects at Google [X] and Facebook and co-founded/advised several companies.</p><p>In his recent role at Facebook, he launched and led innovation teams in Digital Health, Health-tech, Satellite Imaging, TV bandwidth for Connectivity, VR/AR and 'Emerging Worlds' initiative for FB.</p><p>His new focus is on building world-scale interfaces between societal systems and cyber-physical systems. They span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award 2016, ACM SIGGRAPH Achievement Award 2017, Technology Review TR100 award 2004, Global Indus Technovator Award, top 20 Indian technology innovators worldwide 2003, Alfred P. Sloan Research Fellowship award 2009 and Darpa Young Faculty award 2010. Others include Marr Prize honorable mention 2009, LAUNCH Health Innovation Award, presented by NASA, USAID, US State Dept+ NIKE, 2010, Vodafone WirelessInnovationAward (first place) 2011. He has received four MitsubishiElectricInventionAwards.</p><p>His work has appeared in NYTimes, CNN, BBC, NewScientist, TechnologyReview etc. He holds 82+ US patents.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTRzFaeU1PdWRjUEdJRi1SbHd1R09pTTlkbGFr/view?usp=sharing"},
             {
                 "img": "images/davos_demos/Fei_Zou.png",
                 "href": "https://www.linkedin.com/in/fei-zou-39590886/",
                 "name": "Fei Zou",
                 "titles": "Founder & CEO, <a href=\"https://www.heliosdata.com/\">Helios Data Inc.</a> President, <a href=\"http://www.synergiecap.com/home.html\">Synergie Capital Group</a>",
-                "bio": "<p>A Silicon Valley startup and <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a> collaborator that leverages disruptive network technologies and advanced AI to help enterprises to turn GDPR and other data privacy compliance from costs and liabilities into revenues and assets through personal data assetization and securitization.</p>"},
+                "bio": "<p>A Silicon Valley startup and <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a> collaborator that leverages disruptive network technologies and advanced AI to help enterprises to turn GDPR and other data privacy compliance from costs and liabilities into revenues and assets through personal data assetization and securitization.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTcVZ4QWtBZ3g1UmVKb3NfdG4tRUhYZnpkXzRR/view?usp=sharing"},
             {
                 "img": "images/fabio_zoffi.jpg",
                 "href": "https://www.linkedin.com/in/fabio-zoffi-127b743/",
@@ -1418,13 +1427,15 @@
                 "href": "https://www.linkedin.com/in/dr-smadar-sonego-itskovich-51917770",
                 "name": "Smadar Itzkovich",
                 "titles": "Founder of <a href=\"https://www.ashdodlivinglab.com/\">Israel Smart Mobility Living Lab</a> & Head of Industry Development & Innovation, Ashdod Municipality",
-                "bio": "<p><a href=\"https://www.ashdodlivinglab.com/\">Israel Living Lab</a> is revolutionizing the way smart cities innovate in smart mobility. The lab’s collaborative digital infrastructure re-envisions cities as testbeds for private and public companies to work together and share data within a smart mobility trust, supported by MIT Trust Data.</p>"},
+                "bio": "<p><a href=\"https://www.ashdodlivinglab.com/\">Israel Living Lab</a> is revolutionizing the way smart cities innovate in smart mobility. The lab’s collaborative digital infrastructure re-envisions cities as testbeds for private and public companies to work together and share data within a smart mobility trust, supported by MIT Trust Data.</p>",
+                "deck": "https://drive.google.com/file/d/15nO7Ryl2dgFvklwK_m3BkRorw99oKrXr/view?usp=sharing"},
             {
                 "img": "images/davos_demos/Michiel_Bakker.png",
                 "href": "https://www.media.mit.edu/people/bakker/overview",
                 "name": "Michiel Bakker",
                 "titles": "Research Assistant - MIT Media Lab and MIT Human Dynamics",
-                "bio": "<p>Data for Refugees. Building tools to study the social integration of refugees using mobile phone metadata. Test cases in Turkey where we study the dynamics and impact of social integration of refugees in three regions of Turkey.</p>"}
+                "bio": "<p>Data for Refugees. Building tools to study the social integration of refugees using mobile phone metadata. Test cases in Turkey where we study the dynamics and impact of social integration of refugees in three regions of Turkey.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTQkR5bC1Hd2tuTlhWNHEtMmMtUlBpbzIteEQ4/view?usp=sharing"}
             // {
             //     "img": "images/davos_demos/",
             //     "href": "",

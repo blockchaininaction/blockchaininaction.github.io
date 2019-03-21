@@ -100,7 +100,31 @@
                 <li>White Paper <a target="_blank" href="https://www.google.com/url?q=http://imaginationinaction.xyz/blockchain%2BAI%2BHumans.pdf&sa=D&ust=1550883261940000&usg=AFQjCNHv__sVJv1GAwAPxkDuQ-HyL8b0_w">HERE</a></li>
             </ul>
 
+            <div class="person-thumbs person-thumbs-mit" v-cloak>
+                <a v-for="person in $options.peopleMIT2019"
+                    v-bind:title="person.name"
+                    v-bind:href="'#' + person.id"
+                    v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+            </div>
+
             <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">REGISTER</a></p>
+        </div>
+
+        <h3 id="now" v-cloak>
+            <div class="max-width">
+                Speakers @ MIT ↴
+            </div>
+        </h3>
+
+        <div class="max-width">
+            <div class="person" v-for="person in $options.peopleMIT2019" v-bind:id="person.id">
+                <a v-bind:href="person.href" target="_blank">
+                    <img v-bind:src="person.img" />
+                </a>
+                <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                <h5 v-html="person.titles"></h5>
+                <div v-html="person.bio"></div>
+            </div>
         </div>
 
         <h3 id="now" v-cloak>
@@ -624,6 +648,250 @@
             ]}
         ];
 
+        var setId = function(person) {
+            person.id = person.name.split('.').join('').split(' ').join('_').toLocaleLowerCase();
+            return person;
+        }
+
+        var peopleMIT2019 = [
+            {
+                "img": "images/induprakas.jpg",
+                "href": "https://www.linkedin.com/in/induprakas",
+                "name": "Induprakas (Indu) Keri",
+                "block": "",
+                "titles": "Vice President Development, Blockchain Technologies",
+                "bio": "<p>Induprakas Keri is currently Vice President Development, Blockchain Technologies, where he leads all of Intuit’s efforts around Blockchain. Prior to that, he was Chief Information Security Officer and Vice President of Cloud Security at Intuit.</p><p>Indu has had a long and distinguished career in technology.  Prior to Intuit, he was the Chief Operating Officer of Limelight Networks, the number two Content Delivery Network (CDN).  In his role as COO, he was responsible for products, R&D, professional services and customer support.  During his tenure at Limelight, he built out a robust R&D organization, set in place people and process improvements that resulted in double-digit net promoter score increases and presided over the largest capacity increase in the company’s history.  Prior to joining Limelight he was the Executive Vice President Products and Chief Technology Officer at SunGard Availability Services (a $1.5B business) where he drove the overall technology strategy of the company, ran R&D and delivered cloud-based DR products.</p><p>Indu started off his career as an engineer at Silicon Graphics (SGI) where he implemented his dissertation work into the high-end parallelizing compiler delivered by SGI.  His other work experience includes stints at McKinsey & Company, BEA Systems and Oracle.</p>"},
+            {
+                "img": "images/kent_larson.jpg",
+                "href": "https://www.media.mit.edu/people/kll/overview/",
+                "name": "Kent Larson",
+                "block": "",
+                "titles": "Director of the City Science group at MIT Media Lab",
+                "bio": "<p>Kent Larson directs the City Science (formerly Changing Places) group at the MIT Media Lab. His research focuses on developing urban interventions that enable more entrepreneurial, livable, high-performance districts in cities. To that end, his projects include advanced simulation and augmented reality for urban design, transformable micro-housing for millennials, mobility-on-demand systems that create alternatives to private automobiles, and Urban Living Lab deployments in Hamburg, Andorra, Taipei, and Boston.</p><p>Larson and researchers from his group received the “10-Year Impact Award” from UbiComp 2014. This is a “test of time” award for work that, with the benefit of hindsight, has had the greatest impact over the previous decade.</p><p>Larson practiced architecture for 15 years in New York City, with design work published in Architectural Record, Progressive Architecture, Global Architecture, The New York Times, A+U, and Architectural Digest. The New York Times Review of Books selected his book, Louis I. Kahn: Unbuilt Masterworks (2000) as one of that year’s ten best books in architecture.</p>"},
+            {
+                "img": "images/tomer_srulevich.jpg",
+                "href": "https://www.linkedin.com/in/tomersrulevich",
+                "name": "Tomer Srulevich",
+                "block": "",
+                "titles": "Chief Business Officer at Endor",
+                "bio": "<ul><li>A seasoned executive with a passion for launching innovative and disruptive technologies</li><li>Over a decade of global business leadership, held executive level positions spanning Sales, Marketing, Business Development and Operations in startups and public companies</li><li>Builder of multi-millions dollar global operations across Financial Services, Insurance, Retail and Public Sector</li><li>Alumnus of Harvard Business School</li><ul>"},
+            {
+                "img": "images/Beth+headshot+cropped+Sept+2017.jpg",
+                "href": "https://www.linkedin.com/in/ebport/",
+                "name": "Beth Porter",
+                "block": "",
+                "titles": "CEO of Riff Learning, Inc.",
+                "bio": "<p>Beth Porter is a seasoned product development executive with a career spent delivering technology that betters individual and team outcomes. Prior roles include VP Product for edX, VP Software Product Management for Pearson Education, and senior engineering and product management positions at Mathsoft and PTC. She is a researcher and lecturer with the MIT Media Lab and Boston University Questrom School of Business, and she holds a technical architecture appointment at University of Texas at Austin. She also advises education, publishing, and technology clients on strategy, vision and execution for end-to-end online learning solutions that meet business needs.</p><p>As CEO of Riff Learning, she aspires to help break down silos in organizations and increase information flow through the Riff Platform, which gives feedback about existing patterns of communication and guides people, especially teams, toward activities and behaviors that are more successful for them. Using machine learning and artificial intelligence, the Riff Platform provides real-time interventions and post-event feedback and recommendations, including automating agents to remind people to take specific actions. By helping people improve their interpersonal skills — especially in virtual teams where communication signals are sometimes poorly mediated by technology — teams can raise their EQ and become better overall collaborators.</p>"},
+            {
+                "img": "images/SR+Team+Headshots_0021_Sub+Datta.jpg",
+                "href": "https://www.linkedin.com/in/subhrangshu",
+                "name": "Subhrangshu (Sub) Datta",
+                "block": "",
+                "titles": "Chief Business Officer of Soft Robotics",
+                "bio": "<p>Sub is the Chief Business Officer of Soft Robotics based in Cambridge, MA where he runs the team's sales and marketing functions. A high energy commercial leader with a proven track record of delivering results, Sub has built and scaled several innovation driven start-up business units with large medical device companies. He served as Global Head of Sales & Marketing for Smith & Nephew’s <$100M Gynecology business and also previously as General Manager for Sushrut-Adler, a wholly owned Smith & Nephew Subsidiary in the Emerging Markets. Sub served as the Head of the Fertility Technologies business at EMD Serono and Operations Strategy Consulting Manager at A.T. Kearney. A Certified Six Sigma Black Belt, Sub was a Leaders for Global Operations Fellow at MIT and has a MBA from MIT Sloan School of Management, SM in Engineering Systems from MIT, MS in Materials Science & Engineering from Ohio State University and B.Eng. in Metallurgical Engineering from the Indian Institute of Technology, Roorkee, India</p>"},
+            {
+                "img": "images/munzer_dahleh.jpg",
+                "href": "http://dahleh.lids.mit.edu/",
+                "name": "Munzer Dahleh",
+                "block": "",
+                "titles": "Director, IDSS; William A. Coolidge Professor, Electrical Engineering and Computer Science",
+                "bio": "<p>Munther Dahleh was appointed director of the Institute for Data, Systems, and Society, effective July 1, 2015. He was previously the associate department head of EECS. He is also a member MIT’s Laboratory for Information and Decision Systems (LIDS).</p><p>Prof. Dahleh joined LIDS as an assistant professor of EECS in 1987 and became a full professor in 1998. He spent the spring of 1993 as a visiting professor in the Department of Electrical Engineering, California Institute of Technology, and has held consulting positions with several companies in the U.S. and abroad.</p><p>Prof. Dahleh is internationally known for his fundamental contributions to robust control theory, computational methods for controller design, the interplay between information and control, the fundamental limits of learning and decision in networked systems, and the detection and mitigation of systemic risk in interconnected and networked systems.</p>"},
+            {
+                "img": "images/CtjUmAvWYAAMFwF.jpg",
+                "href": "https://devavrat.mit.edu/",
+                "name": "Devavrat Shah",
+                "block": "",
+                "titles": "Chief Scientist and Co-Founder of Celect",
+                "bio": "<p>Devavrat Shah is Chief Scientist and Co-Founder of Celect. He is the Jamieson Professor of Electrical Engineering and Computer Science at MIT. He has invented ground-breaking algorithms in areas ranging from networking to social data analytics. He received his PhD in Computer Science from Stanford and a BTech in Computer Science from IIT Bombay where he was the President of India Gold Medalist.</p>"},
+            {
+                "img": "images/jadbabaie.jpg",
+                "href": "http://web.mit.edu/~jadbabai/www/",
+                "name": "Ali Jadbabaie",
+                "block": "",
+                "titles": "JR East Professor of Engineering at MIT",
+                "bio": "<p>Ali Jadbabaie is an Iranian-American systems theorist, network scientist, and the JR East Professor of Engineering at Massachusetts Institute of Technology. Prior to joining MIT, he was the Alfred Fitler Moore Professor of Network Science in the Department of Electrical and Systems Engineering at the University of Pennsylvania. Jadbabaie is an internationally renowned expert in the control and coordination of multi-robot formations, networked systems, and network science. He is the Associate director of the Institute for Data, Systems and Society at MIT and was the cofounder and director of the Singh Program in Networked & Social Systems Engineering (NETS) at the University of Pennsylvania's School of Engineering and Applied Sciences.</p>"},
+            {
+                "img": "images/neal_lesh.jpg",
+                "href": "https://www.dimagi.com/team/usa/neal/",
+                "name": "Neal Lesh",
+                "block": "",
+                "titles": "Chief Strategy Officer at Dimagi USA",
+                "bio": "<p>Neal Lesh is a computer scientist with field experience in applying information technologies to help organizations address poverty in low-income regions. He has published and lectured extensively in data visualization, data mining, and automated planning and logistics. He has developed medical record and analysis systems for Partners in Health, the government of Rwanda, and a large AIDS treatment program in Tanzania, and worked with many other Universities and NGOs. He is coordinating a Harvard-funded research project in South Africa.</p><p>Neal holds a PhD in computer science from the University of Washington and a masters degree in global health from the Harvard School of Public Health.</p>"},
+            {
+                "img": "images/ken_morse.jpeg",
+                "href": "https://www.linkedin.com/in/kenmorse",
+                "name": "Ken Morse",
+                "block": "",
+                "titles": "Chairman & CEO of Entrepreneurship Ventures Inc.",
+                "bio": "<p>Ken Morse was a co-founder of six high-tech companies; five had successful IPOs or mergers; one was a disaster. They included 3Com Corporation, Aspen Technology, Inc., a China trade company, a biotech venture, and an expert systems company. Ken was either the CEO or responsible for part or all of the sales organization in each of these new enterprises.</p><p>In the thirteen years (1996 – 2009) that Ken served as Founding Managing Director of the MIT Entrepreneurship Center, the number of students taking entrepreneurship courses increased from 220 to 1,600 per year while the number of professors grew from 3 to over 36.</p><p>Ken was appointed to the recently-created National Advisory Council on Innovation & Entrepreneurship by Secretary Locke and President Obama, and is a member of the Council on Foreign Relations (New York City). Ken is Visiting Professor at the ESADE Business School in Barcelona and holds a Chair in Entrepreneurship, Innovation and Competitiveness at the Delft University of Technology in The Netherlands.</p><p>He has been teaching the Entrepreneurial Skills Develop-ment workshops in Europe, Lebanon, Saudi Arabia, Pakistan, New Zealand, Québec, and the US for more than 8 years.</p><p>He is in the early stages of writing a book about global entrepreneurs who built great companies far from Silicon Valley and Route 128. The working title is “Making it Happen Globally”.</p>"},
+            {
+                "img": "images/oliver_harrison.jpg",
+                "href": "https://www.linkedin.com/in/alpha-oliver-harrison/?originalSubdomain=es",
+                "name": "Oliver Harrison",
+                "block": "",
+                "titles": "Chief Executive Officer, Health Moonshot, Telefónica Innovation Alpha, Telefonica",
+                "bio": "<p>MPH, Johns Hopkins. Psychiatrist. Foundation Scholar, Medicine/Neuroscience, Jesus College, Cambridge. Research Fellow, Cognitive Science, Queen Square. Six years as Head of Public Health then Director of Strategy, Health Authority, Abu Dhabi. Five years with McKinsey healthcare. Currently, CEO Health Moonshot, Telefonica Alpha. Non-Exec Director, Guy's and St Thomas's (International Strategy).</p>"},
+            {
+                "img": "images/isabella-loaiza.jpg",
+                "href": "https://www.media.mit.edu/people/isal/overview/",
+                "name": "Isabella Loaiza",
+                "block": "",
+                "titles": "Research Assistant, Human Dynamics Lab at MIT Media Lab",
+                "bio": "<p>Isabella is a Masters student and research assistant at the Collective Learning Group.  She holds a Bachelors in Business and Bachelors in Logistics and Production from Universidad el Rosario in Bogota, Colombia.</p><p>Her research focuses on the capacity that groups have to accumulate knowledge, and how this  capacity is affected by communication and social structure.  More specifically, she is interested in understanding how can we maximize the amount of knowledge that a group is able to hold.</p><p>Isabella has also worked on the application of agent-based modeling for management and organizational studies.</p>"},
+            {
+                "img": "images/thad_starner.jpg",
+                "href": "https://www.cc.gatech.edu/home/thad/",
+                "name": "Thad Starner",
+                "block": "",
+                "titles": "Professor at the Georgia Institute of Technology's School of Interactive Computing",
+                "bio": "<p>Thad Starner is a Professor at the Georgia Institute of Technology's School of Interactive Computing. Thad was perhaps the first to integrate a wearable computer into his everyday life as an intelligent personal assistant. Starner's work as a PhD student would help found the field of Wearable Computing. His group's prototypes and patents on mobile MP3 players, mobile instant messaging and e-mail, gesture-based interfaces, and mobile context-based search foreshadowed now commonplace devices and services. Thad has authored over 100 scientific publications with over 100 co-authors on mobile Human Computer Interaction (HCI), pattern discovery, human power generation for mobile devices, and gesture recognition, and he is a founder and current co-chair of the IEEE Technical Committee on Wearable Information Systems. His work is discussed in public forums such as CNN, NPR, the BBC, CBS's 60 Minutes, The New York Times, Nikkei Science, The London Independent, The Bangkok Post, and The Wall Street Journal.</p>"},
+            {
+                "img": "images/alex-lipton-2016.jpeg",
+                "href": "https://www.linkedin.com/in/alexander-lipton-aa2256bb",
+                "name": "Alexander Lipton",
+                "block": "",
+                "titles": "",
+                "bio": "<p>Alexander Lipton is Founder and CEO of Stronghold Labs, Co-Founder of Distilled Analytics, Partner at Numeraire Financial, Connection Science Fellow at MIT, and Visiting Professor of Financial Engineering at EPFL. He is an Advisory Board Member at several FinTech Companies. In 2016 he left Bank of America Merrill Lynch, where he served for ten years in various senior managerial roles including Quantitative Solutions Executive and Co-Head of the Global Quantitative Group. Earlier, he held senior managerial positions at Citadel Investment Group, Credit Suisse, Deutsche Bank, and Bankers Trust. In parallel, Alex held several prestigious academic appointments at NYU, Oxford University, Imperial College, and the University of Illinois. Before switching to finance, Alex was a Full Professor of Mathematics at the University of Illinois. In 2000 Alex was awarded the first ever Quant of the Year Award by Risk Magazine. Alex published seven books and more than a hundred scientific papers. His next book “Financial Engineering - Selected Works of Alexander Lipton” is to appear shortly.</p>"},
+            {
+                "img": "images/davos_demos/Michiel_Bakker.png",
+                "href": "https://www.media.mit.edu/people/bakker/overview",
+                "name": "Michiel Bakker",
+                "titles": "Research Assistant - MIT Media Lab and MIT Human Dynamics",
+                "bio": "<p>Data for Refugees. Building tools to study the social integration of refugees using mobile phone metadata. Test cases in Turkey where we study the dynamics and impact of social integration of refugees in three regions of Turkey.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTQkR5bC1Hd2tuTlhWNHEtMmMtUlBpbzIteEQ4/view?usp=sharing"},
+            {
+                "img": "images/hossein_rahnama.png",
+                "href": "https://en.wikipedia.org/wiki/Hossein_Rahnama",
+                "name": "Hossein Rahnama",
+                "block": "",
+                "titles": "Founder & CEO, Flybits",
+                "bio": "<p>Hossein Rahnama is a computer scientist who lives in the paradox of academia and entrepreneurship. As a visiting professor at the MIT Media Lab and professor at Ryerson University, his research explores AI, mobile human-computer interaction and the effective design of data-driven services. He is also the founder and CEO of Flybits Inc., a data intelligence company that is serving a global customer base.</p><p>Rahnama has written 30 publications and received 10 patents in ubiquitous computing. He served as a council member at NSERC (National Science and Research Engineering Council of Canada) and currently serving on the board of Canadian Science Publishing. He was a co-founder of the #1 university-based incubator in the world, The Digital Media Zone at Ryerson University. In 2012, MIT Technology Review selected him as one of the Top 35 Innovators under the age of 35 globally. In 2017, he be became one of Canada’s Top 40 under 40.</p>"},
+            {
+                "img": "images/sauvnish-bains.jpg",
+                "href": "https://www.linkedin.com/in/sauvnish-bains-a4a38233",
+                "name": "Sauvnish Bains",
+                "block": "",
+                "titles": "People Operations Manager at Flybits",
+                "bio": ""},
+            {
+                "img": "images/Esvelt_lab_close2_cropped.jpg",
+                "href": "",
+                "name": "Kevin Esvelt",
+                "block": "",
+                "titles": "Director of the Sculpting Evolution group at MIT Media Lab",
+                "bio": "<p>Kevin Esvelt is director of the Sculpting Evolution group at MIT Media Lab, which invents new ways to study and influence the evolution of ecosystems. By carefully developing and testing these methods with openness and humility, the group seeks to address difficult ecological problems for the benefit of humanity and the natural world.</p><p>Prior to joining the MIT Media Lab, Esvelt wove many different areas of science into novel approaches to ecological engineering. He invented phage-assisted continuous evolution (PACE), a synthetic microbial ecosystem for rapidly evolving biomolecules, in the laboratory of David R. Liu at Harvard University. At the Wyss Institute, he worked with George Church to develop the CRISPR system for genome engineering and regulation, and he began exploring the use of bacteriophages and conjugation to engineer microbial ecosystems.</p><p>Esvelt is credited as the first to describe how CRISPR gene drives could be used to alter the traits of wild populations in an evolutionarily stable manner. And recently, he and his Sculpting Evolution group devised a new form of technology, called ‘daisy drives’, which would let communities aiming to prevent disease alter wild organisms in local ecosystems.</p><p>By emphasizing universal safeguards and early transparency, he has worked to ensure that community discussions always precede and guide the development of technologies that will impact the shared environment.</p>"},
+            {
+                "img": "images/dave-ferguson.jpg",
+                "href": "https://www.linkedin.com/in/davidafergusson",
+                "name": "David Fergusson",
+                "block": "",
+                "titles": "Chairman, The M&A Advisor, Senior Managing Director & Group Leader - M&A of Generational Equity",
+                "bio": "<p>David Fergusson is the Senior Managing Director & Group Leader - M&A of Generational Equity, the leading middle market investment bank; Co Chairman of “The M&A Advisor”, the world’s premier think tank for corporate finance, mergers & acquisition, and restructuring, leading the company’s market intelligence, media, event, and advisory services from London and New York for a global constituency of over 350,000 corporate finance professionals; the Vice Chairman of Hugh O’Brien Youth Leadership, the world’s premier social leadership education program for youth, and a Director of leading technology company, Wisekey International.</p><p>A market expert on the impact of technological innovation on corporations and organizations, Mr. Fergusson is the editor of the leading corporate finance book series, with over 500,000 readers and distribution in over 60 countries, Editor-at-Large of Out In Front and, with Carlos Moreira, is the Co-Author of The TransHuman Code.</p><p>Mr. Fergusson is the founder of the global Corporate Finance Emerging Leaders program and founding member of the City of London’s Guild of Entrepreneurs. A pioneer in cross border M&A between the United States and China, he was recognized with the 2017 M&A Leadership Award from the China Mergers & Acquisitions Association and is Chairman of the US Chapter of the Asia M&A Association. In 2015 he was the recipient of the Albert Schweitzer Leadership Award, for his work in global youth leadership development.</p><p>Prior to joining The M&A Advisor, he was a private equity investor with Paradigm Partners. Mr. Fergusson is a graduate of Kings Edgehill School and the University of Guelph.</p>"},
+            {
+                "img": "images/esteban_moro.jpg",
+                "href": "https://www.media.mit.edu/people/emoro/overview/",
+                "name": "Esteban Moro",
+                "block": "",
+                "titles": "",
+                "bio": "<p>Esteban Moro is a professor at the MIT Media Lab, an associate professor at the Universidad Carlos III de Madrid in Spain, and a member of the Joint Institute UC3M Santander on Financial Big Data. He researches the intersection of big data and computational social science with special attention to human dynamics, collective intelligence, social networks, and urban mobility in problems like viral marketing, natural disaster management, and economic segregation in cities. His work has been featured in The Atlantic, The Washington Post, and The Wall Street Journal.</p>"},
+            {
+                "img": "images/davos_speakers/David_Blundin.jpg",
+                "href": "https://www.cogolabs.com/person/david-blundin",
+                "name": "Dave Blundin",
+                "titles": "Chairman of <a href=\"http://www.linkventures.com/team\">Link Ventures</a>, and <a href=\"https://www.vestmark.com/\">Vestmark</a>",
+                "bio": "<p>Dave has co-founded 23 companies at least 5 of which have achieved $100 million+ valuations. He has served on 21 private and public boards. His successes include the founding and sale of web analytics company DataSage in a stock deal of Unicorn scale, the co-founding of Vestmark (the leading innovator of wealth management technology with 2 million accounts and almost $1 trillion in managed assets), and being the lead seed-stage investor in at least 14 consumer internet, analytics, fintech, and big-data companies.</p><p>In 1999, Dave was named to MIT Technology Review’s List of Innovators under 35. Venture capitalist Duncan McCallum of One Liberty Ventures called Dave \"the most visionary person I have ever met\" in the field of decision-support software.</p><p>Prior to 1997, Dave was the President and CEO of Cirrus Recognition Systems, a data mining software company. Previously, he was among the first ten employees at MicroStrategy and, subsequently, served on Microstrategy's board of directors in 2003 and 2004.</p><p>He currently serves as the Chairman of Link’s technology-incubation company, Cogo Labs, and on the boards of most of Link’s investments. He is also the Chairman of Vestmark and a general partner at Vestigo Ventures, a strictly Fintech focused fund.</p><p>Dave received a BS in Computer Science degree from MIT where he researched neural network technology at the AI lab.</p>"},
+            {
+                "img": "images/davos_speakers/Mira_Wilczek.jpg",
+                "href": "https://www.cogolabs.com/person/mira-wilczek",
+                "name": "Mira Wilczek",
+                "titles": "CEO & President of Cogo Labs",
+                "bio": "<p>Mira Wilczek is President and CEO of Cogo Labs and Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. She serves on the Board of Directors at EverQuote, CareDash, and Hopjump, and the Advisory Board of Vestigo Ventures. She is also a Co-Director at the Brahe Educational Foundation. In 2017 Mira was named Top 40 Under 40 by the Boston Business Journal.</p><p>Prior to joining Cogo, Mira was founder and CEO of Red Panda Security, Principal Investigator under the DARPA CFT program, and Director of Business Development at Lyric Semiconductor, where she garnered industry recognition including TR50, Silicon 60, and an EE Times ACE Award and led the successful sale of the company to Analog Devices. She started her career as an ethical hacker at IBM, architecting their first automated penetration testing platform.</p><p>Mira holds patents both granted and pending in the fields of cyber security and sensor data fusion. She has an S.B. in Electrical Engineering and Computer Science from MIT, as well as an MBA from the MIT Sloan School of Management.</p>"},
+            {
+                "img": "images/daniela_rus.jpg",
+                "href": "https://www.csail.mit.edu/person/daniela-rus",
+                "name": "Daniela Rus",
+                "block": "",
+                "titles": "",
+                "bio": "<p>Daniela Rus is the Andrew (1956) and Erna Viterbi Professor of Electrical Engineering and Computer Science and Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT. Rus’s research interests are in robotics, mobile computing, and data science. Rus is a Class of 2002 MacArthur Fellow, a fellow of ACM, AAAI and IEEE, and a member of the National Academy of Engineering, and the American Academy for Arts and Science. She earned her PhD in Computer Science from Cornell University.</p>"},
+            {
+                "img": "images/davos_demos/ramesh-raskar-mit-spectrum_0.jpeg",
+                "href": "https://www.media.mit.edu/people/raskar/overview/",
+                "name": "Ramesh Raskar",
+                "titles": "Assoc. Prof MIT Media Lab, Facebook, Google[X], REDX.io",
+                "bio": "<p>Ramesh Raskar is an Associate Professor at MIT Media Lab and directs the Camera Culture research group. His focus is on building interfaces between social systems and autonomous systems. These society-autonomy interfaces (SAI) span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award (2016), ACM SIGGRAPH Achievement Award (2017), DARPA Young Faculty Award (2009), Alfred P. Sloan Research Fellowship (2009), TR100 Award from MIT Technology Review (2004) and Global Indus Technovator Award (2003). He has worked on special research projects at Google [X] and Facebook and co-founded/advised several companies.</p><p>In his recent role at Facebook, he launched and led innovation teams in Digital Health, Health-tech, Satellite Imaging, TV bandwidth for Connectivity, VR/AR and 'Emerging Worlds' initiative for FB.</p><p>His new focus is on building world-scale interfaces between societal systems and cyber-physical systems. They span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award 2016, ACM SIGGRAPH Achievement Award 2017, Technology Review TR100 award 2004, Global Indus Technovator Award, top 20 Indian technology innovators worldwide 2003, Alfred P. Sloan Research Fellowship award 2009 and Darpa Young Faculty award 2010. Others include Marr Prize honorable mention 2009, LAUNCH Health Innovation Award, presented by NASA, USAID, US State Dept+ NIKE, 2010, Vodafone WirelessInnovationAward (first place) 2011. He has received four MitsubishiElectricInventionAwards.</p><p>His work has appeared in NYTimes, CNN, BBC, NewScientist, TechnologyReview etc. He holds 82+ US patents.</p>",
+                "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTRzFaeU1PdWRjUEdJRi1SbHd1R09pTTlkbGFr/view?usp=sharing"},
+            {
+                "img": "images/VladimirBulovic.jpg",
+                "href": "http://onelab.mit.edu/Vladimir-Bulovi%C4%87",
+                "name": "Vladimir Bulovic",
+                "block": "",
+                "titles": "Director of MIT.nano, Professor of Engineering, MacVicar Fellow, Fariborz Maseeh (1990) Chair in Emerging Technology",
+                "bio": "<p>Vladimir Bulović holds the Fariborz Maseeh Chair in Emerging Technology and is the MIT School of Engineering’s Associate Dean for Innovation. He co-directs the MIT Innovation Initiative and is the faculty leading the design and construction of MIT's new nano-fabrication, nano-characterization, and prototyping facility. He also co-directs the Eni-MIT Solar Frontiers Center, one of MIT's largest sponsored research programs. He leads the Organic and Nanostructured Electronics Laboratory (ONE Lab), which he developed as a unique open nanotechnology facility.</p><p>Prior to joining the School of Engineering leadership, Vladimir directed the MIT Microsystems Technology Laboratories (MTL), which during his tenure grew to support over 700 investigators and $80M of research programs from across the Institute. His research interests include studies of physical properties of organic and inorganic nanostructured films and structures and their applications in novel optoelectronic devices. His academic papers have been cited over 10,000 times, while his 60 U.S. patents and numerous patent disclosures have been licensed and utilized by both start-up and multinational companies.</p><p>A practicing entrepreneur, Vladimir is a founder of QD Vision, Inc. of Lexington, MA (along with ONE Lab alum Dr. Seth Coe-Sullivan, Bawendi group alum Dr. Jonny Steckel, and Sloan graduate Greg Moeler), which is manufacturing quantum dot optoelectronic components. Together with ONE Lab alums Dr. Conor Madigan and Dr. Jianglong (Gerry) Chen, Prof. Marty Schmidt, and Dr. Valerie Leblanc, Vladimir founded Kateeva, Inc. of Menlo Park, CA, which is focused on development of printed organic electronics. Ubiquitous Energy, Inc. was co-founded in 2011 with ONE Lab collaborator Dr. Miles Barr and ONE Lab alum Dr. Richard Lunt III and is developing nanostructured solar technologies. These start-ups presently employ over 200 researchers in the U.S. and a similar number of employees abroad.</p><p>Vladimir received his Ph.D. from Princeton University, where his academic work and patents contributed to the launch of the Universal Display Corporation and the Global Photonics Energy Corporation. He is a recipient of the U.S. Presidential Early Career Award for Scientist and Engineers, the National Science Foundation Career Award, the Ruth and Joel Spira Award, the Eta Kappa Nu Honor Society Award, and the Bose Award for Distinguished Teaching. Recognized as an authority in the field of applied nanotechnology, Vladimir was named to the Technology Review TR100 List, and in 2012 he shared the SEMI Award for North America in recognition of his contribution to commercialization of quantum dot technology.</p><p>In 2008 he was named the Class of 1960 Faculty Fellow, honoring his contributions to energy education leading to the launch of the MIT Energy Studies minor, the first academic program spanning all five schools at MIT. In 2009 he was awarded the Margaret MacVicar Faculty Fellowship, MIT's highest teaching honor, and in 2011 he was named the Faculty Research Innovation Fellow for excellence in research and international recognition. Most recently, Vladimir was named a Fellow of the World Technology Network and the Xerox Distinguished Lecturer in recognition of his continued contribution to innovation of practical applied nanotechnologies.</p>"},
+            {
+                "img": "images/davos_speakers/Jessica_Espey.jpg",
+                "href": "http://unsdsn.org/about-us/people/jessica-espey/",
+                "name": "Jessica Espey",
+                "titles": "Director of <a href=\"https://www.sdsntrends.org/\">SDSN TReNDS</a> and Senior Adviser to <a href=\"http://unsdsn.org/\">SDSN</a>",
+                "bio": "<p>Jessica Espey is the Director <a href=\"https://www.sdsntrends.org/\">SDSN TReNDS</a>, a global knowledge network focused on the good governance of data for sustainable development. TReNDS aims to generate and curate ideas on how to strength national and global statistical systems, to incubate new data sharing practices, and support technical coalitions to establish practice standards for new data approaches.</p><p>TReNDS is part of the UN Sustainable Development Solutions Network, a special initiative of the UN Secretary General launched in 2012 to mobilize global scientific and technological expertise to promote practical solutions for sustainable development, for which Jessica is also Senior Adviser.</p><p>Jessica is also a member of the Global Partnership for Sustainable Development Data’s Technical Advisory Group, and is a member of the Group on Earth Observation’s Expert Advisory Board. Jessica has a particular interest in the use of data for urban sustainable development and as such is also official liaison for the Scientific Steering Committee of the IPCC Conference on Cities and Climate Change.</p><p>Jessica previously served as a special adviser on the post-2015 agenda within the Office of the President of Liberia, supporting the work of The High Level Panel of Eminent Persons (of which President Sirleaf was co-chair) and the development of the Common African Position on the Post-2015 Agenda. She has also worked as a senior researcher at Save the Children UK, the Overseas Development Institute (ODI), and the British Institute in Eastern Africa (BIEA). Jessica holds a Bachelor of Arts degree with Honours in Modern History from the University of Oxford and a Master of Sciences degree in the Political Economy of Development from the School of Oriental and African Studies, University of London. She is currently a PhD candidate at the University of Bristol, UK. She has lived and worked in Liberia, Kenya, Rwanda, the UK and the US.</p>"},
+            {
+                "img": "images/anthony-large.jpg",
+                "href": "http://imes.mit.edu/research-staff-prof/brian-anthony/",
+                "name": "Brian W. Anthony",
+                "block": "",
+                "titles": "",
+                "bio": "<p>Dr. Anthony is Director of MIT’s Master of Engineering in Manufacturing Program, Co-Director of the Medical Electronic Device Realization Center, and Deputy Director for the MIT Skoltech Initiative. With over 20 years experience in product realization—Dr. Anthony won an Emmy (from the Academy of Television Arts and Sciences) in broadcast technical innovation—Dr. Anthony designs instruments and techniques to monitor and control physical systems.  His work involves systems analysis and design and calling upon mechanical, electrical, and optical engineering, along with computer science and optimization, to create solutions.</p><p>The focus of Dr. Anthony’s research is in computational instrumentation—the design of instruments and techniques to measure and control complex physical systems. His research includes the development of instrumentation and measurement solutions for manufacturing systems and medical diagnostics and imaging systems. In addition to his academic work, he has extensive experience in market-driven technology innovation, product realization, and business entrepreneurship and commercialization at the intersection between information technology and advanced manufacturing. His teaching interests include the modeling of large-scale systems in a wide variety of decision-making domains and the development of optimization algorithms and software for analyzing and designing such systems. He has extensive experience in market driven technology innovation as well as business entrepreneurship.</p>"},
+            {
+                "img": "images/dennis_ausiello.jpg",
+                "href": "https://www.massgeneral.org/medicine/assets/images/dennis_ausiello_color_print.jpg",
+                "name": "Dennis Ausiello, M.D.",
+                "block": "",
+                "titles": "Professor, Harvard Medical School; Chief of Medicine, Massachusetts General Hospital",
+                "bio": "<p>Dr. Ausiello has served as Jackson Professor of Clinical Medicine at Harvard Medical School and Chief of Medicine at Massachusetts General Hospital since 1996. Dr. Ausiello's experience includes President of the Association of American Physicians in 2006, Member of the Institute of Medicine and a Fellow of the American Academy of Arts and Sciences, Director of TARIS BioMedical, Inc. Currently, Dr. Ausiello serves as a Director on Pfizer's Board since December 2006; he is also a member of Pfizer's Audit Committee, Corporate Governance Committee and Science and Technology Committee.</p>"},
+            {
+                "img": "images/davos_speakers/Johs_Hoehener.jpg",
+                "href": "https://www.swisscom.ch/en/business/enterprise/experten/profiles/hoehener-johannes.html",
+                "name": "Johannes Höhener",
+                "titles": "Head of FinTech, <a href=\"https://www.swisscom.ch\">Swisscom AG</a>",
+                "bio": "<p>Johs. Hoehener is the Head of FinTech at Swisscom AG, where he leads all digital business activities in the area of trust services, financial market places and Blockchain Crypto Property services. He also represents Swisscom in FinTech venture investments. He founded e-research AG in 2012, which he later integrated into Swisscom as e-foresight, to support customers in researching and analyzing trends in the digital world. Johs. draws on 40 years of finance industry experience, holding various executive positions. He is convinced that digitalization is forcing banks to undergo the most extensive transformation in their history.</p>"},
+            {
+                "img": "images/Navroop-Sahdev2.jpg",
+                "href": "https://www.linkedin.com/in/navroopsahdev",
+                "name": "Navroop Sahdev",
+                "titles": "Head of Economic Strategy, <a href=\"http://www.five-fifty-foundry.com/\">The Fifty Five Foundry</a>",
+                "bio": "<p>Navroop is a Fellow at <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and holds a host of leadership roles in the DLT space, both as a practitioner as well as a researcher. An economist by training, Navroop is currently building a FinTech company that seeks to leverage blockchain technology. She is also a Research Associate at the <a href=\"http://blockchain.cs.ucl.ac.uk/\">Centre for Blockchain Technologies</a> (CBT) at University College London and holds three masters in IP Management, Economics of Innovation and Applied Economics.</p><p>A United Nations Youth Delegate, Navroop is frequently interviewed by Forbes as a subject matter expert on the economics of emerging tech. She has co-authored <a href=\"https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x\">Hyperledger’s Blockchain for Business online course</a> online course and is frequently requested as a keynote speaker at industry conferences. Previously, she has worked at Harvard University and <a href=\"https://www.unenvironment.org/\">United Nations Environment Programme</a>. Her research interests are focused on Distributed Ledger Technologies, Game Theory, Networks Theory and Complex Systems Science.</p>"},
+            {
+                "img": "images/anirban_basak.jpg",
+                "href": "https://www.linkedin.com/in/anirban-basak-3713791",
+                "name": "Anirban Basak",
+                "block": "",
+                "titles": "CEO FortifID Inc.",
+                "bio": "<p>Anirban is a consumer lending executive and technology entrepreneur. Prior to founding FortifID, he worked at Capital One, Chase and WAMU.  He was also a chief engineer at the Merchant Marines, a data scientist at Stanford and an alumnus of MIT’s Fintech Future Commerce.</p>"}
+            // {
+            //     "img": "images/oliver_smith.jpeg",
+            //     "href": "https://www.linkedin.com/in/olliewsmith/",
+            //     "name": "Oliver Smith",
+            //     "block": "",
+            //     "titles": "Strategy Director, Health Moonshot at Telefónica Innovation Alpha",
+            //     "bio": "<p></p>"},
+            // {
+            //     "img": "images/",
+            //     "href": "",
+            //     "name": "",
+            //     "block": "",
+            //     "titles": "",
+            //     "bio": "<p></p>"},
+            // {
+            //     "img": "images/",
+            //     "href": "",
+            //     "name": "",
+            //     "block": "",
+            //     "titles": "",
+            //     "bio": "<p></p>"},
+
+        ];
+        peopleMIT2019 = peopleMIT2019.map(setId);
+
+
         var people = [
             {
                 "img": "https://dam-prod.media.mit.edu/thumb/2017/09/20/pentland-2014.png.800x800.png",
@@ -875,13 +1143,6 @@
             //     "bio": ""},
 
         ];
-
-        var setId = function(person) {
-            person.id = person.name.split('.').join('').split(' ').join('_').toLocaleLowerCase();
-            return person;
-        }
-
-
         people = people.map(setId);
 
         var blockNum = 1;
@@ -1565,7 +1826,9 @@
             speakers: speakers,
             organizers: organizers,
             tbd: tbd,
-            schedule: schedule
+            schedule: schedule,
+
+            peopleMIT2019: peopleMIT2019
         })
 
     </script>

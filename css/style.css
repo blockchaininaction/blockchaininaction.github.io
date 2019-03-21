@@ -391,6 +391,9 @@ hr {
 .person-thumbs-davos {
     grid-template-rows: 78px 78px 78px 78px 78px 78px;
 }
+.person-thumbs-mit {
+    grid-template-rows: 78px 78px 78px;
+}
 .person-thumbs a {
     display: block;
     margin: 0;

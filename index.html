@@ -648,9 +648,22 @@
             ]}
         ];
 
+
+        // PEOPLE \/ \/
+
         var setId = function(person) {
             person.id = person.name.split('.').join('').split(' ').join('_').toLocaleLowerCase();
             return person;
+        }
+
+        var alphabetize = function(a, b){
+            var namePartsA = a.name.split(' ');
+            var lastNameA = namePartsA[namePartsA.length - 1];
+            var namePartsB = b.name.split(' ');
+            var lastNameB = namePartsB[namePartsB.length - 1];
+            if(lastNameA < lastNameB) { return -1; }
+            if(lastNameA > lastNameB) { return 1; }
+            return 0;
         }
 
         var peopleMIT2019 = [
@@ -1173,16 +1186,6 @@
 
 
         //console.log('people without blocks: '+tbd.map(p => p.name));
-
-        var alphabetize = function(a, b){
-            var namePartsA = a.name.split(' ');
-            var lastNameA = namePartsA[namePartsA.length - 1];
-            var namePartsB = b.name.split(' ');
-            var lastNameB = namePartsB[namePartsB.length - 1];
-            if(lastNameA < lastNameB) { return -1; }
-            if(lastNameA > lastNameB) { return 1; }
-            return 0;
-        }
 
         var davosFacilitators = [
             {

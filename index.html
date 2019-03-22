@@ -445,6 +445,31 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
+
+        // https://www.quora.com/How-do-I-load-a-true-JSON-file-using-pure-JavaScript
+        function loadJSON(filePath, success, error)
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function()
+            {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        if (success)
+                            success(JSON.parse(xhr.responseText));
+                } else {
+                    if (error)
+                        error(xhr);
+                    }
+                }
+            };
+            xhr.open("GET", filePath, true);
+            xhr.send();
+        }
+
+
+
+
+
         var schedule = [
             {
                 "time": "08:00 AM",
@@ -1859,30 +1884,45 @@
         davos2ndStage = davos2ndStage.map(scheduleBlockMapper);
         davos2ndStage[0].blockNum = "";
 
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!'
-            },
-            people: people,
 
-            peopleDavos: peopleDavos,
-            davosFacilitators: davosFacilitators,
-            peopleAndDemosDavos: peopleAndDemosDavos,
-            peopleAndOrganizersDavos: peopleAndOrganizersDavos,
-            demosDavos: demosDavos,
-            chefDavos: chefDavos,
-            davosSchedule: davosSchedule,
-            davos2ndStage: davos2ndStage,
-            producersDavos: producersDavos,
 
-            speakers: speakers,
-            organizers: organizers,
-            tbd: tbd,
-            schedule: schedule,
+        var self = this;
+        loadJSON("speakersMIT2019.json", function(result) {
+            console.log(peopleMIT2019, result)
+            self.peopleMIT2019 = result.map(setId).sort(alphabetize);
 
-            peopleMIT2019: peopleMIT2019
-        })
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!'
+                },
+                people: people,
+
+                peopleDavos: peopleDavos,
+                davosFacilitators: davosFacilitators,
+                peopleAndDemosDavos: peopleAndDemosDavos,
+                peopleAndOrganizersDavos: peopleAndOrganizersDavos,
+                demosDavos: demosDavos,
+                chefDavos: chefDavos,
+                davosSchedule: davosSchedule,
+                davos2ndStage: davos2ndStage,
+                producersDavos: producersDavos,
+
+                speakers: speakers,
+                organizers: organizers,
+                tbd: tbd,
+                schedule: schedule,
+
+                peopleMIT2019: peopleMIT2019
+            });
+
+        }, function(error) {console.log(error)});
+
+
+
+
+
+
 
     </script>
 

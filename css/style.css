@@ -392,7 +392,7 @@ hr {
     grid-template-rows: 78px 78px 78px 78px 78px 78px;
 }
 .person-thumbs-mit {
-    grid-template-rows: 78px 78px 78px;
+    grid-template-rows: 78px 78px 78px 78px;
 }
 .person-thumbs a {
     display: block;

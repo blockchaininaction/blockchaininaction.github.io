@@ -1,4 +1,4 @@
-[
+﻿[
 	{
 		"img": "images/induprakas.jpg",
 		"href": "https://www.linkedin.com/in/induprakas",
@@ -339,14 +339,21 @@
 		"img": "images/KChmielinski.jpg",
 		"href": "https://www.media.mit.edu/people/kaschm/overview/",
 		"name": "Kasia Chmielinski",
-		"titles": "Technologist at the U.S. Digital Service. Lifelong Kindergarten group of the MIT Media Lab",
-		"bio": "<p>Kasia Chmielinski is a technologist at the U.S. Digital Service working on improving government technology for the American public. Prior to USDS, Kasia was the Product and Partnerships Lead for Scratch, a project of the Lifelong Kindergarten group of the MIT Media Lab. Kasia got their start in technology at Google, and went on to be part of the founding team of ZestFinance, a startup that uses large-scale algorithms to predict credit risk. Kasia hails from Boston, but dabbled in architecture and engineering at the Chinese University of Hong Kong before graduating with a degree in physics from Harvard University. When not in front of a whiteboard or a keyboard, Kasia can be found making documentary films, especially within and for underrepresented populations, or upon a bicycle, cycling uncomfortably-long distances.</p>"
+		"titles": "Founder and Lead of the Data Nutrition Project",
+		"bio": "<p>Kasia Chmielinski is the Co-Founder and Lead of the Data Nutrition Project, an initiative that builds tools to improve the health of artificial intelligence through healthier data. They are also a product manager in Healthcare Analytics at McKinsey & Company. Previously, Kasia worked at the U.S. Digital Service to improve government technology around the opioid crisis and migrant farmworker visa application process. They were also the Product and Partnerships Lead for Scratch, a project of the MIT Media Lab. When not in front of a whiteboard or a keyboard, Kasia can be found making documentary films, especially within and for underrepresented populations, or upon a bicycle, cycling uncomfortably-long distances.</p>"
 	},
 	{
 		"img": "images/JBingham.jpg",
 		"href": "https://www.janeirodigital.com/who-we-are/",
 		"name": "Justin Bingham",
 		"titles": "CTO at Janeiro Digital",
-		"bio": "<p>Justin oversees both the technology and creative divisions at Janeiro Digital, where he pioneered the RADD methodology. He is also responsible for vision and strategy around Janeiro’s own technology initiatives, including the XFORM platform.  His background includes nearly two decades of experience building sophisticated technology solutions and bringing them to market. He is fluent in numerous programming languages, has extensive knowledge of enterprise application architecture, network infrastructure and protocols, distributed systems, and large scale data processing.  He also invented one of the first systems to passively detect and identify sophisticated covert channels over a network.</p><p>When he’s not in the office, or hanging out with his wife and daughter, you can find him in remote places across the country coaxing his Jeep over the hardest and most extreme off-road terrain he can find.</p>"
+		"bio": "<p>Justin Bingham is an expert in decentralized web technologies, applications, and architectures. As a core member of the inrupt and solid open source teams, Justin is working directly with Sir. Tim Berners Lee to cultivate the Solid ecosystem as well as building technologies upon it that move the needle for enterprises.  He has been closely involved in Solid’s strategy, architecture, developer experience, and end user experience.</p><p> At Janeiro Digital, Justin leads the firm’s vision and strategy across technology initiatives, most recently applying decentralization to massive-scale problems across a range of industry verticals.</p><p>His background includes nearly two decades of experience building sophisticated technology solutions and bringing them to market. He is fluent in numerous programming languages, has extensive knowledge of enterprise application architecture, network infrastructure and protocols, distributed systems, and large scale data processing. Justin also invented one of the first systems to passively detect and identify sophisticated covert channels over a network.</p>"
+	},
+{
+		"img": "images/RSeseri.jpg",
+		"href": "https://www.linkedin.com/in/rudinaseseri",
+		"name": "Rudina Seseri",
+		"titles": "Founder and Managing Partner, Glasswing Ventures",
+		"bio": "<p>Rudina Seseri is Founder and Managing Partner of Glasswing Ventures, an early-stage venture capital firm dedicated to investing in the next generation of AI-powered technology companies. With over 17 years of investing and transactional experience, Rudina has led technology investments and acquisitions in startup companies in enterprise SaaS, IT software and data, marketing technologies and robotics. Rudina’s portfolio of investments include Celtra, CHAOSSEARCH, CrowdTwist, Inrupt, Plannuh, SocialFlow, Talla, Verusen and Zylotech. Rudina is a Harvard Business School Rock Venture Capital Partner and Entrepreneur-In-Residence, serving for 5 consecutive years. She is also a Member of the Business Leadership Council of Wellesley College.</p><p>Rudina serves as a member of the advisory board for GSK Consumer and the Philanthropy Board for Boston Children’s Hospital. She has been named a 2017 Boston Business Journal Power 50: Newsmaker, a 2014 Women to Watch honoree by Mass High Tech and a 2011 Boston Business Journal 40-under-40 honoree for her professional accomplishments and community involvement. She graduated magna cum laude from Wellesley College with a BA in Economics and International Relations and with an MBA from the Harvard Business School (HBS). She is a member of Phi Beta Kappa and Omicron Delta Epsilon honor societies.</p>"
 	}
 ]

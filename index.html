@@ -1545,7 +1545,7 @@
 
         var self = this;
         loadJSON("speakersMIT2019.json", function(result) {
-            console.log(peopleMIT2019, result)
+            //console.log(peopleMIT2019, result)
             self.peopleMIT2019 = result.map(setId).sort(alphabetize);
 
             var app = new Vue({

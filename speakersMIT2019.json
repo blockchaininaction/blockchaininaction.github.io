@@ -354,5 +354,36 @@
     "name": "Rudina Seseri",
     "titles": "Founder and Managing Partner, Glasswing Ventures",
     "bio": "<p>Rudina Seseri is Founder and Managing Partner of Glasswing Ventures, an early-stage venture capital firm dedicated to investing in the next generation of AI-powered technology companies. With over 17 years of investing and transactional experience, Rudina has led technology investments and acquisitions in startup companies in enterprise SaaS, IT software and data, marketing technologies and robotics. Rudina’s portfolio of investments include Celtra, CHAOSSEARCH, CrowdTwist, Inrupt, Plannuh, SocialFlow, Talla, Verusen and Zylotech. Rudina is a Harvard Business School Rock Venture Capital Partner and Entrepreneur-In-Residence, serving for 5 consecutive years. She is also a Member of the Business Leadership Council of Wellesley College.</p><p>Rudina serves as a member of the advisory board for GSK Consumer and the Philanthropy Board for Boston Children’s Hospital. She has been named a 2017 Boston Business Journal Power 50: Newsmaker, a 2014 Women to Watch honoree by Mass High Tech and a 2011 Boston Business Journal 40-under-40 honoree for her professional accomplishments and community involvement. She graduated magna cum laude from Wellesley College with a BA in Economics and International Relations and with an MBA from the Harvard Business School (HBS). She is a member of Phi Beta Kappa and Omicron Delta Epsilon honor societies.</p>"
+},
+
+{
+    "img": "images/MFrank.jpg",
+    "href": "http://web.media.mit.edu/~mrfrank/",
+    "name": "Morgan Frank",
+    "titles": "PhD Candidate in the Scalable Cooperation Research Group at the MIT Media Lab",
+    "bio": "<p>Morgan Frank is a Postdoctoral Associate at MIT’s Media Lab interested in the complexity of AI, the future of work, and the socio-economic consequences of technological change. While many studies focus on phenotypic labor trends, Morgan’s recent research examines how genotypic skill-level processes around AI impact individuals and society. Combining labor research with investigations into the nature of AI research and the social or societal implications of AI adoption, Morgan hopes to inform our understanding of AI’s impact.</p>"
+},
+{
+    "img": "images/KMorse.jpg",
+    "href": "http://entven.com/ken-morse-3/",
+    "name": "Ken Morse",
+    "titles": "Chairman & CEO of Entrepreneurship Ventures Inc.",
+    "bio": "<p>Ken Morse was a co-founder of six high-tech companies; five had successful IPOs or mergers; one was a disaster. They included 3Com Corporation, Aspen Technology, Inc., a China trade company, a biotech venture, and an expert systems company. Ken was either the CEO or responsible for part or all of the sales organization in each of these new enterprises.</P><P>In the thirteen years (1996 – 2009) that Ken served as Founding Managing Director of the MIT Entrepreneurship Center, the number of students taking entrepreneurship courses increased from 220 to 1,600 per year while the number of professors grew from 3 to over 36.</P><P>Ken was appointed to the recently-created National Advisory Council on Innovation & Entrepreneurship by Secretary Locke and President Obama, and is a member of the Council on Foreign Relations (New York City). Ken is Visiting Professor at the ESADE Business School in Barcelona and holds a Chair in Entrepreneurship, Innovation and Competitiveness at the Delft University of Technology in The Netherlands.</P><P>He has been teaching the Entrepreneurial Skills Develop-ment workshops in Europe, Lebanon, Saudi Arabia, Pakistan, New Zealand, Québec, and the US for more than 8 years.</P><P>He is in the early stages of writing a book about global entrepreneurs who built great companies far from Silicon Valley and Route 128. The working title is “Making it Happen Globally”.</p>"
+},
+{
+    "img": "images/MBrown.jpg",
+    "href": "https://centiment.io/beta/about",
+    "name": "Micah Brown",
+    "titles": "CEO & Founder, Centiment.io Inc",
+    "bio": "<p>Micah is a visionary technologist with an intersection of skills consisting of data and algorithm understanding, HCI-centric digital technologies, financial services, financial engineering and media services.</P><P>He has over 10 years of experience (up to SVP) across companies like Aon, Barclays, NBC and Viacom. Micah has a deep technological understanding and also a strong commitment to social causes; at the centre of Centiment and FilmFundr are the need to level the playing field in media for minorities.</p>"
+},
+{
+    "img": "images/NSmith.jpg",
+    "href": "https://www.linkedin.com/in/nedmsmith/",
+    "name": "Ned Smith",
+    "titles": "Principal IoT Security Architect",
+    "bio": "<p>Ned Smith  is a Principal Security Architect in Intel’s Open Technology Center in theSoftware Solutions Group developing trusted edge computing technologies. He also co-chairs the IETF Remote Attestation Procedures working group. He developed the OpenConnectivity Foundation (OCF) security specification for IoT devices and was a securityarchitect for Intel® vPro™ and related security technologies. He co-chaired the TrustedComputing Group’s (TCG) Infrastructure and Trusted Network Communication (TNC)working groups. He developed the Common Data Security Architecture (CDSA)specification in The Open Group. He holds over 150 US patents. He received Intel’s TopInventor award in 2016. His professional interests include trusted cloud, edge and IoTcomputing and blockchain. His non-professional interests including scuba, motorcyclesand genealogy</p>"
 }
+
+
 ]

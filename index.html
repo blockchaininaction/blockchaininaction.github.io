@@ -31,7 +31,7 @@
 </head>
 
 <body id="home">
-    <div id="app">
+    <div id="app" class="main">
         <div class="max-width">
             <div id="logo"></div>
             <header>
@@ -109,7 +109,60 @@
             </div>
 
             <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">REGISTER</a></p>
+
         </div>
+
+        <h3 id="scheduleDavos" v-cloak>
+            <div class="max-width">
+                ↵ Schedule @ MIT 2019
+            </div>
+        </h3>
+
+
+        <div class="max-width davos-schedule" v-cloak>
+            <div class="blocks">
+                <div v-if="!block.transition" v-for="block in $options.mit2019Schedule"
+                    v-bind:class="'block ' + block.class"
+                    v-bind:style="{ 'border-color': block.color }">
+                    <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                        <div class="time">{{block.time}}</div>
+                        <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
+                    </div>
+                    <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
+                        <div class="time">{{block.time}}</div>
+                        <h4>{{block.title}}</h4>
+                    </div>
+                    <div v-if="block.people" class="people">
+                        <div v-for="person in block.people" class="davos-speaker">
+                            <div class="time">{{person.time}}</div>
+                            <a
+                            class="sm-thumb"
+                            v-bind:title="person.name"
+                            v-bind:href="'#' + person.id"
+                            v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                            <div>
+                                <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                <p v-if="person.title" v-html="person.title"></pv-if></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="block.people2" class="people people2">
+                            <div v-for="person in block.people2" class="davos-speaker">
+                                <a
+                                class="sm-thumb"
+                                v-bind:title="person.name"
+                                v-bind:href="'#' + person.id"
+                                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                <div>
+                                    <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                    <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
 
         <h3 id="now" v-cloak>
             <div class="max-width">
@@ -541,12 +594,120 @@
             }
         ];
 
-        // var davosFacilitators = [
-        //     {name: "John Werner"},
-        //     {name: "Randall Lane"},
-        //     {name: "Amy Wilkinson"},
-        //     {name: "Navroop Sahdev"}
-        // ];
+
+        var mit2019Schedule = [
+
+            {title: "Registration", minutes: 30},
+
+            {title: "Introduction", people2: [
+                {name: "John Werner"},
+                {name: "Alex 'Sandy' Pentland"},
+            ]},
+
+            {transition: 5},
+
+            {title: "Block 1", color: "#7000be", people: [
+                {name: "Antoine Gourevitch", title: "Senior Partner & Managing Director at BCG"},
+                {name: "Jonathan Askin", title: "Founder/Director of the Brooklyn Law Incubator & Policy Clinic (BLIP) and the Innovation Catalyst for the Center for Urban Business Entrepreneurship (CUBE)"},
+                {name: "Induprakas (Indu) Keri", title: "Vice President Development, Blockchain Technologies"},
+                {name: "Jessica Espey", title: "Director of SDSN TReNDS and Senior Adviser to SDSN"},
+                {name: "Esteban Moro", title: "Professor at the MIT Media Lab, an associate professor at the Universidad Carlos III de Madrid in Spain, and a member of the Joint Institute UC3M Santander on Financial Big Data"},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 2", color: "#4800be", people: [
+                {name: "Kevin Esvelt", title: "Director of the Sculpting Evolution group at MIT Media Lab"},
+                {name: "Alex Tai", title: "Board Member GBBC | Former Director of Special Operations, Virgin Group; Founder & Chair, Zest The Agency"},
+                {name: "Judith Amores", title: "PhD Student and Research Assistant, Fluid Interfaces, MIT Media Lab"},
+                {name: "Ned Smith", title: "Principal IoT Security Architect"},
+                {name: "Rudina Seseri", title: "Founder and Managing Partner, Glasswing Ventures"},
+                {name: "David Fergusson", title: "Chairman, The M&A Advisor, Senior Managing Director & Group Leader - M&A of Generational Equity"},
+                {name: "Anirban Basak", title: "CEO FortifID Inc."},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 3", color: "#0055be", people: [
+                {name: "Tomer Srulevich", title: "Chief Business Officer at Endor"},
+                {name: "Navroop Sahdev", title: "Head of Economic Strategy, The Fifty Five Foundry"},
+                {name: "Hossein Rahnama", title: "Founder & CEO, Flybits"},
+                {name: "Neal Lesh", title: "Chief Strategy Officer at Dimagi USA"},
+                {name: "Ken Morse", title: "Chairman & CEO of Entrepreneurship Ventures Inc."},
+                {name: "Alexander Lipton", title: "Co-founder and CTO of Sila Money"},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 3", color: "#0094be", people: [
+                {name: "John Clippinger", title: "Research Scientist at MIT Media Lab Human Dynamics Group & Executive Director/CEO, ID3"},
+                {name: "Nathan Eagle", title: "Co-founder and CEO of Jana"},
+                {name: "Dave Blundin", title: "Chairman of Link Ventures, and Vestmark"},
+                {name: "Devavrat Shah", title: "Jamieson Professor of Electrical Engineering and Computer Science at MIT"},
+                {name: "Anne Kim", title: "CTO at Secure AI Labs"},
+                {name: "Adam Blue", title: "Chief Technology Officer of Q2 Holdings, Inc"},
+            ]},
+
+            {title: "Lunch", minutes: 50},
+
+            {title: "Block 3", color: "#00b3be", people: [
+                {name: "Daniela Rus", title: "The Andrew (1956) and Erna Viterbi Professor of Electrical Engineering and Computer Science and Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT"},
+                {name: "Dennis Ausiello, M.D.", title: "Professor, Harvard Medical School; Chief of Medicine, Massachusetts General Hospital"},
+                {name: "Daniel Alejandro Hashimoto, M.D.", title: "Surgical Artificial Intelligence and Innovation Fellow, MGH Surgical Artificial Intelligence & Innovation Laboratory, Massachusetts General Hospital | Harvard Medical School"},
+                {name: "Brian W. Anthony", title: "Director of MIT’s Master of Engineering in Manufacturing Program, Co-Director of the Medical Electronic Device Realization Center, and Deputy Director for the MIT Skoltech Initiative"},
+                {name: "Ho-Jun Suk", title: "Medical Engineering/Medical Physics Ph. D. student in the Harvard/MIT Division of Health Sciences and Technology"},
+                {name: "Topper Carew", title: "Visiting Researcher/Scholar at the MIT Media Lab"},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 3", color: "#00be5e", people: [
+                {name: "Rajni Aneja", title: "Global Head, Digital Strategy/Transformation at Novartis & MIT Media Lab Connection Science Fellow"},
+                {name: "Ramesh Raskar", title: "Assoc. Prof MIT Media Lab, Facebook, Google[X], REDX.io"},
+                {name: "Bryan Wilson", title: "Operations and Policy at RiskGenius; Co-instructor MIT IAP Computational Law Workshop Course"},
+                {name: "Subhrangshu (Sub) Datta", title: "CEO of CompanionMx"},
+                {name: "Justin Bingham", title: "CTO at Janeiro Digital"},
+                {name: "Isabella Loaiza", title: "Research Assistant MIT Media Lab Human Dynamics"},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 3", color: "#6bbe00", people: [
+                {name: "Yan Leng", title: "PhD student at Human Dynamics Laboratory at MIT Media Lab"},
+                {name: "Oliver Smith", title: "Strategy Director, Health Moonshot at Telefónica Innovation Alpha"},
+                {name: "Kavita Gupta", title: "Executive Director at ConsenSys, Founding Managing Partner at ConsenSys Ventures and Country Head at ConsenSys India"},
+                {name: "Adam Blake", title: "Entrepreneur in Residence / Professional Advisor at Martin Trust Center for MIT Entrepreneurship"},
+                {name: "Mira Wilczek", title: "CEO & President of Cogo Labs"},
+                {name: "Tanzeem Choudhury", title: "Associate Professor, Computing and Information Science, Cornell University; Co-founder, HealthRhythms, Inc."},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 3", color: "#beb700", people: [
+                {name: "Irving Wladawsky-berger", title: "Research Affiliate at MIT's Sloan School of Management and Fellow of the Initiative on the Digital Economy and of the MIT Connection Science initiative"},
+                {name: "Panos A. Panay", title: "Vice President, Innovation and Strategy, Berklee College of Music."},
+                {name: "Beth Porter", title: "CEO of Riff Learning, Inc."},
+                {name: "Kasia Chmielinski", title: "Technologist at the U.S. Digital Service. Lifelong Kindergarten group of the MIT Media Lab"},
+                {name: "Fabio Zoffi", title: "President & Executive Chairman at ORS GROUP"},
+                {name: "Thad Starner", title: "Professor at the Georgia Institute of Technology's School of Interactive Computing"},
+            ]},
+
+            {transition: 25},
+
+            {title: "Block 3", color: "#be6200", people: [
+                {name: "Dazza Greenwood", title: "Lecturer and research scientist at the MIT Media Lab"},
+                {name: "Yufing (Kevin) Chen", title: "Postdoctoral Fellow at the Harvard School of Engineering and Applied Sciences (SEAS)"},
+                {name: "Kent Larson", title: "Director of the City Science group at MIT Media Lab"},
+                {name: "Morgan Frank", title: "PhD Candidate in the Scalable Cooperation Research Group at the MIT Media Lab"},
+                {name: "Micah Brown", title: "CEO & Founder, Centiment.io Inc"},
+                {name: "Michiel Bakker", title: "Research Assistant - MIT Media Lab and MIT Human Dynamics"},
+            ]},
+
+            {title: "Closing"}
+        ];
+
+
+
 
         var davosSchedule = [
             {title: "Introduction", people2: [
@@ -1475,10 +1636,9 @@
         var peopleAndOrganizersDavos = davosOrganizers.concat(peopleDavos);
 
 
-        var peopleById = {};
-        davosOrganizers.concat(peopleAndDemosDavos, davosFacilitators).forEach(function(person) {
-            peopleById[person.id] = person;
-        });
+
+
+
 
 
 
@@ -1489,7 +1649,10 @@
         var scheduleBlockMapper = function(block) {
             if (block.people) {
                 block.people = block.people.map(setId).map(function(person) {
-                    //console.log(person.id)
+                    if (!peopleById[person.id]) {
+                        console.log("missing: " + person.id);
+                        return person;
+                    }
                     person.img = peopleById[person.id].img;
                     var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                     person.time = hour + ":" + minutes;
@@ -1526,7 +1689,7 @@
             } else {
                 var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
                 block.time = hour + ":" + minutes;
-                min += 5;
+                min += block.minutes || 5;
                 if (min >= 60) {
                     min -= 60;
                     hour++;
@@ -1535,18 +1698,32 @@
             return block;
         }
 
-        davosSchedule = davosSchedule.map(scheduleBlockMapper);
+
+
 
         hour = 13;
         min = 0;
         blockNum = 1;
-        davos2ndStage = davos2ndStage.map(scheduleBlockMapper);
-        davos2ndStage[0].blockNum = "";
+        //davos2ndStage = davos2ndStage.map(scheduleBlockMapper);
+        //davos2ndStage[0].blockNum = "";
 
         var self = this;
         loadJSON("speakersMIT2019.json", function(result) {
-            //console.log(peopleMIT2019, result)
             self.peopleMIT2019 = result.map(setId).sort(alphabetize);
+
+            self.peopleById = {};
+            davosOrganizers.concat(self.peopleAndDemosDavos, self.davosFacilitators, self.peopleMIT2019).forEach(function(person) { // ,
+                self.peopleById[person.id] = person;
+            });
+
+
+            davosSchedule = davosSchedule.map(scheduleBlockMapper);
+
+            self.hour = 7;
+            self.min = 45;
+            self.blockNum = 1;
+
+            mit2019Schedule = mit2019Schedule.map(scheduleBlockMapper);
 
             var app = new Vue({
                 el: '#app',
@@ -1562,8 +1739,10 @@
                 demosDavos: demosDavos,
                 chefDavos: chefDavos,
                 davosSchedule: davosSchedule,
-                davos2ndStage: davos2ndStage,
+                //davos2ndStage: davos2ndStage,
                 producersDavos: producersDavos,
+
+                mit2019Schedule: mit2019Schedule,
 
                 speakers: speakers,
                 organizers: organizers,

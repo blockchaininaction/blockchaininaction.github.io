@@ -55,13 +55,6 @@
     "bio": "<p>Oliver is responsible for overall strategy within Telefonica Alpha’s Health Moonshot, alongside establishing and maintaining strong partnerships, and business model development. He has extensive experience in strategy and innovation across a range of sectors. Before joining Alpha he was Director of Strategy and Innovation at Guy’s and St Thomas’ Charity, responsible for investing £100m over five years in innovations across acute, primary, and integrated care, and biomedical research and digital health. He was a Senior Civil Servant in the UK Department of Health; responsible for UK Tobacco Control Policy, and wrote the government’s first comprehensive childhood obesity strategy. Oliver was also a Policy Adviser in the Prime Minister’s Strategy Unit under Tony Blair. He has a BA in Politics, Philosophy, and Economics from Oxford University.</p>"
 },
 {
-    "img": "images/isabella-loaiza.jpg",
-    "href": "https://www.media.mit.edu/people/isal/overview/",
-    "name": "Isabella Loaiza",
-    "titles": "Research Assistant MIT Media Lab Human Dynamics",
-    "bio": "<p>Data for Refugees. Building tools to study the social integration of large migration collectives using mobile phone metadata. Test cases in Colombia where we study the dynamics and impact of social, spatial and economic integration of migrants nationwide.</p>"
-},
-{
     "img": "images/thad_starner.jpg",
     "href": "https://www.cc.gatech.edu/home/thad/",
     "name": "Thad Starner",
@@ -80,7 +73,7 @@
     "href": "https://www.media.mit.edu/people/bakker/overview",
     "name": "Michiel Bakker",
     "titles": "Research Assistant - MIT Media Lab and MIT Human Dynamics",
-    "bio": "<p>Data for Refugees. Building tools to study the social integration of refugees using mobile phone metadata. Test cases in Turkey where we study the dynamics and impact of social integration of refugees in three regions of Turkey.</p>"
+    "bio": "<p>Fairness in Machine Learning. Society increasingly relies on machine learning models for automated decision making. Yet, efficiency gains have come paired with concern for algorithmic discrimination that can systematize inequality. We have developed a set of methods that help practitioners design fair algorithms for budget-constrained decision making. These are methods that can be used in a wide range of domains like criminal justice, medical diagnosis, poverty prediction and credit approval.</p>"
 },
 {
     "img": "images/hossein_rahnama.png",
@@ -153,13 +146,6 @@
     "bio": "<p>Dr. Anthony is Director of MIT’s Master of Engineering in Manufacturing Program, Co-Director of the Medical Electronic Device Realization Center, and Deputy Director for the MIT Skoltech Initiative. With over 20 years experience in product realization—Dr. Anthony won an Emmy (from the Academy of Television Arts and Sciences) in broadcast technical innovation—Dr. Anthony designs instruments and techniques to monitor and control physical systems.  His work involves systems analysis and design and calling upon mechanical, electrical, and optical engineering, along with computer science and optimization, to create solutions.</p><p>The focus of Dr. Anthony’s research is in computational instrumentation—the design of instruments and techniques to measure and control complex physical systems. His research includes the development of instrumentation and measurement solutions for manufacturing systems and medical diagnostics and imaging systems. In addition to his academic work, he has extensive experience in market-driven technology innovation, product realization, and business entrepreneurship and commercialization at the intersection between information technology and advanced manufacturing. His teaching interests include the modeling of large-scale systems in a wide variety of decision-making domains and the development of optimization algorithms and software for analyzing and designing such systems. He has extensive experience in market driven technology innovation as well as business entrepreneurship.</p>"
 },
 {
-    "img": "images/dennis_ausiello.jpg",
-    "href": "https://www.massgeneral.org/medicine/assets/images/dennis_ausiello_color_print.jpg",
-    "name": "Dennis Ausiello, M.D.",
-    "titles": "Professor, Harvard Medical School; Chief of Medicine, Massachusetts General Hospital",
-    "bio": "<p>Dr. Ausiello has served as Jackson Professor of Clinical Medicine at Harvard Medical School and Chief of Medicine at Massachusetts General Hospital since 1996. Dr. Ausiello's experience includes President of the Association of American Physicians in 2006, Member of the Institute of Medicine and a Fellow of the American Academy of Arts and Sciences, Director of TARIS BioMedical, Inc. Currently, Dr. Ausiello serves as a Director on Pfizer's Board since December 2006; he is also a member of Pfizer's Audit Committee, Corporate Governance Committee and Science and Technology Committee.</p>"
-},
-{
     "img": "images/Navroop-Sahdev2.jpg",
     "href": "https://www.linkedin.com/in/navroopsahdev",
     "name": "Navroop Sahdev",
@@ -172,13 +158,6 @@
     "name": "Anirban Basak",
     "titles": "CEO FortifID Inc.",
     "bio": "<p>Anirban is a consumer lending executive and technology entrepreneur. Prior to founding FortifID, he worked at Capital One, Chase and WAMU.  He was also a chief engineer at the Merchant Marines, a data scientist at Stanford and an alumnus of MIT’s Fintech Future Commerce.</p>"
-},
-{
-    "img": "images/alex_tai.jpg",
-    "href": "https://twitter.com/1taia?lang=en",
-    "name": "Alex Tai",
-    "titles": "Board Member GBBC | Former Director of Special Operations, Virgin Group; Founder & Chair, Zest The Agency",
-    "bio": "<p>Alex is an experienced Venture Capitalist, Entrepreneur and Executive, among other executive positions Alex has been a Director of the Virgin Group for over 20 years.</p><p>Alex Tai began his career training as a fast jet pilot in the Royal Air Force after graduating from the Royal Air Force College at Cranwell. Alex subsequently joined his families recruitment business whilst continuing to fly executive aircraft. Alex followed his passion for flying and joined Virgin Atlantic as a pilot In 1995, he was seconded to the Virgin Group Special Project Team in 1997. In 2004 Alex founded the Virgin Galactic project for Sir Richard Branson which was launched with Alex becoming the Chief Operating Officer and subsequently Chairman of the US Commercial Spaceflight Federation.  Alex was promoted to Director of Special Projects for the Virgin Group in 2007.</p><p>As a Virgin Group Director Alex worked as a Director of the Virgin Group and Virgin Enterprises investment Team with specific roles in directing investments in technology, media and transportation. Investments of note include Virgin America, Virgin Media, Virgin Mobile (UK, US, Canada), Virgin Active and Virgin Galactic. Alex served as a corporate development lead and investment director representing the Virgin shareholders interests as a Board director on multiple Virgin company investments. Sir Richard Branson credits Alex as the Virgin executive that has deployed the largest amount of Virgin Group funds into some of the most interesting and innovative businesses with excellent returns on invested capital.</p><p>Alex has invested though his personal holding company into a wide variety of businesses ranging from Engineering operations in the UK, media  agencies in the UK, US and Europe, application start ups in San Francisco, betting software and installations in Norway and also holds a property portfolio in the UK, France, Greece and the US. Alex enjoys skiing, kitesurfing and fast cars. Alex holds 11 world records in aviation including fastest around the world in both directions east and west about in class set with his close friend Steve Fossett. Alex is married with two daughters.</p>"
 },
 {
     "img": "images/davos_demos/Panos-Panay.jpg",
@@ -243,27 +222,7 @@
     "titles": "PhD student at Human Dynamics Laboratory at MIT Media Lab",
     "bio": "<p>Ms. Leng a PhD student at Human Dynamics Laboratory at MIT Media Lab, supervised by Professor Alex 'Sandy' Pentland and received Master of Science degrees in Computer Science and Transportation Engineering from MIT in 2016. Ms. Leng received my Bachelor degrees in Transportation Engineering and Computational Mathematics from Beijing Jiaotong University. </p><p>The central theme of her research is to bridge network-based machine learning methods and their practical applications in computational social science. Her primary research interest is to understand how decisions are made on social networks with abundant behavioral data combining tools from game theory, machine learning, and Bayesian generative models. </p><p>Ms. Leng develop machine learning methods on social networks, inspired by theories and long-lasting phenomenon in social science and microeconomics, to infer social relationships or the underlying preferences. Moreover, to better understand the mechanism of social influence on decision-making, Ms. Leng develop generative social learning models. </p><p>In the long-run, Ms. Leng aim to combine game theory and machine learning to enable adaptive network-based interventions both methodologically and experimentally. </p>"
 },
-{
-    "img": "images/RAneja.jpg",
-    "href": "https://connection.mit.edu/dr-rajni-aneja",
-    "name": "Rajni Aneja",
-    "titles": "Global Head, Digital Strategy/Transformation at Novartis & MIT Media Lab Connection Science Fellow",
-    "bio": "<p>Dr. Rajni Aneja is Global Head, Digital Strategy/Transformation at Novartis. She is a Connection Science Fellow, health care strategist, public speaker, transformative change agent with expertise in population health management and digital health. She serves as an advisor to variety of health and wellness organizations. </p><p>Dr. Aneja encompasses various vantage points as a clinician, executive, advisor, entrepreneur, speaker and technology advocate serving in senior leadership roles like chief medical officer for WebMD health, EVP of Joslin and strategic executive, transformation leader at Humana. Dr. Aneja is spreading the vision for strategy and innovation across different spectrums of health care</p><p>Dr. Aneja received her MD from Research Medical Center in Kansas City and MBA from University of Massachusetts.</p>"
-},
-{
-    "img": "images/IWBerger.jpg",
-    "href": "http://ide.mit.edu/about-us/people/irving-wladawsky-berger",
-    "name": "Irving Wladawsky-berger",
-    "titles": "Research Affiliate at MIT's Sloan School of Management and Fellow of the Initiative on the Digital Economy and of the MIT Connection Science initiative",
-    "bio": "<p>Mr. Wladawsky-berger is a Research Affiliate at MIT's Sloan School of Management and Fellow of the Initiative on the Digital Economy and of the MIT Connection Science initiative.</p><p>Mr. Wladawsky-berger is retired from IBM in May of 2007 after 37 years with the company, where he was responsible for identifying emerging technologies and marketplace developments that are critical to the future of the IT industry. He was also responsible for our university relations office and for the IBM Academy of Technology where he served as Chairman of the Board of Governors. He led a number of IBM’s company wide initiatives including the Internet, supercomputing and Linux. </p><p>Since retiring from IBM, Mr. Wladawsky-berger has been an Adviser on Digital Strategy and Innovation at Citigroup, at HBO and at Mastercard. He has been writing a weekly blog, irvingwb.com, since 2005; in April of 2012 Mr. Wladawsky-berger is became a regular contributor to the Wall Street Journal’s CIO Journal.</p><p>Mr. Wladawsky-berger is served on and later became co-chair of the President’s Information Technology Advisory Committee from 1997 to 2001, and was a founding member of the Computer Sciences and Telecommunications Board of the National Research Council in 1986. Mr. Wladawsky-berger is a former member of University of Chicago Board of Governors for Argonne National Laboratories, the Board of Overseers for Fermilab, and BP's Technology Advisory Council. Mr. Wladawsky-berger is a Fellow of the American Academy of Arts and Sciences. Having been born in Cuba and come to the US at the age of 15, Mr. Wladawsky-berger was named 2001 Hispanic Engineer of the Year. Mr. Wladawsky-berger has an M.S. and Ph. D. in physics from the University of Chicago.</p>"
-},
-{
-    "img": "images/ABlake.jpg",
-    "href": "http://entrepreneurship.mit.edu/profile/adam-blake/",
-    "name": "Adam Blake",
-    "titles": "Entrepreneur in Residence / Professional Advisor at Martin Trust Center for MIT Entrepreneurship",
-    "bio": "<p>Adam Blake is Senior Vice President of ThriveHive and General Manager of its marketing automation platform, the first guided marketing platform for small businesses. Prior to joining ThriveHive, Adam founded a consumer electronics business, Pear Cable, which he bootstrapped into a profitable company selling products around the world.</p><p>Before Pear Cable, Adam served as the Director of Fuel Cell Technology Development at CellTech Power, a developer of novel fuel cells. Adam holds three patents (with one pending), received a Bachelor of Science in Mechanical Engineering from Tufts University, and an MBA from the MIT Sloan School of Management with a Certificate in Entrepreneurship and Innovation.</p>"
-},
+
 {
     "img": "images/KChen.jpg",
     "href": "https://scholar.harvard.edu/yufengchen/home",
@@ -277,20 +236,6 @@
     "name": "John Clippinger",
     "titles": "Research Scientist at MIT Media Lab Human Dynamics Group & Executive Director/CEO, ID3",
     "bio": "<p>John Henry Clippinger is Research Scientist at the MIT Media Lab Human Dynamics Group where he is conducting research on trust frameworks for protecting and sharing personal information. With Professor Alex Pentland of MIT, he is founder and Executive Director of the newly formed ID3 (Institute for Institutional Innovation & Data Driven Design) which is developing an open governance platform to support an ecosystem for data-driven services, infrastructures, and enterprises. Previously, he was founder and Co-Director of The Law Lab (www.lawlab.org) at the Berkman Center for Internet & Society at Harvard University, a multi-disciplinary center founded to research the role of social, neurological, and economic mechanisms on the role of law in facilitating cooperation and entrepreneurial innovation. Dr. Clippinger was also a Senior Fellow at the Berkman Center where he co-founded and supported the development of an open source, interoperable identity framework called Project Higgins (www.eclipse.org/higgins) to give users control over their personal information.</p><p>He is the author of A Crowd of One: The Future of Individual Identity (Perseus, Public Affairs, 2007, and The Biology of Business, Natural Laws of Enterprise, (Josey Bass, 1998). Previously, he was Director of Intellectual Capital, Coopers & Lybrand and the founder and CEO of four software companies. He also holds software patents, and consults with companies, foundations, and government agencies on technology, policy and business strategy. He is Co-Chair of Open Identity Exchange Advisory Board and has lectured at Stanford, Brandeis, MIT, Yale, Boston University, Chinese Academy of Science, Harvard, Brown, Dartmouth, UPenn, among others.</p><p>Dr. Clippinger is a graduate of Yale University and holds a M.A. and Ph.D. from the University of Pennsylvania. He is a member of the eG8 Forum, and the Global Leadership Telco Council and the Risk Analysis Networks for the World Economic Forum, an Aspen Institute Research Fellow, frequent participant at The DoD sponsored Highlands Forum, The Aspen Institute, the CEO Leadership Institute of Yale School of Management, Creative Leadership Summit, Aspen Institute Italy, Telco 2.0, Fortune Brainstorm, Arab Thought Leadership Conference, Kauffman Summer Institute, Monaco Media Forum, Ashoka, and The Santa Fe Institute Business Network.</p>"
-},
-{
-    "img": "images/TCarew.jpg",
-    "href": "https://www.media.mit.edu/people/tcarew/overview/",
-    "name": "Topper Carew",
-    "titles": "Visiting Researcher/Scholar at the MIT Media Lab",
-    "bio": "<p>Topper Carew is currently a Visiting Researcher/Scholar at the MIT Media Lab. He has earned degrees in Architecture and Environmental Design from Yale and has had fully supporting fellowships at MIT (Community Fellow) and from the Corporation for Public Broadcasting (Broadcast Fellow).  The former allowed Carew to complete three films and study at MIT’s then film school.  The latter allowed him to spend time at the BBC/London and at the studios in Hollywood. He also has a Doctorate in Communications from the Union Graduate School/Institute for Policy Studies.</p><p>Carew started his film career by making documentaries about the relationship between neighborhood people and architecture, by using it as an empowerment, community organizing and fundraising tool, and by teaching film to inner city kids.  He did all of this at The New Thing Art and Architecture Center, an arts program in the Adams Morgan section of Washington, D.C.  Carew was the New Thing’s founder and director. The fellowship at MIT allowed Carew to make the full transition into film. And to date, Carew has won more than 40 film and television awards, and 8 Gold Medals for graphic design.</p><p>After MIT, he spent 4 years at WGBH (Boston) where he produced Say Brother and several national series for PBS (Say Brother National Edition, Rebop I & II, and Tonight From Harvard Square).  While there, Carew rose to the rank of Program Manager and subsequently shared responsibility for all of WGBH’s program development and production.</p><p>After WGBH, Carew founded an independent production company, Rainbow Television Workshop. It produced series and movies for PBS, HBO, Showtime, Nick and The Disney Channel.  Other projects have aired in prime time on ABC, NBC, and FOX.  His theatrically released films include DC Cab (Universal Pictures) and Breakin‘ and Enterin’ (Shapiro/Glickenhaus). One of his prime time television series, Martin (FOX), enjoys the rarified distinction of having attained off network syndication (TNT,TV One, and MTV)</p><p>Carew has served on a number of boards. They include the National Urban Coalition, the DC Arts Commission, The Children’s Foundation, The Institute of Contemporary Art (Boston), The Negro Scholarship Fund, the Social Venture Network, the LA Children’s Museum, and the First African Meeting House.  He was also appointed to a Presidential Commission on African American History and Culture.</p><p>His awards include 3 Action for Children’s Television Awards, 4 NAACP Image Awards, a People’s Choice Award, and a Robert F. Kennedy Journalism Award.</p><p>In all, Carew has produced (8) national television series, (15) documentaries, 4 theatrically released films, 15 movies for television and 300 live concerts.</p><p>Three recent honors include the Boston Neighborhood Network’s “ National Media Hero Award”, the “Hometown Video Award” for the best Public Access On Air television promotional campaign in the nation, and an appointment as “Artist in Residence” at the historic Trinity Church in Boston.</p>"
-},
-{
-    "img": "images/fabio_zoffi.jpg",
-    "href": "https://www.linkedin.com/in/fabio-zoffi-127b743/",
-    "name": "Fabio Zoffi",
-    "titles": "President & Executive Chairman at <a href=\"http://www.ors.ai\">ORS GROUP</a>",
-    "bio": "<p><a href=\"http://www.ors.ai\">ORS</a> is a leading enterprise software company with over 20 years of experience in delivering applied-AI solutions to global corporations and SMEs across sectors</p><p>Fabio is an international serial entrepreneur and investor born in Venice and living in Germany.</p><p>After spending several years as executive at the Benetton Group, Fabio was partner and managing director of a pan-European early stage technology investment fund and founded Germany’s largest Wimax telecommunications venture.</p><p>As investor and board member, Fabio is currently supporting a portfolio of privately-held companies based in Italy and Germany. Fabio has a degree in business administration at the University of Ca’ Foscari in Venice.</p>"
 },
 {
     "img": "images/DHashimoto.jpg",
@@ -371,10 +316,17 @@
     "bio": "<p>Micah is a visionary technologist with an intersection of skills consisting of data and algorithm understanding, HCI-centric digital technologies, financial services, financial engineering and media services.</P><P>He has over 10 years of experience (up to SVP) across companies like Aon, Barclays, NBC and Viacom. Micah has a deep technological understanding and also a strong commitment to social causes; at the centre of Centiment and FilmFundr are the need to level the playing field in media for minorities.</p>"
 },
 {
+    "img": "images/NBold.jpg",
+    "href": "",
+    "name": "Nami Bold",
+    "titles": "Senior Consultant at People Advisory Services at Ernst and Young",
+    "bio": "<p>Nami is a Senior Consultant at People Advisory Services at Ernst and Young. She supports human strategy within private enterprises through technology enabled transformations and M&A transactions. She has experience in designing competencies and jobs of the future in the Media industry, managing complex data sets to plan future state organizational structure in the largest Chemical industry merger, and enabling change adoption and employee upskilling in end-to-end digital transformation in the Tech industry.</p><p>She hails from Mongolia and graduated Cornell University with a focus on Urban and Regional Studies. She is exploring how AI, Blockchain and Social Enterprises can be launched from Mongolia onto the global stage.</p>"
+},
+{
     "img": "images/NSmith.jpg",
     "href": "https://www.linkedin.com/in/nedmsmith/",
     "name": "Ned Smith",
-    "titles": "Principal IoT Security Architect",
+    "titles": "Principal IoT Security Architect at Intel Corp.",
     "bio": "<p>Ned Smith  is a Principal Security Architect in Intel’s Open Technology Center in theSoftware Solutions Group developing trusted edge computing technologies. He also co-chairs the IETF Remote Attestation Procedures working group. He developed the OpenConnectivity Foundation (OCF) security specification for IoT devices and was a securityarchitect for Intel® vPro™ and related security technologies. He co-chaired the TrustedComputing Group’s (TCG) Infrastructure and Trusted Network Communication (TNC)working groups. He developed the Common Data Security Architecture (CDSA)specification in The Open Group. He holds over 150 US patents. He received Intel’s TopInventor award in 2016. His professional interests include trusted cloud, edge and IoTcomputing and blockchain. His non-professional interests including scuba, motorcyclesand genealogy</p>"
 }
 

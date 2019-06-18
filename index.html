@@ -55,7 +55,7 @@
 
                 </div>
                 <div style="flex-grow: 1">
-                    <h3>Next Event ↴</h3>
+                    <h3>Last Event ↴</h3>
                     <dl>
                         <dt>Date:</dt>
                         <dd>Saturday, April 27</dd>
@@ -78,14 +78,14 @@
             </div>
 
             <div style="display: flex">
-                <div style="flex-grow: 1; text-align: center; padding-top: 80px;">
-                    <img src="images/logos/forbes.png" width="154" height="39"/><br><br><br><br>
-                    <img src="images/logos/mit_connection_science.png" width="183" height="77"/>
+                <div style="flex-grow: 1; text-align: center; padding: 30px 0;">
+                    <img src="images/logos/forbes.png" width="154" height="39" style="margin-right: 250px;"/><img src="images/logos/mit_connection_science.png" width="183" height="77"/>
+                    <p style="text-align: center;"> </p>
                 </div>
-                <div style="flex-basis: 53.5%; flex-shrink: 0;">
+                <!-- <div style="flex-basis: 53.5%; flex-shrink: 0;">
                     <div style="width:100%; text-align:left;"><iframe src="https://eventbrite.com/tickets-external?eid=56589841740&ref=etckt" frameborder="0" height="308" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
                     <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="https://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
-                </div>
+                </div> -->
             </div>
             <br><br>
             <p class="info">On Sat, Apr 27th, we’ll be bringing the best of Davos to Cambridge, MA and gathering leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</p>
@@ -179,7 +179,7 @@
                 <h5 v-html="person.titles"></h5>
                 <div v-html="person.bio"></div>
                 <p v-if="person.youtube">
-                    <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=19'">Watch Talk ▶</a>
+                    <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
                     <!-- <iframe width="623" height="350" v-bind:src="'https://www.youtube.com/embed/' + person.youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                 </p>
             </div>

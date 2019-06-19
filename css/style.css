@@ -3,681 +3,802 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, block, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+block,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, block {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+block {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* END RESET */
 
 [v-cloak] {
-    display: none;
+  display: none;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    background: black;
-    color: #fff;
-    padding: 30px 0;
-    font-family: 'Open Sans', sans-serif;
-    text-rendering: optimizeLegibility;
+  background: black;
+  color: #fff;
+  padding: 30px 0;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 i {
-    font-style: italic;
+  font-style: italic;
 }
 
-.max-width, footer {
-    max-width: 1043px;
-    margin: 0 auto;
-    padding: 0 40px;
+.max-width,
+footer {
+  max-width: 1043px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .main {
-    /* border-top: 1px solid #747474; */
-    padding: 30px 0;
-    background-color: #1e1e1e;
+  /* border-top: 1px solid #747474; */
+  padding: 30px 0;
+  background-color: #1e1e1e;
 }
 
 .davos-dome {
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-position: 50% 110px;
-    background-image: url(../images/Davos_Floor_Map.jpg)
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-position: 50% 110px;
+  background-image: url(../images/Davos_Floor_Map.jpg);
 }
 
-p.info, dl {
-    font-size: 18px;
-    line-height: 1.67;
-    padding-bottom: 30px;
+p.info,
+dl {
+  font-size: 18px;
+  line-height: 1.67;
+  padding-bottom: 30px;
 }
 
 p.info strong {
-    color: #ffe100;
-    font-size: 20px;
-    font-weight: 700;
+  color: #ffe100;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 p.info.header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 p strong {
-    font-weight: bold;
-    color: #ffe100;
+  font-weight: bold;
+  color: #ffe100;
 }
 p strong a {
-    color: #ffe100;
+  color: #ffe100;
 }
 
 .davos-logos {
-    float: right;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 55%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
 }
 .davos-logos img {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 ul.info {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 ul.info li {
-    font-size: 17px;
-    line-height: 1.67;
-    margin-left: 30px;
+  font-size: 17px;
+  line-height: 1.67;
+  margin-left: 30px;
 }
 
 dl dt {
-    float: left;
-    width: 7em;
-    text-align: right;
-    padding-right: 10px;
-    color: #ababab;
-    padding-top: 8px;
+  float: left;
+  width: 7em;
+  text-align: right;
+  padding-right: 10px;
+  color: #ababab;
+  padding-top: 8px;
 }
 dl dd {
-    /* padding-left: 7em; */
-    padding-top: 8px;
-    overflow: auto;
-    padding-top: 8px;
+  /* padding-left: 7em; */
+  padding-top: 8px;
+  overflow: auto;
+  padding-top: 8px;
 }
 dl dd .time {
-    color: #ababab;
-    width: 7em;
-    text-align: right;
-    padding-right: 10px;
+  color: #ababab;
+  width: 7em;
+  text-align: right;
+  padding-right: 10px;
 }
 .cta {
-    text-align: center;
-    margin: 20px 0 50px 0;
+  text-align: center;
+  margin: 20px 0 50px 0;
 }
 .cta a {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 13px 30px;
-    margin: 0 auto 30px auto;
-    border: 3px solid #ffe100;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 13px 30px;
+  margin: 0 auto 30px auto;
+  border: 3px solid #ffe100;
 }
 .cta a:hover {
-    color: black;
-    background: #ffe100;
+  color: black;
+  background: #ffe100;
 }
 
 #logo {
-    margin: -48px 0 0 -52px;
-    position: absolute;
+  margin: -48px 0 0 -52px;
+  position: absolute;
 }
 
 header {
-    margin: 11px 0 41px 150px;
+  margin: 11px 0 41px 150px;
 }
 
 header p {
-    font-size: 25px;
-    font-weight: 600;
-    text-align: right;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: right;
 }
 
 header p sup {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 header p.partner {
-    font-size: 80%;
-    color: #c5c5c5;
+  font-size: 80%;
+  color: #c5c5c5;
 }
 
 header p.partner a {
-    position: relative;
-    top: 20px;
-    left: 9px;
-    background: transparent;
+  position: relative;
+  top: 20px;
+  left: 9px;
+  background: transparent;
 }
 
 header p.partner a:hover {
-    background: black;
+  background: black;
 }
 
 header h1 {
-    margin: 35px 0 16px;
+  margin: 35px 0 16px;
 }
 
 header h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #at {
-    font-size: 70%;
-    color: #c5c5c5;
-    position: relative;
-    top: -5px;
-    margin: 0 5px;
+  font-size: 70%;
+  color: #c5c5c5;
+  position: relative;
+  top: -5px;
+  margin: 0 5px;
 }
 #in {
-    font-size: 70%;
-    color: #c5c5c5;
-    margin: 0 5px;
+  font-size: 70%;
+  color: #c5c5c5;
+  margin: 0 5px;
 }
-
 
 a #medialablogo {
-    fill: white;
-    transition: 500ms fill;
+  fill: white;
+  transition: 500ms fill;
 }
 a:hover #medialablogo {
-    fill: #ffe100;
+  fill: #ffe100;
 }
 
-h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    letter-spacing: -1px;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
 }
 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #ffe100;
-    margin-top: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffe100;
+  margin-top: 15px;
 }
 h3 {
-    font-size: 40px;
-    background: #ffe100;
-    color: black;
-    font-weight: 700;
-    padding: 10px 20px;
-    letter-spacing: -1px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  font-size: 40px;
+  background: #ffe100;
+  color: black;
+  font-weight: 700;
+  padding: 10px 20px;
+  letter-spacing: -1px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 h3#scheduleDavos {
-    background-color: #6a29ff;
-    text-align: right;
+  background-color: #6a29ff;
+  text-align: right;
 }
 h3#facilitators {
-    text-align: right;
+  text-align: right;
 }
 h3#producers {
-    background-color: #00cea0;
-    text-align: right;
+  background-color: #00cea0;
+  text-align: right;
 }
 h3#now {
-    background-color: #00a1d4
+  background-color: #00a1d4;
 }
 h3#demos {
-    background-color: #e29d00;
+  background-color: #e29d00;
 }
 h3#now span {
-    float: right;
+  float: right;
 }
 h3#now span.small {
-    font-size: 25px;
-    line-height: 39px;
+  font-size: 25px;
+  line-height: 39px;
 }
 h3#schedule {
-    background-color: #6a29ff;
-    text-align: right;
-    top: 60px;
+  background-color: #6a29ff;
+  text-align: right;
+  top: 60px;
 }
 h3#mit-speakers {
-    top: 60px;
+  top: 60px;
 }
 h4 {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 h4.utopia {
-    background-color: #6a29ff;
-    color: black;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    display: inline-block;
+  background-color: #6a29ff;
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 h5 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 10px;
-    margin-left: 340px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-left: 340px;
 }
 
 hr {
-    border-color: #747474;
+  border-color: #747474;
 }
-
-
-
 
 .davos-schedule {
-    margin: 30px auto;
+  margin: 30px auto;
 }
 .davos-schedule .people {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .davos-schedule .people2 {
-    margin-left: 66px;
+  margin-left: 66px;
 }
 .davos-block-title {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.davos-block-title.w-people h4{
-    padding: 10px 0;
-    position: relative;
+.davos-block-title.w-people h4 {
+  padding: 10px 0;
+  position: relative;
 }
-.davos-block-title.w-people h4 .block-num{
-    position: absolute;
-    font-size: 12px;
-    left: -71px;
-    top: 18px;
-    opacity: 0.6;
+.davos-block-title.w-people h4 .block-num {
+  position: absolute;
+  font-size: 12px;
+  left: -71px;
+  top: 18px;
+  opacity: 0.6;
 }
 .davos-schedule h4 {
-    font-size: 20px;
-    left: -3px;
+  font-size: 20px;
+  left: -3px;
 }
 .davos-schedule .time {
-    flex: 40px 0 0;
-    margin-left: 20px;
-    padding-bottom: 0px !important;
-    margin-left: 26px;
-    text-align: right;
-    left: -16px !important;
+  flex: 40px 0 0;
+  margin-left: 20px;
+  padding-bottom: 0px !important;
+  margin-left: 26px;
+  text-align: right;
+  left: -16px !important;
 }
 .davos-schedule .block {
-    margin: 0 0 30px 0;
-    border-left-width: 20px;
-    padding: 0;
+  margin: 0 0 30px 0;
+  border-left-width: 20px;
+  padding: 0;
 }
 
 .davos-schedule h5 {
-    margin: 0px;
+  margin: 0px;
 }
 .davos-speaker {
-    display: flex;
-    margin-top: 15px;
+  display: flex;
+  margin-top: 15px;
 }
-.davos-schedule .davos-speaker p{
-    margin: 0;
+.davos-schedule .davos-speaker p {
+  margin: 0;
 }
 .davos-speaker .time {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .davos-schedule .sm-thumb {
-    width: 67px;
-    height: 44px;
+  width: 67px;
+  height: 44px;
 }
 
 .person-thumbs {
-    padding: 10px 0 30px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 78px 78px 78px;
+  padding: 10px 0 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 78px 78px 78px;
 }
 .person-thumbs-davos {
-    grid-template-rows: 78px 78px 78px 78px 78px 78px;
+  grid-template-rows: 78px 78px 78px 78px 78px 78px;
 }
 .person-thumbs-mit {
-    grid-template-rows: 78px 78px 78px 78px;
+  grid-template-rows: 78px 78px 78px 78px;
 }
 .person-thumbs a {
-    display: block;
-    margin: 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) brightness(90%);
-    transition: 300ms filter;
+  display: block;
+  margin: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) brightness(90%);
+  transition: 300ms filter;
 }
 
-.person-thumbs a:hover, .sm-thumb:hover {
-    filter: grayscale(100%) brightness(120%);
+.person-thumbs a:hover,
+.sm-thumb:hover {
+  filter: grayscale(100%) brightness(120%);
 }
 
 .hero-video {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    background-color: black;
-    color: white;
-    transition: 350ms color;
-    transition: 200ms background-color;
-    text-decoration: none;
+  background-color: black;
+  color: white;
+  transition: 350ms color;
+  transition: 200ms background-color;
+  text-decoration: none;
 }
 p a {
-    padding: 4px 3px;
-    margin: 0 -1px;
+  padding: 4px 3px;
+  margin: 0 -1px;
 }
 
 a:hover {
-    color: #ffe100;
-    text-decoration: underline;
+  color: #ffe100;
+  text-decoration: underline;
 }
 
 a.video-link {
-    padding: 10px 15px 9px;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
+  padding: 10px 15px 9px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 a.video-link:hover {
-    background-color: #ffe100;
-    color: black;
-    text-decoration: none;
+  background-color: #ffe100;
+  color: black;
+  text-decoration: none;
 }
 
 .schedule p {
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.67;
+  margin-bottom: 30px;
 }
 
 .schedule .blocks {
-    margin: 30px 0;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
-    grid-auto-flow: column;
+  margin: 30px 0;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-auto-flow: column;
 }
 
 .block {
-    border-left: 5px solid #747474;
-    padding: 0 0 0 20px;
+  border-left: 5px solid #747474;
+  padding: 0 0 0 20px;
 }
 .block .time {
-    background: #1e1e1e;
-    font-size: 15px;
-    padding-bottom: 8px;
-    position: relative;
-    left: -25px;
-    display: inline-block;
+  background: #1e1e1e;
+  font-size: 15px;
+  padding-bottom: 8px;
+  position: relative;
+  left: -25px;
+  display: inline-block;
 }
 .block h4 {
-    font-size: 25px;
+  font-size: 25px;
 }
 .block p {
-    margin: 10px 0 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  margin: 10px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .block .sm-thumbs {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  margin-top: 10px;
 }
-.block .sm-thumbs a, .sm-thumb {
-    display: block;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    background-size: cover;
-    background-position: 50% 50%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) brightness(90%);
-    transition: 300ms filter;
+.block .sm-thumbs a,
+.sm-thumb {
+  display: block;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) brightness(90%);
+  transition: 300ms filter;
 }
 .block.session {
-    grid-row-end: span 3;
+  grid-row-end: span 3;
 }
 .block.session .time {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .person {
-    padding: 90px 0 0 0;
-    margin-top: -60px; /* this accounts for sticky headers height */
+  padding: 90px 0 0 0;
+  margin-top: -60px; /* this accounts for sticky headers height */
 }
 .person:not(:last-child) {
-    border-bottom: 1px solid #747474;
+  border-bottom: 1px solid #747474;
 }
 .person:after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
-@keyframes flashTarget
-{
-    0%   {background: rgb(80, 80, 80);}
-    100%  {background: transparent;}
+@keyframes flashTarget {
+  0% {
+    background: rgb(80, 80, 80);
+  }
+  100% {
+    background: transparent;
+  }
 }
 .person:target {
-    animation: flashTarget 1s;
-    -webkit-animation: flashTarget 1s;
+  animation: flashTarget 1s;
+  -webkit-animation: flashTarget 1s;
 }
 
-.person img, .block .sm-thumbs a {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    object-fit: cover;
+.person img,
+.block .sm-thumbs a {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  object-fit: cover;
 }
 
 .person img {
-    float: left;
-    width: 300px;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    max-height: 300px;
+  float: left;
+  width: 300px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  max-height: 300px;
 }
 
 .person h4 {
-    position: relative;
-    top: -2px;
-    left: -5px;
+  position: relative;
+  top: -2px;
+  left: -5px;
 }
 
 .person h4 a {
-    padding: 10px;
-    background: transparent;
-    position: relative;
-    left: -5px;
+  padding: 10px;
+  background: transparent;
+  position: relative;
+  left: -5px;
 }
 
-.block p, .person p, .person ul {
-    font-size: 13px;
-    line-height: 20px;
-    color: #c5c5c5;
+.block p,
+.person p,
+.person ul {
+  font-size: 13px;
+  line-height: 20px;
+  color: #c5c5c5;
 }
-.person p, .person ul {
-    margin: 20px 0 20px 0;
-    margin-left: 340px;
+.person p,
+.person ul {
+  margin: 20px 0 20px 0;
+  margin-left: 340px;
 }
 
 .person ul ul {
-    margin: 0 0 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .person ul {
-    margin-left: 360px
+  margin-left: 360px;
 }
 
 footer {
-    font-size: 15px;
-    color: #aaaaaa;
-    margin-top: 20px;
-    padding-top: 10px;
+  font-size: 15px;
+  color: #aaaaaa;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 #site-by-case {
-    float: right;
+  float: right;
 }
 
-
 @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
-    p.info {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    .cta {
-        margin: 80px 0 90px 0;
-    }
-    .cta a {
-        font-size: 30px;
-        padding: 20px 50px;
-    }
-    .schedule .blocks {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-        grid-row-gap: 50px;
-    }
-    .person-thumbs {
-        padding: 10px 0 30px 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 130px 130px 130px 130px;
-    }
+  p.info {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .cta {
+    margin: 80px 0 90px 0;
+  }
+  .cta a {
+    font-size: 30px;
+    padding: 20px 50px;
+  }
+  .schedule .blocks {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-row-gap: 50px;
+  }
+  .person-thumbs {
+    padding: 10px 0 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 130px 130px 130px 130px;
+  }
 
-    .person-thumbs-davos {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px 130px;
-    }
+  .person-thumbs-davos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 130px 130px 130px 130px 130px 130px 130px 130px 130px;
+  }
 
-    .block .sm-thumbs {
-        margin-top: 30px;
-    }
-    .block .sm-thumbs a {
-        margin-right: 30px;
-        width: 120px;
-        height: 120px;
-    }
-    .block .time {
-        font-size: 35px;
-    }
-    a.video-link {
-        padding: 30px 25px 29px;
-        font-size: 40px;
-    }
+  .block .sm-thumbs {
+    margin-top: 30px;
+  }
+  .block .sm-thumbs a {
+    margin-right: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .block .time {
+    font-size: 35px;
+  }
+  a.video-link {
+    padding: 30px 25px 29px;
+    font-size: 40px;
+  }
 
-    .davos-schedule .sm-thumb {
-        width: 127px;
-        height: 127px;
-        margin-right: 29px;
-    }
+  .davos-schedule .sm-thumb {
+    width: 127px;
+    height: 127px;
+    margin-right: 29px;
+  }
 
-    .block .time, .davos-speaker .time {
-        font-size: 20px;
-        min-width: 100px;
-    }
+  .block .time,
+  .davos-speaker .time {
+    font-size: 20px;
+    min-width: 100px;
+  }
 
-    .davos-block-title .time {
-        font-size: 39px;
-        min-width: 100px;
-    }
+  .davos-block-title .time {
+    font-size: 39px;
+    min-width: 100px;
+  }
 
-    .davos-speaker {
-        margin-top: 37px;
-    }
+  .davos-speaker {
+    margin-top: 37px;
+  }
 }
 
 /* MVP IE compatibility */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .person-thumbs {
-        display: none;
-    }
+  .person-thumbs {
+    display: none;
+  }
 
-    .schedule .block {
-        margin-top: 15px;
-    }
+  .schedule .block {
+    margin-top: 15px;
+  }
 
-    .schedule .block .time {
-        padding-top: 2px;
-    }
+  .schedule .block .time {
+    padding-top: 2px;
+  }
 }
 
 .white-paper {
-    height:100px;
-    margin: -2px 15px 0 -12px;
-    float: left;
+  height: 100px;
+  margin: -2px 15px 0 -12px;
+  float: left;
 }
 
 .white-paper path {
-    fill: white;
+  fill: white;
 }
 
 .white-paper:hover path {
-    fill: #ffe100;
-    transition: 500ms fill;
+  fill: #ffe100;
+  transition: 500ms fill;
 }
 
 .davos-dome-map {
-    float: left;
-    margin-right: 20px;
-    margin: 6px 20px 6px 0;
+  float: left;
+  margin-right: 20px;
+  margin: 6px 20px 6px 0;
+}
+
+.double-feature {
+  display: flex;
+  padding: 20px;
+}
+.double-feature > div {
+  flex-basis: 50%;
+  margin: 20px;
+}
+.double-feature > div h4 {
+  margin-bottom: 10px;
+}
+.double-feature > div h4 em {
+  color: #29b8ff;
+}
+.double-feature > div .iframe-container {
+  overflow: hidden;
+  padding-top: 62%;
+  position: relative;
+}
+
+.double-feature > div .iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.double-feature sup {
+  font-size: 0.6em;
 }

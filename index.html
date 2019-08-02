@@ -54,12 +54,16 @@
               <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/F49Vzu_B-fo?list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+              <h5>Extended Intelligence: The AI Organization</h5>
+              <p class="info">AI and blockchain are extending human intelligence by making it cheaper, easier, and safer to do business with anyone anywhere anytime. The result is that the rationale for traditional business organizations &emdash; to have low internal transaction costs &emdash; is disappearing and we are beginning to see large investment funds, political campaigns and billion-dollar businesses driven by millions of individual investors/citizens/entrepreneurs without big financial backers and with little central management. How can today’s businesses and governments adapt to a world with powerful but decentralized networks?</p>
             </div>
             <div>
               <h4>May 2<sup>nd</sup> 2020 <em>@</em> <a href="https://www.google.com/maps/place/MIT+Media+Lab/@42.360357,-71.0894527,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370a8b0f310c5:0x1a26a6e6bd5f8030!8m2!3d42.360357!4d-71.087264" target="_blank">MIT Media Lab</a></h4>
               <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/c8PxIFQxkVg?list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+              <h5>Extended Intelligence: AI Empowering People</h5>
+              <p class="info">AI and blockchain are making it cheaper, easier, and safer to do business with anyone anywhere anytime, and networks of humans are using these technologies for superhuman collaboration, a sort of extended human intelligence that can easily leap across organizational, cultural, and national boundaries. Already we see distributed platforms hosting large investment funds, political campaigns and billion-dollar businesses driven by millions of individual investor/citizens/entrepreneurs but no big backers and little central management. Governance of these new AI-driven platforms will require crafting a new sort of social contract that depends less on traditional law and the nation state and more directly on the collective intelligence of individuals.</p>
             </div>
           </div>
 
@@ -131,7 +135,7 @@
 
         </div>
 
-        <h3 id="scheduleDavos" v-cloak>
+        <h3 class="sticky" id="scheduleDavos" v-cloak>
             <div class="max-width">
                 ↵ Schedule @ MIT 2019
             </div>
@@ -183,7 +187,7 @@
         </div>
 
 
-        <h3 id="now" v-cloak>
+        <h3 class="sticky" id="now" v-cloak>
             <div class="max-width">
                 Speakers @ MIT ↴
             </div>
@@ -204,7 +208,7 @@
             </div>
         </div>
 
-        <h3 id="now" v-cloak>
+        <h3 class="sticky" id="now" v-cloak>
             <div class="max-width">
                 Future ⮥<span>Past ↴</span>
             </div>
@@ -269,7 +273,7 @@
             </div>
             <br><br>
 
-            <h3 id="scheduleDavos" v-cloak>
+            <h3 class="sticky" id="scheduleDavos" v-cloak>
                 <div class="max-width">
                     ↵ Schedule @ Davos
                 </div>
@@ -319,7 +323,7 @@
                 </div>
             </div>
 
-            <h3 id="facilitators" v-cloak>
+            <h3 class="sticky" id="facilitators" v-cloak>
                 <div class="max-width">
                     ⭍&nbsp; Facilitators
                 </div>
@@ -336,7 +340,7 @@
                 </div>
             </div>
 
-            <h3 id="now" v-cloak>
+            <h3 class="sticky" id="now" v-cloak>
                 <div class="max-width">
                     Speakers @ Davos ↴
                 </div>
@@ -357,7 +361,7 @@
                 </div>
             </div>
 
-            <h3 id="demos" v-cloak>
+            <h3 class="sticky" id="demos" v-cloak>
                 <div class="max-width">
                     Demos @ Davos ↴
                 </div>
@@ -379,7 +383,7 @@
                 </div>
             </div>
 
-            <h3 id="chef" v-cloak>
+            <h3 class="sticky" id="chef" v-cloak>
                 <div class="max-width">
                     Chef @ The Event ↴
                 </div>
@@ -396,7 +400,7 @@
                 </div>
             </div>
 
-            <h3 id="producers" v-cloak>
+            <h3 class="sticky" id="producers" v-cloak>
                 <div class="max-width">
                     ⭍&nbsp; Event Coordinators
                 </div>
@@ -416,7 +420,7 @@
         </div>
 
 
-        <h3 id="now" v-cloak>
+        <h3 class="sticky" id="now" v-cloak>
             <div class="max-width">
                 Davos 2019 ⮥<span>MIT 2018 ↴</span>
             </div>
@@ -468,7 +472,7 @@
 
             <hr/>
 
-            <h3 id="schedule">↵ Schedule</h3>
+            <h3 class="sticky" id="schedule">↵ Schedule</h3>
 
             <div class="schedule">
                 <div class="blocks">
@@ -489,7 +493,7 @@
                 </div>
             </div>
 
-            <h3 id="mit-speakers">Speakers ↴</h3>
+            <h3 class="sticky" id="mit-speakers">Speakers ↴</h3>
 
             <div class="person" v-for="person in $options.speakers" v-bind:id="person.id">
                 <a v-bind:href="person.href" target="_blank">
@@ -504,7 +508,7 @@
                 </p>
             </div>
 
-            <h3>Organizers &amp; Hosts ↴</h3>
+            <h3 class="sticky">Organizers &amp; Hosts ↴</h3>
 
             <div class="person" v-for="person in $options.organizers" v-bind:id="person.id">
                 <img v-bind:src="person.img" />

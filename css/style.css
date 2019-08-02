@@ -342,6 +342,8 @@ h3 {
   font-weight: 700;
   padding: 10px 20px;
   letter-spacing: -1px;
+}
+h3.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -781,6 +783,13 @@ footer {
 }
 .double-feature > div h4 {
   margin-bottom: 10px;
+}
+.double-feature > div h5 {
+  font-size: 1.5em;
+  margin: 20px 0 10px 0;
+}
+.double-feature p.info {
+  font-size: 16px;
 }
 .double-feature > div h4 em {
   color: #29b8ff;

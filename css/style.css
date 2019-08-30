@@ -171,10 +171,15 @@ footer {
 }
 
 p.info,
-dl {
+dl,
+ol.info {
   font-size: 18px;
   line-height: 1.67;
   padding-bottom: 30px;
+}
+
+ol.info {
+  padding-left: 20px;
 }
 
 p.info strong {

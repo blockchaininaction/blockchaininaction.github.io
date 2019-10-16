@@ -376,5 +376,26 @@
     "titles": "Principal IoT Security Architect at Intel Corp.",
     "youtube": "v1LUeDu-U24",
     "bio": "<p>Ned Smith  is a Principal Security Architect in Intel’s Open Technology Center in theSoftware Solutions Group developing trusted edge computing technologies. He also co-chairs the IETF Remote Attestation Procedures working group. He developed the OpenConnectivity Foundation (OCF) security specification for IoT devices and was a securityarchitect for Intel® vPro™ and related security technologies. He co-chaired the TrustedComputing Group’s (TCG) Infrastructure and Trusted Network Communication (TNC)working groups. He developed the Common Data Security Architecture (CDSA)specification in The Open Group. He holds over 150 US patents. He received Intel’s TopInventor award in 2016. His professional interests include trusted cloud, edge and IoTcomputing and blockchain. His non-professional interests including scuba, motorcyclesand genealogy</p>"
+  },
+  {
+    "img": "images/MIT-Luis-Videgaray-01_0.jpg",
+    "href": "http://news.mit.edu/2019/visiting-lecturer-luis-videgaray-geopolitics-ai-0712",
+    "name": "Luis Videgaray",
+    "titles": "Fomer Mexican Secretary of Foreign Affairs, and of Finance, on Governance of AI",
+    "bio": "<p>Luis Videgaray is a Senior Lecturer at the MIT Sloan School of Management and the Director of MIT AI Policy for the World Project. Prior to coming to MIT, he served as the Foreign Minister and Finance Minister of Mexico. As Foreign Minister (2017-18) he led Mexico´s relationship with the Trump White House, including the successful renegotiation of the NAFTA (now USMCA). He is one of the founders of the Lima Group, created to promote regional diplomatic efforts towards restoring democracy in Venezuela, and conducted Mexico´s leading role in the UN towards an inclusive debate on AI and other new technologies. As Finance Minister (2012-16) he led Mexico’s historic energy liberalization, a telecommunications reform to foster competition in the sector, a tax reform that reduced the country´s dependence on oil revenues, and the drafting of Mexico’s new Fintech Law. He was named Finance Minister of the Year by both The Banker Magazine and Euromoney Magazine, and a Leading Global Thinker by Foreign Policy Magazine. In 2012 he was campaign manager for President Peña Nieto and head of the transition team. Previously, he was a member of Mexico´s Congress, where he chaired the Budget Committee, and Secretary of Finance of the State of Mexico.</p><p>Before government, Mr. Videgaray had a career in investment banking, advising M&A and private equity transactions. He holds a Ph.D. in Economics from MIT and a BA in Economics from Mexico’s ITAM.</p>"
+  },
+  {
+    "img": "images/birg-20150722111558609.jpg",
+    "href": "https://en.wikipedia.org/wiki/Anne-Birgitte_Albrectsen",
+    "name": "Anne-Birgitte Albrectsen",
+    "titles": "Former Director UNDP, CEO of Plan International",
+    "bio": "<p>Albrectsen served with the <a href=\"https://en.wikipedia.org/wiki/United_Nations_Development_Programme\">United Nations Development Programme</a> (UNDP) from 1997 to 2004, in Indonesia and later as Director of the Administrator’s Office at UNDP Headquarters. She led country operations for <a href=\"https://en.wikipedia.org/wiki/United_Nations_Population_Fund\">United Nations Population Fund</a> (UNFPA) in Turkey, Armenia, Georgia and  Azerbaijan from 2004 until 2006.</p><p>Albrectsen is the former UN Assistant Secretary General and Deputy Executive Director for Management at the <a href=\"https://en.wikipedia.org/wiki/United_Nations_Population_Fund\">United Nations Population Fund</a> (UNFPA).</p><p>From 2007 and 2009, Albrectsen led the Danish government’s humanitarian and civil society affairs work as the director of the relevant division in the <a href=\"https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Denmark)\">Danish Ministry of Foreign Affairs</a>.</p><p>Albrectsen published several articles in the past, as for example for <i>Impakter</i> in 2017.</p>"
+  },
+  {
+    "img": "images/daniel_huttenlocher.jpg",
+    "href": "https://web.mit.edu/hutt/www/",
+    "name": "Dan Huttenlocher",
+    "titles": "Founding Dean of MIT  Schwartzman College of Computing",
+    "bio": "<p>Daniel Huttenlocher is the inaugural dean of the MIT Schwarzman College of Computing. Previously he helped found Cornell Tech, the digital technology oriented graduate school created by Cornell University in New York City, and served as its first Dean and Vice Provost. His research and teaching have been recognized by a number of awards including ACM Fellow and CASE Professor of the Year. He has a mix of academic and industry background, having been a Computer Science faculty member at Cornell, researcher and manager at the Xerox Palo Alto Research Center (PARC), and CTO of a fintech startup. He currently serves as the board chair of the John D. and Catherine T. MacArthur Foundation and as a member of the board of Corning Inc. and Amazon.com. He received his bachelor's degree from the University of Michigan, and master's and doctorate from MIT.</p>"
   }
 ]

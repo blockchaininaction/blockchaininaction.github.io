@@ -72,10 +72,34 @@
             </div>
           </div>
 
+          <h3 class="sticky" id="now" v-cloak>
+              <div class="max-width">
+                  2020 Speakers @ Davos ↴
+              </div>
+          </h3>
+
           <div class="max-width">
+              <div class="person" v-for="person in peopleMIT2020" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                      <!-- <iframe width="623" height="350" v-bind:src="'https://www.youtube.com/embed/' + person.youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                  </p>
+              </div>
+          </div>
 
-            <hr>
+          <h3 class="sticky" v-cloak>
+              <div class="max-width">
+                Last Event ↴
+              </div>
+          </h3>
 
+          <div class="max-width">
             <div style="display: flex; margin-top: 50px;">
                 <div style="flex-basis: 35%; flex-shrink: 0; padding-right: 20px;">
                     <img style="width: 100%; height: auto; margin-bottom: 10px;" src="images/MIT_Media_Lab.png"/><br>
@@ -83,7 +107,6 @@
                 </div>
 
                 <div style="flex-grow: 1">
-                    <h3>Last Event ↴</h3>
                     <dl>
                         <dt>Date:</dt>
                         <dd>Saturday, April 27 2019</dd>
@@ -130,7 +153,7 @@
             </ul>
 
             <div class="person-thumbs person-thumbs-mit" v-cloak>
-                <a v-for="person in $options.peopleMIT2019"
+                <a v-for="person in peopleMIT2019"
                     v-bind:title="person.name"
                     v-bind:href="'#' + person.id"
                     v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
@@ -199,7 +222,7 @@
         </h3>
 
         <div class="max-width">
-            <div class="person" v-for="person in $options.peopleMIT2019" v-bind:id="person.id">
+            <div class="person" v-for="person in peopleMIT2019" v-bind:id="person.id">
                 <a v-bind:href="person.href" target="_blank">
                     <img v-bind:src="person.img" />
                 </a>
@@ -883,6 +906,7 @@
         }
 
         var peopleMIT2019 = [];
+        var peopleMIT2020 = [];
 
         var people = [
             {
@@ -1729,50 +1753,63 @@
         //davos2ndStage[0].blockNum = "";
 
         var self = this;
-        loadJSON("speakersMIT2019.json", function(result) {
-            self.peopleMIT2019 = result.map(setId).sort(alphabetize);
 
-            self.peopleById = {};
-            davosOrganizers.concat(self.peopleAndDemosDavos, self.davosFacilitators, self.peopleMIT2019).forEach(function(person) { // ,
+        self.peopleById = {};
+        davosOrganizers.concat(self.peopleAndDemosDavos, self.davosFacilitators).forEach(function(person) { // ,
+            self.peopleById[person.id] = person;
+        });
+
+
+        davosSchedule = davosSchedule.map(scheduleBlockMapper);
+
+        self.hour = 7;
+        self.min = 45;
+        self.blockNum = 1;
+
+
+
+        var data = {
+            peopleMIT2019: [],
+            peopleMIT2020: [],
+            mit2019Schedule: []
+        };
+
+        var app = new Vue({
+            el: '#app',
+            data: data,
+
+            people: people,
+
+            peopleDavos: peopleDavos,
+            davosFacilitators: davosFacilitators,
+            peopleAndDemosDavos: peopleAndDemosDavos,
+            peopleAndOrganizersDavos: peopleAndOrganizersDavos,
+            demosDavos: demosDavos,
+            chefDavos: chefDavos,
+            davosSchedule: davosSchedule,
+            //davos2ndStage: davos2ndStage,
+            producersDavos: producersDavos,
+
+            mit2019Schedule: mit2019Schedule,
+
+            speakers: speakers,
+            organizers: organizers,
+            tbd: tbd,
+            schedule: schedule,
+        });
+
+        loadJSON("speakersMIT2019.json", function(result) {
+            data.peopleMIT2019 = result.map(setId).sort(alphabetize);
+            data.peopleMIT2019.forEach(function(person) { // ,
                 self.peopleById[person.id] = person;
             });
-
-
-            davosSchedule = davosSchedule.map(scheduleBlockMapper);
-
-            self.hour = 7;
-            self.min = 45;
-            self.blockNum = 1;
-
             mit2019Schedule = mit2019Schedule.map(scheduleBlockMapper);
+            console.log("peopleMIT2019 "+data.peopleMIT2019.length)
+        }, function(error) {console.log(error)});
 
-            var app = new Vue({
-                el: '#app',
-                data: {
-                    message: 'Hello Vue!'
-                },
-                people: people,
-
-                peopleDavos: peopleDavos,
-                davosFacilitators: davosFacilitators,
-                peopleAndDemosDavos: peopleAndDemosDavos,
-                peopleAndOrganizersDavos: peopleAndOrganizersDavos,
-                demosDavos: demosDavos,
-                chefDavos: chefDavos,
-                davosSchedule: davosSchedule,
-                //davos2ndStage: davos2ndStage,
-                producersDavos: producersDavos,
-
-                mit2019Schedule: mit2019Schedule,
-
-                speakers: speakers,
-                organizers: organizers,
-                tbd: tbd,
-                schedule: schedule,
-
-                peopleMIT2019: peopleMIT2019
-            });
-
+        loadJSON("speakersMIT2020.json", function(result) {
+          data.peopleMIT2020 = result.map(setId).sort(alphabetize);
+          console.log("speakersMIT2020 "+data.speakersMIT2020.length)
         }, function(error) {console.log(error)});
     </script>
 

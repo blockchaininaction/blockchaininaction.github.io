@@ -82,5 +82,49 @@
     "name": "Mira Wilczek",
     "titles": "CEO & President of Cogo Labs",
     "bio": "<p>Mira Wilczek is President and CEO of Cogo Labs and Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. She serves on the Board of Directors at EverQuote, CareDash, and Hopjump, and the Advisory Board of Vestigo Ventures. She is also a Co-Director at the Brahe Educational Foundation. In 2017 Mira was named Top 40 Under 40 by the Boston Business Journal.</p><p>Prior to joining Cogo, Mira was founder and CEO of Red Panda Security, Principal Investigator under the DARPA CFT program, and Director of Business Development at Lyric Semiconductor, where she garnered industry recognition including TR50, Silicon 60, and an EE Times ACE Award and led the successful sale of the company to Analog Devices. She started her career as an ethical hacker at IBM, architecting their first automated penetration testing platform.</p><p>Mira holds patents both granted and pending in the fields of cyber security and sensor data fusion. She has an S.B. in Electrical Engineering and Computer Science from MIT, as well as an MBA from the MIT Sloan School of Management.</p>"
+  },
+  {
+    "img": "images/davos_speakers/Johs_Hoehener.jpg",
+    "href": "https://www.swisscom.ch/en/business/enterprise/experten/profiles/hoehener-johannes.html",
+    "name": "Johannes Höhener",
+    "titles": "Head of FinTech, <a href=\"https://www.swisscom.ch\">Swisscom AG</a>",
+    "youtube": "3wcJXC7IC0A",
+    "bio": "<p>Johs. Hoehener is the Head of FinTech at Swisscom AG, where he leads all digital business activities in the area of trust services, financial market places and Blockchain Crypto Property services. He also represents Swisscom in FinTech venture investments. He founded e-research AG in 2012, which he later integrated into Swisscom as e-foresight, to support customers in researching and analyzing trends in the digital world. Johs. draws on 40 years of finance industry experience, holding various executive positions. He is convinced that digitalization is forcing banks to undergo the most extensive transformation in their history.</p>"
+  },
+  {
+    "img": "images/davos_demos/Panos-Panay.jpg",
+    "href": "https://www.berklee.edu/people/panos-panay",
+    "name": "Panos A. Panay",
+    "titles": "Vice President, Innovation and Strategy, <a href=\"https://www.berklee.edu/\">Berklee College of Music</a>.",
+    "bio": "<p><a href=\"http://open-music.org/\">Open Music Initiative</a> is developing a global open protocol for uniform identification of music rights owners and creators. Led by Berklee College of Music and <a href=\"https://www.trust.mit.edu/\">MIT Trust Data</a>, and supported by over 250 companies including all three major record labels, major streaming companies, big tech companies and hundreds of blockchain startups.</p>"
+  },
+  {
+    "img": "images/ajay_bhalla.jpg",
+    "href": "https://www.linkedin.com/in/ajay-bhalla-34230715/",
+    "name": "Ajay Bhalla",
+    "titles": "President, Cyber and Intelligence Solutions, Mastercard",
+    "bio": "<p>Responsible for identifying and deploying innovative technology solutions that ensure 70 billion transactions happen each year in a convenient, safe and secure manner. A passionate advocate for the way in which artificial intelligence, biometrics, cybersecurity and digital identity can have a positive impact on society, with a remit to enable these technologies for the benefit of all our stakeholders.</p><p>Provides leadership in M&A transactions and integrations, governance, risk and audit leadership as well as driving a major contribution to Mastercard’s revenue. Additionally, plays a pivotal role in promoting financial inclusion and Mastercard’s ambition to give 2.5 billion people access to financial services.</p><p>Committed to youth engagement in technology and international affairs. Working with leading bodies and academia to advance global understanding and future solutions in the new digital economies. Serves as a CEME Senior Fellow at The Fletcher School, Tufts University and as MIT Connection Science Fellow at Massachusetts Institute of Technology (MIT).</p>"
+  },
+  {
+    "img": "images/daniela_rus.jpg",
+    "href": "https://www.csail.mit.edu/person/daniela-rus",
+    "name": "Daniela Rus",
+    "titles": "The Andrew (1956) and Erna Viterbi Professor of Electrical Engineering and Computer Science and Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT",
+    "youtube": "WaoHim0RZJw",
+    "bio": "<p>Daniela Rus is the Andrew (1956) and Erna Viterbi Professor of Electrical Engineering and Computer Science and Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT. Rus’s research interests are in robotics, mobile computing, and data science. Rus is a Class of 2002 MacArthur Fellow, a fellow of ACM, AAAI and IEEE, and a member of the National Academy of Engineering, and the American Academy for Arts and Science. She earned her PhD in Computer Science from Cornell University.</p>"
+  },
+  {
+    "img": "images/vanessacolella.jpg",
+    "href": "https://www.citi.com/ventures/bio/vanessa-colella.html",
+    "name": "Vanessa Colella",
+    "titles": "Chief Innovation Officer, Citi & Head of Citi Ventures",
+    "bio": "<p>With 25 years of leadership experience working at the intersection of media and technology, Vanessa has unique experience and perspective that draws upon both operating and strategic roles. She's an analytical thinker and a quick learner, with a high tolerance for ambiguous, rapidly evolving situations. She is relentlessly bottom-line driven, having run several businesses in turnaround situations. Vanessa has managed traditional sales and marketing as well as next-generation business functions including data and analytics. She is a passionate leader, having successfully built and inspired teams in a wide variety of circumstances. In addition to her corporate experience, Vanessa is a published author and a former high school teacher. </p>"
+  },
+  {
+    "img": "images/NuriaOliver.jpg",
+    "href": "http://www.nuriaoliver.com/",
+    "name": "Nuria Oliver, PhD",
+    "titles": "Director of Research; Advisor; IEEE Fellow; ACM Fellow; EurAI Fellow; CHI Academy; Engineer of the Year 2018;",
+    "bio": "<p>Nuria Oliver is a computer scientist. She holds a Ph.D. from the Media Lab at MIT. She is the first female computer scientist in Spain to be named an ACM Distinguished Scientist and an ACM Fellow. She is also a Fellow of the European Association of Artificial Intelligence and a IEEE Fellow. She is a member of the Academia Europaea and the fourth and youngest female member of the Spanish Royal Academy of Engineering. In 2018 she was named Engineer of the Year by the Professional Association of Telecommunication Engineers of Spain and she received an honorary doctorate from the University Miguel Hernandez</p>"
   }
 ]

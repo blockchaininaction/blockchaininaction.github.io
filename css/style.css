@@ -481,7 +481,8 @@ hr {
 .person-thumbs-mit {
   grid-template-rows: 78px 78px 78px 78px 78px;
 }
-.person-thumbs a {
+.person-thumbs a,
+.person-thumbs-flex a {
   display: block;
   margin: 0;
   background-size: cover;
@@ -489,6 +490,14 @@ hr {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%) brightness(90%);
   transition: 300ms filter;
+}
+.person-thumbs-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.person-thumbs-flex a {
+  width: 78px;
+  height: 78px;
 }
 
 .person-thumbs a:hover,

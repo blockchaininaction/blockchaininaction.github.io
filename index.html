@@ -74,9 +74,16 @@
 
           <h3 class="sticky" id="now" v-cloak>
               <div class="max-width">
-                  2020 Speakers @ Davos ↴
+                  Speakers @ Davos 2020↴
               </div>
           </h3>
+          <br><br>
+          <div class="person-thumbs-flex max-width" v-cloak>
+            <a v-for="person in peopleMIT2020"
+                v-bind:title="person.name"
+                v-bind:href="'#' + person.id"
+                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+          </div>
 
           <div class="max-width">
               <div class="person" v-for="person in peopleMIT2020" v-bind:id="person.id">
@@ -92,6 +99,8 @@
                   </p>
               </div>
           </div>
+
+          <br><br>
 
           <h3 class="sticky" v-cloak>
               <div class="max-width">

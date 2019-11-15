@@ -578,11 +578,6 @@
             xhr.open("GET", filePath, true);
             xhr.send();
         }
-
-
-
-
-
         var schedule = [
             {
                 "time": "08:00 AM",
@@ -749,9 +744,6 @@
 
             {title: "Closing"}
         ];
-
-
-
 
         var davosSchedule = [
             {title: "Introduction", people2: [
@@ -1188,7 +1180,6 @@
             return !person.block;
         });
 
-
         //console.log('people without blocks: '+tbd.map(p => p.name));
 
         var davosFacilitators = [
@@ -1526,7 +1517,6 @@
 
         peopleDavos = peopleDavos.map(setId).sort(alphabetize);
 
-
         var demosDavos = [
             {
                 "img": "images/davos_demos/ManuLetouzé.jpg",
@@ -1656,7 +1646,6 @@
             //     "titles": "",
             //     "bio": "<p></p>"},
         ]
-
         var producersDavos = [
             {
                 "img": "images/davos_speakers/Tommy_Liem.jpg",
@@ -1679,13 +1668,6 @@
         peopleAndDemosDavos = davosOrganizers.concat(chefDavos).concat(peopleAndDemosDavos);
 
         var peopleAndOrganizersDavos = davosOrganizers.concat(peopleDavos);
-
-
-
-
-
-
-
 
         var hour = 9;
         var min = 20;
@@ -1742,9 +1724,6 @@
             }
             return block;
         }
-
-
-
 
         hour = 13;
         min = 0;
@@ -1809,8 +1788,11 @@
 
         loadJSON("speakersMIT2020.json", function(result) {
           data.peopleMIT2020 = result.map(setId).sort(alphabetize);
-          console.log("speakersMIT2020 "+data.speakersMIT2020.length)
+          console.log("speakersMIT2020 "+data.peopleMIT2020.length)
         }, function(error) {console.log(error)});
+
+
+
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>

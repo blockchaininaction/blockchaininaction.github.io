@@ -79,14 +79,14 @@
           </h3>
           <br><br>
           <div class="person-thumbs-flex max-width" v-cloak>
-            <a v-for="person in peopleMIT2020"
+            <a v-for="person in peopleDavos2020"
                 v-bind:title="person.name"
                 v-bind:href="'#' + person.id"
                 v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
           </div>
 
           <div class="max-width">
-              <div class="person" v-for="person in peopleMIT2020" v-bind:id="person.id">
+              <div class="person" v-for="person in peopleDavos2020" v-bind:id="person.id">
                   <a v-bind:href="person.href" target="_blank">
                       <img v-bind:src="person.img" />
                   </a>
@@ -907,7 +907,7 @@
         }
 
         var peopleMIT2019 = [];
-        var peopleMIT2020 = [];
+        var peopleDavos2020 = [];
 
         var people = [
             {
@@ -1758,7 +1758,7 @@
 
         var data = {
             peopleMIT2019: [],
-            peopleMIT2020: [],
+            peopleDavos2020: [],
             mit2019Schedule: []
         };
 
@@ -1795,9 +1795,9 @@
             console.log("peopleMIT2019 "+data.peopleMIT2019.length)
         }, function(error) {console.log(error)});
 
-        loadJSON("speakersMIT2020.json", function(result) {
-          data.peopleMIT2020 = result.map(setId).sort(alphabetize);
-          console.log("speakersMIT2020 "+data.peopleMIT2020.length)
+        loadJSON("speakersDavos2020.json", function(result) {
+          data.peopleDavos2020 = result.map(setId).sort(alphabetize);
+          console.log("speakersDavos2020 "+data.peopleDavos2020.length)
         }, function(error) {console.log(error)});
 
 

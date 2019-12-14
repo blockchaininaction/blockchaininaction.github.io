@@ -93,7 +93,7 @@
   {
     "img": "images/NuriaOliver.jpg",
     "href": "http://www.nuriaoliver.com/",
-    "name": "Nuria Oliver, PhD",
+    "name": "Nuria Oliver",
     "titles": "Director of Research; Advisor; IEEE Fellow; ACM Fellow; EurAI Fellow; CHI Academy; Engineer of the Year 2018;",
     "bio": "<p>Nuria Oliver is a computer scientist. She holds a Ph.D. from the Media Lab at MIT. She is the first female computer scientist in Spain to be named an ACM Distinguished Scientist and an ACM Fellow. She is also a Fellow of the European Association of Artificial Intelligence and a IEEE Fellow. She is a member of the Academia Europaea and the fourth and youngest female member of the Spanish Royal Academy of Engineering. In 2018 she was named Engineer of the Year by the Professional Association of Telecommunication Engineers of Spain and she received an honorary doctorate from the University Miguel Hernandez</p>"
   },
@@ -131,5 +131,12 @@
     "name": "ShaoLan Hsueh",
     "titles": "Author, Creator, & Founder of Chineasy",
     "bio": "<p>Being the daughter of a calligrapher and ceramic artist, I grew up immersed in art and with a deep appreciation of the beauty of the Chinese language. I was the youngest among three daughters, and there was a majority of women in my family, and I grew up to be more of the tomboy! I was very independent and slightly rebellious.</p><p>Everyone in my family is very artistic except me. In my youth, I was more into Taoism, Chinese acupuncture and science. There were a few nights that I even lost my sleep from reading Taoism classics and literature. As a Taoist, it was important for me to find my path and what could become a form of legacy. I always want to make sure that our existence contributes positively to the world.</p>"
+  },
+  {
+    "img": "images/davos_speakers/Mira_Wilczek.jpg",
+    "href": "https://www.cogolabs.com/person/mira-wilczek",
+    "name": "Mira Wilczek",
+    "titles": "CEO & President of Cogo Labs",
+    "bio": "<p>Mira Wilczek is President and CEO of Cogo Labs and Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. She serves on the Board of Directors at EverQuote, CareDash, and Hopjump, and the Advisory Board of Vestigo Ventures. She is also a Co-Director at the Brahe Educational Foundation. In 2017 Mira was named Top 40 Under 40 by the Boston Business Journal.</p><p>Prior to joining Cogo, Mira was founder and CEO of Red Panda Security, Principal Investigator under the DARPA CFT program, and Director of Business Development at Lyric Semiconductor, where she garnered industry recognition including TR50, Silicon 60, and an EE Times ACE Award and led the successful sale of the company to Analog Devices. She started her career as an ethical hacker at IBM, architecting their first automated penetration testing platform.</p><p>Mira holds patents both granted and pending in the fields of cyber security and sensor data fusion. She has an S.B. in Electrical Engineering and Computer Science from MIT, as well as an MBA from the MIT Sloan School of Management.</p>"
   }
 ]

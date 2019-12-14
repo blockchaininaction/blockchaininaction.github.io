@@ -145,5 +145,12 @@
     "name": "Julie Bishop",
     "titles": "Former Australian Minister for Foreign Affairs",
     "bio": "<p>The Hon Julie Bishop served as Australia’s Minister for Foreign Affairs from 2013 until her resignation in 2018. She was the first female to hold the role as well as the first female Deputy Leader of the Liberal Party, serving for 11 years. As Foreign Minister, Ms Bishop was responsible for strengthening Australia’s key strategic and economic relationships with Ministerial responsibility for more than 5,000 departmental staff, 110 overseas missions as well as government agencies Australian Secret Intelligence Service and Australian Centre for International Agriculture Research. In a political career spanning 20 years, Julie, as a member of the Government Executive, also served as Minister for Education, Science and Training, Women’s Issues and Ageing.</p>"
+  },
+  {
+    "img": "images/Tommy_Nicholas.jpg",
+    "href": "https://alloy.co/about/",
+    "name": "Tommy Nicholas",
+    "titles": "CEO at Alloy",
+    "bio": "<p>Tommy is the CEO and co-founder of Alloy which builds the best compliance software for technology enabled banks and fintech companies. Alloy helps financial institutions transition the traditional manual processes involved with customer onboarding and makes them data-driven and automated. Alloy has raised $19 million in venture capital from Bessemer Venture Partners, Eniac Ventures, Primary Ventures, and many others.</p><p>Tommy leads product at Alloy, working closely with Alloy’s clients to develop and implement data-driven strategies to lower fraud, increase conversion, and improve the customer experience. Tommy attended the University of Virginia, along with Alloy’s CTO Charles Hearn. Prior to Alloy, Tommy worked as a product lead and software engineer. He worked on everything from AR experiences for large museums to consumer facing websites including Coffitivity, a popular productivity app. Tommy also lead product at Knox Payments, an ACH payments infrastructure company.</p>"
   }
 ]

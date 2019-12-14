@@ -72,6 +72,8 @@
             </div>
           </div>
 
+
+
           <h3 class="sticky" id="now" v-cloak>
               <div class="max-width">
                   Speakers @ Davos 2020↴
@@ -99,6 +101,38 @@
                   </p>
               </div>
           </div>
+
+
+
+          <h3 class="sticky" id="now" v-cloak>
+            <div class="max-width">
+                Demos @ Davos 2020↴
+            </div>
+          </h3>
+          <br><br>
+          <div class="person-thumbs-flex max-width" v-cloak>
+            <a v-for="person in demosDavos2020"
+                v-bind:title="person.name"
+                v-bind:href="'#' + person.id"
+                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+          </div>
+
+          <div class="max-width">
+              <div class="person" v-for="person in demosDavos2020" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                      <!-- <iframe width="623" height="350" v-bind:src="'https://www.youtube.com/embed/' + person.youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                  </p>
+              </div>
+          </div>
+
+
 
           <br><br>
 
@@ -908,6 +942,8 @@
 
         var peopleMIT2019 = [];
         var peopleDavos2020 = [];
+        var demosDavos2020 = [];
+
 
         var people = [
             {
@@ -1759,6 +1795,7 @@
         var data = {
             peopleMIT2019: [],
             peopleDavos2020: [],
+            demosDavos2020: [],
             mit2019Schedule: []
         };
 
@@ -1798,6 +1835,11 @@
         loadJSON("speakersDavos2020.json", function(result) {
           data.peopleDavos2020 = result.map(setId).sort(alphabetize);
           console.log("speakersDavos2020 "+data.peopleDavos2020.length)
+        }, function(error) {console.log(error)});
+
+        loadJSON("demosDavos2020.json", function(result) {
+          data.demosDavos2020 = result.map(setId).sort(alphabetize);
+          //console.log("speakersDavos2020 "+data.peopleDavos2020.length)
         }, function(error) {console.log(error)});
 
 

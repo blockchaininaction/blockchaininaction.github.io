@@ -17,7 +17,7 @@
     "img": "images/esteban_moro.jpg",
     "href": "https://www.media.mit.edu/people/emoro/overview/",
     "name": "Esteban Moro",
-    "titles": "Professor at the MIT Media Lab, an associate professor at the Universidad Carlos III de Madrid in Spain, and a member of the Joint Institute UC3M Santander on Financial Big Data",
+    "titles": "Associate Professor at UC3M, Researcher at MIT Connection Science at IDSS",
     "bio": "<p>Esteban Moro is a professor at the MIT Media Lab, an associate professor at the Universidad Carlos III de Madrid in Spain, and a member of the Joint Institute UC3M Santander on Financial Big Data. He researches the intersection of big data and computational social science with special attention to human dynamics, collective intelligence, social networks, and urban mobility in problems like viral marketing, natural disaster management, and economic segregation in cities. His work has been featured in The Atlantic, The Washington Post, and The Wall Street Journal.</p>"
   },
   {
@@ -38,7 +38,7 @@
     "img": "images/MFrank.jpg",
     "href": "http://web.media.mit.edu/~mrfrank/",
     "name": "Morgan Frank",
-    "titles": "PhD Candidate in the Scalable Cooperation Research Group at the MIT Media Lab",
+    "titles": "Post Doctoral Student at IDSS & MIT Connection Science",
     "bio": "<p>Morgan Frank is a Postdoctoral Associate at MIT’s Media Lab interested in the complexity of AI, the future of work, and the socio-economic consequences of technological change. While many studies focus on phenotypic labor trends, Morgan’s recent research examines how genotypic skill-level processes around AI impact individuals and society. Combining labor research with investigations into the nature of AI research and the social or societal implications of AI adoption, Morgan hopes to inform our understanding of AI’s impact.</p>"
   },
   {
@@ -70,5 +70,12 @@
     "name": "Yves-Alexandre de Montjoye",
     "titles": "Research Affiliate",
     "bio": "<p>I am an Assistant Professor (Lecturer) at Imperial College London where I head the Computational Privacy Group. I'm a technical expert appointed by Parliament to the Belgian Data Protection Agency and was a Special Adviser to EC Commissioner Vestager in 2018-2019. I'm affiliated with the Data Science Institute and Department of Computing. I was previously a postdoctoral researcher at Harvard working with Latanya Sweeney and Gary King and I received my PhD from MIT under the supervision of Alex \"Sandy\" Pentland</p>"
+  },
+  {
+    "img": "images/Alex_Lipton.jpg",
+    "href": "http://connection.mit.edu/alexander-lipton",
+    "name": "Alexander Lipton",
+    "titles": "Connection Science Fellow",
+    "bio": "<p>Alexander Lipton is a Managing Director, Quantitative Solutions Executive at Bank of America. Prior to his current role, he was a Managing Director, Co-head of the Global Quantitative Group at Bank of America Merrill Lynch. He also held senior managerial positions at several sell and buy side firms. Currently, Alexander is an Adjunct Professor of Mathematics at NYU. Previously, he was a Visiting Professor of Quantitative Finance at University of Oxford and Advisory Board member at the Oxford-Man Institute. Earlier, he was Visiting Professor of Mathematics at Imperial College London. Before switching to finance, Alex was a Full Professor of Mathematics at the University of Illinois and a Consultant at Los Alamos National Laboratory. His current interests include FinTech, distributed ledgers, digital banking, monetary circuit, industrial strength derivative pricing including regulatory and economic capital calculations and valuation adjustments, as well as large scale holistic bank balance sheet optimization. Alexander published more than a hundred papers on applied mathematics and quantitative finance and authored/edited several books on these subjects.</p>"
   }
 ]

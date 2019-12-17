@@ -1,0 +1,269 @@
+[
+  {
+    "img": "https://dam-prod.media.mit.edu/thumb/2017/09/20/pentland-2014.png.800x800.png",
+    "href": "https://www.media.mit.edu/people/sandy/overview/",
+    "name": "Alex 'Sandy' Pentland",
+    "titles": "Professor of Media Arts and Sciences<br/>Toshiba Professor<br/>Media Lab Entrepreneurship Program Director",
+    "youtube": "5clSrrfD_As",
+    "bio": "<p>Professor Alex \"Sandy\" Pentland directs the <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and <a href=\"https://www.media.mit.edu/groups/human-dynamics/overview/\">Human Dynamics</a> labs and previously helped create and direct the <a href=\"https://www.media.mit.edu/\">MIT Media Lab</a> and the <a href=\"https://www.medialabasia.in/\">Media Lab Asia</a> in India. He is one of the most-cited scientists in the world, and Forbes recently declared him one of the \"7 most powerful data scientists in the world\" along with Google founders and the Chief Technical Officer of the United States. He has received numerous awards and prizes such as the McKinsey Award from Harvard Business Review, the 40th Anniversary of the Internet from DARPA, and the Brandeis Award for work in privacy.</p><p>He is a founding member of advisory boards for Google, AT&amp;T, Nissan, and the UN Secretary General, a serial entrepreneur who has co-founded more than a dozen companies including social enterprises such as the <a href=\"http://datatransparencylab.org/\">Data Transparency Lab</a>, the Harvard-ODI-MIT <a href=\"http://datapopalliance.org/\">DataPop Alliance</a> and the <a href=\"https://idcubed.org/\">Institute for Data Driven Design</a>. He is a member of the U.S. National Academy of Engineering and leader within the World Economic Forum.</p>",
+    "organizer": true
+  },
+  {
+    "img": "images/john.png",
+    "href": "https://www.linkedin.com/in/johnwerner1/",
+    "name": "John Werner",
+    "youtube": "n3UmXP7HZDs",
+    "titles": "Founder and CEO of <a href=\"http://arinaction.org/\">AR in Action</a><br/>Vice President, Augmented Reality Technology Innovator<br/>Mobilizer, Human Super Connector, &amp <a href=\"http://www.johnwernerphotography.com/\">avid photographer</a>",
+    "bio": "<p>John Werner has created a career out of bringing ideas, networks and people together to generate powerful results. Currently, John serves as an executive-in-residence at <a href=\"https://www.cogolabs.com/\">CogoLabs</a>, a startup accelerator in Cambridge, MA.</p><p>Before joining CogoLabs, John’s deep curiosity and penchant for problem-solving led him to a diverse set of roles spanning many fields and interests. Previously, John was a VP at a <a href=\"https://www.ycombinator.com/\">Y Combinator</a> augmented reality startup based in Silicon Valley. John’s also served as the Head of Innovation and New Ventures at the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture Group</a>, and the Managing Director of <a href=\"https://www.media.mit.edu/groups/emerging-worlds/overview/\">Emerging Worlds SIG</a>, where he led the launch of collaborative innovation centers in Mumbai, Nashik, and Hyderabad.</p><p>John also channels his passion and curiosity into cultivating platforms for thought and exchange. John is the Founder & CEO of  <a href=\"http://arinaction.org/\">ARIA</a>, a community focused on the potential of augmented reality and the Blockchain+AI+Human, which takes place at MIT and the World Economic Forum with MIT Professor Sandy Pentland. John also founded Ideas in Action Inc., a non-profit that creates and produces <a href=\"https://tedxbeaconstreet.com/\">TEDxBeaconStreet</a>, whose talks have accumulated 250+ million YouTube views. John was also a co-Founder of <a href=\"https://www.citizenschools.org/\">Citizen Schools</a>, an advisor for <a href=\"https://www.photobutler.com/\">PhotoButler</a> and <a href=\"https://www.vestigoventures.com/\">Vestigo Ventures</a>, a Loeb Fellow at the Harvard University’s Graduate School of Design and a graduate of Hamilton College.</p><p>In his free time, John is a passionate <a href=\"https://www.johnwernerphotography.com/\">photographer</a> and an accomplished triathlete. John and his family live in Brookline, MA.</p>",
+    "organizer": true
+  },
+  {
+    "img": "https://photos.smugmug.com/People/Stuart-Haber/i-tNBqH9S/0/c0db6d0e/X4/DSC_3453-X4.jpg",
+    "href": "https://www.linkedin.com/in/stuart-haber/",
+    "name": "Stuart Haber",
+    "block": "infra",
+    "order": 3,
+    "youtube": "_pw2ZcVmGQ8",
+    "titles": "Co-inventor of Blockchain<br>Chief Scientist at <a href=\"https://auditchain.com/\">Auditchain</a>",
+    "bio": "<p>Working on blockchain techniques since 1990. Co-founder with Scott Stornetta of Surety, spun off from Bellcore to commercialize our digital time-stamping algorithm -- the first to use publicly accessible linked chains of hash values to ensure the integrity of digital information, what's now known as the blockchain. Expert in cryptography and computer security.</p><p>Half the references in <a href=\"https://bitcoin.org/bitcoin.pdf\">Satoshi Nakamoto's White Paper</a> are Stuart's papers.</p>"
+  },
+  {
+    "img": "images/Anders_Brownworth.jpg",
+    "href": "https://www.linkedin.com/in/andersbrownworth/",
+    "name": "Anders Brownworth",
+    "block": "fin",
+    "order": 1,
+    "youtube": "bq8zHPJ7JLE",
+    "titles": "Chief Evangelist at <a href=\"http://www.circle.com\">Circle Internet Financial</a>",
+    "bio": "<p>Anders Brownworth is Chief Evangelist at <a href=\"http://www.circle.com\">Circle</a> where he champions the CENTRE platform. He taught the first blockchain class at MIT and previously helped create and launch Republic Wireless, a WiFi / cellular hybrid smartphone service. Mr. Brownworth holds a number of patents in the telecom space and played a key role in Bandwidth.com's evolution from startup to public company.</p><p>Circle is a peer-to-peer payments technology company founded by Jeremy Allaire and Sean Neville in October 2013. Circle is backed by $136 million in venture capital from investors including Goldman Sachs, IDG Capital Partners, Breyer Capital, Accel Partners, General Catalyst Partners, Baidu, CICC Alpha, EverBright, WanXiang and CreditEase. Circle’s mobile payment platform, Circle Pay, allows users to hold, send, and receive traditional fiat currencies without fees. Circle operates one of the largest OTC crypto asset trading desks in the world.</p>"
+  },
+  {
+    "img": "images/jodi_schiller.jpg",
+    "href": "https://www.linkedin.com/in/jodischiller/",
+    "name": "Jodi Schiller",
+    "block": "fin",
+    "order": 3,
+    "titles": "CSO at <a href=\"https://etheralabs.io/\">Etheralabs</a><br>Freelance Consultant to Blockchain Fintech Firms",
+    "bio": "<p>Experienced entrepreneur, creative and analyst, Jodi is the Chief Strategy Officer for <a href=\"https://etheralabs.io/\">Etheralabs</a>, a blockchain company dedicated to helping guide businesses towards successful ICO's.</p><p>Prior to working at Etheralabs, Jodi consulted for companies and funds looking to build products, craft ICO whitepapers and analyses, and select high-profit frontier technology (cryptocurrency, AI, AR/VR, big data) ventures.</p><p>She is a Futurist and frequent speaker. She delivers high-impact talks detailing the landscape of “now” and painting a picture of future opportunities and potential roadblocks with exploding innovations around the world. Specialties include deep understandings of the cultural, ethical and psychological impacts of developing technology and creative approaches to solving the big problems. She is on the IEEE board for developing standards for AR and VR and has been a passionate advocate for diversity in tech. She also has a webcast and podcast , soultalks.co, about rational spirituality that explores ways to help ourselves stay true to our larger purpose.</p>"
+  },
+  {
+    "img": "https://pbs.twimg.com/media/DUitKtIXkAAnkuq.jpg",
+    "href": "https://www.linkedin.com/in/r-jesse-mcwaters-8319347/",
+    "name": "Jesse McWaters",
+    "block": "eco",
+    "order": 2,
+    "youtube": "dXfoktJ4IzE",
+    "titles": "Financial Innovation Lead, <a href=\"https://www.weforum.org/\">World Economic Forum</a>",
+    "bio": "<p>R. Jesse McWaters leads the <a href=\"https://www.weforum.org/\">World Economic Forum</a>’s work on innovation in financial services—an initiative that seeks to understand how new technologies and innovative new entrants are transforming the competitive dynamics of the industry. His team’s efforts are currently focused on understanding the transformative implications of digital identity and distributed ledger (blockchain) technologies on the future of financial infrastructure through examination of a wide variety of practical use-cases.</p><p>Jesse is a frequent speaker on financial innovation and the co-author of the World Economic Forum publication “The Future of Financial Services - How disruptive innovations are reshaping the way financial services are structured, provisioned and consumed”. This in-depth exploration of financial innovation, published in July 2015, is based on over 150 expert interviews and a worldwide series of workshops with senior financial executives and cutting-edge FinTech founders.</p>"
+  },
+  {
+    "img": "https://dam-prod.media.mit.edu/thumb/2017/03/23/headshot.jpg.800x800.jpg",
+    "href": "https://www.media.mit.edu/people/narula/overview/",
+    "name": "Neha Narula",
+    "block": "tech",
+    "order": 3,
+    "youtube": "QszF-Ve7a2o",
+    "titles": "Director <a href=\"http://dci.mit.edu/\">DCI @ MIT Media Lab</a>",
+    "bio": "<p>Neha Narula is the Director of the <a href=\"http://dci.mit.edu/\">Digital Currency Initiative</a>, a part of the MIT Media Lab focusing on cryptocurrencies and blockchain technology. While completing a PhD in computer science at MIT, she built fast, scalable distributed systems and databases. She is a member of the World Economic Forum's Global Futures Council on Blockchain and has given a TED talk on the Future of Money.</p><p>In a previous life, Neha helped relaunch the news aggregator Digg and was a senior software engineer at Google. There, she designed Blobstore, a system for storing and serving petabytes of immutable data, and worked on Native Client, a way to run native code securely through a browser.</p>"
+  },
+  {
+    "img": "https://pbs.twimg.com/profile_images/206927950/lee_from_tufts_mag.jpg",
+    "href": "https://www.linkedin.com/in/leebrenner/",
+    "name": "Lee Brenner",
+    "block": "soc",
+    "order": 3,
+    "youtube": "6HazDRfOAQA",
+    "titles": "Chief Engagement Officer, <a href=\"https://www.gbbcouncil.org/\">GBB Council</a>",
+    "bio": "<p>Lee has spent most of his career at the intersession of journalism, public affairs &amp; technology. As a digital media, communications, and marketing strategist and entrepreneur with a specialty in how technology, social news, and online platforms are changing traditional communications, journalism &amp; politics, he has worked on &amp; led marketing, partnerships &amp; storytelling teams within the civic technology space, has worked on advancing monetization concepts for digital news platforms and focused outreach toward traditionally hard-to-reach demographics. After years of working in tech, including Microsoft, producing at CNN, leading the innovative news, political &amp; non-profit division at MySpace during the 2007-2008 Presidential election season, co-founding a boutique, digital communications &amp; marketing firm, running a social news &amp; events start-up, as well as co-hosting a \"politics/public affairs meets social media\" SiriusXM show, a unique skill set has been acquired, including the ability to translate \"tech-speak\" to layman terms and vice-versa. With a desire to use technology for social good, whether in government, civil society, or non-profits, Lee has tried to maintain that integrity during his career. Lee has been a Term Member of Council on Foreign Relations for 5 years; he sits on the Board of Advisors of Why Tuesday?, a voting rights organization; and he has recently joined the new Technology Board of Advisors to Atlas Corps, an organization that brings technology &amp; social innovators from around the world to train in the United States.</p>"
+  },
+  {
+    "img": "https://www.innov8social.com/wp-content/uploads/2015/12/square-headshots-4-2.png",
+    "href": "http://www.valmoventures.com/team/valerie-mosley/",
+    "name": "Valerie Mosley",
+    "block": "soc",
+    "order": 4,
+    "youtube": "ank819qCJ2c",
+    "titles": "Seasoned Investor, Global Wealth Strategist, <a href=\"https://auditchain.com/\">Auditchain</a> Advisor",
+    "bio": "<p>Valerie Mosley, CEO, <a href=\"http://www.valmoventures.com\">Valmo Ventures</a></p><p>Former Senior Vice President, Partner and Investment Strategist, <a href=\"https://www.wellington.com/en/\">Wellington Management Company</a></p><p>Valerie Mosley created Valmo Ventures to advise and invest in companies that add value both to investors and society. She currently serves on the board of <a href=\"https://www.eatonvance.com/\">Eaton Vance</a>'s family of mutual funds, Dynex (DX, a NYSE mortgage REIT), and <a href=\"https://www.progressinvestment.com/\">Progress Investment Management Company</a> (a privately held Fund of Funds). Valerie also advises <a href=\"https://auditchain.com/\">Auditchain</a> (the first decentralized, continuous audit and reporting protocol ecosystem), <a href=\"http://steamrole.org/\">STEAM Role</a> (a career networking platform), and <a href=\"http://www.uawtrust.org/\">The UAW Retiree Medical Benefits Trust.</a></p>"
+  },
+  {
+    "img": "images/michael_hamilton.jpg",
+    "href": "https://www.linkedin.com/in/michael-hamilton-b387159/",
+    "name": "Michael Hamilton",
+    "block": "eco",
+    "order": 3,
+    "youtube": "Edao_EfZtMU",
+    "titles": "Partner at <a href\"https://www.dlapiper.com/en/us/\">DLA Piper LLP</a>",
+    "bio": "<p>Business lawyer and advisor focusing on complex business transactions. Thought leader in real estate finance and equity investments. Seeker of solutions, not issues. Passionate about building systems and using technology to innovate the delivery of legal services to clients.</p>"
+  },
+  {
+    "img": "https://cdn-images-1.medium.com/max/658/1*Ziqqu6VcZeDUckOpcBmkAw.jpeg",
+    "href": "https://www.linkedin.com/in/james-sowers-925a1b17/",
+    "name": "James Sowers",
+    "block": "eco",
+    "order": 1,
+    "youtube": "2Lshehj0AqU",
+    "titles": "Ico expert advisor @ <a href=\"https://www.linkedin.com/company/blockchain-advisory-council/\">Blockchain Advisory Council</a><br/>Mentor @ <a href=\"http://alchemistaccelerator.com/\">Alchemist Accelerator</a><br/>Founder @ <a href=\"https://www.linkedin.com/company/cryto-specialist-llc/\">Crypto Specialist LLC</a><br/>Blockchain Futurist",
+    "bio": "<p>James is an experienced angel Investor, speaker and blockchain strategy advisor. He is also a contributor to well known Blockchain publications and has been featured in other well known financial publications.</p>"
+  },
+  {
+    "img": "images/guy_zyskin.jpeg",
+    "href": "http://web.media.mit.edu/~guyzys/",
+    "name": "Guy Zyskind",
+    "block": "infra",
+    "order": 1,
+    "youtube": "tJipWiJzY4k",
+    "titles": "Founder and CEO at <a href=\"https://enigma.co/\">Enigma</a>",
+    "bio": "<p>A curious researcher, hands on developer, engineering and product manager, tackling world-changing challenges.</p><p>Currently, building a new way of doing data analysis on encrypted data using blockchain and secure computation. Recent graduate from MIT, where I had taught the first engineering class about blockchain technology.</p><p>Specialities and interests: Bitcoin, Blockchain, Security &amp; Privacy, Data science, Machine learning, Big Data, Mobile, Start-ups, Product design and Management.</p>"
+  },
+  {
+    "img": "images/Lawrence_Lundy-Bryan.jpg",
+    "href": "https://www.linkedin.com/in/lawrencelundy/",
+    "name": "Lawrence Lundy-Bryan",
+    "block": "infra",
+    "order": 2,
+    "youtube": "Q37mHnTRff0",
+    "titles": "Head of Research @ <a href=\"https://outlierventures.io/\">Outlier Ventures</a>. Pioneering the Convergence Ecosystem.",
+    "bio": "<p>Exploring the convergence of artificial intelligence, blockchains and the internet of things.</p><p>I head up research and partnerships at <a href=\"https://outlierventures.io/\">Outlier Ventures</a>; pioneering our Convergence Ecosystem investment strategy. I'm also a FinTech Fellow at the Singapore University of Social Sciences (SUSS) and an Advisor at Alice.si, a social funding platform.</p><p>I was previously a strategy consultant at <a href=\"https://ww2.frost.com/\">Frost &amp; Sullivan</a> helping clients like Intel, Huawei, Amadeus and Shell understand how emerging technologies would affect their businesses. I have provided comment and analysis for the BBC, Bloomberg, The Economist, and The Wall Street Journal.</p>"
+  },
+  {
+    "img": "images/faces.BrianBehlendorf20837.jpg",
+    "href": "https://www.linkedin.com/in/brianbehlendorf/",
+    "name": "Brian Behlendorf",
+    "block": "tech",
+    "order": 1,
+    "youtube": "v29Nw7qvQ0s",
+    "titles": "Executive Director of the <a href=\"https://www.hyperledger.org/\">Hyperledger Project</a>",
+    "bio": "<p>I've dedicated my career to connecting and empowering the Free Software and Open Source community to solve hard technology problems and have a positive societal impact. I've done this wearing many different hats - as a startup company founder, as an advisor to the U.S. government, as a board member at various non-profits and consortia, as a YGL and employee of the World Economic Forum, and as an investor.</p><p><a href=\"https://en.wikipedia.org/wiki/Brian_Behlendorf\">https://en.wikipedia.org/wiki/Brian_Behlendorf</a></p>"
+  },
+  {
+    "img": "images/yaniv_altshuler.jpg",
+    "href": "https://www.linkedin.com/in/yaniv-altshuler-73a31a/",
+    "name": "Yaniv Altshuler",
+    "block": "infra",
+    "order": 4,
+    "youtube": "5VZ10WADmik",
+    "titles": "Co-Founder and CEO at <a href=\"https://www.endor.com/\">Endor</a>",
+    "bio": "<p>I am the Co-Founder and CEO of <a href=\"https://www.endor.com/\">Endor</a>, and a researcher at MIT.</p><p>My main (but not only) comfort zone is the mathematical aspects of networks and communities, and the way local interactions are translated to macro-scale behaviors.</p><ul><li>Published a book on Security and Privacy in Social Networks (2012), and a second one about Swarms and Network Intelligence (in Press)</li><li>Developed stochastic optimization technologies for supercomputers at IBM</li><li>Did my BA and PhD (Computer Science) at the Israel Institute of Technology, followed by an exciting 3 years post-doc at MIT Media Lab</li><li>Published over 60 scientific papers and 15 patents. My research was covered by Harvard Business Review, Financial Times, Communications of the ACM, The Globe, IEEE Spectrum and others</li><li>Together with Prof. Alex “Sandy” Pentland at MIT developed the new science of Social Physics</li><li>In my free time I like to swim, run and wrestle</li></ul>"
+  },
+  {
+    "img": "images/Jeffrey_Saviano.jpg",
+    "href": "www.linkedin.com/in/jeffrey-saviano-1398775/",
+    "name": "Jeffrey Saviano",
+    "block": "how",
+    "order": 2,
+    "youtube": "B8IrLgoPOxE",
+    "titles": "EY Global Tax Innovation Leader",
+    "bio": "<p>Based in Cambridge, Massachusetts, Jeff is a principal of <a href=\"https://webforms.ey.com/\">EY</a> and a member of EY’s global innovation leadership team. Jeff leads teams in the discovery, design, and commercialization of new tax services. In collaboration with MIT, Jeff also leads the EY Global Advanced Technology Tax Lab, a leading team of computer scientists and solution architects solving complex tax issues through the application of advanced technologies. The EY Tax Lab is an instrument of tax industry transformation, with an emphasis on the convergence of disruptive technologies that are driving business growth, such as blockchain, advanced data analytics and AI- with a particular focus on machine learning and natural language processing.</p><p>Jeff’s teams are examining the relationship between people and computers to understand how machines can boost the effectiveness of tax professionals, resulting in a collective intelligence. Pinpointing the emerging technology developments that will have the greatest impact on the tax industry – and taking new, innovative approaches to address them – is a major focus of the Tax Lab. Furthering the EY purpose of building a better working world, the Tax Lab will develop a governance model of AI systems for tax purposes, and help government better understand the externalities of tax policy with AI systems.</p><p>In his talk, Jeff will discuss the application of AI and blockchain to the global administration of tax; how advanced technologies can address the global tax fraud dilemma and better enable fair and just taxing systems for the benefit of society.</p>"
+  },
+  {
+    "img": "images/Susan_Kish.jpg",
+    "href": "http://www.susankish.com/",
+    "name": "Susan Kish",
+    "block": "fin",
+    "order": 4,
+    "youtube": "di3RbQoUHn0",
+    "titles": "Fellow, <a href=\"http://connection.mit.edu/\">Connection Science</a> &amp; <a href=\"https://engineering.mit.edu/\">Engineering</a>, MIT",
+    "bio": "<p>Susan is a Fellow at MIT, and works with clients on strategy, technology and innovation. As a senior executive with extensive experience in launching successful products and events, she has worked across the energy, financial services, technology and media industries, and is a relentless advocate of digital literacy.</p><p>Most recently, Susan led the launch and development of the <a href=\"https://ceraweek.com/agora/\">Innovation Agora @ CERAWeek</a>, focussed on the intersession of disruptive technologies and the energy system. CERAWeek is an annual executive energy conference from IHS Markit.</p><p>Previously, Susan created and led a cross-platform team at Bloomberg focussed on innovation across media, data and analytics. Services to come out of this venture included the birth of “The Year Ahead”, a data-driven media franchise; <a href=\"https://www.bloomberg.com/company/d4gx/\">D4GX</a>, a program focused on Data for Good; and the incubation of Bloomberg’s award-winning data visualization team. Before that, Susan led market development at <a href=\"https://about.bnef.com/\">New Energy Finance</a>, which was acquired by Bloomberg. In this role, Susan initiated the Bloomberg Future of Energy Summit in 2008. Prior to Bloomberg, Susan was an entrepreneur, founding First Tuesday Zurich in 1999. The business think tank connected start-ups and investors, and convened thought leader networks. After that was acquired in 2006 by the professional online network <a href=\"https://www.xing.com\">XING</a>, she established XING’s consulting and advisory business.</p><p>Susan started her career as a banker at UBS and Chase. Susan is an independent director on several boards.</p><p>Susan graduated from Harvard College in the History of Science, Magna cum Laude.</p>"
+  },
+  {
+    "img": "images/David_Shrier.jpg",
+    "href": "https://www.linkedin.com/in/david-shrier/",
+    "name": "David Shrier",
+    "block": "how",
+    "order": 1,
+    "youtube": "JaPHwRDmg88",
+    "titles": "Oxford & MIT futurist | author | CEO <a href=\"http://distilledanalytics.com/\">distilledanalytics.com</a>",
+    "bio": "<p>David Shrier is a globally recognized authority on financial innovation, and leads the University of Oxford's online programmes; <a href=\"http://www.oxfordblockchain.org/\">Oxford Blockchain Strategy</a> and <a href=\"http://www.oxfordfintech.org/\">Oxford Fintech</a>, as well as MIT's Future Commerce (the first graduate fintech class in North America), all of which he created. His work spans the intersection of technology, business, and government through the axis of innovation ecosystem development. David is the CEO of <a href=\"http://www.distilledanalytics.com/\">Distilled Analytics</a>, transforming financial services via predictive AI analytics, Vice Chairman of <a href=\"https://www.endor.com/\">Endor.coin</a>, and Chairman of <a href=\"https://www.rifflearning.com/\">Riff Learning</a>, an AI-driven collaboration technology platform provider. He counsels the Government of Dubai on blockchain and digital identity, and <a href=\"http://www.millenniumadvisors.com/\">Millennium Advisors</a>, a middle market credit liquidity provider, on technology trends. David is on the advisory board of WorldQuant University, a program offering a totally-free, accredited, online Master's degree in financial engineering, member of the FinTech Industry Committee for FINRA, the U.S. securities industry's self-regulatory body, and on the Fintech Trade &amp;, Investment Steering Board for the UK Government's Department of International Trade. He previously advised the European Commission on commercializing innovation with a focus on digital technology. He has published multiple books on blockchain, fintech, and cybersecurity.</p><p><a href=\"http://www.VisionaryFuture.com\">www.VisionaryFuture.com</a></p>"
+  },
+  {
+    "img": "images/Jeffrey_Tarrant.jpg",
+    "href": "https://en.wikipedia.org/wiki/Jeffrey_Tarrant",
+    "name": "Jeffrey Tarrant",
+    "block": "soc",
+    "order": 2,
+    "youtube": "nynnvr559eA",
+    "titles": "Chairman and Founder at <a href=\"http://www.mov37.com/\">MOV37</a>",
+    "bio": "<p>Jeffrey Tarrant has more than three decades of experience picking emerging talent. Prior to founding <a href=\"http://www.mov37.com/\">MOV37</a> and <a href=\"https://www.protegepartners.com/www5/\">Protégé Partners</a>, Jeffrey managed institutional size alternative investments for private family fortunes and was a member of the board of the <a href=\"https://www.tiff.org/\">Investment Fund for Foundations</a>  . Jeffrey is known for investing in and seeding emerging managers, many of whom have become renowned names in the industry. During this time, Jeffrey also created <a href=\"http://www.altvest.com/\">Altvest</a> (now a division of Morning Star), the hedge fund industry’s first Internet-based commercial database and analytics systems. Jeffrey was founder and director of <a href=\"http://arkonline.org/\">ARK</a>, (Absolute Return for Kids), a U.K. based charity with a mission to transform the lives of children. He is currently a director of <a href=\"https://witness.org/\">WITNESS</a>, a global human rights organization, and he is on the advisory board of The Angiogenesis Foundation. Jeffrey’s philanthropic efforts include active support for many award-winning social issue documentary films. Jeffrey Tarrant is a graduate of Harvard Business School and University of California at Davis.</p>"
+  },
+  {
+    "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
+    "href": "https://hardjono.mit.edu/",
+    "name": "Thomas Hardjono",
+    "block": "tech",
+    "order": 4,
+    "youtube": "jXbuIYetC_E",
+    "titles": "Technical Director at <a href=\"https://www.trust.mit.edu/\"MIT Internet Trust Consortium</a> - <a href=\"http://connection.mit.edu/\">MIT Connection Science</a>",
+    "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
+  },
+  {
+    "img": "images/Paul_Brody.jpg",
+    "href": "https://www.linkedin.com/in/pbrody/",
+    "name": "Paul Brody",
+    "block": "eco",
+    "order": 4,
+    "youtube": "kXq2DVSfZfQ",
+    "titles": "Principal &amp; Global Innovation Leader, BlockChain Technology, <a href=\"https://webforms.ey.com/\">Ernst &amp; Young</a>",
+    "bio": "<p>I am responsible for driving EY’s initiatives and investments in blockchain technology across consulting, audit, and tax business lines.</p><p>I have held number of leadership positions in the areas of IoT, supply chain and operations and business strategy, working with client organizations such as HP, Samsung, LG, Huawei, Apple, Canon, Toshiba, Sony, Panasonic, Ericsson, Nokia, Alcatel, FIAT, Honeywell, and Raytheon, to name a few.</p><p>I'm a member of the open linked-in network and I enjoy hearing about new ideas and technologies that will re-shape our industry or create opportunities (and challenges) for EY.</p><p>Specialties: Consumer electronics business strategy, mobile telecommunications, product design, supply chain and operations management.</p>"
+  },
+  {
+    "img": "images/fabio_zoffi.jpg",
+    "href": "https://www.linkedin.com/in/fabio-zoffi-127b743/",
+    "name": "Fabio Zoffi",
+    "block": "soc",
+    "order": 1,
+    "youtube": "ySS8lYHc4ko",
+    "titles": "President & Executive Chairman at <a href=\"http://www.orsgroup.io/\">ORS GROUP</a>",
+    "bio": "<p>Fabio Zoffi is a serial entrepreneur and an international investor born in Venice, Italy and currently residing in Munich, Germany. He is the President and Executive Chairman at ORS GROUP, a leading A.I. software company for business optimisation solutions and a pioneer in connecting Artificial Intelligence, Blockchain  and Cryptocurrency – the “ABC“ technology building blocks for empowering 1 billion entrepreneur by 2040 (<a href=\"http://www.orsgroup.io/\">www.orsgroup.io</a>).</p>"
+  },
+  {
+    "img": "https://pbs.twimg.com/profile_images/381180533/rkanter_400x400.jpg",
+    "href": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6486",
+    "name": "Rosabeth Moss Kanter",
+    "block": "eco",
+    "order": 5,
+    "youtube": "3rIxiZD2XBE",
+    "titles": "Ernest L. Arbuckle Professor of Business Administration",
+    "bio": "<p>Rosabeth Moss Kanter holds the Ernest L. Arbuckle Professorship at Harvard Business School, specializing in strategy, innovation, and leadership for change. She is also Chair and Director of the Harvard University Advanced Leadership Initiative, a Harvard-wide innovation she co-founded in 2008, a growing international model that helps successful leaders at the top of their fields apply their skills to national and global challenges in their next life stage, to build a new leadership force for the world.  She is currently working on a book about digital disruption, organizational transformation, and the do-it-yourself entrepreneurial revolution, as well as scaling the idea of advanced leadership.</p>"
+  },
+  {
+    "img": "http://www.computercpa.com/CohenEE.jpg",
+    "href": "https://auditchain.com/team/eric-cohen",
+    "name": "Eric Cohen",
+    "block": "fin",
+    "order": 2,
+    "youtube": "LL2FNAagR_0",
+    "titles": "Co-founder of <a href=\"https://www.xbrl.org/\">XBRL</a> and Director of Assurance and XBRL Architecture, Auditchain",
+    "bio": "<p>Mr. Cohen is an accounting technology futurist, one of the original founders of XBRL and a pioneer in accounting and audit technology and related assurance methodologies. A writer, teacher and trainer, he has taught accountants, academics, regulators, software developers and business people about the Internet, <a href=\"https://www.xbrl.org/\">XBRL</a>, standardized business reporting, audit data standards and electronic distributed ledgers, security and authentication, analytics, GRC and continuous auditing. He has published hundreds of articles and columns for the business and academic press, and written or contributed to numerous books, including primary authorship of <a href=\"https://amzn.to/2jx4KNI\">Accountant’s Guide to the Internet</a>, the first book about the relevance of the Internet to the accounting profession. An experienced global collaborator and standards developer, he works with a global network of specialists and academics in standards development relevant to the accounting and audit process.</p>"
+  },
+  {
+    "img": "images/Navroop-Sahdev2.jpg",
+    "href": "https://www.linkedin.com/in/navroopsahdev",
+    "name": "Navroop Sahdev",
+    "block": "how",
+    "order": 3,
+    "youtube": "KCxM8_KrQv4",
+    "titles": "Head of Research, <a href=\"https://www.admeliorallc.com/\">Ad Meliora LLC</a>",
+    "bio": "<p>An economist by training, Navroop is building a blockchain-based trading platform for crowdfunded equity at <a href=\"https://www.admeliorallc.com/\">Ad Meliora LLC</a>. Navroop is also a Fellow at <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and a Research Associate at the <a href=\"http://blockchain.cs.ucl.ac.uk/\">Centre for Blockchain Technologies</a> (CBT) at University College London. She holds a host of leadership roles in the DLT space, both as a practitioner as well as a researcher.</p><p>A United Nations Youth Delegate for 2017, Navroop has co-authored <a href=\"https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x\">Hyperledger’s Blockchain for Business online course</a>. She speaks regularly at FinTech and blockchain conferences and currently serves on the advisory board of a host of blockchain companies, across industries. Previously, she has worked at Harvard University and <a href=\"https://www.unenvironment.org/\">United Nations Environment Programme</a>. Her research interests are focused on Distributed Ledger Technologies, Game Theory, Networks Theory and Complex Systems Science. She has three masters in IP Management, Economics of Innovation and Applied Economics.</p>"
+  },
+  {
+    "img": "images/StalnakerStanPhoto.jpg",
+    "href": "https://uk.linkedin.com/in/hubculture",
+    "name": "Stan Stalnaker",
+    "block": "how",
+    "order": 4,
+    "youtube": "vG8riIWsQmQ",
+    "titles": "Founding Director and Chief Strategy Officer for <a href=\"https://hubculture.com/\">Hub Culture</a>; + Ultra, Ven, Zeke.ai, Bermuda Standard and OAI.io",
+    "bio": "<p><a href=\"https://hubculture.com/\">Hub Culture</a> is the collaboration network behind the Ven global digital currency, the HubID identity authentication system and Pavilions - wonderful places to meet, collaborate and connect worldwide.</p><p>Ven is an Internet reserve currency priced from a basket of currencies, commodities and carbon futures and is actively traded in the financial markets. These properties make Ven a stable, grounded choice for financial trading, investment, and institutional holding.</p><p>HubID delivers Hub Culture members an open-source cryptographic vault and a unique badge issuing digital identity, which is both owned and controlled by the user. Unlike other networks, Hub Culture provides digital 'self-sovereignty' in big data, putting this power in the hands of the individual.</p><p>Pavilions deliver the future of work in flexible formats, designed to engage with the world's leading influentials, entrepreneurs and innovators at the times and places where they gather. Members work with Hub Culture Knowledge Brokers across a diverse set of fields to foster innovation and deals.</p><p>Specialties: social networks, globalization, digital currency, identity verification, concierge services, luxury, trends, consulting, knowledge brokerage</p>"
+  },
+  {
+    "img": "https://medrec.media.mit.edu/images/Nchinda.jpg",
+    "href": "https://twitter.com/firescar96",
+    "name": "Nchinda Nchinda",
+    "block": "tech",
+    "order": 2,
+    "youtube": "UVHm9MvWcAg",
+    "titles": "Officer <a href=\"https://twitter.com/MITBitcoinClub\">MIT Bitcoin Club</a>, Researcher in Viral Communications",
+    "bio": "<p>I am going to the Massachussetts Institute of Technology to learn Computer and Political Science. I would like to work in Artificial Intelligece and/or CyberSecurity and/or Web/Mobile Development.</p><p>Specialties: Programming(Java, Javascript, Python), Web Development, playing the tuba and other brass instruments, learning at an accelerated rate, listening.</p>"
+  }
+]

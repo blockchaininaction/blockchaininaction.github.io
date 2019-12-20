@@ -141,13 +141,42 @@ html {
 body {
   background: black;
   color: #fff;
-  padding: 30px 0;
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
 i {
   font-style: italic;
+}
+
+.nav {
+  border-bottom: 4px solid #ffe100;
+  margin: 10px 0;
+}
+.nav a {
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 0px 25px;
+  line-height: 39px;
+  font-size: 17px;
+  height: 42px;
+  display: inline-block;
+  font-weight: 700;
+  border: 2px solid #aaaaaa;
+  border-bottom: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-right: 20px;
+}
+.nav a:hover {
+  background: rgb(71, 71, 71);
+  text-decoration: none;
+}
+.nav a.active {
+  color: black;
+  background: #ffe100;
+  border: 2px solid #ffe100;
+  border-bottom: none;
 }
 
 .max-width,
@@ -381,10 +410,6 @@ h3#now span.small {
 h3#schedule {
   background-color: #6a29ff;
   text-align: right;
-  top: 60px;
-}
-h3#mit-speakers {
-  top: 60px;
 }
 h4 {
   font-size: 30px;

@@ -40,20 +40,24 @@
                 <h2>Creating a tech-enabled future connected by a common human thread.</h2>
             </header>
         </div>
+        <br/><br/>
+        <div class="nav" v-cloak>
+          <div class="max-width">
+            <a v-for="route in $options.routes" v-on:click="router.navigate(route.url)" v-bind:class="{ active: route.url === $data.route }" >{{route.name}}</a>
+          </div>
+        </div>
 
         <br/><br/>
 
-        <div class="max-width">
+        <!-- <div class="max-width">
             <p class="info"><strong>Mens et Manus</strong>: MIT's motto, Latin for "mind and hand", is a reminder that two fundamental ingredients are necessary to bring an idea to fruition:</p>
             <ol class="info"><li>Innovation starts with a spark of inspiration.</li><li>To realize revolutionary ideas, one must diry their hands & execute in the real world.</li></ol>
             <p class="info">
               Imagination in Action is an organization founded on this principle. Co-founders <a href="#alex_'sandy'_pentland">Alex (Sandy) Pentland</a> and <a href="#john_werner">John Werner</a> sought to create an event that would combine the best of cutting-edge ideation and real-world implementation. We are a community of <strong>applied utopians</strong> who are creating a new human-centered reality outside of traditional hierarchy and authority, using tools such as blockchain and AI. We are coming together to explore these new possible worlds. Our two annual events at MIT and the Davos World Economic Forum bring together the world’s leading scientists, entrepreneurs, and technologists to discuss the emerging trends that could shape our world – and how we can turn possibility into reality!
             </p>
-        </div>
-          <h3 style="background: #29b8ff;"><div class="max-width">What's Next ↴</div></h3>
-          <br/><br/>
+        </div> -->
 
-          <div class="double-feature">
+          <!-- <div class="double-feature">
             <div>
               <h4>Jan 21<sup>st</sup> 2020 <em>@</em> <a href="https://www.google.com/maps/place/Panorama+Hotel+Davos/@47.43072,4.6576046,6z/data=!4m8!1m2!2m1!1sThe+TCS+Dome,+Panorama+Hotel,++Promenade+80,+7270+Davos+Platz,+Switzerland!3m4!1s0x4784a6a9ab3d7c05:0xb50ac586ac03604f!8m2!3d46.7991947!4d9.8249569" target="_blank">Davos</a></h4>
               <div class="iframe-container">
@@ -70,10 +74,9 @@
               <h5>Extended Intelligence: AI Empowering People</h5>
               <p class="info">AI, IoT, and blockchain are making it cheaper, easier, and safer to do business with anyone anywhere anytime, and networks of humans are using these technologies for superhuman collaboration, a sort of extended human intelligence that can easily leap across organizational, cultural, and national boundaries. Already we see distributed platforms hosting large investment funds, political campaigns and billion-dollar businesses driven by millions of individual investor/citizens/entrepreneurs but no big backers and little central management. How can citizens, businesses and governments adapt to a world filled with powerful but decentralized networks? </p>
             </div>
-          </div>
+          </div> -->
 
-
-
+        <div v-if="route === '/'">
           <h3 class="sticky" id="now" v-cloak>
               <div class="max-width">
                   Speakers @ Davos 2020↴
@@ -101,8 +104,6 @@
               </div>
           </div>
 
-
-
           <h3 class="sticky" id="now" v-cloak>
             <div class="max-width">
                 Demos @ Davos 2020↴
@@ -129,19 +130,11 @@
                   </p>
               </div>
           </div>
+        </div>
 
-
-
-          <br><br>
-
-          <h3 class="sticky" v-cloak>
-              <div class="max-width">
-                Last Event ↴
-              </div>
-          </h3>
-
+        <div v-if="route === '/mit2019'">
           <div class="max-width">
-            <div style="display: flex; margin-top: 50px;">
+            <div style="display: flex;">
                 <div style="flex-basis: 35%; flex-shrink: 0; padding-right: 20px;">
                     <img style="width: 100%; height: auto; margin-bottom: 10px;" src="images/MIT_Media_Lab.png"/><br>
                     <img style="width: 100%; height: auto;" src="images/MIT2018.jpg"/>
@@ -167,122 +160,116 @@
                         <dd>MIT Professor <a href="#alex_'sandy'_pentland">Alex Pentland</a>, <a href="#john_werner">John Werner</a>.</dd>
                     </dl>
                 </div>
-            </div>
+              </div>
 
-            <div style="display: flex">
-                <div style="flex-grow: 1; text-align: center; padding: 30px 0;">
-                    <img src="images/logos/forbes.png" width="154" height="39" style="margin-right: 250px;"/><img src="images/logos/mit_connection_science.png" width="183" height="77"/>
-                    <p style="text-align: center;"> </p>
-                </div>
-                <!-- <div style="flex-basis: 53.5%; flex-shrink: 0;">
-                    <div style="width:100%; text-align:left;"><iframe src="https://eventbrite.com/tickets-external?eid=56589841740&ref=etckt" frameborder="0" height="308" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-                    <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="https://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
-                </div> -->
-            </div>
-            <br><br>
-            <p class="info">On Sat, Apr 27th, we’ll be bringing the best of Davos to Cambridge, MA and gathering leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</p>
-            <p class="info">Our goal is to establish best practices within new technology-enabled environments that are bound together by a common human fabric. This will be achieved by piloting “beta” versions of technology systems in partnership with a wide variety of stakeholders.</p>
-            <ul class="info">
-                <li>Event @ World Economic Forum
-                    <ul>
-                        <li>Key takeaways <a target="_blank" href="https://connection.mit.edu/news/funny-thing-happened-way-world-economic-forum">HERE</a></li>
-                        <li>Talks <a target="_blank" href="https://www.google.com/url?q=https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation%3D1&sa=D&ust=1550883261933000&usg=AFQjCNE6LAka1zPOmgpStAq3GSc8fSOkGA">HERE</a></li>
-                        <li>Demos <a href="#demos">HERE</a></li>
-                    </ul>
-                </li>
-                <li>White Paper <a target="_blank" href="https://www.google.com/url?q=http://imaginationinaction.xyz/blockchain%2BAI%2BHumans.pdf&sa=D&ust=1550883261940000&usg=AFQjCNHv__sVJv1GAwAPxkDuQ-HyL8b0_w">HERE</a></li>
-            </ul>
+              <div style="display: flex">
+                  <div style="flex-grow: 1; text-align: center; padding: 30px 0;">
+                      <img src="images/logos/forbes.png" width="154" height="39" style="margin-right: 250px;"/><img src="images/logos/mit_connection_science.png" width="183" height="77"/>
+                      <p style="text-align: center;"> </p>
+                  </div>
+                  <!-- <div style="flex-basis: 53.5%; flex-shrink: 0;">
+                      <div style="width:100%; text-align:left;"><iframe src="https://eventbrite.com/tickets-external?eid=56589841740&ref=etckt" frameborder="0" height="308" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                      <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="https://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
+                  </div> -->
+              </div>
+              <br><br>
+              <p class="info">On Sat, Apr 27th, we’ll be bringing the best of Davos to Cambridge, MA and gathering leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</p>
+              <p class="info">Our goal is to establish best practices within new technology-enabled environments that are bound together by a common human fabric. This will be achieved by piloting “beta” versions of technology systems in partnership with a wide variety of stakeholders.</p>
+              <ul class="info">
+                  <li>Event @ World Economic Forum
+                      <ul>
+                          <li>Key takeaways <a target="_blank" href="https://connection.mit.edu/news/funny-thing-happened-way-world-economic-forum">HERE</a></li>
+                          <li>Talks <a target="_blank" href="https://www.google.com/url?q=https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation%3D1&sa=D&ust=1550883261933000&usg=AFQjCNE6LAka1zPOmgpStAq3GSc8fSOkGA">HERE</a></li>
+                          <li>Demos <a href="#demos">HERE</a></li>
+                      </ul>
+                  </li>
+                  <li>White Paper <a target="_blank" href="https://www.google.com/url?q=http://imaginationinaction.xyz/blockchain%2BAI%2BHumans.pdf&sa=D&ust=1550883261940000&usg=AFQjCNHv__sVJv1GAwAPxkDuQ-HyL8b0_w">HERE</a></li>
+              </ul>
 
-            <div class="person-thumbs person-thumbs-mit" v-cloak>
-                <a v-for="person in speakersMIT2019"
-                    v-bind:title="person.name"
-                    v-bind:href="'#' + person.id"
-                    v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-            </div>
+              <div class="person-thumbs person-thumbs-mit" v-cloak>
+                  <a v-for="person in speakersMIT2019"
+                      v-bind:title="person.name"
+                      v-bind:href="'#' + person.id"
+                      v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+              </div>
 
-            <!-- <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">REGISTER</a></p> -->
+              <!-- <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">REGISTER</a></p> -->
 
+          </div>
+
+          <h3 class="sticky" id="scheduleDavos" v-cloak>
+              <div class="max-width">
+                  ↵ Schedule @ MIT 2019
+              </div>
+          </h3>
+
+          <div class="max-width davos-schedule" v-cloak>
+              <div class="blocks">
+                  <div v-if="!block.transition" v-for="block in scheduleMIT2019"
+                      v-bind:class="'block ' + block.class"
+                      v-bind:style="{ 'border-color': block.color }">
+                      <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                          <div class="time">{{block.time}}</div>
+                          <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
+                      </div>
+                      <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
+                          <div class="time">{{block.time}}</div>
+                          <h4>{{block.title}}</h4>
+                      </div>
+                      <div v-if="block.people" class="people">
+                          <div v-for="person in block.people" class="davos-speaker">
+                              <div class="time">{{person.time}}</div>
+                              <a
+                              class="sm-thumb"
+                              v-bind:title="person.name"
+                              v-bind:href="'#' + person.id"
+                              v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                              <div>
+                                  <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                  <p v-if="person.title" v-html="person.title"></pv-if></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div v-if="block.people2" class="people people2">
+                              <div v-for="person in block.people2" class="davos-speaker">
+                                  <a
+                                  class="sm-thumb"
+                                  v-bind:title="person.name"
+                                  v-bind:href="'#' + person.id"
+                                  v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                  <div>
+                                      <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                      <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <h3 class="sticky" id="now" v-cloak>
+              <div class="max-width">
+                  Speakers @ MIT 2019 ↴
+              </div>
+          </h3>
+
+          <div class="max-width">
+              <div class="person" v-for="person in speakersMIT2019" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                  </p>
+              </div>
+          </div>
         </div>
 
-        <h3 class="sticky" id="scheduleDavos" v-cloak>
-            <div class="max-width">
-                ↵ Schedule @ MIT 2019
-            </div>
-        </h3>
-
-
-        <div class="max-width davos-schedule" v-cloak>
-            <div class="blocks">
-                <div v-if="!block.transition" v-for="block in scheduleMIT2019"
-                    v-bind:class="'block ' + block.class"
-                    v-bind:style="{ 'border-color': block.color }">
-                    <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
-                        <div class="time">{{block.time}}</div>
-                        <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
-                    </div>
-                    <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
-                        <div class="time">{{block.time}}</div>
-                        <h4>{{block.title}}</h4>
-                    </div>
-                    <div v-if="block.people" class="people">
-                        <div v-for="person in block.people" class="davos-speaker">
-                            <div class="time">{{person.time}}</div>
-                            <a
-                            class="sm-thumb"
-                            v-bind:title="person.name"
-                            v-bind:href="'#' + person.id"
-                            v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-                            <div>
-                                <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
-                                <p v-if="person.title" v-html="person.title"></pv-if></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div v-if="block.people2" class="people people2">
-                            <div v-for="person in block.people2" class="davos-speaker">
-                                <a
-                                class="sm-thumb"
-                                v-bind:title="person.name"
-                                v-bind:href="'#' + person.id"
-                                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-                                <div>
-                                    <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
-                                    <p v-if="person.title" v-html="person.title"></pv-if></p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-
-        <h3 class="sticky" id="now" v-cloak>
-            <div class="max-width">
-                Speakers @ MIT 2019 ↴
-            </div>
-        </h3>
-
-        <div class="max-width">
-            <div class="person" v-for="person in speakersMIT2019" v-bind:id="person.id">
-                <a v-bind:href="person.href" target="_blank">
-                    <img v-bind:src="person.img" />
-                </a>
-                <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
-                <h5 v-html="person.titles"></h5>
-                <div v-html="person.bio"></div>
-                <p v-if="person.youtube">
-                    <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
-                </p>
-            </div>
-        </div>
-
-        <h3 class="sticky" id="now" v-cloak>
-            <div class="max-width">
-              Davos 2019 ↴
-            </div>
-        </h3>
-
-        <div class="main">
+        <div v-if="route === '/davos2019'">
             <div class="max-width">
                 <a href="https://www.youtube.com/watch?v=F49Vzu_B-fo&index=2&list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF" target="_blank"><img src="images/davos_dome_playlist.jpg" style="width: 100%; height: auto;"></a>
                 <br><br><p class="cta"><a href="https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation=1" target="_blank">WATCH Davos Talks</a></p>
@@ -485,14 +472,7 @@
 
         </div>
 
-
-        <h3 class="sticky" id="now" v-cloak>
-            <div class="max-width">
-                Davos 2019 ⮥<span>MIT 2018 ↴</span>
-            </div>
-        </h3>
-
-        <div class="main">
+        <div v-if="route === '/mit2018'">
           <div class="max-width">
             <header>
                 <p><a href="mailto:jwerner@blockchaininaction.org">May 11<sup>th</sup> 2018</a> <span id="at">@</span>
@@ -524,15 +504,14 @@
             </div>
 
             <iframe class="hero-video" width="963" height="542" src="https://www.youtube.com/embed/5clSrrfD_As" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
             <hr/>
-
             <iframe class="hero-video" width="963" height="542" src="https://www.youtube.com/embed/n3UmXP7HZDs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-            <hr/>
+          </div>
 
-            <h3 class="sticky" id="schedule">↵ Schedule</h3>
+            <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule</div></h3>
 
+          <div class="max-width">
             <div class="schedule">
                 <div class="blocks">
                     <div v-for="block in scheduleMIT2018"
@@ -551,9 +530,11 @@
                     </div>
                 </div>
             </div>
+          </div>
 
-            <h3 class="sticky" id="mit-speakers">Speakers ↴</h3>
+            <h3 class="sticky" id="mit-speakers"><div class="max-width">Speakers ↴</div></h3>
 
+          <div class="max-width">
             <div class="person" v-for="person in speakersMIT2018" v-bind:id="person.id">
                 <a v-bind:href="person.href" target="_blank">
                     <img v-bind:src="person.img" />
@@ -587,6 +568,8 @@
         </footer>
 
     </div>
+
+    <script src="//unpkg.com/navigo@6"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
 
@@ -703,12 +686,38 @@
             speakersMIT2019: [],
 
             peopleDavos2020: [],
-            demosDavos2020: []
+            demosDavos2020: [],
+
+            route: "/"
+
         };
+
+        var root = null;
+        var useHash = false; // Defaults to: false
+        var hash = '#'; // Defaults to: '#'
+        var router = new Navigo(root, useHash, hash);
+
+        var routes = [
+          {url: "/", name:"Davos 2020"},
+          {url: "/mit2019", name:"MIT 2019"},
+          {url: "/davos2019", name:"Davos 2019"},
+          {url: "/mit2018", name:"MIT 2018"}
+        ];
+
+        for (const route of routes) {
+          router
+          .on(route.url, function () {
+            data.route = route.url;
+            console.log(route.url)
+          })
+          .resolve();
+        }
+
 
         var app = new Vue({
             el: '#app',
             data: data,
+            routes: routes
         });
 
         loadJSON("data/mit2018.json", function(result) {;

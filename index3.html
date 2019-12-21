@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116199459-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-116199459-1');
+    </script>
+	<meta charset="utf-8">
+	<title>Imagination in Action</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:title" content="Imagination in Action"/>
+    <meta property="og:image" content="//photos.smugmug.com/photos/i-RDdS9TG/0/X5/i-RDdS9TG-X5.jpg"/>
+    <meta property="og:description" content="Something unusual happened at Davos this year: New ideas coming not from the usual collection of rich and famous, their symbiotic journalists, or even from political activists. This was the voice of creation rooted outside of the wealthy world and put into action by hands-on builders empowered by tools such as blockchain and AI, centered on human needs, and creating a new realities outside of traditional hierarchy and authority. It was imagination in action, curated by MIT’s Alex Pentland and John Werner."/>
+    <meta property="og:url" content="//imaginationinaction.xyz/" />
+</head>
+
+<body id="home">
+    <div id="app" class="main">
+        <div class="max-width">
+            <div id="logo"></div>
+            <header>
+                <h1>Imagination in Action</h1>
+                <hr>
+                <h2>Creating a tech-enabled future connected by a common human thread.</h2>
+            </header>
+        </div>
+        <br/><br/>
+        <div class="nav" v-cloak>
+          <div class="max-width">
+            <a v-for="route in $options.routes" v-on:click="router.navigate(route.url)" v-bind:class="{ active: route.url === $data.route }" >{{route.name}}</a>
+          </div>
+        </div>
+
+        <!-- <div class="max-width">
+            <p class="info"><strong>Mens et Manus</strong>: MIT's motto, Latin for "mind and hand", is a reminder that two fundamental ingredients are necessary to bring an idea to fruition:</p>
+            <ol class="info"><li>Innovation starts with a spark of inspiration.</li><li>To realize revolutionary ideas, one must diry their hands & execute in the real world.</li></ol>
+            <p class="info">
+              Imagination in Action is an organization founded on this principle. Co-founders <a href="#alex_'sandy'_pentland">Alex (Sandy) Pentland</a> and <a href="#john_werner">John Werner</a> sought to create an event that would combine the best of cutting-edge ideation and real-world implementation. We are a community of <strong>applied utopians</strong> who are creating a new human-centered reality outside of traditional hierarchy and authority, using tools such as blockchain and AI. We are coming together to explore these new possible worlds. Our two annual events at MIT and the Davos World Economic Forum bring together the world’s leading scientists, entrepreneurs, and technologists to discuss the emerging trends that could shape our world – and how we can turn possibility into reality!
+            </p>
+        </div> -->
+
+          <!-- <div class="double-feature">
+            <div>
+              <h4>Jan 21<sup>st</sup> 2020 <em>@</em> <a href="https://www.google.com/maps/place/Panorama+Hotel+Davos/@47.43072,4.6576046,6z/data=!4m8!1m2!2m1!1sThe+TCS+Dome,+Panorama+Hotel,++Promenade+80,+7270+Davos+Platz,+Switzerland!3m4!1s0x4784a6a9ab3d7c05:0xb50ac586ac03604f!8m2!3d46.7991947!4d9.8249569" target="_blank">Davos</a></h4>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/F49Vzu_B-fo?list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h5>Extended Intelligence: The AI Organization</h5>
+              <p class="info">AI, IoT and blockchain are extending human intelligence by making it cheaper, easier, and safer to do business with anyone anywhere anytime. The result is that the rationale for traditional business organizations - to have low internal transaction costs - is disappearing and we are beginning to see large investment funds, political campaigns and billion-dollar businesses driven by millions of individual investors/citizens/entrepreneurs without big financial backers and with little central management. Governance of these new data-driven platforms will require crafting a new sort of social contract that depends less on familar governance structures and traditional law and more directly on the collective intelligence of individuals.</p>
+            </div>
+            <div>
+              <h4>May 2<sup>nd</sup> 2020 <em>@</em> <a href="https://www.google.com/maps/place/MIT+Media+Lab/@42.360357,-71.0894527,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370a8b0f310c5:0x1a26a6e6bd5f8030!8m2!3d42.360357!4d-71.087264" target="_blank">MIT Media Lab</a></h4>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/c8PxIFQxkVg?list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h5>Extended Intelligence: AI Empowering People</h5>
+              <p class="info">AI, IoT, and blockchain are making it cheaper, easier, and safer to do business with anyone anywhere anytime, and networks of humans are using these technologies for superhuman collaboration, a sort of extended human intelligence that can easily leap across organizational, cultural, and national boundaries. Already we see distributed platforms hosting large investment funds, political campaigns and billion-dollar businesses driven by millions of individual investor/citizens/entrepreneurs but no big backers and little central management. How can citizens, businesses and governments adapt to a world filled with powerful but decentralized networks? </p>
+            </div>
+          </div> -->
+
+        <div v-if="route === '/'">
+          <h3>
+              <div class="max-width">Extended Intelligence: The AI Organization</div>
+          </h3>
+
+          <div class="davos-dome">
+
+          <div class="max-width">
+            <h2 style="font-size: 33px; margin-bottom: 19px;">@ World Economic Forum 2020</h2>
+          </div>
+
+          <div class="flex-row max-width">
+            <div class="iframe-container">
+              <h4 style="margin: 20px 0; line-height: 1.2em;">January 21, 2020<br>Davos, Switzerland</h4>
+              <iframe src="https://www.youtube.com/embed/F49Vzu_B-fo?list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <dl class="davos2020meta" style="margin-top: 15px;">
+                <dt>Hosts:</dt>
+                <dd>MIT Professor Alex Pentland, John Werner</dd>
+                <dt>Sponsors:</dt>
+                <dd>TCS, Forbes, MIT Connection Science,<br>Global Citizen</dd>
+                <dt>Venue:</dt>
+                <dd>The TCS Dome, Panorama Hotel, <br>Promenade 80,<br>7270 Davos Platz, Switzerland</dd>
+                <dt>Format:</dt>
+                <dd>During the annual meeting of WEF we will bring together the world's foremost leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</dd>
+            </dl>
+          </div>
+
+          <div class="flex-row max-width">
+            <dl>
+                <dt>08:00 - 08:30</dt>
+                <dd>Registration</dd>
+                <dt>08:30 - 08:45</dt>
+                <dd>Welcome</dd>
+                <dt>08:45 - 09:15</dt>
+                <dd>Chairperson Panel</dd>
+                <dt>09:15  - 12:00</dt>
+                <dd>Extended Intelligence:<br>&nbsp;&nbsp;The AI Organization<br>BLOCK 1: Finance<br>BLOCK 2: Enabled Trade<br>BLOCK 3: Education<br>BLOCK 4: Government</dd>
+                <dt>12:00 - 13:00</dt>
+                <dd>Firestarter Talks (2-5 min)</dd>
+                <dt>13:00 - 14:00</dt>
+                <dd>Michelin Star Lunch & Networking</dd>
+                <dt>14:00 - 15:00</dt>
+                <dd>Forbes + Global Citizen Big Announcement</dd>
+            </dl>
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px;">
+                <img src="/images/logos/mit_connection_science.png" width="183" height="77"/>
+                <img src="/images/logos/tcs.png" width="104" height="91"/>
+                <img src="/images/logos/forbes.png" width="154" height="39"/>
+              </div>
+              <img src="/images/davos_birdseye.jpg"/>
+            </div>
+          </div>
+
+        </div>
+
+          <h3 class="sticky" id="now" v-cloak>
+              <div class="max-width">
+                  Speakers @ Davos 2020↴
+              </div>
+          </h3>
+          <br><br>
+          <div class="person-thumbs-flex max-width" v-cloak>
+            <a v-for="person in peopleDavos2020"
+                v-bind:title="person.name"
+                v-bind:href="'#' + person.id"
+                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+          </div>
+
+          <div class="max-width">
+              <div class="person" v-for="person in peopleDavos2020" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                  </p>
+              </div>
+          </div>
+
+          <h3 class="sticky" id="now" v-cloak>
+            <div class="max-width">
+                Demos @ Davos 2020↴
+            </div>
+          </h3>
+          <br><br>
+          <div class="person-thumbs-flex max-width" v-cloak>
+            <a v-for="person in demosDavos2020"
+                v-bind:title="person.name"
+                v-bind:href="'#' + person.id"
+                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+          </div>
+
+          <div class="max-width">
+              <div class="person" v-for="person in demosDavos2020" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                  </p>
+              </div>
+          </div>
+        </div>
+
+        <div v-if="route === '/mit2019'">
+          <br><br>
+          <div class="max-width">
+
+            <div class="iframe-container">
+              <iframe style="width: 100%; height: 541px; margin-bottom: 20px;" src="https://www.youtube.com/embed/c8PxIFQxkVg?list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div style="display: flex;">
+                <div style="flex-basis: 35%; flex-shrink: 0; padding-right: 20px;">
+                    <img style="width: 100%; height: auto; margin-bottom: 10px;" src="/images/MIT_Media_Lab.png"/><br>
+                    <img style="width: 100%; height: auto;" src="/images/MIT2018.jpg"/>
+                </div>
+
+                <div style="flex-grow: 1">
+                    <dl>
+                        <dt>Date:</dt>
+                        <dd>Saturday, April 27 2019</dd>
+                        <dt>Sponsors:</dt>
+                        <dd>Forbes, and MIT Trust Data Consortium.</dd>
+                        <dt>Venue:</dt>
+                        <dd><a href="https://www.media.mit.edu/" target="_blank">MIT Media Lab</a></dd>
+                        <dt>Schedule:</dt>
+                        <dd><span class="time">07:30 – 08:15</span>Registration<br>
+                            <span class="time">08:15 – 08:25</span>Welcome + Davos Update (Sandy + John)<br>
+                            <span class="time">08:25 – 11:35</span>Lightning Talks (5 min)<br>
+                            <span class="time">11:35 – 12:30</span>Lunch + Demos<br>
+                            <span class="time">12:30 – 16:30</span>Con't Lightning Talks (5 min)<br>
+                            <span class="time">16:30 – 16:45</span>Closing<br>
+                            On-going video interviews (all-day)</dd>
+                        <dt>Hosts:</dt>
+                        <dd>MIT Professor <a href="#alex_'sandy'_pentland">Alex Pentland</a>, <a href="#john_werner">John Werner</a>.</dd>
+                    </dl>
+                </div>
+              </div>
+
+              <div style="display: flex">
+                  <div style="flex-grow: 1; text-align: center; padding: 30px 0;">
+                      <img src="/images/logos/forbes.png" width="154" height="39" style="margin-right: 250px;"/><img src="/images/logos/mit_connection_science.png" width="183" height="77"/>
+                      <p style="text-align: center;"> </p>
+                  </div>
+                  <!-- <div style="flex-basis: 53.5%; flex-shrink: 0;">
+                      <div style="width:100%; text-align:left;"><iframe src="https://eventbrite.com/tickets-external?eid=56589841740&ref=etckt" frameborder="0" height="308" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                      <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="https://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
+                  </div> -->
+              </div>
+              <br><br>
+              <p class="info">On Sat, Apr 27th, we’ll be bringing the best of Davos to Cambridge, MA and gathering leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</p>
+              <p class="info">Our goal is to establish best practices within new technology-enabled environments that are bound together by a common human fabric. This will be achieved by piloting “beta” versions of technology systems in partnership with a wide variety of stakeholders.</p>
+              <ul class="info">
+                  <li>Event @ World Economic Forum
+                      <ul>
+                          <li>Key takeaways <a target="_blank" href="https://connection.mit.edu/news/funny-thing-happened-way-world-economic-forum">HERE</a></li>
+                          <li>Talks <a target="_blank" href="https://www.google.com/url?q=https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation%3D1&sa=D&ust=1550883261933000&usg=AFQjCNE6LAka1zPOmgpStAq3GSc8fSOkGA">HERE</a></li>
+                          <li>Demos <a href="#demos">HERE</a></li>
+                      </ul>
+                  </li>
+                  <li>White Paper <a target="_blank" href="https://www.google.com/url?q=http://imaginationinaction.xyz/blockchain%2BAI%2BHumans.pdf&sa=D&ust=1550883261940000&usg=AFQjCNHv__sVJv1GAwAPxkDuQ-HyL8b0_w">HERE</a></li>
+              </ul>
+
+              <div class="person-thumbs person-thumbs-mit" v-cloak>
+                  <a v-for="person in speakersMIT2019"
+                      v-bind:title="person.name"
+                      v-bind:href="'#' + person.id"
+                      v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+              </div>
+
+              <!-- <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">REGISTER</a></p> -->
+
+          </div>
+
+          <h3 class="sticky" id="scheduleDavos" v-cloak>
+              <div class="max-width">
+                  ↵ Schedule @ MIT 2019
+              </div>
+          </h3>
+
+          <div class="max-width davos-schedule" v-cloak>
+              <div class="blocks">
+                  <div v-if="!block.transition" v-for="block in scheduleMIT2019"
+                      v-bind:class="'block ' + block.class"
+                      v-bind:style="{ 'border-color': block.color }">
+                      <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                          <div class="time">{{block.time}}</div>
+                          <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
+                      </div>
+                      <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
+                          <div class="time">{{block.time}}</div>
+                          <h4>{{block.title}}</h4>
+                      </div>
+                      <div v-if="block.people" class="people">
+                          <div v-for="person in block.people" class="davos-speaker">
+                              <div class="time">{{person.time}}</div>
+                              <a
+                              class="sm-thumb"
+                              v-bind:title="person.name"
+                              v-bind:href="'#' + person.id"
+                              v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                              <div>
+                                  <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                  <p v-if="person.title" v-html="person.title"></pv-if></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div v-if="block.people2" class="people people2">
+                              <div v-for="person in block.people2" class="davos-speaker">
+                                  <a
+                                  class="sm-thumb"
+                                  v-bind:title="person.name"
+                                  v-bind:href="'#' + person.id"
+                                  v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                  <div>
+                                      <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                      <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <h3 class="sticky" id="now" v-cloak>
+              <div class="max-width">
+                  Speakers @ MIT 2019 ↴
+              </div>
+          </h3>
+
+          <div class="max-width">
+              <div class="person" v-for="person in speakersMIT2019" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                  </p>
+              </div>
+          </div>
+        </div>
+
+        <div v-if="route === '/davos2019'">
+          <br><br>
+            <div class="max-width">
+                <a href="https://www.youtube.com/watch?v=F49Vzu_B-fo&index=2&list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF" target="_blank"><img src="/images/davos_dome_playlist.jpg" style="width: 100%; height: auto;"></a>
+                <br><br><p class="cta"><a href="https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation=1" target="_blank">WATCH Davos Talks</a></p>
+            </div><br>
+            <div class="davos-dome">
+                <div class="max-width">
+                    <p class="info header">
+                        <strong>Davos, Switzerland<br>January 22, 2019<br>Blockchain + AI + Human Summit</strong>
+                        <span class="davos-logos">
+                            <img src="/images/logos/tcs.png" width="104" height="91"/>
+                            <img src="/images/logos/forbes.png" width="154" height="39"/>
+                            <img src="/images/logos/mit_connection_science.png" width="183" height="77"/>
+                        </span>
+                    </p>
+
+                    <dl>
+                        <dt>Hosts:</dt>
+                        <dd>CEO of <a href="https://www.tcs.com/">Tata Consultancy Services</a> <a href="#rajesh_gopinathan">Rajesh Gopinathan</a>, MIT Professor <a href="#alex_'sandy'_pentland">Alex Pentland</a>, <a href="#john_werner">John Werner</a>.</dd>
+                        <dt>Sponsors:</dt>
+                        <dd>TCS, Forbes, and MIT Trust Data Consortium.</dd>
+                        <dt>Venue:</dt>
+                        <dd>The TCS Dome, Panorama Hotel, <br>Promenade 80,<br>7270 Davos Platz, Switzerland</dd>
+                        <dt>Format:</dt>
+                        <dd>During the annual meeting of the World Economic Forum (WEF) we will bring together the world's foremost leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world.</dd>
+                        <dt>Date:</dt>
+                        <dd>Tuesday, 22nd January 2019</dd>
+
+                        <dt>Schedule:</dt>
+                        <dd><span class="time">09:00 - 09:15</span>Registration<br>
+                            <span class="time">09:25 - 02:40</span>Leading Innovator Solutions & ‘Lightning’ Speed Talks (2-5 min)<br>
+                            <span class="time">12:00 - 13:00</span>CEO and visionary “Idea Lab” Panel: The Transformative Power of Digital Technologies<br>
+                            <span class="time">11:30 - 14:00</span>Buffet Lunch & Networking<br>
+                            Ongoing one-on-one video interviews to side</dd>
+                    </dl>
+                    <p class="info" style="padding-bottom: 10px;">
+                        This Blockchain+AI+Human summit will include:
+                    </p>
+                    <ul class="info">
+                        <li>Michelin-star lunch</li>
+                        <li>Networking with both the WEF audience and a select group of blockchain and AI innovators</li>
+                        <li>Program with lightning “TED type” talks (2-5 min) and dozens of demos highlighting real-world data-for-good Blockchain + AI projects, all curated by the MIT Trust Data Consortium (trust.mit.edu) around the theme Blockchain and AI for Good</li>
+                    </ul>
+                    <p class="info">
+                        <img style="float: left; margin-right: 40px;" src="/images/davosDome2.jpg" width="50%" >
+                        This will be a spectacular venue, a great group of people, and a very special opportunity to share your ideas and learn from others. <br><br>The next <b>Blockchain in Action</b> summit will be held at MIT on April 27th, 2019. Talk to John Werner (<a href="mailto:jwerner@mit.edu">jwerner@mit.edu</a>) or Prof. Alex Pentand (<a href="mailto:pentland@mit.edu">pentland@mit.edu</a>) for details and official invitation.
+                    </p>
+
+                    <div class="person-thumbs person-thumbs-davos" v-cloak>
+                        <a v-for="person in everyoneDavos2019"
+                            v-bind:title="person.name"
+                            v-bind:href="'#' + person.id"
+                            v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            <h3 class="sticky" id="scheduleDavos" v-cloak>
+                <div class="max-width">
+                    ↵ Schedule @ Davos 2019
+                </div>
+            </h3>
+
+            <div class="max-width davos-schedule" v-cloak>
+                <div class="blocks">
+                    <div v-if="!block.transition" v-for="block in scheduleDavos2019"
+                        v-bind:class="'block ' + block.class"
+                        v-bind:style="{ 'border-color': block.color }">
+                        <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                            <div class="time">{{block.time}}</div>
+                            <h4><span class="block-num">Block {{block.blockNum}}</span>{{block.title}}</h4>
+                        </div>
+                        <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
+                            <div class="time">{{block.time}}</div>
+                            <h4>{{block.title}}</h4>
+                        </div>
+                        <div v-if="block.people" class="people">
+                            <div v-for="person in block.people" class="davos-speaker">
+                                <div class="time">{{person.time}}</div>
+                                <a
+                                class="sm-thumb"
+                                v-bind:title="person.name"
+                                v-bind:href="'#' + person.id"
+                                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                <div>
+                                    <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                    <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div v-if="block.people2" class="people people2">
+                                <div v-for="person in block.people2" class="davos-speaker">
+                                    <a
+                                    class="sm-thumb"
+                                    v-bind:title="person.name"
+                                    v-bind:href="'#' + person.id"
+                                    v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                                    <div>
+                                        <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                                        <p v-if="person.title" v-html="person.title"></pv-if></p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="sticky" id="facilitators" v-cloak>
+                <div class="max-width">
+                    ⭍&nbsp; Facilitators
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <div class="person" v-for="person in facilitatorsDavos2019" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                </div>
+            </div>
+
+            <h3 class="sticky" id="now" v-cloak>
+                <div class="max-width">
+                    Speakers @ Davos ↴
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <div class="person" v-for="person in peopleAndOrganizersDavos2019" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                    <p v-if="person.youtube">
+                        <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=19'">Watch Talk ▶</a>
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="sticky" id="demos" v-cloak>
+                <div class="max-width">
+                    Demos @ Davos ↴
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <img src="/images/Demo_Logos_wide.png" style="width: 100%; height: auto; margin-top: 30px;"/>
+            </div>
+
+            <div class="max-width">
+                <div class="person" v-for="person in demosDavos2019" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                    <p><a v-if="person.deck" class="video-link" v-bind:href="person.deck" target="_blank">Presentation</a></p>
+                </div>
+            </div>
+
+            <h3 class="sticky" id="chef" v-cloak>
+                <div class="max-width">
+                    Chef @ The Event ↴
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <div class="person" v-for="person in chefDavos2019" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                </div>
+            </div>
+
+            <h3 class="sticky" id="producers" v-cloak>
+                <div class="max-width">
+                    ⭍&nbsp; Event Coordinators
+                </div>
+            </h3>
+
+            <div class="max-width">
+                <div class="person" v-for="person in producersDavos2019" v-bind:id="person.id">
+                    <a v-bind:href="person.href" target="_blank">
+                        <img v-bind:src="person.img" />
+                    </a>
+                    <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                    <h5 v-html="person.titles"></h5>
+                    <div v-html="person.bio"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div v-if="route === '/mit2018'">
+          <br><br>
+          <div class="max-width">
+            <header>
+                <p><a href="mailto:jwerner@blockchaininaction.org">May 11<sup>th</sup> 2018</a> <span id="at">@</span>
+                <a href="https://www.media.mit.edu/"><svg id="medialablogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150" height="82" viewBox="0 0 150 82" enable-background="new 0 0 150 82" xml:space="preserve">
+                    <path d="M69.283,80.663V46.521H35.141V12.381H1V1h45.522v34.141h34.141v45.521H69.283z M1.005,35.141v45.521h45.516V69.282H12.38 V35.141H1.005z M92.05,45.888h3.418v-6.02c0-0.642,0.152-1.167,0.452-1.573c0.3-0.405,0.717-0.61,1.249-0.61 c0.516,0,0.898,0.159,1.142,0.473c0.244,0.314,0.366,0.766,0.366,1.353v6.377h3.42v-6.02c0-0.642,0.147-1.167,0.441-1.573 c0.294-0.405,0.714-0.61,1.259-0.61c0.519,0,0.897,0.159,1.142,0.473c0.247,0.314,0.368,0.766,0.368,1.353v6.377h3.421v-6.984 c0-0.604-0.078-1.155-0.231-1.658c-0.156-0.504-0.381-0.933-0.683-1.291c-0.3-0.355-0.682-0.631-1.142-0.828 c-0.462-0.196-0.993-0.293-1.594-0.293c-0.7,0-1.332,0.151-1.898,0.452c-0.568,0.301-1.061,0.778-1.478,1.436h-0.044 c-0.279-0.586-0.674-1.048-1.183-1.384c-0.512-0.336-1.124-0.504-1.836-0.504c-0.784,0-1.439,0.168-1.962,0.504 c-0.524,0.336-0.954,0.783-1.291,1.343h-0.062v-1.532H92.05V45.888z M110.236,33.66h3.419V30.89h-3.419V33.66z M110.236,45.888 h3.419V35.147h-3.419V45.888z M120.755,45.962c0.313-0.034,0.548-0.074,0.702-0.117V43.35c-0.068,0-0.174,0.005-0.314,0.011 c-0.137,0.007-0.285,0.011-0.44,0.011c-0.365,0-0.656-0.072-0.871-0.211c-0.218-0.14-0.325-0.422-0.325-0.839v-5.034h1.95v-2.14 h-1.95v-3.398h-3.335v3.398h-1.425v2.14h1.425v5.769c0,0.572,0.084,1.052,0.253,1.436c0.167,0.385,0.403,0.688,0.713,0.912 c0.307,0.223,0.667,0.382,1.08,0.472c0.413,0.092,0.871,0.135,1.374,0.135C120.052,46.012,120.442,45.997,120.755,45.962z  M92.05,62.17h3.418v-6.02c0-0.644,0.152-1.168,0.452-1.574c0.3-0.407,0.717-0.61,1.249-0.61c0.516,0,0.898,0.159,1.142,0.473 c0.244,0.314,0.366,0.766,0.366,1.352v6.379h3.42v-6.02c0-0.644,0.147-1.168,0.441-1.574c0.294-0.407,0.714-0.61,1.259-0.61 c0.519,0,0.897,0.159,1.142,0.473c0.247,0.314,0.368,0.766,0.368,1.352v6.379h3.421v-6.987c0-0.601-0.078-1.154-0.231-1.657 c-0.156-0.503-0.381-0.931-0.683-1.289c-0.3-0.355-0.682-0.634-1.142-0.828c-0.462-0.194-0.993-0.296-1.594-0.296 c-0.7,0-1.332,0.154-1.898,0.454c-0.568,0.299-1.061,0.78-1.478,1.437h-0.044c-0.279-0.588-0.674-1.048-1.183-1.386 c-0.512-0.334-1.124-0.505-1.836-0.505c-0.784,0-1.439,0.171-1.962,0.505c-0.524,0.338-0.954,0.784-1.291,1.345h-0.062V51.43H92.05 V62.17z M117.265,62.231c0.551-0.167,1.052-0.409,1.5-0.733c0.475-0.321,0.867-0.702,1.173-1.143c0.308-0.441,0.52-0.905,0.63-1.392 h-3.336c-0.153,0.334-0.377,0.597-0.671,0.786c-0.295,0.185-0.663,0.281-1.111,0.281c-0.715,0-1.265-0.208-1.659-0.626 c-0.391-0.42-0.643-0.995-0.754-1.723h7.719c0.015-1.089-0.135-2.084-0.451-2.988c-0.314-0.902-0.795-1.646-1.437-2.233 c-0.462-0.421-0.997-0.749-1.604-0.986c-0.609-0.239-1.297-0.36-2.067-0.36c-0.824,0-1.571,0.146-2.243,0.434 c-0.672,0.285-1.254,0.685-1.742,1.195c-0.488,0.51-0.866,1.113-1.133,1.803c-0.266,0.694-0.398,1.438-0.398,2.234 c0,0.811,0.132,1.568,0.398,2.265c0.267,0.703,0.645,1.304,1.133,1.818c0.488,0.507,1.091,0.907,1.803,1.192 c0.713,0.287,1.511,0.43,2.392,0.43C116.092,62.482,116.712,62.401,117.265,62.231z M113.058,55.645 c0.112-0.644,0.342-1.154,0.693-1.532c0.351-0.377,0.853-0.566,1.51-0.566c0.559,0,1.02,0.189,1.384,0.566 c0.365,0.377,0.58,0.888,0.649,1.532H113.058z M128.19,62.033c0.538-0.314,0.967-0.75,1.289-1.313h0.043v1.45h3.272v-15h-3.418 v5.474h-0.063c-0.323-0.447-0.716-0.814-1.176-1.099c-0.463-0.287-1.073-0.434-1.824-0.434c-0.702,0-1.338,0.142-1.911,0.422 c-0.575,0.28-1.065,0.669-1.477,1.166c-0.415,0.496-0.736,1.094-0.967,1.792c-0.229,0.701-0.346,1.47-0.346,2.306 c0,0.897,0.117,1.698,0.346,2.405c0.231,0.705,0.558,1.302,0.978,1.792c0.418,0.491,0.913,0.864,1.488,1.123 c0.574,0.258,1.2,0.388,1.889,0.388C127.025,62.504,127.653,62.346,128.19,62.033z M125.63,58.982 c-0.368-0.546-0.553-1.288-0.553-2.226c0-0.906,0.187-1.646,0.566-2.212c0.377-0.567,0.908-0.849,1.593-0.849 c0.378,0,0.703,0.077,0.977,0.23c0.273,0.155,0.503,0.37,0.692,0.64c0.188,0.272,0.327,0.602,0.42,0.985 c0.089,0.386,0.135,0.801,0.135,1.247c0,0.882-0.202,1.604-0.597,2.165c-0.4,0.557-0.954,0.838-1.668,0.838 C126.523,59.799,126.002,59.526,125.63,58.982z M134.171,49.939h3.419v-2.768h-3.419V49.939z M134.171,62.17h3.419V51.43h-3.419 V62.17z M144.375,62.045c0.497-0.268,0.906-0.624,1.227-1.073h0.044c0.042,0.282,0.09,0.523,0.146,0.726 c0.054,0.201,0.128,0.359,0.208,0.472h3.315v-0.147c-0.154-0.098-0.255-0.271-0.303-0.516c-0.05-0.244-0.074-0.583-0.074-1.017 V55.08c0-0.671-0.112-1.265-0.337-1.784c-0.224-0.516-0.563-0.944-1.027-1.279c-0.389-0.295-0.87-0.513-1.427-0.662 c-0.561-0.146-1.245-0.22-2.054-0.22c-0.811,0-1.518,0.098-2.118,0.295c-0.604,0.194-1.103,0.459-1.501,0.796 c-0.398,0.334-0.701,0.73-0.912,1.176c-0.21,0.447-0.321,0.922-0.336,1.426h3.146c0.056-0.45,0.224-0.79,0.504-1.029 c0.279-0.237,0.692-0.357,1.237-0.357c0.518,0,0.891,0.105,1.123,0.316c0.229,0.208,0.345,0.49,0.345,0.84 c0,0.362-0.201,0.622-0.608,0.774c-0.405,0.154-1.114,0.296-2.118,0.419c-0.56,0.072-1.089,0.176-1.586,0.317 c-0.497,0.139-0.934,0.338-1.311,0.598c-0.378,0.258-0.673,0.587-0.892,0.984c-0.216,0.4-0.323,0.893-0.323,1.479 c0,0.533,0.09,1.001,0.271,1.406c0.183,0.405,0.434,0.75,0.757,1.026c0.321,0.28,0.708,0.491,1.164,0.629 c0.452,0.142,0.945,0.212,1.479,0.212C143.223,62.442,143.879,62.309,144.375,62.045z M142.457,59.986 c-0.283-0.181-0.419-0.49-0.419-0.924c0-0.403,0.145-0.707,0.442-0.911c0.292-0.202,0.765-0.379,1.424-0.537 c0.349-0.081,0.675-0.169,0.974-0.259c0.301-0.092,0.561-0.193,0.788-0.305v1.279c0,0.588-0.201,1.057-0.6,1.406 c-0.396,0.348-0.92,0.525-1.56,0.525C143.084,60.261,142.736,60.17,142.457,59.986z M92.05,80.664h3.46V65.665h-3.46V80.664z  M102.318,80.537c0.497-0.264,0.904-0.62,1.226-1.069h0.043c0.041,0.28,0.091,0.52,0.146,0.725c0.056,0.202,0.127,0.36,0.211,0.471 h3.314v-0.146c-0.154-0.099-0.257-0.269-0.304-0.514c-0.049-0.245-0.074-0.583-0.074-1.018v-5.41c0-0.671-0.112-1.266-0.337-1.784 c-0.222-0.518-0.566-0.945-1.027-1.282c-0.391-0.292-0.867-0.511-1.425-0.659c-0.56-0.145-1.244-0.221-2.056-0.221 c-0.811,0-1.518,0.097-2.119,0.295c-0.601,0.193-1.102,0.459-1.5,0.796c-0.398,0.334-0.702,0.726-0.914,1.174 c-0.209,0.45-0.32,0.924-0.333,1.427h3.147c0.056-0.449,0.222-0.792,0.502-1.028c0.28-0.238,0.692-0.357,1.238-0.357 c0.516,0,0.891,0.105,1.121,0.314c0.231,0.21,0.349,0.488,0.349,0.839c0,0.364-0.205,0.623-0.61,0.776 c-0.405,0.154-1.112,0.293-2.119,0.42c-0.559,0.068-1.086,0.174-1.583,0.314c-0.496,0.14-0.932,0.339-1.311,0.597 c-0.377,0.258-0.676,0.587-0.892,0.987c-0.216,0.398-0.326,0.892-0.326,1.478c0,0.531,0.091,1.001,0.274,1.405 c0.183,0.405,0.432,0.75,0.755,1.028c0.322,0.28,0.709,0.49,1.163,0.631c0.456,0.138,0.949,0.209,1.479,0.209 C101.169,80.937,101.821,80.804,102.318,80.537z M100.4,78.483c-0.281-0.182-0.421-0.489-0.421-0.924 c0-0.406,0.147-0.708,0.441-0.912c0.293-0.201,0.769-0.381,1.426-0.533c0.348-0.084,0.675-0.171,0.976-0.263 c0.301-0.091,0.563-0.192,0.787-0.303v1.278c0,0.588-0.201,1.056-0.598,1.406c-0.4,0.35-0.921,0.525-1.563,0.525 C101.028,78.756,100.678,78.665,100.4,78.483z M116.866,80.612c0.567-0.258,1.049-0.634,1.447-1.123 c0.398-0.488,0.706-1.087,0.924-1.795c0.217-0.705,0.324-1.505,0.324-2.402c0-0.809-0.107-1.56-0.324-2.255 c-0.218-0.69-0.525-1.292-0.924-1.801c-0.398-0.509-0.88-0.909-1.447-1.196c-0.567-0.287-1.199-0.432-1.899-0.432 c-0.74,0-1.351,0.14-1.833,0.42c-0.485,0.281-0.893,0.649-1.23,1.113h-0.063v-5.476h-3.419v14.998h3.272V79.3h0.042 c0.336,0.558,0.782,0.982,1.343,1.27c0.559,0.287,1.196,0.43,1.909,0.43C115.674,81,116.298,80.869,116.866,80.612z M112.345,77.464 c-0.406-0.553-0.608-1.275-0.608-2.172c0-0.879,0.185-1.614,0.556-2.201c0.369-0.588,0.933-0.882,1.689-0.882 c0.7,0,1.226,0.282,1.583,0.841c0.357,0.559,0.536,1.299,0.536,2.223c0,0.936-0.179,1.675-0.536,2.214 c-0.358,0.538-0.87,0.807-1.542,0.807C113.31,78.294,112.75,78.019,112.345,77.464z"></path></svg></a>
+                </p>
+                <p style="margin-top: 10px;"><span id="in">in the</span><a href="http://www.mit.edu/~cousot/MintaMartinLecture/directions.html">Bartos Theatre</a></p>
+                <p class="partner">In Partnership With <a href="http://connection.mit.edu/"><img src="/images/MIT_Connection_Science.svg"/></a></p>
+            </header>
+
+            <p class="info"><strong>Blockchain &amp; Artificial Intelligence: <br>Tech Trends Poised To Transform Business and Culture?</strong></p>
+            <p class="info">Nascent Blockchain applications and AI research have demonstrated the transformative potential of both technologies. Their integration with the physical world will transform sectors such as logistics chains, asset management, data systems, investment, and securitization via cheap, trustworthy, and user-friendly Blockchain algorithms. These new capabilities will drive radical shifts in business and culture on a global scale, offering opportunities for better management, inclusion, transparency and accountability. </p>
+
+            <p class="info">
+                <a href="http://blockchaininaction.org/blockchain+AI+Humans.pdf">
+                    <svg class="white-paper" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 344.091 344.091"  xml:space="preserve">
+                        <path d="M301.264, 108.967c-0.036-0.531-0.137-1.044-0.31-1.545c-0.066-0.191-0.113-0.37-0.197-0.555
+                   c-0.292-0.632-0.656-1.235-1.169-1.748L196.217,1.742c-0.513-0.513-1.11-0.877-1.742-1.164c-0.191-0.089-0.382-0.137-0.579-0.203
+                   c-0.489-0.167-0.991-0.263-1.51-0.298C192.249,0.066,192.13,0,191.993,0H48.728c-3.3,0-5.967,2.673-5.967,5.967v332.158
+                   c0,3.3,2.667,5.967,5.967,5.967h246.635c3.3,0,5.967-2.667,5.967-5.967V109.337C301.336,109.206,301.27,109.092,301.264,108.967z
+                    M280.965,103.37h-82.999V20.371L280.965,103.37z M54.701,332.152V11.934h131.331v97.403c0,3.294,2.667,5.967,5.967,5.967h97.403
+                   v216.854H54.701V332.152z"/></svg></a><a href="http://blockchaininaction.org/blockchain+AI+Humans.pdf">Discussions have been synthesized</a> (under <a href="https://www.chathamhouse.org/chatham-house-rule">Chatham House rules</a>) into an MIT publication and distributed to thought leaders at Davos and elsewhere. The discussion will also lead to a collection of visionary papers authored by speakers, to be published by MIT Press in our <a href="https://mitpress.mit.edu/books/imprint/mit-connection-science-and-engineering">Connection Science Imprint series</a>.</p>
+
+            <div class="person-thumbs" v-cloak>
+                <a v-for="person in peopleMIT2018"
+                    v-bind:title="person.name"
+                    v-bind:href="'#' + person.id"
+                    v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+            </div>
+
+            <iframe class="hero-video" width="963" height="542" src="https://www.youtube.com/embed/5clSrrfD_As" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <hr/>
+            <iframe class="hero-video" width="963" height="542" src="https://www.youtube.com/embed/n3UmXP7HZDs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+          </div>
+
+            <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule</div></h3>
+
+          <div class="max-width">
+            <div class="schedule">
+                <div class="blocks">
+                    <div v-for="block in scheduleMIT2018"
+                        v-bind:class="'block ' + block.class"
+                        v-bind:style="{ 'border-color': block.color }">
+                        <!-- <h4><a v-bind:href="'#' + block.id">{{block.title}}</a></h4> -->
+                        <div class="time" v-bind:style="{ 'color': block.color }">{{block.time}}</div>
+                        <h4>{{block.title}}</h4>
+                        <p v-if="block.dsc" v-html="block.dsc"></p>
+                        <div v-if="block.people" class="sm-thumbs">
+                            <a v-for="person in block.people"
+                            v-bind:title="person.name"
+                            v-bind:href="'#' + person.id"
+                            v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+            <h3 class="sticky" id="mit-speakers"><div class="max-width">Speakers ↴</div></h3>
+
+          <div class="max-width">
+            <div class="person" v-for="person in speakersMIT2018" v-bind:id="person.id">
+                <a v-bind:href="person.href" target="_blank">
+                    <img v-bind:src="person.img" />
+                </a>
+                <h4><a v-bind:href="person.href" target="_blank">{{person.name}}</a></h4>
+                <h5 v-html="person.titles"></h5>
+                <div v-html="person.bio"></div>
+                <p v-if="person.youtube">
+                    <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=19'">Watch Talk ▶</a>
+                    <!-- <iframe width="623" height="350" v-bind:src="'https://www.youtube.com/embed/' + person.youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                </p>
+            </div>
+
+            <h3 class="sticky">Organizers &amp; Hosts ↴</h3>
+
+            <div class="person" v-for="person in organizersMIT2018" v-bind:id="person.id">
+                <img v-bind:src="person.img" />
+                <h4><a v-bind:href="person.href">{{person.name}}</a></h4>
+                <h5 v-html="person.titles"></h5>
+                <div v-html="person.bio"></div>
+                <p v-if="person.youtube">
+                    <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube">Watch Talk ▶</a>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-width">
+            <p class="info"><strong>Mens et Manus</strong>: MIT's motto, Latin for "mind and hand", is a reminder that two fundamental ingredients are necessary to bring an idea to fruition:</p>
+            <ol class="info"><li>Innovation starts with a spark of inspiration.</li><li>To realize revolutionary ideas, one must diry their hands & execute in the real world.</li></ol>
+            <p class="info">
+              Imagination in Action is an organization founded on this principle. Co-founders <a href="#alex_'sandy'_pentland">Alex (Sandy) Pentland</a> and <a href="#john_werner">John Werner</a> sought to create an event that would combine the best of cutting-edge ideation and real-world implementation. We are a community of <strong>applied utopians</strong> who are creating a new human-centered reality outside of traditional hierarchy and authority, using tools such as blockchain and AI. We are coming together to explore these new possible worlds. Our two annual events at MIT and the Davos World Economic Forum bring together the world’s leading scientists, entrepreneurs, and technologists to discuss the emerging trends that could shape our world – and how we can turn possibility into reality!
+            </p>
+        </div>
+
+        <div class="nav footer" v-cloak>
+          <div class="max-width">
+            <a v-for="route in $options.routes" v-on:click="router.navigate(route.url)" v-bind:class="{ active: route.url === $data.route }" >{{route.name}}</a>
+          </div>
+        </div>
+
+        <footer>
+            &copy;2019 Blockchain in Action  |  <a href="mailto:jwerner@blockchaininaction.org">jwerner@blockchaininaction.org</a>
+            <span id="site-by-case">site by <a href="http://caseprince.com/">case</a> | hosting by <a href="https://pages.github.com/">GitHub Pages</a></span>
+        </footer>
+
+    </div>
+
+    <script src="//unpkg.com/navigo@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+
+        // https://www.quora.com/How-do-I-load-a-true-JSON-file-using-pure-JavaScript
+        function loadJSON(filePath, success, error)
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function()
+            {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        if (success)
+                            success(JSON.parse(xhr.responseText));
+                } else {
+                    if (error)
+                        error(xhr);
+                    }
+                }
+            };
+            xhr.open("GET", filePath, true);
+            xhr.send();
+        }
+
+        var self = this;
+        self.peopleById = {};
+        var setId = function(person) {
+            person.id = person.name.split('.').join('').split(' ').join('_').toLocaleLowerCase();
+            if (person.img) {
+              self.peopleById[person.id] = person;
+            }
+            return person;
+        }
+
+        var alphabetize = function(a, b){
+            var namePartsA = a.name.split(' ');
+            var lastNameA = namePartsA[namePartsA.length - 1];
+            var namePartsB = b.name.split(' ');
+            var lastNameB = namePartsB[namePartsB.length - 1];
+            if(lastNameA < lastNameB) { return -1; }
+            if(lastNameA > lastNameB) { return 1; }
+            return 0;
+        }
+
+        var scheduleBlockMapper = function(schedule, hour, min) {
+            var blockNum = 1;
+            return schedule.map(function(block) {
+              if (block.people) {
+                  block.people = block.people.map(setId).map(function(person) {
+                      if (!peopleById[person.id]) {
+                          console.log("missing: " + person.id);
+                          return person;
+                      }
+                      person.img = peopleById[person.id].img;
+                      var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
+                      person.time = hour + ":" + minutes;
+                      min += 5;
+                      if (min >= 60) {
+                          min -= 60;
+                          hour++;
+                      }
+                      return person;
+                  });
+                  block.blockNum = blockNum;
+                  blockNum++
+              } else if (block.people2) {
+                  block.people2 = block.people2.map(setId).map(function(person) {
+                      person.img = peopleById[person.id] && peopleById[person.id].img;
+                      return person;
+                  });
+                  var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
+                  block.time = hour + ":" + minutes;
+                  min += 5;
+                  if (min >= 60) {
+                      min -= 60;
+                      hour++;
+                  }
+              } else if (block.transition) {
+                  block.time = hour + ":" + minutes;
+                  min += Number(block.transition);
+                  if (min >= 60) {
+                      min -= 60;
+                      hour++;
+                  }
+              } else {
+                  var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
+                  block.time = hour + ":" + minutes;
+                  min += block.minutes || 5;
+                  if (min >= 60) {
+                      min -= 60;
+                      hour++;
+                  }
+              }
+              return block;
+            });
+        }
+
+        var data = {
+            peopleMIT2018: [],
+            scheduleMIT2018: [],
+            speakersMIT2018: [],
+            organizersMIT2018: [],
+
+            speakersDavos2019: [],
+            facilitatorsDavos2019: [],
+            demosDavos2019: [],
+            chefDavos2019: [],
+            producersDavos2019: [],
+            scheduleDavos2019: [],
+            peopleAndDemosDavos2019: [],
+            peopleAndOrganizersDavos2019: [],
+            everyoneDavos2019: [],
+
+            scheduleMIT2019: [],
+            speakersMIT2019: [],
+
+            peopleDavos2020: [],
+            demosDavos2020: [],
+
+            route: "/"
+
+        };
+
+        var root = null;
+        var useHash = false; // Defaults to: false
+        var hash = '#'; // Defaults to: '#'
+        var router = new Navigo(root, useHash, hash);
+
+        var routes = [
+          {url: "/", name:"Davos 2020"},
+          {url: "/mit2019", name:"MIT 2019"},
+          {url: "/davos2019", name:"Davos 2019"},
+          {url: "/mit2018", name:"MIT 2018"}
+        ];
+
+        for (const route of routes) {
+          router
+          .on(route.url, function () {
+            data.route = route.url;
+            console.log(route.url)
+          })
+          .resolve();
+        }
+
+
+        var app = new Vue({
+            el: '#app',
+            data: data,
+            routes: routes
+        });
+
+        loadJSON("data/mit2018.json", function(result) {;
+            data.peopleMIT2018 = result.speakers.map(setId).sort(alphabetize);
+
+            var blockNum = 1;
+            data.scheduleMIT2018 = result.schedule.map(function(block) {
+                if (block.id) {
+                    block.people = data.peopleMIT2018.filter(function(person) {
+                        return person.block === block.id;
+                    }).sort(function(a, b) {
+                        return a.order > b.order;
+                    });
+                    block.class = 'session '+block.id;
+                    block.title = 'Block '+blockNum+'. '+block.title;
+                    blockNum++;
+                }
+                return block;
+            });
+
+            data.speakersMIT2018 = data.peopleMIT2018.filter(function (person) {
+                return !person.organizer;
+            });
+
+            data.organizersMIT2018 = data.peopleMIT2018.filter(function (person) {
+                return person.organizer;
+            });
+
+            data.tbdMIT2018 = data.peopleMIT2018.filter(function (person) {
+                return !person.block;
+            });
+        }, function(error) {console.log(error)});
+
+        loadJSON("data/davos2019.json", function(result) {
+          data.speakersDavos2019 = result.speakers && result.speakers.map(setId).sort(alphabetize);
+          console.log("speakersDavos2019 "+data.speakersDavos2019.length);
+
+          data.facilitatorsDavos2019 = result.facilitators.map(setId);
+          data.demosDavos2019 = result.demos.map(setId);
+          data.chefDavos2019 = result.chef.map(setId);
+          data.producersDavos2019 = result.producers.map(setId);
+          data.organizersDavos2019 = result.organizers.map(setId);
+
+          data.scheduleDavos2019 = scheduleBlockMapper(result.schedule, 13, 0);//result.schedule.map(scheduleBlockMapper, 13, 0);
+
+          data.peopleAndDemosDavos2019 = data.speakersDavos2019.concat(data.demosDavos2019, data.facilitatorsDavos2019, data.producersDavos2019).sort(alphabetize);
+          data.peopleAndOrganizersDavos2019 = data.organizersDavos2019.concat(data.speakersDavos2019);
+          data.everyoneDavos2019 = data.organizersDavos2019.concat(data.chefDavos2019, data.peopleAndDemosDavos2019);
+
+        }, function(error) {console.log(error)});
+
+
+        loadJSON("data/mit2019.json", function(result) {
+            data.speakersMIT2019 = result.speakers.map(setId).sort(alphabetize);
+            data.scheduleMIT2019 = scheduleBlockMapper( result.schedule, 7, 45);
+        }, function(error) {console.log(error)});
+
+        loadJSON("data/davos2020.json", function(result) {
+          data.peopleDavos2020 = result.speakers.map(setId).sort(alphabetize);
+          data.demosDavos2020 = result.demos.map(setId).sort(alphabetize);
+        }, function(error) {console.log(error)});
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+    <script>
+        var camera, scene, renderer;
+        var line, line2;
+        var width = 200;
+        var height = width;
+        init();
+        animate();
+        function init() {
+            camera = new THREE.PerspectiveCamera( 60, width /height, 1, 1000 );
+            camera.position.z = 330;
+            scene = new THREE.Scene();
+
+            var geometry = new THREE.OctahedronGeometry( 150, 0 );
+            var wireframe = new THREE.WireframeGeometry( geometry );
+            var material = new THREE.LineBasicMaterial( {
+                color: 0xffe100,
+                linewidth: 2,
+                linecap: 'round', //ignored by WebGLRenderer
+                linejoin:  'round' //ignored by WebGLRenderer
+            } );
+            line = new THREE.LineSegments( wireframe );
+            line2 = new THREE.LineSegments( wireframe );
+            line.material = material;
+            line2.material = material;
+
+            line.rotation.y = Math.PI / 4;
+            line2.rotation.y = Math.PI / 4;
+
+            line.rotation.x = Math.PI / 5.5;
+            line2.rotation.x = Math.PI / 5.5;
+
+            scene.add( line, line2 );
+            renderer = new THREE.WebGLRenderer({ alpha: true });
+            renderer.setPixelRatio( window.devicePixelRatio );
+            renderer.setSize( width, height );
+            document.getElementById('logo').appendChild( renderer.domElement );
+        }
+
+        function animate() {
+            requestAnimationFrame( animate );
+            line.rotation.x += 0.0005;
+            line.rotation.y += 0.001;
+
+            line2.rotation.x -= 0.00025;
+            line2.rotation.y -= 0.0005;
+            renderer.render( scene, camera );
+        }
+
+//         ,
+//   {
+//     "img": "images/",
+//     "href": "",
+//     "name": "",
+//     "titles": "",
+//     "bio": "<p></p>"
+//   }
+// ]
+    </script>
+</body>
+</html>

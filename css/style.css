@@ -151,7 +151,6 @@ i {
 
 .nav {
   border-bottom: 4px solid #ffe100;
-  margin: 10px 0;
 }
 .nav a {
   letter-spacing: 1px;
@@ -175,8 +174,24 @@ i {
 .nav a.active {
   color: black;
   background: #ffe100;
-  border: 2px solid #ffe100;
+  border-color: #ffe100;
   border-bottom: none;
+}
+
+.nav.footer {
+  border-top: 4px solid #ffe100;
+  border-bottom: none;
+}
+.nav.footer a {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 2px solid #aaaaaa;
+  border-top: none;
+}
+.nav.footer a.active {
+  border-color: #ffe100;
 }
 
 .max-width,
@@ -258,6 +273,9 @@ dl dt {
   padding-right: 10px;
   color: #ababab;
   padding-top: 8px;
+}
+.davos2020meta dt {
+  width: 6.2em;
 }
 dl dd {
   /* padding-left: 7em; */
@@ -431,6 +449,21 @@ h5 {
 
 hr {
   border-color: #747474;
+}
+
+.flex-row {
+  display: flex;
+}
+.flex-row > * {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.flex-row img {
+  max-width: 100%;
+}
+.flex-row iframe {
+  width: 100%;
+  height: 70%;
 }
 
 .davos-schedule {

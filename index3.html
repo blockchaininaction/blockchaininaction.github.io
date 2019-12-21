@@ -11,7 +11,7 @@
     </script>
 	<meta charset="utf-8">
 	<title>Imagination in Action</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -82,7 +82,7 @@
           <div class="davos-dome">
 
           <div class="max-width">
-            <h2 style="font-size: 33px; margin-bottom: 19px;">@ World Economic Forum 2020</h2>
+            <h2 style="font-size: 33px; margin-bottom: 19px; text-align: right;">@ World Economic Forum 2020</h2>
           </div>
 
           <div class="flex-row max-width">
@@ -194,6 +194,8 @@
               <iframe style="width: 100%; height: 541px; margin-bottom: 20px;" src="https://www.youtube.com/embed/c8PxIFQxkVg?list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
+            <p class="cta"><a href="https://www.youtube.com/playlist?list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA" target="_blank">WATCH MIT 2019 Talks</a></p>
+
             <div style="display: flex;">
                 <div style="flex-basis: 35%; flex-shrink: 0; padding-right: 20px;">
                     <img style="width: 100%; height: auto; margin-bottom: 10px;" src="/images/MIT_Media_Lab.png"/><br>
@@ -252,9 +254,7 @@
                       v-bind:href="'#' + person.id"
                       v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
               </div>
-
               <!-- <p class="cta"><a href="https://www.eventbrite.com/e/imagination-in-action-mit-tickets-56589841740" target="_blank">REGISTER</a></p> -->
-
           </div>
 
           <h3 class="sticky" id="scheduleDavos" v-cloak>
@@ -333,7 +333,7 @@
           <br><br>
             <div class="max-width">
                 <a href="https://www.youtube.com/watch?v=F49Vzu_B-fo&index=2&list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF" target="_blank"><img src="/images/davos_dome_playlist.jpg" style="width: 100%; height: auto;"></a>
-                <br><br><p class="cta"><a href="https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation=1" target="_blank">WATCH Davos Talks</a></p>
+                <br><br><p class="cta"><a href="https://www.youtube.com/channel/UCDM3spCHry_YQ9K23FJYi7w?sub_confirmation=1" target="_blank">WATCH Davos 2019 Talks</a></p>
             </div><br>
             <div class="davos-dome">
                 <div class="max-width">
@@ -571,7 +571,7 @@
 
           </div>
 
-            <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule</div></h3>
+            <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule @ MIT 2018</div></h3>
 
           <div class="max-width">
             <div class="schedule">
@@ -579,7 +579,6 @@
                     <div v-for="block in scheduleMIT2018"
                         v-bind:class="'block ' + block.class"
                         v-bind:style="{ 'border-color': block.color }">
-                        <!-- <h4><a v-bind:href="'#' + block.id">{{block.title}}</a></h4> -->
                         <div class="time" v-bind:style="{ 'color': block.color }">{{block.time}}</div>
                         <h4>{{block.title}}</h4>
                         <p v-if="block.dsc" v-html="block.dsc"></p>
@@ -594,7 +593,7 @@
             </div>
           </div>
 
-            <h3 class="sticky" id="mit-speakers"><div class="max-width">Speakers ↴</div></h3>
+            <h3 class="sticky" id="mit-speakers"><div class="max-width">Speakers @ MIT 2018 ↴</div></h3>
 
           <div class="max-width">
             <div class="person" v-for="person in speakersMIT2018" v-bind:id="person.id">
@@ -606,7 +605,6 @@
                 <div v-html="person.bio"></div>
                 <p v-if="person.youtube">
                     <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=19'">Watch Talk ▶</a>
-                    <!-- <iframe width="623" height="350" v-bind:src="'https://www.youtube.com/embed/' + person.youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                 </p>
             </div>
 
@@ -796,7 +794,7 @@
             routes: routes
         });
 
-        loadJSON("data/mit2018.json", function(result) {;
+        loadJSON("/data/mit2018.json", function(result) {;
             data.peopleMIT2018 = result.speakers.map(setId).sort(alphabetize);
 
             var blockNum = 1;
@@ -827,7 +825,7 @@
             });
         }, function(error) {console.log(error)});
 
-        loadJSON("data/davos2019.json", function(result) {
+        loadJSON("/data/davos2019.json", function(result) {
           data.speakersDavos2019 = result.speakers && result.speakers.map(setId).sort(alphabetize);
           console.log("speakersDavos2019 "+data.speakersDavos2019.length);
 
@@ -846,12 +844,12 @@
         }, function(error) {console.log(error)});
 
 
-        loadJSON("data/mit2019.json", function(result) {
+        loadJSON("/data/mit2019.json", function(result) {
             data.speakersMIT2019 = result.speakers.map(setId).sort(alphabetize);
             data.scheduleMIT2019 = scheduleBlockMapper( result.schedule, 7, 45);
         }, function(error) {console.log(error)});
 
-        loadJSON("data/davos2020.json", function(result) {
+        loadJSON("/data/davos2020.json", function(result) {
           data.peopleDavos2020 = result.speakers.map(setId).sort(alphabetize);
           data.demosDavos2020 = result.demos.map(setId).sort(alphabetize);
         }, function(error) {console.log(error)});

@@ -10,7 +10,7 @@
       "organizer": true
     },
     {
-      "img": "images/john.png",
+      "img": "/images/john.png",
       "href": "https://www.linkedin.com/in/johnwerner1/",
       "name": "John Werner",
       "youtube": "n3UmXP7HZDs",
@@ -29,7 +29,7 @@
       "bio": "<p>Working on blockchain techniques since 1990. Co-founder with Scott Stornetta of Surety, spun off from Bellcore to commercialize our digital time-stamping algorithm -- the first to use publicly accessible linked chains of hash values to ensure the integrity of digital information, what's now known as the blockchain. Expert in cryptography and computer security.</p><p>Half the references in <a href=\"https://bitcoin.org/bitcoin.pdf\">Satoshi Nakamoto's White Paper</a> are Stuart's papers.</p>"
     },
     {
-      "img": "images/Anders_Brownworth.jpg",
+      "img": "/images/Anders_Brownworth.jpg",
       "href": "https://www.linkedin.com/in/andersbrownworth/",
       "name": "Anders Brownworth",
       "block": "fin",
@@ -39,7 +39,7 @@
       "bio": "<p>Anders Brownworth is Chief Evangelist at <a href=\"http://www.circle.com\">Circle</a> where he champions the CENTRE platform. He taught the first blockchain class at MIT and previously helped create and launch Republic Wireless, a WiFi / cellular hybrid smartphone service. Mr. Brownworth holds a number of patents in the telecom space and played a key role in Bandwidth.com's evolution from startup to public company.</p><p>Circle is a peer-to-peer payments technology company founded by Jeremy Allaire and Sean Neville in October 2013. Circle is backed by $136 million in venture capital from investors including Goldman Sachs, IDG Capital Partners, Breyer Capital, Accel Partners, General Catalyst Partners, Baidu, CICC Alpha, EverBright, WanXiang and CreditEase. Circle’s mobile payment platform, Circle Pay, allows users to hold, send, and receive traditional fiat currencies without fees. Circle operates one of the largest OTC crypto asset trading desks in the world.</p>"
     },
     {
-      "img": "images/jodi_schiller.jpg",
+      "img": "/images/jodi_schiller.jpg",
       "href": "https://www.linkedin.com/in/jodischiller/",
       "name": "Jodi Schiller",
       "block": "fin",
@@ -88,7 +88,7 @@
       "bio": "<p>Valerie Mosley, CEO, <a href=\"http://www.valmoventures.com\">Valmo Ventures</a></p><p>Former Senior Vice President, Partner and Investment Strategist, <a href=\"https://www.wellington.com/en/\">Wellington Management Company</a></p><p>Valerie Mosley created Valmo Ventures to advise and invest in companies that add value both to investors and society. She currently serves on the board of <a href=\"https://www.eatonvance.com/\">Eaton Vance</a>'s family of mutual funds, Dynex (DX, a NYSE mortgage REIT), and <a href=\"https://www.progressinvestment.com/\">Progress Investment Management Company</a> (a privately held Fund of Funds). Valerie also advises <a href=\"https://auditchain.com/\">Auditchain</a> (the first decentralized, continuous audit and reporting protocol ecosystem), <a href=\"http://steamrole.org/\">STEAM Role</a> (a career networking platform), and <a href=\"http://www.uawtrust.org/\">The UAW Retiree Medical Benefits Trust.</a></p>"
     },
     {
-      "img": "images/michael_hamilton.jpg",
+      "img": "/images/michael_hamilton.jpg",
       "href": "https://www.linkedin.com/in/michael-hamilton-b387159/",
       "name": "Michael Hamilton",
       "block": "eco",
@@ -108,7 +108,7 @@
       "bio": "<p>James is an experienced angel Investor, speaker and blockchain strategy advisor. He is also a contributor to well known Blockchain publications and has been featured in other well known financial publications.</p>"
     },
     {
-      "img": "images/guy_zyskin.jpeg",
+      "img": "/images/guy_zyskin.jpeg",
       "href": "http://web.media.mit.edu/~guyzys/",
       "name": "Guy Zyskind",
       "block": "infra",
@@ -118,7 +118,7 @@
       "bio": "<p>A curious researcher, hands on developer, engineering and product manager, tackling world-changing challenges.</p><p>Currently, building a new way of doing data analysis on encrypted data using blockchain and secure computation. Recent graduate from MIT, where I had taught the first engineering class about blockchain technology.</p><p>Specialities and interests: Bitcoin, Blockchain, Security &amp; Privacy, Data science, Machine learning, Big Data, Mobile, Start-ups, Product design and Management.</p>"
     },
     {
-      "img": "images/Lawrence_Lundy-Bryan.jpg",
+      "img": "/images/Lawrence_Lundy-Bryan.jpg",
       "href": "https://www.linkedin.com/in/lawrencelundy/",
       "name": "Lawrence Lundy-Bryan",
       "block": "infra",
@@ -128,7 +128,7 @@
       "bio": "<p>Exploring the convergence of artificial intelligence, blockchains and the internet of things.</p><p>I head up research and partnerships at <a href=\"https://outlierventures.io/\">Outlier Ventures</a>; pioneering our Convergence Ecosystem investment strategy. I'm also a FinTech Fellow at the Singapore University of Social Sciences (SUSS) and an Advisor at Alice.si, a social funding platform.</p><p>I was previously a strategy consultant at <a href=\"https://ww2.frost.com/\">Frost &amp; Sullivan</a> helping clients like Intel, Huawei, Amadeus and Shell understand how emerging technologies would affect their businesses. I have provided comment and analysis for the BBC, Bloomberg, The Economist, and The Wall Street Journal.</p>"
     },
     {
-      "img": "images/faces.BrianBehlendorf20837.jpg",
+      "img": "/images/faces.BrianBehlendorf20837.jpg",
       "href": "https://www.linkedin.com/in/brianbehlendorf/",
       "name": "Brian Behlendorf",
       "block": "tech",
@@ -138,7 +138,7 @@
       "bio": "<p>I've dedicated my career to connecting and empowering the Free Software and Open Source community to solve hard technology problems and have a positive societal impact. I've done this wearing many different hats - as a startup company founder, as an advisor to the U.S. government, as a board member at various non-profits and consortia, as a YGL and employee of the World Economic Forum, and as an investor.</p><p><a href=\"https://en.wikipedia.org/wiki/Brian_Behlendorf\">https://en.wikipedia.org/wiki/Brian_Behlendorf</a></p>"
     },
     {
-      "img": "images/yaniv_altshuler.jpg",
+      "img": "/images/yaniv_altshuler.jpg",
       "href": "https://www.linkedin.com/in/yaniv-altshuler-73a31a/",
       "name": "Yaniv Altshuler",
       "block": "infra",
@@ -148,7 +148,7 @@
       "bio": "<p>I am the Co-Founder and CEO of <a href=\"https://www.endor.com/\">Endor</a>, and a researcher at MIT.</p><p>My main (but not only) comfort zone is the mathematical aspects of networks and communities, and the way local interactions are translated to macro-scale behaviors.</p><ul><li>Published a book on Security and Privacy in Social Networks (2012), and a second one about Swarms and Network Intelligence (in Press)</li><li>Developed stochastic optimization technologies for supercomputers at IBM</li><li>Did my BA and PhD (Computer Science) at the Israel Institute of Technology, followed by an exciting 3 years post-doc at MIT Media Lab</li><li>Published over 60 scientific papers and 15 patents. My research was covered by Harvard Business Review, Financial Times, Communications of the ACM, The Globe, IEEE Spectrum and others</li><li>Together with Prof. Alex “Sandy” Pentland at MIT developed the new science of Social Physics</li><li>In my free time I like to swim, run and wrestle</li></ul>"
     },
     {
-      "img": "images/Jeffrey_Saviano.jpg",
+      "img": "/images/Jeffrey_Saviano.jpg",
       "href": "www.linkedin.com/in/jeffrey-saviano-1398775/",
       "name": "Jeffrey Saviano",
       "block": "how",
@@ -158,7 +158,7 @@
       "bio": "<p>Based in Cambridge, Massachusetts, Jeff is a principal of <a href=\"https://webforms.ey.com/\">EY</a> and a member of EY’s global innovation leadership team. Jeff leads teams in the discovery, design, and commercialization of new tax services. In collaboration with MIT, Jeff also leads the EY Global Advanced Technology Tax Lab, a leading team of computer scientists and solution architects solving complex tax issues through the application of advanced technologies. The EY Tax Lab is an instrument of tax industry transformation, with an emphasis on the convergence of disruptive technologies that are driving business growth, such as blockchain, advanced data analytics and AI- with a particular focus on machine learning and natural language processing.</p><p>Jeff’s teams are examining the relationship between people and computers to understand how machines can boost the effectiveness of tax professionals, resulting in a collective intelligence. Pinpointing the emerging technology developments that will have the greatest impact on the tax industry – and taking new, innovative approaches to address them – is a major focus of the Tax Lab. Furthering the EY purpose of building a better working world, the Tax Lab will develop a governance model of AI systems for tax purposes, and help government better understand the externalities of tax policy with AI systems.</p><p>In his talk, Jeff will discuss the application of AI and blockchain to the global administration of tax; how advanced technologies can address the global tax fraud dilemma and better enable fair and just taxing systems for the benefit of society.</p>"
     },
     {
-      "img": "images/Susan_Kish.jpg",
+      "img": "/images/Susan_Kish.jpg",
       "href": "http://www.susankish.com/",
       "name": "Susan Kish",
       "block": "fin",
@@ -168,7 +168,7 @@
       "bio": "<p>Susan is a Fellow at MIT, and works with clients on strategy, technology and innovation. As a senior executive with extensive experience in launching successful products and events, she has worked across the energy, financial services, technology and media industries, and is a relentless advocate of digital literacy.</p><p>Most recently, Susan led the launch and development of the <a href=\"https://ceraweek.com/agora/\">Innovation Agora @ CERAWeek</a>, focussed on the intersession of disruptive technologies and the energy system. CERAWeek is an annual executive energy conference from IHS Markit.</p><p>Previously, Susan created and led a cross-platform team at Bloomberg focussed on innovation across media, data and analytics. Services to come out of this venture included the birth of “The Year Ahead”, a data-driven media franchise; <a href=\"https://www.bloomberg.com/company/d4gx/\">D4GX</a>, a program focused on Data for Good; and the incubation of Bloomberg’s award-winning data visualization team. Before that, Susan led market development at <a href=\"https://about.bnef.com/\">New Energy Finance</a>, which was acquired by Bloomberg. In this role, Susan initiated the Bloomberg Future of Energy Summit in 2008. Prior to Bloomberg, Susan was an entrepreneur, founding First Tuesday Zurich in 1999. The business think tank connected start-ups and investors, and convened thought leader networks. After that was acquired in 2006 by the professional online network <a href=\"https://www.xing.com\">XING</a>, she established XING’s consulting and advisory business.</p><p>Susan started her career as a banker at UBS and Chase. Susan is an independent director on several boards.</p><p>Susan graduated from Harvard College in the History of Science, Magna cum Laude.</p>"
     },
     {
-      "img": "images/David_Shrier.jpg",
+      "img": "/images/David_Shrier.jpg",
       "href": "https://www.linkedin.com/in/david-shrier/",
       "name": "David Shrier",
       "block": "how",
@@ -178,7 +178,7 @@
       "bio": "<p>David Shrier is a globally recognized authority on financial innovation, and leads the University of Oxford's online programmes; <a href=\"http://www.oxfordblockchain.org/\">Oxford Blockchain Strategy</a> and <a href=\"http://www.oxfordfintech.org/\">Oxford Fintech</a>, as well as MIT's Future Commerce (the first graduate fintech class in North America), all of which he created. His work spans the intersection of technology, business, and government through the axis of innovation ecosystem development. David is the CEO of <a href=\"http://www.distilledanalytics.com/\">Distilled Analytics</a>, transforming financial services via predictive AI analytics, Vice Chairman of <a href=\"https://www.endor.com/\">Endor.coin</a>, and Chairman of <a href=\"https://www.rifflearning.com/\">Riff Learning</a>, an AI-driven collaboration technology platform provider. He counsels the Government of Dubai on blockchain and digital identity, and <a href=\"http://www.millenniumadvisors.com/\">Millennium Advisors</a>, a middle market credit liquidity provider, on technology trends. David is on the advisory board of WorldQuant University, a program offering a totally-free, accredited, online Master's degree in financial engineering, member of the FinTech Industry Committee for FINRA, the U.S. securities industry's self-regulatory body, and on the Fintech Trade &amp;, Investment Steering Board for the UK Government's Department of International Trade. He previously advised the European Commission on commercializing innovation with a focus on digital technology. He has published multiple books on blockchain, fintech, and cybersecurity.</p><p><a href=\"http://www.VisionaryFuture.com\">www.VisionaryFuture.com</a></p>"
     },
     {
-      "img": "images/Jeffrey_Tarrant.jpg",
+      "img": "/images/Jeffrey_Tarrant.jpg",
       "href": "https://en.wikipedia.org/wiki/Jeffrey_Tarrant",
       "name": "Jeffrey Tarrant",
       "block": "soc",
@@ -198,7 +198,7 @@
       "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
     },
     {
-      "img": "images/Paul_Brody.jpg",
+      "img": "/images/Paul_Brody.jpg",
       "href": "https://www.linkedin.com/in/pbrody/",
       "name": "Paul Brody",
       "block": "eco",
@@ -208,7 +208,7 @@
       "bio": "<p>I am responsible for driving EY’s initiatives and investments in blockchain technology across consulting, audit, and tax business lines.</p><p>I have held number of leadership positions in the areas of IoT, supply chain and operations and business strategy, working with client organizations such as HP, Samsung, LG, Huawei, Apple, Canon, Toshiba, Sony, Panasonic, Ericsson, Nokia, Alcatel, FIAT, Honeywell, and Raytheon, to name a few.</p><p>I'm a member of the open linked-in network and I enjoy hearing about new ideas and technologies that will re-shape our industry or create opportunities (and challenges) for EY.</p><p>Specialties: Consumer electronics business strategy, mobile telecommunications, product design, supply chain and operations management.</p>"
     },
     {
-      "img": "images/fabio_zoffi.jpg",
+      "img": "/images/fabio_zoffi.jpg",
       "href": "https://www.linkedin.com/in/fabio-zoffi-127b743/",
       "name": "Fabio Zoffi",
       "block": "soc",
@@ -238,7 +238,7 @@
       "bio": "<p>Mr. Cohen is an accounting technology futurist, one of the original founders of XBRL and a pioneer in accounting and audit technology and related assurance methodologies. A writer, teacher and trainer, he has taught accountants, academics, regulators, software developers and business people about the Internet, <a href=\"https://www.xbrl.org/\">XBRL</a>, standardized business reporting, audit data standards and electronic distributed ledgers, security and authentication, analytics, GRC and continuous auditing. He has published hundreds of articles and columns for the business and academic press, and written or contributed to numerous books, including primary authorship of <a href=\"https://amzn.to/2jx4KNI\">Accountant’s Guide to the Internet</a>, the first book about the relevance of the Internet to the accounting profession. An experienced global collaborator and standards developer, he works with a global network of specialists and academics in standards development relevant to the accounting and audit process.</p>"
     },
     {
-      "img": "images/Navroop-Sahdev2.jpg",
+      "img": "/images/Navroop-Sahdev2.jpg",
       "href": "https://www.linkedin.com/in/navroopsahdev",
       "name": "Navroop Sahdev",
       "block": "how",
@@ -248,7 +248,7 @@
       "bio": "<p>An economist by training, Navroop is building a blockchain-based trading platform for crowdfunded equity at <a href=\"https://www.admeliorallc.com/\">Ad Meliora LLC</a>. Navroop is also a Fellow at <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and a Research Associate at the <a href=\"http://blockchain.cs.ucl.ac.uk/\">Centre for Blockchain Technologies</a> (CBT) at University College London. She holds a host of leadership roles in the DLT space, both as a practitioner as well as a researcher.</p><p>A United Nations Youth Delegate for 2017, Navroop has co-authored <a href=\"https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x\">Hyperledger’s Blockchain for Business online course</a>. She speaks regularly at FinTech and blockchain conferences and currently serves on the advisory board of a host of blockchain companies, across industries. Previously, she has worked at Harvard University and <a href=\"https://www.unenvironment.org/\">United Nations Environment Programme</a>. Her research interests are focused on Distributed Ledger Technologies, Game Theory, Networks Theory and Complex Systems Science. She has three masters in IP Management, Economics of Innovation and Applied Economics.</p>"
     },
     {
-      "img": "images/StalnakerStanPhoto.jpg",
+      "img": "/images/StalnakerStanPhoto.jpg",
       "href": "https://uk.linkedin.com/in/hubculture",
       "name": "Stan Stalnaker",
       "block": "how",

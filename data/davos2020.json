@@ -167,6 +167,35 @@
       "name": "Steve Pagliuca",
       "titles": "Managing Director, Bain Capital",
       "bio": "<p>Steve Pagliuca is a Managing Director at Bain Capital, a leading global private investment firm based in Boston. Mr. Pagliuca is also a Managing Partner and Co-Owner of the World Championship Boston Celtics Basketball franchise</p><p>Mr. Pagliuca joined Bain & Company in 1982 and founded the Information Partners private equity fund for Bain Capital in 1989. As a Managing Director of Bain Capital, he has helped build the firm into one of the world's leading investment companies with over $75 billion in assets under management.</p><p>Mr. Pagliuca has also lived and worked in The Netherlands as a senior accountant and international tax specialist for Peat Marwick Mitchell & Company and has helped to develop Bain Capital's private equity practice in Europe. His focus is investments in the media, information and health care industries.</p>"
+    },
+    {
+      "img": "images/Claire-Melamed-Bio-pic-Rebecca-McRobb-640x640.jpg",
+      "href": "https://www.linkedin.com/in/claire-melamed-54853b31",
+      "name": "Claire Melamed",
+      "titles": "Chief Executive Officer at Global Partnership for Sustainable Development Data",
+      "bio": "<p>Dr Claire Melamed is the CEO of the Global Partnership for Sustainable Development Data. This growing network brings together over 300 members – governments, private sector, and civil society – to harness and leverage data and data technology towards achieving the Sustainable Development Goals. She was previously Managing Director of the Overseas Development Institute, and in 2014, she worked in the office of the UN Secretary General, writing the report of the Independent Expert Advisory Group on the Data Revolution, “A World That Counts”. “We say that every life counts, but we still don’t count every life”, she says in her advocacy to use the knowledge provided by data to improve lives and protect the planet. Claire is based in London and heads up a global team based in five countries.</p>"
+    },
+    {
+      "img": "images/Paul_Tudor_Jones.jpg",
+      "href": "https://en.wikipedia.org/wiki/Paul_Tudor_Jones",
+      "name": "Paul Tudor Jones",
+      "titles": "Founder of Tudor Investment Corporation and Robin Hood Foundation",
+      "bio": "<p>Paul Tudor Jones II is an American investor, hedge fund manager, and philanthropist. In 1980, he founded his hedge fund, Tudor Investment Corporation, an asset management firm headquartered in Greenwich, Connecticut. Soon after, he created the Tudor Group, a hedge fund holding company that specializes in fixed income, currencies, equities, and commodities.</p>"
+    },
+    {
+      "img": "/images/davos_demos/ramesh-raskar-mit-spectrum_0.jpeg",
+      "href": "https://www.media.mit.edu/people/raskar/overview/",
+      "name": "Ramesh Raskar",
+      "titles": "Assoc. Prof MIT Media Lab, Facebook, Google[X], REDX.io",
+      "bio": "<p>Ramesh Raskar is an Associate Professor at MIT Media Lab and directs the Camera Culture research group. His focus is on building interfaces between social systems and autonomous systems. These society-autonomy interfaces (SAI) span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award (2016), ACM SIGGRAPH Achievement Award (2017), DARPA Young Faculty Award (2009), Alfred P. Sloan Research Fellowship (2009), TR100 Award from MIT Technology Review (2004) and Global Indus Technovator Award (2003). He has worked on special research projects at Google [X] and Facebook and co-founded/advised several companies.</p><p>In his recent role at Facebook, he launched and led innovation teams in Digital Health, Health-tech, Satellite Imaging, TV bandwidth for Connectivity, VR/AR and 'Emerging Worlds' initiative for FB.</p>",
+      "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTRzFaeU1PdWRjUEdJRi1SbHd1R09pTTlkbGFr/view?usp=sharing"
+    },
+    {
+      "img": "images/Santanu_Bhattacharya.jpg",
+      "href": "https://www.linkedin.com/in/santanub/",
+      "name": "Santanu Bhattacharya",
+      "titles": "Chief Data Scientist at Airtel",
+      "bio": "<p>Seasoned executive with expertise in digital transformation; created and led multi B$ data-driven businesses for global scale. Currently, I am the Chief Data Scientist at Airtel (400 million subscribers in 16 countries), leading digital and data driven growth and transformation for “Airtel 3.0”</p><p>Past, I have led Facebook’s emerging market products with 350 million users/ $2B revenue, headed America Online’s (AOL) global data analytics and products with $1B topline, has successfully built two start-ups (Salorix, Origin) and been part of the journey to one starup's (Delhivery) Unicorn status. I have built world-class teams of business leaders and technologists from scratch to produce cutting-edge products, driving significant values</p>"
     }
   ],
   "demos": [

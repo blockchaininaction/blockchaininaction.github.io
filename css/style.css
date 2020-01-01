@@ -196,7 +196,7 @@ i {
 
 .max-width,
 footer {
-  max-width: 1043px;
+  max-width: 1042px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -395,6 +395,9 @@ h3 {
   padding: 10px 20px;
   letter-spacing: -1px;
 }
+h3 em {
+  font-weight: 100;
+}
 h3.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -467,7 +470,16 @@ iframe {
 }
 .flex-row iframe {
   width: 100%;
-  height: 70%;
+  height: 100%;
+}
+
+.schedule-addendum {
+  line-height: 26px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.schedule-addendum li {
+  margin: 0 0 10px 10px;
 }
 
 .davos-schedule {
@@ -558,8 +570,8 @@ iframe {
   flex-wrap: wrap;
 }
 .person-thumbs-flex a {
-  width: 78px;
-  height: 78px;
+  width: 80px;
+  height: 80px;
 }
 
 .person-thumbs a:hover,
@@ -830,7 +842,7 @@ footer {
 
 .white-paper {
   height: 100px;
-  margin: -2px 15px 0 -12px;
+  margin: 11px 15px 0 -12px;
   float: left;
 }
 

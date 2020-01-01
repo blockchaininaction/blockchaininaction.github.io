@@ -47,13 +47,6 @@
           </div>
         </div>
 
-        <!-- <div class="max-width">
-            <p class="info"><strong>Mens et Manus</strong>: MIT's motto, Latin for "mind and hand", is a reminder that two fundamental ingredients are necessary to bring an idea to fruition:</p>
-            <ol class="info"><li>Innovation starts with a spark of inspiration.</li><li>To realize revolutionary ideas, one must diry their hands & execute in the real world.</li></ol>
-            <p class="info">
-              Imagination in Action is an organization founded on this principle. Co-founders <a href="#alex_'sandy'_pentland">Alex (Sandy) Pentland</a> and <a href="#john_werner">John Werner</a> sought to create an event that would combine the best of cutting-edge ideation and real-world implementation. We are a community of <strong>applied utopians</strong> who are creating a new human-centered reality outside of traditional hierarchy and authority, using tools such as blockchain and AI. We are coming together to explore these new possible worlds. Our two annual events at MIT and the Davos World Economic Forum bring together the world’s leading scientists, entrepreneurs, and technologists to discuss the emerging trends that could shape our world – and how we can turn possibility into reality!
-            </p>
-        </div> -->
 
           <!-- <div class="double-feature">
             <div>
@@ -75,77 +68,115 @@
           </div> -->
 
         <div v-if="route === '/'">
-          <h3>
-              <div class="max-width">Extended Intelligence: The AI Organization</div>
-          </h3>
+          <h3><div class="max-width">Extended Intelligence: <em>The AI Organization</em></div></h3>
 
           <div class="davos-dome">
+            <div class="flex-row max-width" style="margin: 20px auto 30px;">
+              <div>
+                <div class="iframe-container" style="height: 264px;">
+                  <iframe src="https://www.youtube.com/embed/F49Vzu_B-fo?list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="margin-right: 30px">
+                  <h4 style="margin: 20px 0 15px 0px;">Schedule ↴</h4>
+                  <dl style="padding-bottom: 10px;">
+                      <dt>08:00 - 08:30</dt>
+                      <dd>Registration</dd>
+                      <dt>08:30 - 08:45</dt>
+                      <dd>Welcome</dd>
+                      <dt>08:45 - 09:15</dt>
+                      <dd>Chairperson Panel</dd>
+                      <dt>09:15  - 12:00</dt>
+                      <dd>BLOCK 1: Finance<br>BLOCK 2: Enabled Trade<br>BLOCK 3: Education<br>BLOCK 4: Government</dd>
+                      <dt>12:00 - 13:00</dt>
+                      <dd>Firestarter Talks (2-5 min)</dd>
+                      <dt>13:00 - 14:00</dt>
+                      <dd>Michelin Star Lunch & Networking</dd>
+                      <dt>14:00 - 15:00</dt>
+                      <dd>Forbes + Global Citizen Big Announcement</dd>
+                      <dt>Ongoing </dt>
+                      <dd>
+                        <ul>
+                          <li>Innovator Demo Pods</li>
+                          <li>1:1 Video Interviews at Side</li>
+                        </ul>
+                      </dd>
+                  </dl>
+                  <hr>
+                  <ul class="schedule-addendum">
+                    <li>Michelin-star lunch</li>
+                    <li>Networking with WEF audience + select group of emerging tech leaders and innovators. </li>
+                    <li>Program with lightning “TED type” talks (2-5 min) and dozens of demos highlighting real-world solutions that are extending human intelligence through applications of AI, IoT & Data Analytics.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div style="margin-left: 5px;">
+                    <h2 style="font-size: 30px; text-align: right;">@ World Economic Forum 2020</h2>
+                    <h4 style="font-size: 25px; text-align: right; line-height: 1.2em;">January 21, 2020 | Davos, Switzerland</h4>
+                    <dl class="davos2020meta" style="margin-top: 15px;">
+                        <dt>Hosts:</dt>
+                        <dd>MIT Professor Alex Pentland, John Werner</dd>
+                        <dt>Sponsors:</dt>
+                        <dd>TCS, Forbes, MIT Connection Science,<br>Global Citizen</dd>
+                        <dt>Venue:</dt>
+                        <dd>The TCS Dome, Panorama Hotel, <br>Promenade 80,<br>7270 Davos Platz, Switzerland</dd>
+                        <dt>Format:</dt>
+                        <dd style="font-size: 16px; margin-top: 4px;">During the annual meeting of WEF we will bring together the world's foremost leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</dd>
+                    </dl>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px;">
+                  <img src="/images/logos/mit_connection_science.png" width="183" height="77"/>
+                  <img src="/images/logos/tcs.png" width="104" height="91"/>
+                  <img src="/images/logos/forbes.png" width="154" height="39"/>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 20px 25px 20px;">
+                  <img src="/images/logos/logo_global_citizen_stacked.png" width="150" height="63"/>
+                  <img src="/images/logos/imagination_in_action_logo.png" width="250" height="51"/>
+                </div>
+
+
+                <img src="/images/davos_birdseye.jpg"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="person-thumbs-flex max-width" v-cloak>
+            <a v-for="person in peopleDavos2020"
+                v-bind:title="person.name"
+                v-bind:href="'#' + person.id"
+                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+          </div><br><br>
+
+          <h3 class="sticky" id="now" v-cloak>
+              <div class="max-width">
+                  Hosts @ Davos 2020↴
+              </div>
+          </h3>
 
           <div class="max-width">
-            <h2 style="font-size: 33px; margin-bottom: 19px; text-align: right;">@ World Economic Forum 2020</h2>
-          </div>
-
-          <div class="flex-row max-width">
-            <div class="iframe-container">
-              <h4 style="margin: 20px 0; line-height: 1.2em;">January 21, 2020<br>Davos, Switzerland</h4>
-              <iframe src="https://www.youtube.com/embed/F49Vzu_B-fo?list=PLY_nsiUEgM3ljPmTSrW9Bcc7Yq3zhbvYF&showinfo=0&modestbranding=1&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <dl class="davos2020meta" style="margin-top: 15px;">
-                <dt>Hosts:</dt>
-                <dd>MIT Professor Alex Pentland, John Werner</dd>
-                <dt>Sponsors:</dt>
-                <dd>TCS, Forbes, MIT Connection Science,<br>Global Citizen</dd>
-                <dt>Venue:</dt>
-                <dd>The TCS Dome, Panorama Hotel, <br>Promenade 80,<br>7270 Davos Platz, Switzerland</dd>
-                <dt>Format:</dt>
-                <dd>During the annual meeting of WEF we will bring together the world's foremost leaders from business, government, academia, media and civil society to deepen their relationships and work more collaboratively towards improving the state of our world through emerging technology.</dd>
-            </dl>
-          </div>
-
-          <div class="flex-row max-width">
-            <dl>
-                <dt>08:00 - 08:30</dt>
-                <dd>Registration</dd>
-                <dt>08:30 - 08:45</dt>
-                <dd>Welcome</dd>
-                <dt>08:45 - 09:15</dt>
-                <dd>Chairperson Panel</dd>
-                <dt>09:15  - 12:00</dt>
-                <dd>Extended Intelligence:<br>&nbsp;&nbsp;The AI Organization<br>BLOCK 1: Finance<br>BLOCK 2: Enabled Trade<br>BLOCK 3: Education<br>BLOCK 4: Government</dd>
-                <dt>12:00 - 13:00</dt>
-                <dd>Firestarter Talks (2-5 min)</dd>
-                <dt>13:00 - 14:00</dt>
-                <dd>Michelin Star Lunch & Networking</dd>
-                <dt>14:00 - 15:00</dt>
-                <dd>Forbes + Global Citizen Big Announcement</dd>
-            </dl>
-            <div>
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px;">
-                <img src="/images/logos/mit_connection_science.png" width="183" height="77"/>
-                <img src="/images/logos/tcs.png" width="104" height="91"/>
-                <img src="/images/logos/forbes.png" width="154" height="39"/>
+              <div class="person" v-for="person in hostsDavos2020" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                  </p>
               </div>
-              <img src="/images/davos_birdseye.jpg"/>
-            </div>
           </div>
-
-        </div>
 
           <h3 class="sticky" id="now" v-cloak>
               <div class="max-width">
                   Speakers @ Davos 2020↴
               </div>
           </h3>
-          <br><br>
-          <div class="person-thumbs-flex max-width" v-cloak>
-            <a v-for="person in peopleDavos2020"
-                v-bind:title="person.name"
-                v-bind:href="'#' + person.id"
-                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-          </div>
 
           <div class="max-width">
-              <div class="person" v-for="person in peopleDavos2020" v-bind:id="person.id">
+              <div class="person" v-for="person in speakersDavos2020" v-bind:id="person.id">
                   <a v-bind:href="person.href" target="_blank">
                       <img v-bind:src="person.img" />
                   </a>
@@ -163,13 +194,6 @@
                 Demos @ Davos 2020↴
             </div>
           </h3>
-          <br><br>
-          <div class="person-thumbs-flex max-width" v-cloak>
-            <a v-for="person in demosDavos2020"
-                v-bind:title="person.name"
-                v-bind:href="'#' + person.id"
-                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-          </div>
 
           <div class="max-width">
               <div class="person" v-for="person in demosDavos2020" v-bind:id="person.id">
@@ -763,11 +787,12 @@
             scheduleMIT2019: [],
             speakersMIT2019: [],
 
-            peopleDavos2020: [],
+            hostsDavos2020: [],
+            speakersDavos2020: [],
             demosDavos2020: [],
+            peopleDavos2020: [],
 
             route: "/"
-
         };
 
         var root = null;
@@ -790,7 +815,6 @@
           })
           .resolve();
         }
-
 
         var app = new Vue({
             el: '#app',
@@ -847,67 +871,19 @@
 
         }, function(error) {console.log(error)});
 
-
         loadJSON("/data/mit2019.json", function(result) {
             data.speakersMIT2019 = result.speakers.map(setId).sort(alphabetize);
             data.scheduleMIT2019 = scheduleBlockMapper( result.schedule, 7, 45);
         }, function(error) {console.log(error)});
 
         loadJSON("/data/davos2020.json", function(result) {
-          data.peopleDavos2020 = result.speakers.map(setId).sort(alphabetize);
+          data.speakersDavos2020 = result.speakers.map(setId).sort(alphabetize);
           data.demosDavos2020 = result.demos.map(setId).sort(alphabetize);
+          data.hostsDavos2020 = result.hosts.map(setId);
+          data.peopleDavos2020 = data.speakersDavos2020.concat(data.demosDavos2020, data.hostsDavos2020).sort(alphabetize);
+
+          data.hostsDavos2020.push(self.peopleById.mike_federle, self.peopleById.randall_lane);
         }, function(error) {console.log(error)});
-
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
-    <script>
-        var camera, scene, renderer;
-        var line, line2;
-        var width = 200;
-        var height = width;
-        init();
-        animate();
-        function init() {
-            camera = new THREE.PerspectiveCamera( 60, width /height, 1, 1000 );
-            camera.position.z = 330;
-            scene = new THREE.Scene();
-
-            var geometry = new THREE.OctahedronGeometry( 150, 0 );
-            var wireframe = new THREE.WireframeGeometry( geometry );
-            var material = new THREE.LineBasicMaterial( {
-                color: 0xffe100,
-                linewidth: 2,
-                linecap: 'round', //ignored by WebGLRenderer
-                linejoin:  'round' //ignored by WebGLRenderer
-            } );
-            line = new THREE.LineSegments( wireframe );
-            line2 = new THREE.LineSegments( wireframe );
-            line.material = material;
-            line2.material = material;
-
-            line.rotation.y = Math.PI / 4;
-            line2.rotation.y = Math.PI / 4;
-
-            line.rotation.x = Math.PI / 5.5;
-            line2.rotation.x = Math.PI / 5.5;
-
-            scene.add( line, line2 );
-            renderer = new THREE.WebGLRenderer({ alpha: true });
-            renderer.setPixelRatio( window.devicePixelRatio );
-            renderer.setSize( width, height );
-            document.getElementById('logo').appendChild( renderer.domElement );
-        }
-
-        function animate() {
-            requestAnimationFrame( animate );
-            line.rotation.x += 0.0005;
-            line.rotation.y += 0.001;
-
-            line2.rotation.x -= 0.00025;
-            line2.rotation.y -= 0.0005;
-            renderer.render( scene, camera );
-        }
 
 //         ,
 //   {
@@ -917,7 +893,10 @@
 //     "titles": "",
 //     "bio": "<p></p>"
 //   }
-// ]
+
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+    <script src="scripts/logo.js"></script>
 </body>
 </html>

@@ -182,8 +182,16 @@
       "name": "Santanu Bhattacharya",
       "titles": "Chief Data Scientist at Airtel",
       "bio": "<p>Seasoned executive with expertise in digital transformation; created and led multi B$ data-driven businesses for global scale. Currently, I am the Chief Data Scientist at Airtel (400 million subscribers in 16 countries), leading digital and data driven growth and transformation for “Airtel 3.0”</p><p>Past, I have led Facebook’s emerging market products with 350 million users/ $2B revenue, headed America Online’s (AOL) global data analytics and products with $1B topline, has successfully built two start-ups (Salorix, Origin) and been part of the journey to one starup's (Delhivery) Unicorn status. I have built world-class teams of business leaders and technologists from scratch to produce cutting-edge products, driving significant values</p>"
+    },
+    {
+      "img": "images/Christian_Schupbach.jpg",
+      "href": "https://www.linkedin.com/in/ch-schuepbach/",
+      "name": "Christian Schüpbach",
+      "titles": "Digital Venture Builder (FinTech) at Swisscom",
+      "bio": "<p>Christian leads Swisscom Ventures which is the venture capital arm of Swisscom AG, the leading telecom and ICT provider in Switzerland. Since 2007, they have invested in over 50 technology companies from their offices in Switzerland (Zurich and Bern) and the USA (Silicon Valley). They invest in 6-8 new companies every year representing a total volume of $30-50m p.a.</p>"
     }
   ],
+  "staging": [],
   "demos": [
     {
       "img": "/images/Beth+headshot+cropped+Sept+2017.jpg",
@@ -263,6 +271,36 @@
       "name": "Alexander Lipton",
       "titles": "Connection Science Fellow",
       "bio": "<p>Alexander Lipton is a Managing Director, Quantitative Solutions Executive at Bank of America. Prior to his current role, he was a Managing Director, Co-head of the Global Quantitative Group at Bank of America Merrill Lynch. He also held senior managerial positions at several sell and buy side firms. Currently, Alexander is an Adjunct Professor of Mathematics at NYU. Previously, he was a Visiting Professor of Quantitative Finance at University of Oxford and Advisory Board member at the Oxford-Man Institute. Earlier, he was Visiting Professor of Mathematics at Imperial College London. Before switching to finance, Alex was a Full Professor of Mathematics at the University of Illinois and a Consultant at Los Alamos National Laboratory. His current interests include FinTech, distributed ledgers, digital banking, monetary circuit, industrial strength derivative pricing including regulatory and economic capital calculations and valuation adjustments, as well as large scale holistic bank balance sheet optimization. Alexander published more than a hundred papers on applied mathematics and quantitative finance and authored/edited several books on these subjects.</p>"
+    },
+    {
+      "img": "images/Harry_Halpin.jpg",
+      "href": "https://www.linkedin.com/in/harryhalpin/",
+      "name": "Harry Halpin",
+      "titles": "Acting CEO at Nym Technologies SA, where I do absolutely everything.",
+      "bio": "<p>My goal is halt surveillance and fight for human freedom through decentralization. The terrain of struggle is technology, and privacy-enhancing technologies and cryptography are our weapons. If you are interested in joining us, contact me or contact@nymtech.net and we'll be back in touch. </p>"
+    },
+    {
+      "img": "images/John_Havens.jpg",
+      "href": "https://www.linkedin.com/in/johnchavens/",
+      "name": "John C. Havens",
+      "titles": "Executive Director at The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems",
+      "bio": "<p>As a writer, speaker, activist and consultant focusing on the intersection of technology and culture, I'm trying to help people increase their wellbeing by taking a measure of their lives.</p>"
+    }
+  ],
+  "hosts": [
+    {
+      "img": "/images/john.png",
+      "href": "https://www.linkedin.com/in/johnwerner1/",
+      "name": "John Werner",
+      "titles": "Managing Director at <a href=\"http://www.linkventures.com/\">Link Ventures</a>; Chief Network Officer/SVP at <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>; Fellow at MIT Connection Science; Mobilizer, Human Connector, &amp; <a href=\"http://www.johnwernerphotography.com/\">avid photographer</a> ",
+      "bio": "<p>John Werner has created a career out of bringing ideas, networks and people together to generate powerful results. Currently, John serves as the Chief Network Officer, SVP Corporate Development of Cogo Labs and as Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. Before joining Link Ventures and <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>, John’s deep curiosity and penchant for problem-solving led him to a diverse set of roles spanning many fields and interests. Previously, John was a VP at a <a href=\"https://www.ycombinator.com/\">Y Combinator</a> augmented reality startup based in Silicon Valley. John’s also served as the Head of Innovation and New Ventures at the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture Group</a>, and the Managing Director of <a href=\"https://www.media.mit.edu/groups/emerging-worlds/overview/\">Emerging Worlds SIG</a>, where he led the launch of collaborative innovation centers in Mumbai, Nashik, and Hyderabad.</p><p>John also channels his passion and curiosity into cultivating platforms for thought and exchange. John is the Founder &amp; CEO of <a href=\"http://arinaction.org/\">ARIA</a>, a community focused on the potential of augmented reality and the <a href=\"http://blockchaininaction.org/\">Blockchain+AI+Human</a>, which takes place at MIT and the World Economic Forum in Davos with MIT Professor Sandy Pentland. John also founded Ideas in Action Inc., a non-profit that creates and produces <a href=\"https://tedxbeaconstreet.com/\">TEDxBeaconStreet</a>, whose talks have accumulated 250+ million YouTube views.</p><p>John was also a co-Founder of <a href=\"https://www.citizenschools.org/\">Citizen Schools</a>, an advisor for <a href=\"https://www.photobutler.com/\">PhotoButler</a>, <a href=\"https://www.vestigoventures.com/\">Vestigo Ventures</a> and <a href=\"https://ff.co/#/\">Founders Forum</a> (Boston), an <a href=\"http://connection.mit.edu/\">MIT Connection Science Fellow</a>, a <a href=\"https://loebfellowship.gsd.harvard.edu/\">Loeb Fellow at the Harvard University’s Graduate School of Design</a> and a graduate of <a href=\"https://www.hamilton.edu/\">Hamilton College</a>. John was recognized by Harvard Business Review for his leadership; by BostonInno in 2014 as a top 50 on Fire in Boston; Boston Chamber with a TOYL (Ten Outstanding Young Leaders) Award in 2006. In his free time, John is a passionate <a href=\"https://www.johnwernerphotography.com/\">photographer</a> and an accomplished triathlete (qualified for the worlds and 4x nationals). John and his family live in Brookline, MA.</p>"
+    },
+    {
+      "img": "images/pentland-2014.png.800x800.png",
+      "href": "https://www.media.mit.edu/people/sandy/overview/",
+      "name": "Alex 'Sandy' Pentland",
+      "titles": "Professor of Media Arts and Sciences<br/>Toshiba Professor<br/>Media Lab Entrepreneurship Program Director",
+      "bio": "<p>Professor Alex \"Sandy\" Pentland directs the <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and <a href=\"https://www.media.mit.edu/groups/human-dynamics/overview/\">Human Dynamics</a> labs and previously helped create and direct the <a href=\"https://www.media.mit.edu/\">MIT Media Lab</a> and the <a href=\"https://www.medialabasia.in/\">Media Lab Asia</a> in India. He is one of the most-cited scientists in the world, and Forbes recently declared him one of the \"7 most powerful data scientists in the world\" along with Google founders and the Chief Technical Officer of the United States. He has received numerous awards and prizes such as the McKinsey Award from Harvard Business Review, the 40th Anniversary of the Internet from DARPA, and the Brandeis Award for work in privacy.</p><p>He is a founding member of advisory boards for Google, AT&amp;T, Nissan, and the UN Secretary General, a serial entrepreneur who has co-founded more than a dozen companies including social enterprises such as the <a href=\"http://datatransparencylab.org/\">Data Transparency Lab</a>, the Harvard-ODI-MIT <a href=\"http://datapopalliance.org/\">DataPop Alliance</a> and the <a href=\"https://idcubed.org/\">Institute for Data Driven Design</a>. He is a member of the U.S. National Academy of Engineering and leader within the World Economic Forum.</p>"
     }
   ]
 }

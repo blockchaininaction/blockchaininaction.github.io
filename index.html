@@ -130,30 +130,9 @@
 
           <h3 class="sticky" id="now" v-cloak>
               <div class="max-width">
-                  Hosts @ Davos 2020↴
-              </div>
-          </h3>
-
-          <div class="max-width">
-              <div class="person" v-for="person in hostsDavos2020" v-bind:id="person.id">
-                  <a v-bind:href="person.href" target="_blank">
-                      <img v-bind:src="person.img" />
-                  </a>
-                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
-                  <h5 v-html="person.titles"></h5>
-                  <div v-html="person.bio"></div>
-                  <p v-if="person.youtube">
-                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
-                  </p>
-              </div>
-          </div>
-
-          <h3 class="sticky" id="now" v-cloak>
-              <div class="max-width">
                   Speakers @ Davos 2020↴
               </div>
           </h3>
-
           <div class="max-width">
               <div class="person" v-for="person in speakersDavos2020" v-bind:id="person.id">
                   <a v-bind:href="person.href" target="_blank">
@@ -173,9 +152,27 @@
                 Demos @ Davos 2020↴
             </div>
           </h3>
-
           <div class="max-width">
               <div class="person" v-for="person in demosDavos2020" v-bind:id="person.id">
+                  <a v-bind:href="person.href" target="_blank">
+                      <img v-bind:src="person.img" />
+                  </a>
+                  <h4><a v-bind:href="person.href" target="_blank" v-cloak>{{person.name}}</a></h4>
+                  <h5 v-html="person.titles"></h5>
+                  <div v-html="person.bio"></div>
+                  <p v-if="person.youtube">
+                      <a class="video-link" target="_blank" v-bind:href="'https://www.youtube.com/watch?v=' + person.youtube + '&amp;start=15&amp;list=PLY_nsiUEgM3mE8258yVkCEXPbhN1dPNGA'">Watch Talk ▶</a>
+                  </p>
+              </div>
+          </div>
+
+          <h3 class="sticky" id="now" v-cloak>
+              <div class="max-width">
+                  Hosts @ Davos 2020↴
+              </div>
+          </h3>
+          <div class="max-width">
+              <div class="person" v-for="person in hostsDavos2020" v-bind:id="person.id">
                   <a v-bind:href="person.href" target="_blank">
                       <img v-bind:src="person.img" />
                   </a>

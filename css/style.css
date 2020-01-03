@@ -575,6 +575,7 @@ iframe {
 }
 
 .person-thumbs a:hover,
+.person-thumbs-flex a:hover,
 .sm-thumb:hover {
   filter: grayscale(100%) brightness(120%);
 }

@@ -99,13 +99,6 @@
       "bio": "<p>Kavita is an executive director at ConsenSys, founding managing partner at ConsenSys Ventures and country head at ConsenSys India. She is a visiting scholar at Stanford University. Kavita received the UN social finance innovator award in 2015 for being an integral part of the founding green bond team at The World Bank.</p><p>Previously she ran a $250M fund aligned with UN SDGs infusing capital in technologies providing first time or low-cost access around the world. She has set up innovative investment funds across East Africa, Middle East, South Asia and recently in the US for past 16 years through World Bank, IFC, McKinsey and The Schmidt Family office. She founded and headed World Bank's first innovation fund in 2010.</p><p>She is on the board and advisor of various accelerators and foundations across the world like google accelerator social track, MIT Solve (Sr. Advisor), Vatican's Right Now foundation for impact investments, Mandela foundation, Blockchained India etc. She is an MIT and Media lab alum.</p>"
     },
     {
-      "img": "/images/Nick_Reade.jpg",
-      "href": "https://www.banksa.com.au/about/board-of-directors/nick-reade",
-      "name": "Nick Reade",
-      "titles": "CEO, BankSA",
-      "bio": "<p>Mr Reade has 25 years of financial services experience in funds management, stockbroking, retail and commercial banking, having commenced his career at CommSec in 1995 before moving to ANZ where he spent 14 years in a number of senior positions in marketing, personal lending and credit cards, SME banking, corporate and commercial banking, and innovation.</p><p>Mr Reade joined BankSA as its Chief Executive in 2014, and has since led a program of transformation, creating South Australia's bank for the future that focuses on customer experience, small business and innovation.</p><p>He is also a board member of Renew Adelaide and St Peter's Girls' School; and a Trustee on the Committee for Economic Development of Australia's SA/NT State Advisory Council.</p><p>A proud South Australian with unbridled passion for innovation and small business, BankSA benefits from Mr Reade's financial services experience and astute business acumen.</p>"
-    },
-    {
       "img": "/images/ShaoLan_Hsueh.jpg",
       "href": "http://shaolan.com/",
       "name": "ShaoLan Hsueh",
@@ -189,6 +182,20 @@
       "name": "Christian Schüpbach",
       "titles": "Digital Venture Builder (FinTech) at Swisscom",
       "bio": "<p>Christian leads Swisscom Ventures which is the venture capital arm of Swisscom AG, the leading telecom and ICT provider in Switzerland. Since 2007, they have invested in over 50 technology companies from their offices in Switzerland (Zurich and Bern) and the USA (Silicon Valley). They invest in 6-8 new companies every year representing a total volume of $30-50m p.a.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/rajesh_gopinathan.jpg",
+      "href": "https://en.wikipedia.org/wiki/Rajesh_Gopinathan",
+      "name": "Rajesh Gopinathan",
+      "titles": "CEO & Managing Director at <a href=\"https://www.tcs.com/\">Tata Consultancy Services</a>",
+      "bio": "<p>Rajesh Gopinathan is the Chief Executive Officer and Managing Director of Tata Consultancy Services (TCS), a leading global IT solutions and consulting firm.</p><p>He has played a key role in helping TCS become a USD 20.09 billion global company. With over 450,738 consultants, TCS is one of the largest private sector employers globally and was recognized as a Global Top Employer for the fourth consecutive year, with the highest retention rate in a competitive industry.</p><p>Under Rajesh’s leadership, the market capitalization of the company crossed USD 100 billion during April 2018, making TCS the most valuable company in India. TCS was recognized as the fastest growing brand in the IT industry for 2019 and consolidated its position as one of the top 3 IT Services brands for the second year in a row. The brand value of TCS increased by 23 % this year and thus TCS entered the USD 12.8 billion club.</p>"
+    },
+    {
+      "img": "images/Robert_Mahari.jpg",
+      "href": "http://web.mit.edu/4change/aboutus.htm",
+      "name": "Robert Mahari",
+      "titles": "President at Harvard Law & Technology Society",
+      "bio": "<p>Robert Mahari is a JD candidate at Harvard Law School, where he is the president of the Harvard Law & Technology Society and editor in chief of the Harvard Law Record. His work is focused on how technology can and should affect the practice of law. Robert has organized several interdisciplinary global symposia on topics related to the intersection of law and technology, including the upcoming 2020 Harvard European Legal Technology & Privacy Symposium. </p><p>Robert graduated from MIT with a double major in Chemical Engineering and Management Science. He was a visiting researcher at the MIT Media Lab’s Human Dynamics Group where he focused on using machine learning tools to understand financial dynamics of class action litigation. Fluent in four languages, Robert is particularly interested in pursuing projects with global impact. He has taught a recurring Executive MBA workshop at the University of Warsaw on entrepreneurship in the US in both English and Polish. Robert has work experience in management consulting, investment banking and private equity and serves on the boards of a Scandinavian steel group and a Polish publishing group. In his free time, Robert is drawn to the outdoors and loves to hike and fish around the world.</p>"
     }
   ],
   "staging": [],
@@ -197,8 +204,8 @@
       "img": "/images/Beth+headshot+cropped+Sept+2017.jpg",
       "href": "https://www.linkedin.com/in/ebport/",
       "name": "Beth Porter",
-      "titles": "CEO of Riff Learning, Inc.",
-      "bio": "<p>Beth Porter is a seasoned product development executive with a career spent delivering technology that betters individual and team outcomes. Prior roles include VP Product for edX, VP Software Product Management for Pearson Education, and senior engineering and product management positions at Mathsoft and PTC. She is a researcher and lecturer with the MIT Media Lab and Boston University Questrom School of Business, and she holds a technical architecture appointment at University of Texas at Austin. She also advises education, publishing, and technology clients on strategy, vision and execution for end-to-end online learning solutions that meet business needs.</p><p>As CEO of Riff Learning, she aspires to help break down silos in organizations and increase information flow through the Riff Platform, which gives feedback about existing patterns of communication and guides people, especially teams, toward activities and behaviors that are more successful for them. Using machine learning and artificial intelligence, the Riff Platform provides real-time interventions and post-event feedback and recommendations, including automating agents to remind people to take specific actions. By helping people improve their interpersonal skills — especially in virtual teams where communication signals are sometimes poorly mediated by technology — teams can raise their EQ and become better overall collaborators.</p>"
+      "titles": "Cofounder & CEO of Riff Analytics",
+      "bio": "<p>Beth is Cofounder and CEO of Riff Analytics, a scrappy AI startup out of MIT that measures conversational dynamics to help people build situational and social awareness, especially when they collaborate on complex tasks.</p><p>Beth's philosophy is that people learn best from each other, and learning fosters both personal growth and organizational innovation and change. She teaches IT Strategies to MBAs at Boston University, where her students work in small, peer learning groups throughout the course, and learning innovation in Media Ventures at the MIT Media Lab. Prior roles include VP Product for edX, VP Software Product Management for Pearson Education, and senior engineering and product management positions at Mathsoft and PTC.</p>"
     },
     {
       "img": "/images/David_Shrier.jpg",
@@ -273,18 +280,11 @@
       "bio": "<p>Alexander Lipton is a Managing Director, Quantitative Solutions Executive at Bank of America. Prior to his current role, he was a Managing Director, Co-head of the Global Quantitative Group at Bank of America Merrill Lynch. He also held senior managerial positions at several sell and buy side firms. Currently, Alexander is an Adjunct Professor of Mathematics at NYU. Previously, he was a Visiting Professor of Quantitative Finance at University of Oxford and Advisory Board member at the Oxford-Man Institute. Earlier, he was Visiting Professor of Mathematics at Imperial College London. Before switching to finance, Alex was a Full Professor of Mathematics at the University of Illinois and a Consultant at Los Alamos National Laboratory. His current interests include FinTech, distributed ledgers, digital banking, monetary circuit, industrial strength derivative pricing including regulatory and economic capital calculations and valuation adjustments, as well as large scale holistic bank balance sheet optimization. Alexander published more than a hundred papers on applied mathematics and quantitative finance and authored/edited several books on these subjects.</p>"
     },
     {
-      "img": "images/Harry_Halpin.jpg",
-      "href": "https://www.linkedin.com/in/harryhalpin/",
-      "name": "Harry Halpin",
-      "titles": "Acting CEO at Nym Technologies SA, where I do absolutely everything.",
-      "bio": "<p>My goal is halt surveillance and fight for human freedom through decentralization. The terrain of struggle is technology, and privacy-enhancing technologies and cryptography are our weapons. If you are interested in joining us, contact me or contact@nymtech.net and we'll be back in touch. </p>"
-    },
-    {
       "img": "images/John_Havens.jpg",
       "href": "https://www.linkedin.com/in/johnchavens/",
       "name": "John C. Havens",
       "titles": "Executive Director at The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems",
-      "bio": "<p>As a writer, speaker, activist and consultant focusing on the intersection of technology and culture, I'm trying to help people increase their wellbeing by taking a measure of their lives.</p>"
+      "bio": "<p>John helped create The Council on Extended Intelligence (CXI) in 2017 to proliferate the ideals of responsible participant design, data agency and metrics of economic prosperity prioritizing people and the planet over profit and productivity.  Founded as a partnership between The IEEE Standards Association and MIT, CXI includes members from the EU Parliament, the UK House of Lords, and dozens of global policy, academic and business leaders.</p><p>John is also Executive Director of The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems that has two primary outputs – the creation and iteration of a body of work known as Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems and the recommendation of ideas for Standards Projects focused on prioritizing ethical considerations in A/IS. Twitter: <a href=\"https://twitter.com/johnchavens\">@johnchavens</a></p>"
     }
   ],
   "hosts": [

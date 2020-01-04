@@ -865,7 +865,8 @@
         data.peopleDavos2020 = data.speakersDavos2020.concat(data.demosDavos2020, data.hostsDavos2020).sort(alphabetize);
 
         // TODO: Reuse person objects throughout
-        data.speakersDavos2020.push(self.peopleById["nicole_d'avis"]).sort(alphabetize);
+        data.speakersDavos2020.push(self.peopleById["nicole_d'avis"]);
+        data.speakersDavos2020 = data.speakersDavos2020.sort(alphabetize);
         data.hostsDavos2020.push(self.peopleById.mike_federle, self.peopleById.randall_lane);
       }, function(error) {console.log(error)});
 

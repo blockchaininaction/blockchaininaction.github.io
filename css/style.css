@@ -543,6 +543,12 @@ iframe {
   height: 44px;
 }
 
+dl.davos2020 dt {
+  width: 113px;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
 .person-thumbs {
   padding: 10px 0 30px 0;
   display: grid;

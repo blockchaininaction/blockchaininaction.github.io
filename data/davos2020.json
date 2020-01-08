@@ -191,18 +191,19 @@
       "bio": "<p>Rajesh Gopinathan is the Chief Executive Officer and Managing Director of Tata Consultancy Services (TCS), a leading global IT solutions and consulting firm.</p><p>He has played a key role in helping TCS become a USD 20.09 billion global company. With over 450,738 consultants, TCS is one of the largest private sector employers globally and was recognized as a Global Top Employer for the fourth consecutive year, with the highest retention rate in a competitive industry.</p><p>Under Rajesh’s leadership, the market capitalization of the company crossed USD 100 billion during April 2018, making TCS the most valuable company in India. TCS was recognized as the fastest growing brand in the IT industry for 2019 and consolidated its position as one of the top 3 IT Services brands for the second year in a row. The brand value of TCS increased by 23 % this year and thus TCS entered the USD 12.8 billion club.</p>"
     },
     {
-      "img": "images/Robert_Mahari.jpg",
-      "href": "http://web.mit.edu/4change/aboutus.htm",
-      "name": "Robert Mahari",
-      "titles": "President at Harvard Law & Technology Society",
-      "bio": "<p>Robert Mahari is a JD candidate at Harvard Law School, where he is the president of the Harvard Law & Technology Society and editor in chief of the Harvard Law Record. His work is focused on how technology can and should affect the practice of law. Robert has organized several interdisciplinary global symposia on topics related to the intersection of law and technology, including the upcoming 2020 Harvard European Legal Technology & Privacy Symposium.</p><p>Robert graduated from MIT with a double major in Chemical Engineering and Management Science. He was a visiting researcher at the MIT Media Lab’s Human Dynamics Group where he focused on using machine learning tools to understand financial dynamics of class action litigation. Fluent in four languages, Robert is particularly interested in pursuing projects with global impact. He has taught a recurring Executive MBA workshop at the University of Warsaw on entrepreneurship in the US in both English and Polish. Robert has work experience in management consulting, investment banking and private equity and serves on the boards of a Scandinavian steel group and a Polish publishing group. In his free time, Robert is drawn to the outdoors and loves to hike and fish around the world.</p>"
-    },
-    {
       "img": "images/Hugh_Evans.jpg",
       "href": "https://www.linkedin.com/in/hughcevans/",
       "name": "Hugh Evans",
       "titles": "Founder & CEO at Global Citizen",
       "bio": "<p>Hugh is an internationally renowned development advocate and humanitarian. His passion for poverty eradication was sparked at the age of 14 while on a World Vision trip to the Philippines. The abject poverty Hugh was exposed to led him to begin his work challenging the status quo of extreme poverty. Following a trip to South Africa in 2002 as World Vision’s inaugural Youth Ambassador, Hugh co-founded the Oaktree Foundation; Australia’s first youth-run aid organization. Oaktree’s success under Hugh’s guidance as Director led to Hugh being named Young Australian of the Year (2004) and Junior Chamber International Person of the World (2005)</p><p>Hugh then worked to grow the Make Poverty History campaign in Australia, helping to run the 2006 Make Poverty History Concert fronted by U2 singer Bono. The impact of these campaigns were credited with playing a key role in the Government’s decision to increase its committed foreign aid budget.</p>"
+    },
+    {
+      "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
+      "href": "https://hardjono.mit.edu/",
+      "name": "Thomas Hardjono",
+      "block": "tech",
+      "titles": "Technical Director at <a href=\"https://www.trust.mit.edu/\"MIT Internet Trust Consortium</a> - <a href=\"http://connection.mit.edu/\">MIT Connection Science</a>",
+      "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
     }
   ],
   "staging": [],
@@ -243,14 +244,6 @@
       "bio": "<p>Morgan Frank is a Postdoctoral Associate at MIT’s Media Lab interested in the complexity of AI, the future of work, and the socio-economic consequences of technological change. While many studies focus on phenotypic labor trends, Morgan’s recent research examines how genotypic skill-level processes around AI impact individuals and society. Combining labor research with investigations into the nature of AI research and the social or societal implications of AI adoption, Morgan hopes to inform our understanding of AI’s impact.</p>"
     },
     {
-      "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
-      "href": "https://hardjono.mit.edu/",
-      "name": "Thomas Hardjono",
-      "block": "tech",
-      "titles": "Technical Director at <a href=\"https://www.trust.mit.edu/\"MIT Internet Trust Consortium</a> - <a href=\"http://connection.mit.edu/\">MIT Connection Science</a>",
-      "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
-    },
-    {
       "img": "/images/yaniv_altshuler.jpg",
       "href": "https://www.linkedin.com/in/yaniv-altshuler-73a31a/",
       "name": "Yaniv Altshuler",
@@ -285,6 +278,13 @@
       "name": "John C. Havens",
       "titles": "Executive Director at The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems",
       "bio": "<p>John helped create The Council on Extended Intelligence (CXI) in 2017 to proliferate the ideals of responsible participant design, data agency and metrics of economic prosperity prioritizing people and the planet over profit and productivity.  Founded as a partnership between The IEEE Standards Association and MIT, CXI includes members from the EU Parliament, the UK House of Lords, and dozens of global policy, academic and business leaders.</p><p>John is also Executive Director of The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems that has two primary outputs – the creation and iteration of a body of work known as Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems and the recommendation of ideas for Standards Projects focused on prioritizing ethical considerations in A/IS. Twitter: <a href=\"https://twitter.com/johnchavens\">@johnchavens</a></p>"
+    },
+    {
+      "img": "images/Robert_Mahari.jpg",
+      "href": "http://web.mit.edu/4change/aboutus.htm",
+      "name": "Robert Mahari",
+      "titles": "President at Harvard Law & Technology Society",
+      "bio": "<p>Robert Mahari is a JD candidate at Harvard Law School, where he is the president of the Harvard Law & Technology Society and editor in chief of the Harvard Law Record. His work is focused on how technology can and should affect the practice of law. Robert has organized several interdisciplinary global symposia on topics related to the intersection of law and technology, including the upcoming 2020 Harvard European Legal Technology & Privacy Symposium.</p><p>Robert graduated from MIT with a double major in Chemical Engineering and Management Science. He was a visiting researcher at the MIT Media Lab’s Human Dynamics Group where he focused on using machine learning tools to understand financial dynamics of class action litigation. Fluent in four languages, Robert is particularly interested in pursuing projects with global impact. He has taught a recurring Executive MBA workshop at the University of Warsaw on entrepreneurship in the US in both English and Polish. Robert has work experience in management consulting, investment banking and private equity and serves on the boards of a Scandinavian steel group and a Polish publishing group. In his free time, Robert is drawn to the outdoors and loves to hike and fish around the world.</p>"
     }
   ],
   "hosts": [

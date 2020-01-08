@@ -120,13 +120,6 @@
       "bio": "<p>The Hon Julie Bishop served as Australia's Minister for Foreign Affairs from 2013 until her resignation in 2018. She was the first female to hold the role as well as the first female Deputy Leader of the Liberal Party, serving for 11 years. As Foreign Minister, Ms Bishop was responsible for strengthening Australia's key strategic and economic relationships with Ministerial responsibility for more than 5,000 departmental staff, 110 overseas missions as well as government agencies Australian Secret Intelligence Service and Australian Centre for International Agriculture Research. In a political career spanning 20 years, Julie, as a member of the Government Executive, also served as Minister for Education, Science and Training, Women's Issues and Ageing.</p>"
     },
     {
-      "img": "/images/Tommy_Nicholas.jpg",
-      "href": "https://alloy.co/about/",
-      "name": "Tommy Nicholas",
-      "titles": "CEO at Alloy",
-      "bio": "<p>Tommy is the CEO and co-founder of Alloy which builds the best compliance software for technology enabled banks and fintech companies. Alloy helps financial institutions transition the traditional manual processes involved with customer onboarding and makes them data-driven and automated. Alloy has raised $19 million in venture capital from Bessemer Venture Partners, Eniac Ventures, Primary Ventures, and many others.</p><p>Tommy leads product at Alloy, working closely with Alloy's clients to develop and implement data-driven strategies to lower fraud, increase conversion, and improve the customer experience. Tommy attended the University of Virginia, along with Alloy's CTO Charles Hearn. Prior to Alloy, Tommy worked as a product lead and software engineer. He worked on everything from AR experiences for large museums to consumer facing websites including Coffitivity, a popular productivity app. Tommy also lead product at Knox Payments, an ACH payments infrastructure company.</p>"
-    },
-    {
       "img": "/images/Charles_Chang.jpg",
       "href": "https://fisf.fudan.edu.cn/en_show-112-75.html",
       "name": "Charles Chang",
@@ -196,14 +189,6 @@
       "name": "Hugh Evans",
       "titles": "Founder & CEO at Global Citizen",
       "bio": "<p>Hugh is an internationally renowned development advocate and humanitarian. His passion for poverty eradication was sparked at the age of 14 while on a World Vision trip to the Philippines. The abject poverty Hugh was exposed to led him to begin his work challenging the status quo of extreme poverty. Following a trip to South Africa in 2002 as World Vision’s inaugural Youth Ambassador, Hugh co-founded the Oaktree Foundation; Australia’s first youth-run aid organization. Oaktree’s success under Hugh’s guidance as Director led to Hugh being named Young Australian of the Year (2004) and Junior Chamber International Person of the World (2005)</p><p>Hugh then worked to grow the Make Poverty History campaign in Australia, helping to run the 2006 Make Poverty History Concert fronted by U2 singer Bono. The impact of these campaigns were credited with playing a key role in the Government’s decision to increase its committed foreign aid budget.</p>"
-    },
-    {
-      "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
-      "href": "https://hardjono.mit.edu/",
-      "name": "Thomas Hardjono",
-      "block": "tech",
-      "titles": "Technical Director at <a href=\"https://www.trust.mit.edu/\"MIT Internet Trust Consortium</a> - <a href=\"http://connection.mit.edu/\">MIT Connection Science</a>",
-      "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
     }
   ],
   "staging": [],
@@ -285,6 +270,21 @@
       "name": "Robert Mahari",
       "titles": "President at Harvard Law & Technology Society",
       "bio": "<p>Robert Mahari is a JD candidate at Harvard Law School, where he is the president of the Harvard Law & Technology Society and editor in chief of the Harvard Law Record. His work is focused on how technology can and should affect the practice of law. Robert has organized several interdisciplinary global symposia on topics related to the intersection of law and technology, including the upcoming 2020 Harvard European Legal Technology & Privacy Symposium.</p><p>Robert graduated from MIT with a double major in Chemical Engineering and Management Science. He was a visiting researcher at the MIT Media Lab’s Human Dynamics Group where he focused on using machine learning tools to understand financial dynamics of class action litigation. Fluent in four languages, Robert is particularly interested in pursuing projects with global impact. He has taught a recurring Executive MBA workshop at the University of Warsaw on entrepreneurship in the US in both English and Polish. Robert has work experience in management consulting, investment banking and private equity and serves on the boards of a Scandinavian steel group and a Polish publishing group. In his free time, Robert is drawn to the outdoors and loves to hike and fish around the world.</p>"
+    },
+    {
+      "img": "/images/Tommy_Nicholas.jpg",
+      "href": "https://alloy.co/about/",
+      "name": "Tommy Nicholas",
+      "titles": "CEO at Alloy",
+      "bio": "<p>Tommy is the CEO and co-founder of Alloy which builds the best compliance software for technology enabled banks and fintech companies. Alloy helps financial institutions transition the traditional manual processes involved with customer onboarding and makes them data-driven and automated. Alloy has raised $19 million in venture capital from Bessemer Venture Partners, Eniac Ventures, Primary Ventures, and many others.</p><p>Tommy leads product at Alloy, working closely with Alloy's clients to develop and implement data-driven strategies to lower fraud, increase conversion, and improve the customer experience. Tommy attended the University of Virginia, along with Alloy's CTO Charles Hearn. Prior to Alloy, Tommy worked as a product lead and software engineer. He worked on everything from AR experiences for large museums to consumer facing websites including Coffitivity, a popular productivity app. Tommy also lead product at Knox Payments, an ACH payments infrastructure company.</p>"
+    },
+    {
+      "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
+      "href": "https://hardjono.mit.edu/",
+      "name": "Thomas Hardjono",
+      "block": "tech",
+      "titles": "Technical Director at <a href=\"https://www.trust.mit.edu/\"MIT Internet Trust Consortium</a> - <a href=\"http://connection.mit.edu/\">MIT Connection Science</a>",
+      "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
     }
   ],
   "hosts": [

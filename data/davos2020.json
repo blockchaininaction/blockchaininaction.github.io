@@ -1,13 +1,6 @@
 {
   "speakers": [
     {
-      "img": "/images/MIT-Luis-Videgaray-01_0.jpg",
-      "href": "http://news.mit.edu/2019/visiting-lecturer-luis-videgaray-geopolitics-ai-0712",
-      "name": "Luis Videgaray",
-      "titles": "Fomer Mexican Secretary of Foreign Affairs, and of Finance, on Governance of AI",
-      "bio": "<p>Luis Videgaray is a Senior Lecturer at the MIT Sloan School of Management and the Director of MIT AI Policy for the World Project. Prior to coming to MIT, he served as the Foreign Minister and Finance Minister of Mexico. As Foreign Minister (2017-18) he led Mexico's relationship with the Trump White House, including the successful renegotiation of the NAFTA (now USMCA). He is one of the founders of the Lima Group, created to promote regional diplomatic efforts towards restoring democracy in Venezuela, and conducted Mexico's leading role in the UN towards an inclusive debate on AI and other new technologies. As Finance Minister (2012-16) he led Mexico's historic energy liberalization, a telecommunications reform to foster competition in the sector, a tax reform that reduced the country's dependence on oil revenues, and the drafting of Mexico's new Fintech Law. He was named Finance Minister of the Year by both The Banker Magazine and Euromoney Magazine, and a Leading Global Thinker by Foreign Policy Magazine. In 2012 he was campaign manager for President Peña Nieto and head of the transition team. Previously, he was a member of Mexico's Congress, where he chaired the Budget Committee, and Secretary of Finance of the State of Mexico.</p><p>Before government, Mr. Videgaray had a career in investment banking, advising M&A and private equity transactions. He holds a Ph.D. in Economics from MIT and a BA in Economics from Mexico's ITAM.</p>"
-    },
-    {
       "img": "/images/davos_speakers/Rick_Haythornthwaite.jpg",
       "href": "https://en.wikipedia.org/wiki/Richard_Haythornthwaite",
       "name": "Rick Haythornthwaite",
@@ -125,13 +118,6 @@
       "name": "Charles Chang",
       "titles": "Ph.D. in Finance, University of California, Berkeley",
       "bio": "<p>Charles Chang, the Deputy Dean of Academics, Professor of Finance and Director of the Fintech Research Center at Fanhai International School of Finance, Fudan University. Member of the finance faculty at the Chinese University of Hong Kong.Professor Chang was a faculty member at the Shanghai Advanced Institute of Finance, Shanghai Jiao Tong University. He was a visiting professor for National Taiwan University and Peking University. Prior to returning to Asia, he spent six years on the professorial faculty at Cornell University.</p>"
-    },
-    {
-      "img": "/images/Joseph_Aoun.jpg",
-      "href": "http://www.northeastern.edu/president/biography/",
-      "name": "Joseph Aoun",
-      "titles": "President of Northeastern University",
-      "bio": "<p>Joseph E. Aoun, a well-known higher education thought leader and renowned scholar in linguistics, is the seventh President of Northeastern University.</p><p>An internationally respected voice on the value of global and experiential education, President Aoun has led the expansion of experiential learning - centered on Northeastern's signature co-op program - to offer opportunities for work, research, service, and global study in 136 countries.</p><p>He has strategically aligned the university's use-inspired research enterprise with three global imperatives - health, security, and sustainability - a focus supported by seven new interdisciplinary research institutes.</p>"
     },
     {
       "img": "/images/Steve_Pagliuca.jpg",

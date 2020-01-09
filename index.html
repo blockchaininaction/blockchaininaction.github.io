@@ -801,9 +801,12 @@
       }
 
       var app = new Vue({
-          el: '#app',
-          data: data,
-          routes: routes
+        el: '#app',
+        data: data,
+        routes: routes,
+        updated: function() {
+          console.log("updated");
+        },
       });
 
       loadJSON("/data/davos2020.json", function(result) {

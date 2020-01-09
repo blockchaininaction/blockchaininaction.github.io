@@ -58,14 +58,24 @@
             <div style="margin-right: 30px">
               <h4 style="margin: 20px 0 15px 0px;">Schedule ↴</h4>
               <dl style="padding-bottom: 10px;" class="davos2020">
+                <dt>08:00</dt>
+                <dd>DOORS OPEN</dd>
                 <dt>08:30</dt>
-                <dd>Welcome to Imagination in Action</dd>
-                <dd>BLOCK 1 - Leadership Panel</dd>
-                <dd>BLOCK 2 - Extending Human Intelligence using AI, blockchain, and IoT</dd>
-                <dd>BLOCK 3 - Ideas on Extended Intelligence</dd>
-                <dd>Networking and Lunch</dd>
-                <dd>BLOCK 4 - Global Extended Intelligence</dd>
-                <dd>Closing Imagination in Action</dd>
+                <dd>WELCOME</dd>
+                <dt>08:45</dt>
+                <dd><div class="block-num">BLOCK 1</div><div class="block-item">- Reimagining Leadership</div></dd>
+                <dt>09:15</dt>
+                <dd><div class="block-num">BLOCK 2</div><div class="block-item">- Reimagining Innovation</div></dd>
+                <dd>BREAK</dd>
+                <dt>11:00</dt>
+                <dd><div class="block-num">BLOCK 3</div><div class="block-item">- Imaginative Ideas In 5 Minutes</div>
+                  <div class="block-item">- Reimagining Capitalism Panels</div></dd>
+                <dt>12:00</dt>
+                <dd>NETWORKING & LUNCH</dd>
+                <dt>13:00</dt>
+                <dd><div class="block-num">BLOCK 4</div><div class="block-item">- Reimagining Global Solutions</div></dd>
+                <dt>14:30</dt>
+                <dd>CLOSING</dd>
                 <dt>Ongoing</dt>
                 <dd>
                   <ul>
@@ -118,6 +128,7 @@
         <a v-for="person in peopleDavos2020"
           v-bind:title="person.name"
           v-bind:href="'#' + person.id"
+          v-bind:class="person.class"
           v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
       </div><br><br>
 
@@ -264,7 +275,7 @@
                   v-bind:style="{ 'border-color': block.color }">
                   <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
                       <div class="time">{{block.time}}</div>
-                      <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
+                      <h4><div class="block-num"></span>Block {{block.blockNum}}</h4>
                   </div>
                   <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
                       <div class="time">{{block.time}}</div>
@@ -395,7 +406,7 @@
                     v-bind:style="{ 'border-color': block.color }">
                     <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
                         <div class="time">{{block.time}}</div>
-                        <h4><span class="block-num">Block {{block.blockNum}}</span>{{block.title}}</h4>
+                        <h4><div class="block-num">Block {{block.blockNum}}</span>{{block.title}}</h4>
                     </div>
                     <div v-else class="davos-block-title" v-bind:style="{ 'background': block.color }">
                         <div class="time">{{block.time}}</div>
@@ -568,7 +579,7 @@
         <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule @ MIT 2018</div></h3>
 
       <div class="max-width">
-        <div class="schedule">
+        <div class="scheduleMIT2018">
             <div class="blocks">
                 <div v-for="block in scheduleMIT2018"
                     v-bind:class="'block ' + block.class"

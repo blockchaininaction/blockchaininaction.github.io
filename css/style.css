@@ -551,6 +551,12 @@ dl.davos2020 dt {
 dl.davos2020 dd {
   margin-left: 81px;
 }
+dl.davos2020 .block-num {
+  float: left;
+}
+dl.davos2020 .block-item {
+  padding-left: 78px;
+}
 
 .person-thumbs {
   padding: 10px 0 30px 0;
@@ -573,6 +579,10 @@ dl.davos2020 dd {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%) brightness(90%);
   transition: 300ms filter;
+}
+.person-thumbs a.thumb-headspace,
+.person-thumbs-flex a.thumb-headspace {
+  background-position: 50% 0;
 }
 .person-thumbs-flex {
   display: flex;

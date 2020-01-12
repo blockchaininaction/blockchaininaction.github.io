@@ -92,13 +92,6 @@
       "bio": "<p>Kavita is an executive director at ConsenSys, founding managing partner at ConsenSys Ventures and country head at ConsenSys India. She is a visiting scholar at Stanford University. Kavita received the UN social finance innovator award in 2015 for being an integral part of the founding green bond team at The World Bank.</p><p>Previously she ran a $250M fund aligned with UN SDGs infusing capital in technologies providing first time or low-cost access around the world. She has set up innovative investment funds across East Africa, Middle East, South Asia and recently in the US for past 16 years through World Bank, IFC, McKinsey and The Schmidt Family office. She founded and headed World Bank's first innovation fund in 2010.</p><p>She is on the board and advisor of various accelerators and foundations across the world like google accelerator social track, MIT Solve (Sr. Advisor), Vatican's Right Now foundation for impact investments, Mandela foundation, Blockchained India etc. She is an MIT and Media lab alum.</p>"
     },
     {
-      "img": "/images/ShaoLan_Hsueh.jpg",
-      "href": "http://shaolan.com/",
-      "name": "ShaoLan Hsueh",
-      "titles": "Author, Creator, & Founder of Chineasy",
-      "bio": "<p>Being the daughter of a calligrapher and ceramic artist, I grew up immersed in art and with a deep appreciation of the beauty of the Chinese language. I was the youngest among three daughters, and there was a majority of women in my family, and I grew up to be more of the tomboy! I was very independent and slightly rebellious.</p><p>Everyone in my family is very artistic except me. In my youth, I was more into Taoism, Chinese acupuncture and science. There were a few nights that I even lost my sleep from reading Taoism classics and literature. As a Taoist, it was important for me to find my path and what could become a form of legacy. I always want to make sure that our existence contributes positively to the world.</p>"
-    },
-    {
       "img": "/images/davos_speakers/Mira_Wilczek.jpg",
       "href": "https://www.cogolabs.com/person/mira-wilczek",
       "name": "Mira Wilczek",
@@ -242,6 +235,15 @@
       "name": "Tedros Adhanom",
       "titles": "Director-General, World Health Organization",
       "bio": "<p>Dr Tedros Adhanom Ghebreyesus was elected as WHO Director-General for a five-year term by WHO Member States at the Seventieth World Health Assembly in May 2017. He is the first WHO Director-General to have been elected from multiple candidates by the World Health Assembly, and is the first person from the WHO African Region to serve as WHO's chief technical and administrative officer. Immediately after taking office on 1 July 2017 Dr Tedros outlined five key priorities for the Organization: universal health coverage; health emergencies; women’s, children’s and adolescents’ health; health impacts of climate and environmental change; and a transformed WHO.</p><p>Dr Tedros served as Ethiopia’s Minister of Foreign Affairs from 2012–2016. In this role he led efforts to negotiate the Addis Ababa Action Agenda, in which 193 countries committed to the financing necessary to achieve the Sustainable Development Goals. Dr Tedros served as Ethiopia’s Minister of Health from 2005–2012, where he led a comprehensive reform of the country’s health system. The transformation he led as Ethiopia’s Minister of Health improved access to health care for millions of people. Under his leadership Ethiopia invested in critical health infrastructure, expanded its health workforce, and developed innovative health financing mechanisms.</p>"
+    }
+  ],
+  "removed": [
+    {
+      "img": "/images/ShaoLan_Hsueh.jpg",
+      "href": "http://shaolan.com/",
+      "name": "ShaoLan Hsueh",
+      "titles": "Author, Creator, & Founder of Chineasy",
+      "bio": "<p>Being the daughter of a calligrapher and ceramic artist, I grew up immersed in art and with a deep appreciation of the beauty of the Chinese language. I was the youngest among three daughters, and there was a majority of women in my family, and I grew up to be more of the tomboy! I was very independent and slightly rebellious.</p><p>Everyone in my family is very artistic except me. In my youth, I was more into Taoism, Chinese acupuncture and science. There were a few nights that I even lost my sleep from reading Taoism classics and literature. As a Taoist, it was important for me to find my path and what could become a form of legacy. I always want to make sure that our existence contributes positively to the world.</p>"
     }
   ],
   "demos": [

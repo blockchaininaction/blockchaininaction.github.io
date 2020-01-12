@@ -633,13 +633,14 @@ a.video-link:hover {
   text-decoration: none;
 }
 
-.schedule p {
+.schedule p,
+.scheduleMIT2018 p {
   font-size: 18px;
   line-height: 1.67;
   margin-bottom: 30px;
 }
 
-.schedule .blocks {
+.scheduleMIT2018 .blocks {
   margin: 30px 0;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;

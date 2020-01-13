@@ -1,0 +1,368 @@
+{
+  "speakers": [
+    {
+      "img": "/images/davos_speakers/Rick_Haythornthwaite.jpg",
+      "href": "https://en.wikipedia.org/wiki/Richard_Haythornthwaite",
+      "name": "Rick Haythornthwaite",
+      "titles": "Chairman of Mastercard",
+      "bio": "<p>Rick Haythornthwaite currently serves as the Chairman of MasterCard Inc., Chairman of Centrica PLC, and Chairman and Founder of QiO Technologies Ltd. He has nearly 40 years of executive and non-executive experience, and has led numerous companies through mergers, acquisitions, and other complex transactions at nearly every stage of the business life cycle. He began his career at BP PLC, having held various executive roles throughout his 17-year tenure, including Chief Geologist at BP France, General Manager of Magnus Oilfield and President of BP Venezuela.  Following his work at BP, Mr. Haythornthwaite continued to build leadership experience in the energy and industrials sectors as Corporate and Commercial Director of Premier Oil PLC for two years and four years at Blue Circle Industries, latterly as CEO until its merger with Lafarge in 2001. He went on to serve as CEO of Invensys PLC between 2001 and 2005 and most recently as a Partner at Star Capital Partners Ltd. Mr. Haythornthwaite is an Advisory Partner at Moelis & Company, where he specializes in advising companies across the energy, industrial, and technology sectors.</p><p>Mr. Haythornthwaite holds a Bachelor's degree in Geology from The Queen's College at Oxford and a Master's degree in Management from the Sloan School of Management at MIT.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/David_Kenny.jpg",
+      "href": "https://www.linkedin.com/in/davidkenny1/",
+      "name": "David Kenny",
+      "titles": "CEO, Nielsen Holdings",
+      "bio": "<p>Transformational President and CEO at Digitas, Akamai, Publicis, The Weather Company, IBM, and Nielsen. Three decades of consumer and media focused experience in Big Data, Analytics, AI/ML, and Cloud Technologies. Transformation skills include strategic focus, team development, client and partner development, marketing, and technical innovation.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/Randall_Lane.jpg",
+      "href": "https://www.forbes.com/sites/randalllane",
+      "name": "Randall Lane",
+      "titles": "Editor and Chief Content Officer at <a href=\"https://www.forbes.com\">Forbes</a>",
+      "bio": "<p>Randall is the editor of <a href=\"https://www.forbes.com\">Forbes</a> Magazine, and believe strongly that entrepreneurial capitalism and market-based thinking can solve the world's problems. This is his second stint at Forbes -- between 1991 and 1997, he was a reporter, a staff writer (five cover stories), associate editor and Washington bureau chief.</p><p>In between, he caught the start-up bug: he co-founded P.O.V. Magazine (Adweek's Startup of the Year), and then launched Doubledown Media (Trader Monthly, Dealmaker, Private Air, etc.). As a fattening hobby, he has reviewed restaurants for various magazines since college (and was a National Magazine Award finalist for my wine writing). He used to think chronicling the world's greatest business minds made him a great entrepreneur, but he now realizes his time as an entrepreneur made him an acute business journalist. He just published a new book, The Zeroes: My Misadventures In the Decade Wall Street Went Insane.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/AmyWilkinson_300.jpg",
+      "href": "https://www.amywilkinson.com/",
+      "name": "Amy Wilkinson",
+      "titles": "CEO & Founder of Ingenuity, Author, Lecturer at Stanford",
+      "bio": "<p>Amy Wilkinson is CEO and founder of Ingenuity, Lecturer at Stanford Graduate School of Business and author of The Creator's Code: The Six Essential Skills of Extraordinary Entrepreneurs. She advises executives and emerging leaders around the world on how to master the skills that underlie entrepreneurial success.</p><p>Wilkinson's career spans leadership roles at McKinsey & Company, J.P. Morgan and as founder of Alegre, a foreign-based export company. She has also served in the White House as a senior policy advisor to the United States Trade Representative and a White House Fellow.</p><p>Fascinated by how leaders must reinvent their approaches to excel in an entrepreneurial age, Wilkinson interviewed 200 of today's top entrepreneurs including the founders of Airbnb, LinkedIn, eBay, PayPal, Yelp, Dropbox, Tesla Motors, SpaceX, Chipotle, Under Armour, Spanx, Jetblue, and Revolution Foods to distill what it takes to go from start-up to scale in our rapidly changing economy. She conducted this work while a senior fellow at Harvard University and public policy scholar at the Woodrow Wilson Center. The Ewing Marian Kauffman Foundation awarded Wilkinson a grant for her groundbreaking research on high growth entrepreneurs.</p><p>Wilkinson has been a keynote speaker for corporations, institutes, and universities around the world. Recent speaking events include the World Economic Forum at Davos, Consumer Electronics Show, NASSCOM (India's Leadership Forum), Microsoft, IBM, TD Ameritrade, National Governor's Association, and Federal Reserve Board of Governors.</p><p>She is an expert for The Wall Street Journal. Wilkinson and her work have been featured by CNN, Fox News, CNBC, Bloomberg TV & Radio, NPR, The Wall Street Journal, The Economist, Fortune, Forbes, Inc. TIME, The Washington Post, and USA Today.</p><p>Wilkinson earned BA, MA, and MBA degrees from Stanford University. She is a member of the Council on Foreign Relations and an Eisenhower Fellow.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/Michael_Federle.jpg",
+      "href": "https://www.linkedin.com/in/michaelfederle/",
+      "name": "Mike Federle",
+      "titles": "CEO at Forbes & sharing video on “Blockchain”",
+      "bio": "<p>Mr. Michael Federle, also known as Mike, has been President of Forbes Media LLC since July 2016 and as its Chief Operating Officer since October 2011. Mr. Federle is overseeing circulation, manufacturing and distribution operations as well as global licensing and new business development. He is the Chief Operating Officer at Forbes.com Inc. He is a 25-year veteran of the media industry. He co-founded and served as the President and Chief Operating Officer of Techonomy Media Inc. Mr. Federle oversaw Techonomy's strategic partnerships, sponsorships and the Techonomy Fellows Program. He served as Publisher of Fortune magazine from 1998 to 2007 and has invested in a wide range of media companies. Mr. Federle served as Group Publisher of the Time Inc Business & Finance Network, Group Publisher of the Bonnier Mountain Group in Boulder, Colorado, and Chief Executive Officer of Advertising & Marketing at Next Jump, a privately held Silicon Valley internet company.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/David_Blundin.jpg",
+      "href": "https://www.cogolabs.com/person/david-blundin",
+      "name": "Dave Blundin",
+      "titles": "Chairman of <a href=\"http://www.linkventures.com/team\">Link Ventures</a>, and <a href=\"https://www.vestmark.com/\">Vestmark</a>",
+      "bio": "<p>Dave has co-founded over a dozen companies at least 5 of which have achieved $300 million+ valuations. He has served on 23 private and public boards. His successes include the founding and sale of web analytics company DataSage in a stock deal of Unicorn scale, the co-founding of Vestmark (the leading innovator of wealth management technology with over 2 million accounts and over $1 trillion in managed assets), and being the lead seed-stage investor in at least 14 consumer internet, analytics, fintech, and big-data companies.</p><p>Dave was named to MIT Technology Review’s List of Innovators under 35. Venture capitalist Duncan McCallum of One Liberty Ventures called Dave \"the most visionary person I have ever met\" in the field of decision-support software</p><p>Dave was the President and CEO of Cirrus Recognition Systems, a data mining software company. Previously, he was among the first ten employees at MicroStrategy and, subsequently, served on Microstrategy's board of directors [NASDAQ:MSTR].</p><p>He currently serves as the Chairman of Link’s technology-incubation company, Cogo Labs, and on the boards of most of Link’s investments. He is also the chairman of Vestmark and a general partner at Vestigo Ventures, a Fintech focused fund with seed-deals in Cryptocurrency, Infrastructure, and Consumer Finance.</p><p>Dave received a BS in Computer Science degree from MIT where he researched neural network technology at the AI lab.</p>"
+    },
+    {
+      "img": "/images/ajay_bhalla.jpg",
+      "href": "https://www.linkedin.com/in/ajay-bhalla-34230715/",
+      "name": "Ajay Bhalla",
+      "titles": "President, Cyber and Intelligence Solutions, Mastercard",
+      "bio": "<p>Responsible for identifying and deploying innovative technology solutions that ensure 70 billion transactions happen each year in a convenient, safe and secure manner. A passionate advocate for the way in which artificial intelligence, biometrics, cybersecurity and digital identity can have a positive impact on society, with a remit to enable these technologies for the benefit of all our stakeholders.</p><p>Provides leadership in M&A transactions and integrations, governance, risk and audit leadership as well as driving a major contribution to Mastercard's revenue. Additionally, plays a pivotal role in promoting financial inclusion and Mastercard's ambition to give 2.5 billion people access to financial services.</p><p>Committed to youth engagement in technology and international affairs. Working with leading bodies and academia to advance global understanding and future solutions in the new digital economies. Serves as a CEME Senior Fellow at The Fletcher School, Tufts University and as MIT Connection Science Fellow at Massachusetts Institute of Technology (MIT).</p>"
+    },
+    {
+      "img": "/images/daniela_rus.jpg",
+      "href": "https://www.csail.mit.edu/person/daniela-rus",
+      "name": "Daniela Rus",
+      "titles": "The Andrew (1956) and Erna Viterbi Professor of Electrical Engineering and Computer Science and Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT",
+      "bio": "<p>Daniela Rus is the Andrew (1956) and Erna Viterbi Professor of Electrical Engineering and Computer Science and Director of the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT. Rus's research interests are in robotics, mobile computing, and data science. Rus is a Class of 2002 MacArthur Fellow, a fellow of ACM, AAAI and IEEE, and a member of the National Academy of Engineering, and the American Academy for Arts and Science. She earned her PhD in Computer Science from Cornell University.</p>"
+    },
+    {
+      "img": "/images/vanessacolella.jpg",
+      "href": "https://www.citi.com/ventures/bio/vanessa-colella.html",
+      "name": "Vanessa Colella",
+      "titles": "Chief Innovation Officer, Citi & Head of Citi Ventures",
+      "bio": "<p>With 25 years of leadership experience working at the intersection of media and technology, Vanessa has unique experience and perspective that draws upon both operating and strategic roles. She's an analytical thinker and a quick learner, with a high tolerance for ambiguous, rapidly evolving situations. She is relentlessly bottom-line driven, having run several businesses in turnaround situations. Vanessa has managed traditional sales and marketing as well as next-generation business functions including data and analytics. She is a passionate leader, having successfully built and inspired teams in a wide variety of circumstances. In addition to her corporate experience, Vanessa is a published author and a former high school teacher. </p>"
+    },
+    {
+      "img": "/images/NuriaOliver.jpg",
+      "href": "http://www.nuriaoliver.com/",
+      "name": "Nuria Oliver",
+      "titles": "Director of Research; Advisor; IEEE Fellow; ACM Fellow; EurAI Fellow; CHI Academy; Engineer of the Year 2018;",
+      "bio": "<p>Nuria Oliver is a computer scientist. She holds a Ph.D. from the Media Lab at MIT. She is the first female computer scientist in Spain to be named an ACM Distinguished Scientist and an ACM Fellow. She is also a Fellow of the European Association of Artificial Intelligence and a IEEE Fellow. She is a member of the Academia Europaea and the fourth and youngest female member of the Spanish Royal Academy of Engineering. In 2018 she was named Engineer of the Year by the Professional Association of Telecommunication Engineers of Spain and she received an honorary doctorate from the University Miguel Hernandez</p>"
+    },
+    {
+      "img": "/images/davos_speakers/Chris_Sanders.jpg",
+      "href": "https://www.linkedin.com/in/clsanders/",
+      "name": "Chris Sanders",
+      "titles": "Co-Founder <a href=\"http://arinaction.org/\">AR in Action</a>",
+      "bio": "<p>Chris Sanders is a health innovator, entrepreneur, and Ironman Triathlete. He co-founded AR in Action to accelerate the development of real-world Augmented Reality Solutions in healthcare through curation of one of the most important communities and gatherings on the planet. Chris is also helping startups commercialize digital health solutions that push the needle forward exponentially in what we know about health and disease.</p>"
+    },
+    {
+      "img": "/images/Jeffrey_Saviano.jpg",
+      "href": "www.linkedin.com/in/jeffrey-saviano-1398775/",
+      "name": "Jeffrey Saviano",
+      "titles": "EY Global Tax Innovation Leader",
+      "bio": "<p>Based in Cambridge, Massachusetts, Jeff is a principal of <a href=\"https://webforms.ey.com/\">EY</a> and a member of EY's global innovation leadership team. Jeff leads teams in the discovery, design, and commercialization of new tax services. In collaboration with MIT, Jeff also leads the EY Global Advanced Technology Tax Lab, a leading team of computer scientists and solution architects solving complex tax issues through the application of advanced technologies. The EY Tax Lab is an instrument of tax industry transformation, with an emphasis on the convergence of disruptive technologies that are driving business growth, such as blockchain, advanced data analytics and AI- with a particular focus on machine learning and natural language processing.</p><p>Jeff's teams are examining the relationship between people and computers to understand how machines can boost the effectiveness of tax professionals, resulting in a collective intelligence. Pinpointing the emerging technology developments that will have the greatest impact on the tax industry – and taking new, innovative approaches to address them – is a major focus of the Tax Lab. Furthering the EY purpose of building a better working world, the Tax Lab will develop a governance model of AI systems for tax purposes, and help government better understand the externalities of tax policy with AI systems.</p><p>In his talk, Jeff will discuss the application of AI and blockchain to the global administration of tax; how advanced technologies can address the global tax fraud dilemma and better enable fair and just taxing systems for the benefit of society.</p>"
+    },
+    {
+      "img": "/images/KGupta.jpg",
+      "href": "https://www.indiadappfest.com/speaker/kavita-gupta/",
+      "name": "Kavita Gupta",
+      "titles": "Executive Director at ConsenSys, Founding Managing Partner at ConsenSys Ventures and Country Head at ConsenSys India",
+      "bio": "<p>Kavita Gupta is a visiting scholar, lecturer and founding member of the Distributed Trust Initiative at Stanford University. She also leads investment committee for Katapult. AI - investing in AI & Blockchain. Previously, she was the Founding Managing Partner of the VC-hedge fund at ConsenSys Venture, investing in next-gen blockchain technologies. In 2015, she received the UN Social Finance Innovator Award for helping found the green bond team at The World Bank. She’s set up innovative investment funds across Africa, the Middle East, South Asia and the US for the past 16 years, and advises the Vatican impact investing community, Dusk Foundation, and the Mandela Trust, among others.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/Mira_Wilczek.jpg",
+      "href": "https://www.cogolabs.com/person/mira-wilczek",
+      "name": "Mira Wilczek",
+      "titles": "Managing Director at Link Ventures",
+      "bio": "<p>Mira Wilczek is Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>. She serves on the Board of Directors at EverQuote, CareDash, and Hopjump, and the Advisory Board of Vestigo Ventures. She is also a Co-Director at the Brahe Educational Foundation. In 2017 Mira was named Top 40 Under 40 by the Boston Business Journal.</p><p>Prior to joining Cogo, Mira was founder and CEO of Red Panda Security, Principal Investigator under the DARPA CFT program, and Director of Business Development at Lyric Semiconductor, where she garnered industry recognition including TR50, Silicon 60, and an EE Times ACE Award and led the successful sale of the company to Analog Devices. She started her career as an ethical hacker at IBM, architecting their first automated penetration testing platform.</p><p>Mira holds patents both granted and pending in the fields of cyber security and sensor data fusion. She has an S.B. in Electrical Engineering and Computer Science from MIT, as well as an MBA from the MIT Sloan School of Management.</p>"
+    },
+    {
+      "img": "/images/Julie_Bishop.jpg",
+      "href": "https://en.wikipedia.org/wiki/Julie_Bishop",
+      "name": "Julie Bishop",
+      "titles": "Former Australian Minister for Foreign Affairs",
+      "bio": "<p>The Hon Julie Bishop served as Australia's Minister for Foreign Affairs from 2013 until her resignation in 2018. She was the first female to hold the role as well as the first female Deputy Leader of the Liberal Party, serving for 11 years. As Foreign Minister, Ms Bishop was responsible for strengthening Australia's key strategic and economic relationships with Ministerial responsibility for more than 5,000 departmental staff, 110 overseas missions as well as government agencies Australian Secret Intelligence Service and Australian Centre for International Agriculture Research. In a political career spanning 20 years, Julie, as a member of the Government Executive, also served as Minister for Education, Science and Training, Women's Issues and Ageing.</p>"
+    },
+    {
+      "img": "/images/Charles_Chang.jpg",
+      "href": "https://fisf.fudan.edu.cn/en_show-112-75.html",
+      "name": "Charles Chang",
+      "titles": "Ph.D. in Finance, University of California, Berkeley",
+      "bio": "<p>Charles Chang, the Deputy Dean of Academics, Professor of Finance and Director of the Fintech Research Center at Fanhai International School of Finance, Fudan University. Member of the finance faculty at the Chinese University of Hong Kong.Professor Chang was a faculty member at the Shanghai Advanced Institute of Finance, Shanghai Jiao Tong University. He was a visiting professor for National Taiwan University and Peking University. Prior to returning to Asia, he spent six years on the professorial faculty at Cornell University.</p>"
+    },
+    {
+      "img": "/images/Steve_Pagliuca.jpg",
+      "href": "https://www.linkedin.com/in/stevepagliuca/",
+      "name": "Steve Pagliuca",
+      "titles": "Managing Director, Bain Capital",
+      "bio": "<p>Steve Pagliuca is a Managing Director at Bain Capital, a leading global private investment firm based in Boston. Mr. Pagliuca is also a Managing Partner and Co-Owner of the World Championship Boston Celtics Basketball franchise</p><p>Mr. Pagliuca joined Bain & Company in 1982 and founded the Information Partners private equity fund for Bain Capital in 1989. As a Managing Director of Bain Capital, he has helped build the firm into one of the world's leading investment companies with over $75 billion in assets under management.</p><p>Mr. Pagliuca has also lived and worked in The Netherlands as a senior accountant and international tax specialist for Peat Marwick Mitchell & Company and has helped to develop Bain Capital's private equity practice in Europe. His focus is investments in the media, information and health care industries.</p>"
+    },
+    {
+      "img": "images/Claire-Melamed-Bio-pic-Rebecca-McRobb-640x640.jpg",
+      "href": "https://www.linkedin.com/in/claire-melamed-54853b31",
+      "name": "Claire Melamed",
+      "titles": "Chief Executive Officer at Global Partnership for Sustainable Development Data",
+      "bio": "<p>Dr Claire Melamed is the CEO of the Global Partnership for Sustainable Development Data. This growing network brings together over 300 members – governments, private sector, and civil society – to harness and leverage data and data technology towards achieving the Sustainable Development Goals. She was previously Managing Director of the Overseas Development Institute, and in 2014, she worked in the office of the UN Secretary General, writing the report of the Independent Expert Advisory Group on the Data Revolution, “A World That Counts”. “We say that every life counts, but we still don't count every life”, she says in her advocacy to use the knowledge provided by data to improve lives and protect the planet. Claire is based in London and heads up a global team based in five countries.</p>"
+    },
+    {
+      "img": "images/Paul_Tudor_Jones.jpg",
+      "href": "https://en.wikipedia.org/wiki/Paul_Tudor_Jones",
+      "name": "Paul Tudor Jones",
+      "titles": "Founder of Tudor Investment Corporation and Robin Hood Foundation",
+      "bio": "<p>Paul Tudor Jones II is an American investor, hedge fund manager, and philanthropist. In 1980, he founded his hedge fund, Tudor Investment Corporation, an asset management firm headquartered in Greenwich, Connecticut. Soon after, he created the Tudor Group, a hedge fund holding company that specializes in fixed income, currencies, equities, and commodities.</p>"
+    },
+    {
+      "img": "/images/davos_demos/ramesh-raskar-mit-spectrum_0.jpeg",
+      "href": "https://www.media.mit.edu/people/raskar/overview/",
+      "name": "Ramesh Raskar",
+      "titles": "Assoc. Prof MIT Media Lab, Facebook, Google[X], REDX.io",
+      "bio": "<p>Ramesh Raskar is an Associate Professor at MIT Media Lab and directs the Camera Culture research group. His focus is on building interfaces between social systems and autonomous systems. These society-autonomy interfaces (SAI) span research in physical (e.g., sensors, health-tech), digital (e.g., automating machine learning) and global (e.g., geomaps, autonomous mobility) domains.</p><p>He received the Lemelson Award (2016), ACM SIGGRAPH Achievement Award (2017), DARPA Young Faculty Award (2009), Alfred P. Sloan Research Fellowship (2009), TR100 Award from MIT Technology Review (2004) and Global Indus Technovator Award (2003). He has worked on special research projects at Google [X] and Facebook and co-founded/advised several companies.</p><p>In his recent role at Facebook, he launched and led innovation teams in Digital Health, Health-tech, Satellite Imaging, TV bandwidth for Connectivity, VR/AR and 'Emerging Worlds' initiative for FB.</p>",
+      "deck": "https://drive.google.com/file/d/0BzUjOVWyC6wTRzFaeU1PdWRjUEdJRi1SbHd1R09pTTlkbGFr/view?usp=sharing"
+    },
+    {
+      "img": "images/Santanu_Bhattacharya.jpg",
+      "href": "https://www.linkedin.com/in/santanub/",
+      "name": "Santanu Bhattacharya",
+      "titles": "Chief Data Scientist at Airtel",
+      "bio": "<p>Seasoned executive with expertise in digital transformation; created and led multi B$ data-driven businesses for global scale. Currently, I am the Chief Data Scientist at Airtel (400 million subscribers in 16 countries), leading digital and data driven growth and transformation for “Airtel 3.0”</p><p>Past, I have led Facebook's emerging market products with 350 million users/ $2B revenue, headed America Online's (AOL) global data analytics and products with $1B topline, has successfully built two start-ups (Salorix, Origin) and been part of the journey to one starup's (Delhivery) Unicorn status. I have built world-class teams of business leaders and technologists from scratch to produce cutting-edge products, driving significant values</p>"
+    },
+    {
+      "img": "images/Christian_Schupbach.jpg",
+      "href": "https://www.linkedin.com/in/ch-schuepbach/",
+      "name": "Christian Schüpbach",
+      "titles": "Digital Venture Builder (FinTech) at Swisscom",
+      "bio": "<p>Christian is responsible for the Digital Asset initiatives of Swisscom, Switzerland's leading telecom company and one of its leading IT companies. Swisscom is among Europe's most active corporates in the Blockchain, Digital Assets and Trust Services space. Over the past years Swisscom's Digital Business Unit launched various blockchain ventures and is very committed to promote the mainstream adoption of the blockchain technology in Europe.</p><p>Christian holds a Master's degree in Banking and Finance from the University of St. Gallen. Having spent the majority of his career as an exotic derivatives trader in a large investment bank, Christian understood early on that new tech can lead to a competitive advantage in banking. With the opportunities brought by new technologies like AI and blockchain, Christian decided to entirely focusing on working on the future of banking. Over the past years he was instrumental in shaping the Digital Asset space in Switzerland, first in his role as Managing partner in a small investment boutique and since 2019 as Digital Asset lead at Swisscom.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/rajesh_gopinathan.jpg",
+      "href": "https://en.wikipedia.org/wiki/Rajesh_Gopinathan",
+      "name": "Rajesh Gopinathan",
+      "titles": "CEO & Managing Director at <a href=\"https://www.tcs.com/\">Tata Consultancy Services</a>",
+      "bio": "<p>Rajesh Gopinathan is the Chief Executive Officer and Managing Director of Tata Consultancy Services (TCS), a leading global IT solutions and consulting firm.</p><p>He has played a key role in helping TCS become a USD 20.09 billion global company. With over 450,738 consultants, TCS is one of the largest private sector employers globally and was recognized as a Global Top Employer for the fourth consecutive year, with the highest retention rate in a competitive industry.</p><p>Under Rajesh's leadership, the market capitalization of the company crossed USD 100 billion during April 2018, making TCS the most valuable company in India. TCS was recognized as the fastest growing brand in the IT industry for 2019 and consolidated its position as one of the top 3 IT Services brands for the second year in a row. The brand value of TCS increased by 23 % this year and thus TCS entered the USD 12.8 billion club.</p>"
+    },
+    {
+      "img": "images/Hugh_Evans.jpg",
+      "href": "https://www.linkedin.com/in/hughcevans/",
+      "name": "Hugh Evans",
+      "titles": "Founder & CEO at Global Citizen",
+      "bio": "<p>Hugh is an internationally renowned development advocate and humanitarian.</p><p>His passion for poverty eradication was sparked at the age of 14 while on a World Vision trip to the Philippines. The abject poverty Hugh was exposed to led him to begin his work challenging the status quo of extreme poverty. Following a trip to South Africa in 2002 as World Vision's inaugural Youth Ambassador, Hugh co-founded the Oaktree Foundation; Australia's first youth-run aid organization. Oaktree's success under Hugh's guidance as Director led to Hugh being named Young Australian of the Year (2004) and Junior Chamber International Person of the World (2005).</p><p>Hugh then worked to grow the Make Poverty History campaign in Australia, helping to run the 2006 Make Poverty History Concert fronted by U2 singer Bono. The impact of these campaigns were credited with playing a key role in the Government's decision to increase its committed foreign aid budget.</p><p>In 2008, with grants from the United Nations, Australian government and British government, Hugh built his impact in the aid and development sector, co-founding the Global Poverty Project (GPP). GPP is an education and advocacy organization committed to increasing the number and effectiveness of individuals taking action to end extreme poverty. In 2010 it helped launch the million dollar, international fundraising campaign Live Below the Line, and in 2011 Global Poverty Project worked alongside the Bill & Melinda Gates foundation to execute The End of Polio campaign which leveraged $118 million in funds to eradicate Polio. In August 2012, GPP launched the annual Global Citizen Festival - a free ticketed music event in New York City that coincides with the UN General Assembly meeting in September. Over the last ten years, Global Citizens have taken nearly 22 million actions in the fight against extreme poverty driving financial commitments of almost $40bn in support of the world's most marginalised people.</p><p>He was featured on Forbes 30 Under 30 in 2012, was named as one of Fast Company's 100 Most Creative People in Business in 2014, and received the GQ Man of the Year Award for Chivalry in 2014.</p>",
+      "class": "thumb-headspace"
+    },
+    {
+      "img": "images/Declan_Kelly.jpg",
+      "href": "https://www.teneo.com/person/declan-kelly/",
+      "name": "Declan Kelly",
+      "titles": "Chairman, CEO and co-founder of Teneo",
+      "bio": "<p>Declan is a trusted advisor to several of the world’s leading CEOs and corporations.</p><p>Prior to Teneo, Declan served as the U.S. Economic Envoy to Northern Ireland at the U.S. Department of State, appointed by Secretary of State, Hillary Clinton, in September, 2009.</p><p>In his role as Envoy, Declan is recognized as having helped bring significant investment to the region from U.S. corporations. He also played a significant role in supporting the efforts that led to the historic devolution of policing and justice powers to the Northern Ireland Assembly, giving Northern Ireland fully devolved political governance for the first time in its modern history.</p><p>Prior to his government service, Declan served as Executive Vice President and Chief Integration Officer of FTI Consulting (FTI), one of the world’s leading international consulting companies.</p><p>Declan is an honorary Visiting Professor in Management and Leadership at Queen’s University Belfast. In 2011 he also received an honorary doctorate from the University in recognition of his service to the community and economy of Northern Ireland.</p><p>He created and continues to underwrite and personally oversee The Northern Ireland Mentorship Program which enables young university graduates from Northern Ireland to spend a year working within several leading corporations in the United States with a view to using their experience to embark on new careers in Northern Ireland. To date there have been over 100 participants in the program.</p><p>Declan serves on the board of Global Citizen, a leading international advocacy organization dedicated to ending extreme poverty by 2030.</p><p>Declan and Global Citizen CEO, Hugh Evans, are together leading an initiative called Global Goal Live – a year-long campaign that will culminate with a 10-hour global media event spanning five continents that will be the largest live-broadcast cause event in history on September 26th, 2020. The initiative will help secure commitments toward the $350 billion in additional funding needed annually to achieve the United Nations Global Goals in the world’s poorest 59 countries.</p>"
+    },
+    {
+      "img": "images/Eddie_Ndopu.jpg",
+      "href": "https://en.wikipedia.org/wiki/Eddie_Ndopu",
+      "name": "Eddie Ndopu",
+      "titles": "Award-winning activist, humanitarian, and public intellectual, United Nations SDG Advocate",
+      "bio": "<p>Eddie is a global activist and humanitarian. Diagnosed with spinal muscular atrophy at age two and only given a few years to live, he has become a beacon of hope for people with disabilities around the world. Eddie is a United Nations SDG Advocate appointed by Secretary-General, Antonio Guterres. He is also Founder and CEO of Beyond Zero Ventures, a consolidation of initiatives to help humanity raise the bar for access and inclusion. Eddie holds a masters in public policy from Oxford and plans to be one of the first physically disabled people to experience zero-gravity spaceflight.</p>"
+    },
+    {
+      "img": "images/Wawira_Njiru.jpg",
+      "href": "https://en.wikipedia.org/wiki/Anne_Wawira_Njiru",
+      "name": "Wawira Njiru",
+      "titles": "Kenyan businesswoman, entrepreneur, human nutritionist, and philanthropist, executive director of Food 4 Education",
+      "bio": "<p>Wawira is the founder of Food for Education an organisation that is feeding Africa’s future through innovative, cutting-edge technology. Food for Education has created a sustainable model of efficiently providing locally sourced, high quality, nutritious meals to public primary school children. They have provided over 1,000,000 meals and their scalable, efficient model is creating the first sustainable path to solve the child nutrition crisis for 500 million African children.</p><p>Food for Education provides affordable, highly nutritious meals to public primary school children to improve their nutrition and education outcomes. They use technology to source from small holder farmers, cook centrally and distribute lunches to 10,000 kids a day. Parents use mobile money to pre-pay $0.15 for each meal through their innovative Tap2Eat technology. Their contributions are topped up to a virtual wallet linked to NFC wrist bands that kids use to Tap 2 Eat in under 5 seconds.</p><p>She is a Stanford d school alumni, the youngest recipient of the University of South Australia’s alumni award 2017, a 2018 Rainer Arnhold Fellow, a recipient of the Builders of Africa Award 2018 and one of 2018’s Top 40 under 40 women in Kenya.</p><p>She is also the first recipient of the Global Citizen Youth Leadership Prize 2018 presented by Cisco.</p><p>She is passionate about African youth and African solutions.</p>"
+    },
+    {
+      "img": "images/Bas_Burger.jpg",
+      "href": "https://www.globalservices.bt.com/en/aboutus/leadership/bas-burger",
+      "name": "Bas Burger",
+      "titles": "CEO of BT Global Services",
+      "bio": "<p>Bas has worked for close to 20 years in the ICT sector, supporting the digitalisation of some of the world’s most valuable and complex organisations.</p><p>As CEO, Bas is repositioning us as a more focused digital business, prioritising the innovation of cloud-based platforms that deliver products and services, with our global network at the core, to support the digital transformation of our customers.</p><p>Bas Burger has been with us since 2008 in a variety of roles, most recently president, Americas, driving growth across the whole region.</p><p>Before that, Bas gained industry sector expertise by leading our global commerce organisation, managing multinational customers in the manufacturing, logistics and pharmaceutical sectors since 2010, adding the Global Consumer Packaged Goods (CPG) and the Global Pharmaceutical and Chemical industry sectors in 2013. Bas also led our operations across Europe, the Middle East, Africa and Latin America from 2012 to 2013.</p><p>Bas started his career with us as CEO of the Benelux region, where he transformed the way we operate, improving the performance and service delivered to multinationals, government agencies, and large local enterprises.</p><p>Before joining us, Bas was executive president and part of the management committee of Getronics NV. There he ran global sales, channels and partnerships and supported and developed their international business. He was also CEO and Managing Director of KPN Entercom Solutions, NV.</p><p>A Dutch native, Bas holds a Master of Business Administration (MBA) from the University of Bradford, UK.</p>"
+    },
+    {
+      "img": "images/Rima_Qureshi.jpg",
+      "href": "https://www.verizon.com/about/our-company/executive-bios/rima-qureshi",
+      "name": "Rima Qureshi",
+      "titles": "EVP & Chief Strategy Officer, Verizon",
+      "bio": "<p>Rima Qureshi is executive vice president and chief strategy officer for Verizon. She is responsible for development and implementation of Verizon's overall corporate strategy, business development, partnerships, strategic investments and acquisitions.</p><p>Before joining Verizon in November 2017, Qureshi was president and CEO of Ericsson North America.  She has extensive experience in successfully managing various business segments, including sales, product management, operations and research and development. She also has extensive experience in acquisitions and integration.</p><p>Before becoming president and CEO of Ericsson North America in 2016, she was Ericsson's chief strategy officer and head of mergers and acquisitions. Her more than two decades of leadership experience in the mobile communications industry include more than 15 years of global experience.</p><p>Qureshi joined Ericsson in 1993 and was a vice president there since 2000. In 2010 she was named senior vice president of Ericsson's CDMA Mobile Systems Group, and she assumed additional responsibilities as senior vice president of strategic projects in 2013. She also served as chairman of the Ericsson's Northern Europe, Russia;Central Asia group, and chairman of Ericsson's Modem division before becoming chief strategy officer.</p><p>Rima is currently a board member of MasterCard Incorporated and GSMA, the global telecom industry association. She also serves as an international advisory board member of McGill University.  She has significant experience working with the humanitarian sector and various United Nations agencies.</p><p>She earned both her undergraduate and master's degrees from McGill University in Montreal, and is fluent in both English and French.</p>"
+    },
+    {
+      "img": "images/Krishnan_Ramanujam.jpg",
+      "href": "https://www.linkedin.com/in/krishnan-ramanujam-a0015413",
+      "name": "Krishnan Ramanujam",
+      "titles": "President, Business & Technology Services at Tata Consultancy Services",
+      "bio": "<p>As President of TCS’ Service Lines, Krishnan leads Consulting and Service Integration, Cognitive Business Operations and Digital Transformation Services globally.</p><p>Krishnan drives forward the vision, direction and go-to-market strategy for TCS’ Services organization. In addition to fostering the development of new services and solutions, Krishnan and his leadership team, armed with expert skills and deep contextual knowledge of key industries, successfully guide complex global transformation initiatives for the world’s leading enterprises.</p><p>Krishnan’s organization is focused on driving growth and transformation for TCS clients by spearheading and leading their evolution from IT-centric to customer-centric models which streamline and optimize business functions. Many of the world’s largest corporations rely on Krishnan and his teams to define and apply technology as the driver toward successful business outcomes. This, in turn, creates a path for TCS customers to create new business models and alternative revenue streams. By developing and leveraging best-in-class experts and offerings in Design Thinking, Consulting, Cloud, IoT, AI, Analytics and Enterprise Applications, Krishnan has successfully positioned TCS as the industry’s leading expert in enterprise transformations.</p>",
+      "class": "thumb-headspace"
+    },
+    {
+      "img": "images/Alexander_De_Croo.jpg",
+      "href": "https://www.decroo.belgium.be/en/biography",
+      "name": "Alexander De Croo",
+      "titles": "Deputy Prime Minister of Belgium",
+      "bio": "<p>Alexander De Croo is the Deputy Prime Minister and Minister of Development Cooperation, Digital Agenda, Telecom and Postal Services of Belgium. Previously, he was Minister of Pensions. Before his political career, Alexander De Croo became a project leader of The Boston Consulting Group in 1999.</p><p>Starting from 2006, he founded a new company called Darts-ip specialized in providing service to Intellectual Property professionals. In 2013, De Croo was appointed Vice Chairman of the World Economic Forum Global Agenda Council on Ageing. He is part of the 2015 intake of World Economic Forum Young Global Leaders.</p>"
+    },
+    {
+      "img": "images/Priyanka_Chopra-Jonas.jpg",
+      "href": "https://en.wikipedia.org/wiki/Priyanka_Chopra",
+      "name": "Priyanka Chopra-Jonas",
+      "titles": "Actress, Singer, Film Producer, and the winner of the Miss World 2000 pageant",
+      "bio": "<p>Priyanka Chopra-Jonas is a multi-faceted talent, who is one of the most recognized personalities in the world.</p><p>Chopra-Jonas was already a film and television star in her native India when she made her American TV acting debut, on ABC’s hit drama “Quantico.” Playing the central role of Alex Parrish, she made history as the first Indian actor to star as the lead of a TV drama series. In January 2016, Chopra-Jonas won a People’s Choice Award for her role in “Quantico,” in the category of Favorite Actress in a New Television Series, again making history as the first Indian actress to win a People’s Choice Award and in 2017 won Favorite Actress in a TV Drama. In April 2016 she was featured on the cover of TIME magazine’s coveted TIME 100 issue, named as one of the “Most Influential People” in the world, and recognized as one of Forbes 100 Most Powerful Women in 2018.</p><p>Chopra-Jonas’ foray into the entertainment industry began at the age of seventeen, when she won Miss India and went on to win Miss World the following year, a title that brought her international attention.</p><p>With over 100 million social media followers, and growing by the day, Chopra-Jonas is committed to using her reach for good.  She is a UNICEF Goodwill Ambassador, and has been a National Goodwill Ambassador to India for 12 years. She is also a UN Foundation Girl Up Champion and is involved in a number of efforts to protect children’s rights and promote the education of girls in India, including her namesake charity, The Priyanka Chopra Foundation for Health and Education. In addition to these roles, Chopra-Jonas has also dedicated herself to fighting for inclusion and diversity for all and strongly believes in working to create a more inclusive world where diversity is celebrated.</p><p>Over Chopra-Jonas’ 20-year career, she has dedicated herself to fighting for inclusion and diversity – both topics she is passionate about. Chopra-Jonas is married to recording artist and actor Nick Jonas. The couple splits their time between New York, Los Angeles, and Mumbai.</p>"
+    }
+  ],
+  "staging": [
+    {
+      "img": "images/Marc_Pritchard.jpg",
+      "href": "https://www.linkedin.com/in/marcpritchardpg/",
+      "name": "Marc Pritchard",
+      "titles": "Chief Brand Officer at Procter & Gamble",
+      "bio": "<p>Marc Pritchard is responsible for P&G’s brand building disciplines worldwide. He sets theCompany’s multi-billion-dollar media, marketing and advertising strategies, and leads marketing innovations that guide communication and brand building for P&G’s portfolio of trusted, quality brands.</p><p>Marc is a veteran of P&G for more than three decades, joining the company in 1982 as a cost analyst in the Paper Division, followed by a move into marketing in 1987 on the Sure anti- perspirant/deodorant brand. He has 20+ years of progressive experience in the Beauty and Personal Care categories which earned his appointment to president of Global Cosmetics and Personal Care in 2003. Known for his pioneering approach to product, commercial and operational innovation, Marc served as president of Global Strategy for two years, driving expanded productivity for P&G. He was appointed P&G’s chief marketing officer in 2008.</p><p>As P&G’s top brand builder, Marc believes in the power of brands to serve people with superior- performing products, while being both a force for good and a force for growth through ethics and responsibility, community impact, diversity and inclusion, gender equality and environmental sustainability. He continually leads P&G’s brand building reinvention and is a leading voice in the media, marketing and creative industry.</p>"
+    },
+    {
+      "img": "images/Tedros_Adhanom.jpg",
+      "href": "https://www.who.int/antimicrobial-resistance/interagency-coordination-group/dg_who_bio/en/",
+      "name": "Tedros Adhanom",
+      "titles": "Director-General, World Health Organization",
+      "bio": "<p>Dr Tedros Adhanom Ghebreyesus was elected as WHO Director-General for a five-year term by WHO Member States at the Seventieth World Health Assembly in May 2017. He is the first WHO Director-General to have been elected from multiple candidates by the World Health Assembly, and is the first person from the WHO African Region to serve as WHO's chief technical and administrative officer. Immediately after taking office on 1 July 2017 Dr Tedros outlined five key priorities for the Organization: universal health coverage; health emergencies; women’s, children’s and adolescents’ health; health impacts of climate and environmental change; and a transformed WHO.</p><p>Dr Tedros served as Ethiopia’s Minister of Foreign Affairs from 2012–2016. In this role he led efforts to negotiate the Addis Ababa Action Agenda, in which 193 countries committed to the financing necessary to achieve the Sustainable Development Goals. Dr Tedros served as Ethiopia’s Minister of Health from 2005–2012, where he led a comprehensive reform of the country’s health system. The transformation he led as Ethiopia’s Minister of Health improved access to health care for millions of people. Under his leadership Ethiopia invested in critical health infrastructure, expanded its health workforce, and developed innovative health financing mechanisms.</p>"
+    }
+  ],
+  "removed": [
+    {
+      "img": "/images/ShaoLan_Hsueh.jpg",
+      "href": "http://shaolan.com/",
+      "name": "ShaoLan Hsueh",
+      "titles": "Author, Creator, & Founder of Chineasy",
+      "bio": "<p>Being the daughter of a calligrapher and ceramic artist, I grew up immersed in art and with a deep appreciation of the beauty of the Chinese language. I was the youngest among three daughters, and there was a majority of women in my family, and I grew up to be more of the tomboy! I was very independent and slightly rebellious.</p><p>Everyone in my family is very artistic except me. In my youth, I was more into Taoism, Chinese acupuncture and science. There were a few nights that I even lost my sleep from reading Taoism classics and literature. As a Taoist, it was important for me to find my path and what could become a form of legacy. I always want to make sure that our existence contributes positively to the world.</p>"
+    }
+  ],
+  "demos": [
+    {
+      "img": "/images/Beth+headshot+cropped+Sept+2017.jpg",
+      "href": "https://www.linkedin.com/in/ebport/",
+      "name": "Beth Porter",
+      "titles": "Cofounder & CEO of Riff Analytics",
+      "bio": "<p>Beth is Cofounder and CEO of Riff Analytics, a scrappy AI startup out of MIT that measures conversational dynamics to help people build situational and social awareness, especially when they collaborate on complex tasks.</p><p>Beth's philosophy is that people learn best from each other, and learning fosters both personal growth and organizational innovation and change. She teaches IT Strategies to MBAs at Boston University, where her students work in small, peer learning groups throughout the course, and learning innovation in Media Ventures at the MIT Media Lab. Prior roles include VP Product for edX, VP Software Product Management for Pearson Education, and senior engineering and product management positions at Mathsoft and PTC.</p>"
+    },
+    {
+      "img": "/images/esteban_moro.jpg",
+      "href": "https://www.media.mit.edu/people/emoro/overview/",
+      "name": "Esteban Moro",
+      "titles": "Associate Professor at UC3M, Researcher at MIT Connection Science at IDSS",
+      "bio": "<p>Esteban Moro is a professor at the MIT Media Lab, an associate professor at the Universidad Carlos III de Madrid in Spain, and a member of the Joint Institute UC3M Santander on Financial Big Data. He researches the intersection of big data and computational social science with special attention to human dynamics, collective intelligence, social networks, and urban mobility in problems like viral marketing, natural disaster management, and economic segregation in cities. His work has been featured in The Atlantic, The Washington Post, and The Wall Street Journal.</p>"
+    },
+    {
+      "img": "/images/fabio_zoffi.jpg",
+      "href": "https://www.linkedin.com/in/fabio-zoffi-127b743/",
+      "name": "Fabio Zoffi",
+      "titles": "President & Executive Chairman at <a href=\"http://www.orsgroup.io/\">ORS GROUP</a>",
+      "bio": "<p>Fabio Zoffi is a serial entrepreneur and an international investor born in Venice, Italy and currently residing in Munich, Germany. He is the President and Executive Chairman at ORS GROUP, a leading A.I. software company for business optimisation solutions and a pioneer in connecting Artificial Intelligence, Blockchain  and Cryptocurrency – the “ABC“ technology building blocks for empowering 1 billion entrepreneur by 2040 (<a href=\"http://www.orsgroup.io/\">www.orsgroup.io</a>).</p>"
+    },
+    {
+      "img": "/images/hossein_rahnama.png",
+      "href": "https://en.wikipedia.org/wiki/Hossein_Rahnama",
+      "name": "Hossein Rahnama",
+      "titles": "Founder & CEO, Flybits",
+      "bio": "<p>Hossein Rahnama is a computer scientist who lives in the paradox of academia and entrepreneurship. As a visiting professor at the MIT Media Lab and professor at Ryerson University, his research explores AI, mobile human-computer interaction and the effective design of data-driven services. He is also the founder and CEO of Flybits Inc., a data intelligence company that is serving a global customer base.</p><p>Rahnama has written 30 publications and received 10 patents in ubiquitous computing. He served as a council member at NSERC (National Science and Research Engineering Council of Canada) and currently serving on the board of Canadian Science Publishing. He was a co-founder of the #1 university-based incubator in the world, The Digital Media Zone at Ryerson University. In 2012, MIT Technology Review selected him as one of the Top 35 Innovators under the age of 35 globally. In 2017, he be became one of Canada's Top 40 under 40.</p>"
+    },
+    {
+      "img": "/images/MFrank.jpg",
+      "href": "http://web.media.mit.edu/~mrfrank/",
+      "name": "Morgan Frank",
+      "titles": "Post Doctoral Student at IDSS & MIT Connection Science",
+      "bio": "<p>Morgan Frank is a Postdoctoral Associate at MIT's Media Lab interested in the complexity of AI, the future of work, and the socio-economic consequences of technological change. While many studies focus on phenotypic labor trends, Morgan's recent research examines how genotypic skill-level processes around AI impact individuals and society. Combining labor research with investigations into the nature of AI research and the social or societal implications of AI adoption, Morgan hopes to inform our understanding of AI's impact.</p>"
+    },
+    {
+      "img": "/images/yaniv_altshuler.jpg",
+      "href": "https://www.linkedin.com/in/yaniv-altshuler-73a31a/",
+      "name": "Yaniv Altshuler",
+      "block": "infra",
+      "titles": "Co-Founder and CEO at <a href=\"https://www.endor.com/\">Endor</a>",
+      "bio": "<p>I am the Co-Founder and CEO of <a href=\"https://www.endor.com/\">Endor</a>, and a researcher at MIT.</p><p>My main (but not only) comfort zone is the mathematical aspects of networks and communities, and the way local interactions are translated to macro-scale behaviors.</p><ul><li>Published a book on Security and Privacy in Social Networks (2012), and a second one about Swarms and Network Intelligence (in Press)</li><li>Developed stochastic optimization technologies for supercomputers at IBM</li><li>Did my BA and PhD (Computer Science) at the Israel Institute of Technology, followed by an exciting 3 years post-doc at MIT Media Lab</li><li>Published over 60 scientific papers and 15 patents. My research was covered by Harvard Business Review, Financial Times, Communications of the ACM, The Globe, IEEE Spectrum and others</li><li>Together with Prof. Alex “Sandy” Pentland at MIT developed the new science of Social Physics</li><li>In my free time I like to swim, run and wrestle</li></ul>"
+    },
+    {
+      "img": "/images/Nicole_dAvis.jpg",
+      "href": "https://www.berklee.edu/focused/ice/operations-and-events-manager",
+      "name": "Nicole d'Avis",
+      "titles": "Managing Director of Berklee’s Institute for Creative Entrepreneurship / Open Music Initiative",
+      "bio": "<p>Nicole d’Avis is the Managing Director of Berklee’s Institute for Creative Entrepreneurship and leads the Open Music Initiative, a 300+ music industry member consortium focused on streamlining metadata and payment tracking for artists. She designed Berklee College’s minor in Creative Entrepreneurship, including teaching a course on Music + Blockchain, and directs its annual Silicon Valley Student Trip, the Berklee-Brown Summer Program, executive ed programs with ESADE Business School and numerous Berklee Artist Residencies for Grammy-Award winning artists.</p><p>Nicole has led the formation of the Open Music Initiative into a member-supported non profit organization, and has stewarded the first stage of Open Music's Berklee / MIT technical project. Nicole’s speaking engagements include the Beatvyne Music x Tech Conference in Dublin, Ace Hotel Artists Workshop in London, and the Unclaimed Royalties Symposium at the U.S. Library of Congress. For the last 15 years, Nicole’s work has straddled the intersection of technology, creativity, value and education, working with thousands of young creators and makers globally to use emerging technology and the arts as tools for social justice and sustainable careers.</p>",
+      "class": "thumb-headspace"
+    },
+    {
+      "img": "/images/Yves-Alexandre.jpg",
+      "href": "http://www.demontjoye.com/",
+      "name": "Yves-Alexandre de Montjoye",
+      "titles": "Research Affiliate",
+      "bio": "<p>I am an Assistant Professor (Lecturer) at Imperial College London where I head the Computational Privacy Group. I'm a technical expert appointed by Parliament to the Belgian Data Protection Agency and was a Special Adviser to EC Commissioner Vestager in 2018-2019. I'm affiliated with the Data Science Institute and Department of Computing. I was previously a postdoctoral researcher at Harvard working with Latanya Sweeney and Gary King and I received my PhD from MIT under the supervision of Alex \"Sandy\" Pentland</p>"
+    },
+    {
+      "img": "/images/Alex_Lipton.jpg",
+      "href": "http://connection.mit.edu/alexander-lipton",
+      "name": "Alexander Lipton",
+      "titles": "Connection Science Fellow",
+      "bio": "<p>Alexander Lipton is a Managing Director, Quantitative Solutions Executive at Bank of America. Prior to his current role, he was a Managing Director, Co-head of the Global Quantitative Group at Bank of America Merrill Lynch. He also held senior managerial positions at several sell and buy side firms. Currently, Alexander is an Adjunct Professor of Mathematics at NYU. Previously, he was a Visiting Professor of Quantitative Finance at University of Oxford and Advisory Board member at the Oxford-Man Institute. Earlier, he was Visiting Professor of Mathematics at Imperial College London. Before switching to finance, Alex was a Full Professor of Mathematics at the University of Illinois and a Consultant at Los Alamos National Laboratory. His current interests include FinTech, distributed ledgers, digital banking, monetary circuit, industrial strength derivative pricing including regulatory and economic capital calculations and valuation adjustments, as well as large scale holistic bank balance sheet optimization. Alexander published more than a hundred papers on applied mathematics and quantitative finance and authored/edited several books on these subjects.</p>"
+    },
+    {
+      "img": "images/John_Havens.jpg",
+      "href": "https://www.linkedin.com/in/johnchavens/",
+      "name": "John C. Havens",
+      "titles": "Executive Director at The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems",
+      "bio": "<p>John helped create The Council on Extended Intelligence (CXI) in 2017 to proliferate the ideals of responsible participant design, data agency and metrics of economic prosperity prioritizing people and the planet over profit and productivity.  Founded as a partnership between The IEEE Standards Association and MIT, CXI includes members from the EU Parliament, the UK House of Lords, and dozens of global policy, academic and business leaders.</p><p>John is also Executive Director of The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems that has two primary outputs – the creation and iteration of a body of work known as Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems and the recommendation of ideas for Standards Projects focused on prioritizing ethical considerations in A/IS. Twitter: <a href=\"https://twitter.com/johnchavens\">@johnchavens</a></p>"
+    },
+    {
+      "img": "images/Robert_Mahari.jpg",
+      "href": "www.linkedin.com/in/robert-mahari-874310157",
+      "name": "Robert Mahari",
+      "titles": "President at Harvard Law & Technology Society",
+      "bio": "<p>Robert Mahari is a JD candidate at Harvard Law School, where he is the president of the Harvard Law & Technology Society and editor in chief of the Harvard Law Record. His work is focused on how technology can and should affect the practice of law. Robert has organized several interdisciplinary global symposia on topics related to the intersection of law and technology, including the upcoming 2020 Harvard European Legal Technology & Privacy Symposium.</p><p>Robert graduated from MIT with a double major in Chemical Engineering and Management Science. He was a visiting researcher at the MIT Media Lab's Human Dynamics Group where he focused on using machine learning tools to understand financial dynamics of class action litigation. Fluent in four languages, Robert is particularly interested in pursuing projects with global impact. He has taught a recurring Executive MBA workshop at the University of Warsaw on entrepreneurship in the US in both English and Polish. Robert has work experience in management consulting, investment banking and private equity and serves on the boards of a Scandinavian steel group and a Polish publishing group. In his free time, Robert is drawn to the outdoors and loves to hike and fish around the world.</p>"
+    },
+    {
+      "img": "/images/Tommy_Nicholas.jpg",
+      "href": "https://alloy.co/about/",
+      "name": "Tommy Nicholas",
+      "titles": "CEO at Alloy",
+      "bio": "<p>Tommy is the CEO and co-founder of Alloy which builds the best compliance software for technology enabled banks and fintech companies. Alloy helps financial institutions transition the traditional manual processes involved with customer onboarding and makes them data-driven and automated. Alloy has raised $19 million in venture capital from Bessemer Venture Partners, Eniac Ventures, Primary Ventures, and many others.</p><p>Tommy leads product at Alloy, working closely with Alloy's clients to develop and implement data-driven strategies to lower fraud, increase conversion, and improve the customer experience. Tommy attended the University of Virginia, along with Alloy's CTO Charles Hearn. Prior to Alloy, Tommy worked as a product lead and software engineer. He worked on everything from AR experiences for large museums to consumer facing websites including Coffitivity, a popular productivity app. Tommy also lead product at Knox Payments, an ACH payments infrastructure company.</p>"
+    },
+    {
+      "img": "https://hardjono.mit.edu/sites/default/files/images/Thomas%20Hardjono%20web--3.jpg",
+      "href": "https://hardjono.mit.edu/",
+      "name": "Thomas Hardjono",
+      "block": "tech",
+      "titles": "Technical Director at <a href=\"https://www.trust.mit.edu/\"MIT Internet Trust Consortium</a> - <a href=\"http://connection.mit.edu/\">MIT Connection Science</a>",
+      "bio": "<p>Thomas Hardjono is the Technical Director of <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and the <a href=\"https://www.trust.mit.edu/\">MIT Trust::Data Consortium</a>. Passionate about the Internet infrastructure, equitable access and open source, he devoted several years at MIT running the <a href=\"https://www.kerberos.org\">MIT Kerberos Consortium</a>. Prior to this he was a Distinguished Engineer at <a href=\"https://en.wikipedia.org/wiki/Bay_Networks\">Bay Networks</a>, Principal Scientist at <a href=\"https://www.verisign.com/\">VeriSign PKI</a>, and held CTO roles at several start-ups.</p><p> With a background in cryptography, for the past two decades Thomas has been at the forefront of several identity, trust and cybersecurity initiatives in industry, ranging from network multicast security, IoT Security, trusted computing to scalable identity systems and privacy. Having developed the notion of personal secure storage in the mid-1990s for individual privacy, he sees opportunity for the future blockchain and crypto-infrastructures to enable private computing spaces for individual and communities.</p><p>Thomas has authored several technical papers and books covering cryptography, networking and identity.</p>"
+    }
+  ],
+  "hosts": [
+    {
+      "img": "/images/john.png",
+      "href": "https://www.linkedin.com/in/johnwerner1/",
+      "name": "John Werner",
+      "titles": "Managing Director at <a href=\"http://www.linkventures.com/\">Link Ventures</a>; Chief Network Officer/SVP at <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>; Fellow at MIT Connection Science; Mobilizer, Human Connector, &amp; <a href=\"http://www.johnwernerphotography.com/\">avid photographer</a> ",
+      "bio": "<p>John Werner has created a career out of bringing ideas, networks and people together to generate powerful results. Currently, John serves as Managing Director at <a href=\"http://www.linkventures.com/team\">Link Ventures</a>, Chief Network Officer, and SVP Corporate Development of <a href=\"https://www.cogolabs.com/\">Cogo Labs</a>. Before joining Link Ventures and Cogo Labs, John's deep curiosity and penchant for problem-solving led him to a diverse set of roles spanning many fields and interests. Previously, John was a VP at a <a href=\"https://www.ycombinator.com/\">Y Combinator</a> augmented reality startup based in Silicon Valley. John's also served as the Head of Innovation and New Ventures at the <a href=\"http://cameraculture.media.mit.edu/\">MIT Media Lab's Camera Culture Group</a>, and the Managing Director of <a href=\"https://www.media.mit.edu/groups/emerging-worlds/overview/\">Emerging Worlds SIG</a>, where he led the launch of collaborative innovation centers in Mumbai, Nashik, and Hyderabad.</p><p>John also channels his passion and curiosity into cultivating platforms for thought and exchange. John is the Founder &amp; CEO of <a href=\"http://arinaction.org/\">ARIA</a>, a community focused on the potential of augmented reality and the <a href=\"http://blockchaininaction.org/\">Blockchain+AI+Human</a>, which takes place at MIT and the World Economic Forum in Davos with MIT Professor Sandy Pentland. John also founded Ideas in Action Inc., a non-profit that creates and produces <a href=\"https://tedxbeaconstreet.com/\">TEDxBeaconStreet</a>, whose talks have accumulated 250+ million YouTube views.</p><p>John was also a co-Founder of <a href=\"https://www.citizenschools.org/\">Citizen Schools</a>, an advisor for <a href=\"https://www.photobutler.com/\">PhotoButler</a>, <a href=\"https://www.vestigoventures.com/\">Vestigo Ventures</a> and <a href=\"https://ff.co/#/\">Founders Forum</a> (Boston), an <a href=\"http://connection.mit.edu/\">MIT Connection Science Fellow</a>, a <a href=\"https://loebfellowship.gsd.harvard.edu/\">Loeb Fellow at the Harvard University's Graduate School of Design</a> and a graduate of <a href=\"https://www.hamilton.edu/\">Hamilton College</a>. John was recognized by Harvard Business Review for his leadership; by BostonInno in 2014 as a top 50 on Fire in Boston; Boston Chamber with a TOYL (Ten Outstanding Young Leaders) Award in 2006. In his free time, John is a passionate <a href=\"https://www.johnwernerphotography.com/\">photographer</a> and an accomplished triathlete (qualified for the worlds and 4x nationals). John and his family live in Brookline, MA.</p>"
+    },
+    {
+      "img": "images/pentland-2014.png.800x800.png",
+      "href": "https://www.media.mit.edu/people/sandy/overview/",
+      "name": "Alex 'Sandy' Pentland",
+      "titles": "Professor of Media Arts and Sciences<br/>Toshiba Professor<br/>Media Lab Entrepreneurship Program Director",
+      "bio": "<p>Professor Alex \"Sandy\" Pentland directs the <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and <a href=\"https://www.media.mit.edu/groups/human-dynamics/overview/\">Human Dynamics</a> labs and previously helped create and direct the <a href=\"https://www.media.mit.edu/\">MIT Media Lab</a> and the <a href=\"https://www.medialabasia.in/\">Media Lab Asia</a> in India. He is one of the most-cited scientists in the world, and Forbes recently declared him one of the \"7 most powerful data scientists in the world\" along with Google founders and the Chief Technical Officer of the United States. He has received numerous awards and prizes such as the McKinsey Award from Harvard Business Review, the 40th Anniversary of the Internet from DARPA, and the Brandeis Award for work in privacy.</p><p>He is a founding member of advisory boards for Google, AT&amp;T, Nissan, and the UN Secretary General, a serial entrepreneur who has co-founded more than a dozen companies including social enterprises such as the <a href=\"http://datatransparencylab.org/\">Data Transparency Lab</a>, the Harvard-ODI-MIT <a href=\"http://datapopalliance.org/\">DataPop Alliance</a> and the <a href=\"https://idcubed.org/\">Institute for Data Driven Design</a>. He is a member of the U.S. National Academy of Engineering and leader within the World Economic Forum.</p>"
+    }
+  ]
+}

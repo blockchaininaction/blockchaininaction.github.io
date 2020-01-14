@@ -123,9 +123,17 @@
         </div>
       </div>
 
-      <h3 id="now" v-cloak>
+      <div class="person-thumbs-flex max-width" v-cloak>
+        <a v-for="person in peopleDavos2020"
+          v-bind:title="person.name"
+          v-bind:href="'#' + person.id"
+          v-bind:class="person.class"
+          v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+      </div><br><br>
+
+      <h3 id="now scheduleDavos" style="text-align: right">
         <div class="max-width">
-            Special Guests
+            ↵ Featured Speakers
         </div>
       </h3>
 
@@ -143,15 +151,7 @@
         <div class="max-width">
           Speakers @ Davos 2020↴
         </div>
-      </h3><br><br>
-
-      <div class="person-thumbs-flex max-width" v-cloak>
-        <a v-for="person in peopleDavos2020"
-          v-bind:title="person.name"
-          v-bind:href="'#' + person.id"
-          v-bind:class="person.class"
-          v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-      </div>
+      </h3>
 
       <div class="max-width">
         <div class="person" v-for="person in speakersDavos2020" v-bind:id="person.id">

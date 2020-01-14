@@ -121,19 +121,36 @@
         </div>
       </div>
 
+      <h3 id="now" v-cloak>
+        <div class="max-width">
+            Special Guests
+        </div>
+      </h3>
+
+      <div class="max-width special-guests">
+        <div v-for="person in specialGuestsDavos2020">
+          <a v-bind:href="'#' + person.id">
+            <img v-bind:src="person.img" />
+          </a>
+          <h4><a v-bind:href="'#' + person.id" v-cloak>{{person.name}}</a></h4>
+          <p v-html="person.titles"></p>
+        </div>
+      </div>
+
+      <h3 class="sticky" id="now" v-cloak>
+        <div class="max-width">
+          Speakers @ Davos 2020↴
+        </div>
+      </h3><br><br>
+
       <div class="person-thumbs-flex max-width" v-cloak>
         <a v-for="person in peopleDavos2020"
           v-bind:title="person.name"
           v-bind:href="'#' + person.id"
           v-bind:class="person.class"
           v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-      </div><br><br>
+      </div>
 
-      <h3 class="sticky" id="now" v-cloak>
-        <div class="max-width">
-          Speakers @ Davos 2020↴
-        </div>
-      </h3>
       <div class="max-width">
         <div class="person" v-for="person in speakersDavos2020" v-bind:id="person.id">
           <a v-bind:href="person.href" target="_blank">
@@ -153,7 +170,16 @@
             Demos @ Davos 2020↴
         </div>
       </h3>
-      <div class="max-width"><img src="images/logos/2020 Davos Demo Logos.jpg" style="width: 100%; margin-top: 20px;"/></div>
+      <div class="max-width"><img src="images/logos/2020 Davos Demo Logos.jpg" style="width: 100%; margin-top: 20px;"/></div><br><br>
+
+      <div class="person-thumbs-flex max-width" v-cloak>
+        <a v-for="person in demosDavos2020"
+          v-bind:title="person.name"
+          v-bind:href="'#' + person.id"
+          v-bind:class="person.class"
+          v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+      </div><br><br>
+
       <div class="max-width">
         <div class="person" v-for="person in demosDavos2020" v-bind:id="person.id">
           <a v-bind:href="person.href" target="_blank">
@@ -570,10 +596,9 @@
         <iframe class="hero-video" width="963" height="542" src="https://www.youtube.com/embed/5clSrrfD_As" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <hr/>
         <iframe class="hero-video" width="963" height="542" src="https://www.youtube.com/embed/n3UmXP7HZDs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
       </div>
 
-        <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule @ MIT 2018</div></h3>
+      <h3 class="sticky" id="schedule"><div class="max-width">↵ Schedule @ MIT 2018</div></h3>
 
       <div class="max-width">
         <div class="scheduleMIT2018">
@@ -595,7 +620,7 @@
         </div>
       </div>
 
-        <h3 class="sticky" id="mit-speakers"><div class="max-width">Speakers @ MIT 2018 ↴</div></h3>
+      <h3 class="sticky" id="mit-speakers"><div class="max-width">Speakers @ MIT 2018 ↴</div></h3>
 
       <div class="max-width">
         <div class="person" v-for="person in speakersMIT2018" v-bind:id="person.id">
@@ -771,6 +796,7 @@
           speakersDavos2020: [],
           demosDavos2020: [],
           peopleDavos2020: [],
+          specialGuestsDavos2020: [],
 
           route: "/"
       };
@@ -810,8 +836,9 @@
         data.demosDavos2020 = result.demos.map(setId).sort(alphabetize);
         data.hostsDavos2020 = result.hosts.map(setId);
         data.peopleDavos2020 = data.speakersDavos2020.concat(data.demosDavos2020, data.hostsDavos2020).sort(alphabetize);
+        data.specialGuestsDavos2020 = [self.peopleById["priyanka_chopra-jonas"], self.peopleById["rick_haythornthwaite"], self.peopleById["julie_bishop"]]
 
-        // TODO: Reuse person objects throughout
+        // TODO: Reuse person objects throughout!
         data.speakersDavos2020.push(self.peopleById["nicole_d'avis"]);
         data.speakersDavos2020 = data.speakersDavos2020.sort(alphabetize);
         data.hostsDavos2020.push(self.peopleById.mike_federle, self.peopleById.randall_lane);

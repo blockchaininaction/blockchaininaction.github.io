@@ -557,6 +557,35 @@ dl.davos2020 .block-num {
 dl.davos2020 .block-item {
   padding-left: 78px;
 }
+.special-guests {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.special-guests > div {
+  flex: 280px 0 0;
+}
+.special-guests > div img {
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); /* brightness(90%) */
+  transition: 300ms filter;
+}
+.special-guests > div img:hover {
+  filter: grayscale(100%) brightness(120%);
+}
+.special-guests > div h4 {
+  font-size: 23px;
+  padding: 10px 0;
+}
+.special-guests p {
+  line-height: 1.3em;
+  font-size: 13px;
+}
 
 .person-thumbs {
   padding: 10px 0 30px 0;

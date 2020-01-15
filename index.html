@@ -141,8 +141,19 @@
 
       <div class="max-width special-guests">
         <div v-for="person in specialGuestsDavos2020">
-          <a v-bind:href="'#' + person.id">
-            <img v-bind:src="person.img" />
+          <a v-bind:href="'#' + person.id"
+            v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"
+            v-bind:class="person.class">
+          </a>
+          <h4><a v-bind:href="'#' + person.id" v-cloak>{{person.name}}</a></h4>
+          <p v-html="person.titles"></p>
+        </div>
+      </div>
+      <div class="max-width special-guests" style="justify-content: space-evenly;">
+        <div v-for="person in specialGuestsDavos2020b">
+          <a v-bind:href="'#' + person.id"
+            v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"
+            v-bind:class="person.class">
           </a>
           <h4><a v-bind:href="'#' + person.id" v-cloak>{{person.name}}</a></h4>
           <p v-html="person.titles"></p>
@@ -588,7 +599,6 @@
                 <div v-html="person.bio"></div>
             </div>
         </div>
-
     </div>
 
     <div v-if="route === '/mit2018'">
@@ -701,7 +711,6 @@
         &copy;2020 Imagination in Action  |  <a href="mailto:jwerner@blockchaininaction.org">jwerner@blockchaininaction.org</a>
         <span id="site-by-case">site by <a href="http://caseprince.com/">case</a> | hosting by <a href="https://pages.github.com/">GitHub Pages</a></span>
     </footer>
-
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/navigo@7.1.2/lib/navigo.min.js"></script>
@@ -827,6 +836,7 @@
           demosDavos2020: [],
           peopleDavos2020: [],
           specialGuestsDavos2020: [],
+          specialGuestsDavos2020b: [],
 
           route: "/"
       };
@@ -866,7 +876,8 @@
         data.demosDavos2020 = result.demos.map(setId).sort(alphabetize);
         data.hostsDavos2020 = result.hosts.map(setId);
         data.peopleDavos2020 = data.speakersDavos2020.concat(data.demosDavos2020, data.hostsDavos2020).sort(alphabetize);
-        data.specialGuestsDavos2020 = [self.peopleById["priyanka_chopra-jonas"], self.peopleById["rick_haythornthwaite"], self.peopleById["julie_bishop"]]
+        data.specialGuestsDavos2020 = [self.peopleById["priyanka_chopra-jonas"], self.peopleById["rick_haythornthwaite"], self.peopleById["julie_bishop"]];
+        data.specialGuestsDavos2020b = [self.peopleById["alexander_de_croo"], self.peopleById["gilbert_houngbo"]];
 
         // TODO: Reuse person objects throughout!
         data.speakersDavos2020.push(self.peopleById["nicole_d'avis"]);
@@ -927,15 +938,6 @@
               return !person.block;
           });
       }, function(error) {console.log(error)});
-
-//         ,
-//   {
-//     "img": "images/",
-//     "href": "",
-//     "name": "",
-//     "titles": "",
-//     "bio": "<p></p>"
-//   }
 
   </script>
 

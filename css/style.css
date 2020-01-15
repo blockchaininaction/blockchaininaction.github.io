@@ -566,7 +566,8 @@ dl.davos2020 .block-item {
 .special-guests > div {
   flex: 280px 0 0;
 }
-.special-guests > div img {
+.special-guests > div > a {
+  display: block;
   width: 280px;
   height: 280px;
   background-size: cover;
@@ -610,7 +611,8 @@ dl.davos2020 .block-item {
   transition: 300ms filter;
 }
 .person-thumbs a.thumb-headspace,
-.person-thumbs-flex a.thumb-headspace {
+.person-thumbs-flex a.thumb-headspace,
+.special-guests a.thumb-headspace {
   background-position: 50% 0;
 }
 .person-thumbs-flex {

@@ -292,6 +292,13 @@
       "name": "Thomas Zeltner",
       "titles": "Special Envoy of the World Health Organization",
       "bio": "<p> Thomas Zeltner, former Secretary of Health of Switzerland and Director-General of the Swiss National Health Authority (1991-2009), has a long history as an innovative leader in public health.</p><p>Currently he is the project leader and designated first chairman of the WHO Foundation to be established in Geneva early in 2020. The WHO Foundation will be lean, impact-driven grantmaking organization with the objective of addressing the most pressing global health challenges of tomorrow by financing WHO and its partners implementing the SDGs and WHO’s general program of work. As an initiative facilitated by the WHO, the WHO Foundation will have the integrity and global reach of the WHO combined with the flexibility and reactivity of a lean, independent legal entity.</p><p>He is also President of UNESCO commission of Switzerland and advises the Swiss Government in the implementation and future development of the National Health Policy. He is the Vice Chair of the University Council of the Medical University of Vienna. He is also President of the KPT insurance company, one of the most innovative health insurance plans in Switzerland.</p><p>As Director-General of the Federal Office of Public Health of Switzerland he was a key actor in Swiss health policy and has repeatedly been ranked among the 12 most influential political figures of Switzerland. He has presided over changes to transform the Swiss health care model from one of regulated competition into a more value and consumer driven health care system.</p><p>As Secretary of State for Health, Zeltner represented Switzerland at the World Health Organization. He was member and Vice-President of WHO’s Executive Board (1999-2002). More recently he served as Special Envoy for WHO (2012-14). In this capacity he advised the former Director General Margaret Chan in critical areas of the reform of this UN agency (particularly the financing and budgeting reform, as well as the elaboration of a framework of engagement with non-state actors (FENSA)).</p>"
+    },
+    {
+      "img": "/images/davos_speakers/Tomicah_Tillman.jpg",
+      "href": "https://www.linkedin.com/in/tomicah/",
+      "name": "Tomicah Tillemann",
+      "titles": "Co-founder and Director of the <a href=\"https://www.newamerica.org/bretton-woods-ii/blockchain-trust-accelerator/\">Blockchain Trust Accelerator at New America</a>",
+      "bio": "<p>The <a href=\"https://www.newamerica.org/bretton-woods-ii/blockchain-trust-accelerator/\">Blockchain Trust Accelerator at New America</a> works with organizations including the Rockefeller Foundation, State Department, Coca-cola, Harvard and Levi Strauss to deploy blockchain solutions in governance and social impact applications worldwide. He chairs the Global Blockchain Business Council and advises Bitfury and other leading technology companies. He previously served at the State Department and Senate Foreign Relations Committee as a speechwriter and advisor to Hillary Clinton, John Kerry, and Joe Biden. He was educated at Yale and Johns Hopkins and is a  co-holder of four patents.</p>"
     }
   ],
   "staging": [
@@ -423,5 +430,21 @@
       "titles": "Professor of Media Arts and Sciences<br/>Toshiba Professor<br/>Media Lab Entrepreneurship Program Director",
       "bio": "<p>Professor Alex \"Sandy\" Pentland directs the <a href=\"http://connection.mit.edu/\">MIT Connection Science</a> and <a href=\"https://www.media.mit.edu/groups/human-dynamics/overview/\">Human Dynamics</a> labs and previously helped create and direct the <a href=\"https://www.media.mit.edu/\">MIT Media Lab</a> and the <a href=\"https://www.medialabasia.in/\">Media Lab Asia</a> in India. He is one of the most-cited scientists in the world, and Forbes recently declared him one of the \"7 most powerful data scientists in the world\" along with Google founders and the Chief Technical Officer of the United States. He has received numerous awards and prizes such as the McKinsey Award from Harvard Business Review, the 40th Anniversary of the Internet from DARPA, and the Brandeis Award for work in privacy.</p><p>He is a founding member of advisory boards for Google, AT&amp;T, Nissan, and the UN Secretary General, a serial entrepreneur who has co-founded more than a dozen companies including social enterprises such as the <a href=\"http://datatransparencylab.org/\">Data Transparency Lab</a>, the Harvard-ODI-MIT <a href=\"http://datapopalliance.org/\">DataPop Alliance</a> and the <a href=\"https://idcubed.org/\">Institute for Data Driven Design</a>. He is a member of the U.S. National Academy of Engineering and leader within the World Economic Forum.</p>"
     }
+  ],
+  "schedule": [
+    { "title": "DOORS OPEN", "minutes": 30 },
+
+    {
+      "title": "WELCOME",
+      "people2": [
+        { "name": "Alex 'Sandy' Pentland" },
+        { "name": "John Werner" },
+        { "name": "Rajesh Gopinathan" },
+        { "name": "Mike Federle" }
+      ]
+    },
+
+    { "transition": 5 },
+    { "title": "Closing" }
   ]
 }

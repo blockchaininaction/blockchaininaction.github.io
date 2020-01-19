@@ -530,7 +530,6 @@
       "subBlocks": [
         {
           "title": "FINANCE",
-          "dsc": "The world is moving toward digital currencies, managed by AI and using unprecedented real-time detail from IoT. The result can be dramatic reductions in fraud, risk, and cost...as well as enabling \"big brother\" oversight by nations and platforms. What does this mean for financial institutions? For governments? For citizens?",
           "minutes": 28,
           "people": [
             { "name": "Kavita Gupta" },
@@ -541,13 +540,11 @@
         },
         {
           "title": "TRADE",
-          "dsc": "Transaction costs are dropping sharply due to technologies like AI and blockchain, and IoT is providing dramatic improvements in risk management, quality control, and efficiency. Does this mean the end of the core advantages of large companies: low internal transaction costs, consistent processes, and deep financial resources?",
           "minutes": 14,
           "people": [{ "name": "Nicole D'Avis" }, { "name": "Charles Chang" }]
         },
         {
           "title": "EDUCATION and RESEARCH",
-          "dsc": "How can we bring everyone the knowledge and tools they will need in this new world?",
           "minutes": 28,
           "people": [
             { "name": "Daniela Rus" },
@@ -558,7 +555,6 @@
         },
         {
           "title": "GOVERNEMNT",
-          "dsc": "Everywhere in the world lawmakers seem frozen by the rate of change, most institutions are outdated dinosaurs, and there is a sense that government is failing at even its basic functions. What can be done?",
           "minutes": 14,
           "people": [
             { "name": "Claire Melamed" },

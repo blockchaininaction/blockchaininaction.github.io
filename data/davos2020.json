@@ -665,6 +665,8 @@
       ]
     },
 
+    { "transition": 20 },
+
     {
       "title": "CLOSING",
       "people2": [

@@ -81,7 +81,7 @@
                   </ul>
                 </dd>
               </dl>
-              <p class="cta" style="margin-top: 40px;"><a href="https://drive.google.com/file/d/1kJRA8QY9lkM0Pk-FNm49F1TOSQWVNgzZ/view" target="_blank">Full Schedule</a></p>
+              <p class="cta" style="margin-top: 40px;"><a href="#scheduleDavos">Full Schedule</a></p>
               <ul class="schedule-addendum">
                 <li>Michelin-star lunch</li>
                 <li>Networking with WEF audience + select group of emerging tech leaders and innovators. </li>
@@ -827,38 +827,8 @@
       var scheduleBlockMapper = function(schedule, hour, min) {
           var blockNum = 1;
           return schedule.map(function(block) {
-            if (block.subBlocks) {
-              // block.time = hour + ":" + formatMin(min);
-              if (block.subBlockTimingIndeterminate) {
-                block.time = hour + ":" + formatMin(min);
-              }
-              for (subBlock of block.subBlocks) {
-                // console.log(subBlock);
-                subBlock.people = subBlock.people.map(setId).map(function(person) {
-                  person.img = peopleById[person.id] && peopleById[person.id].img;
-                  person.class = peopleById[person.id] && peopleById[person.id].class;
-                  return person;
-                });
 
-                if (!block.subBlockTimingIndeterminate) {
-                  subBlock.time = hour + ":" + formatMin(min);
-                }
-                if (subBlock.minutes) {
-                  min += subBlock.minutes;
-                  if (min >= 60) {
-                      min -= 60;
-                      hour++;
-                  }
-                }
-              }
-              if (block.minutes) {
-                min += block.minutes;
-                if (min >= 60) {
-                    min -= 60;
-                    hour++;
-                }
-              }
-            } else if (block.people) {
+            if (block.people) {
                 block.people = block.people.map(setId).map(function(person) {
                     if (!peopleById[person.id]) {
                         console.log("missing: " + person.id);
@@ -896,7 +866,7 @@
                     min -= 60;
                     hour++;
                 }
-            } else {
+            } else if (!block.subBlocks) {
                 block.time = hour + ":" + formatMin(min);
                 min += block.minutes || 5;
                 if (min >= 60) {
@@ -904,15 +874,40 @@
                     hour++;
                 }
             }
-            if (block.panels) {
-              for (panel of block.panels.panels) {
-                min += panel.minutes || 5;
+
+            if (block.subBlocks) {
+              // block.time = hour + ":" + formatMin(min);
+              // if (block.subBlockTimingIndeterminate) {
+              //   block.time = hour + ":" + formatMin(min);
+              // }
+              for (subBlock of block.subBlocks) {
+                // console.log(subBlock);
+                subBlock.people = subBlock.people.map(setId).map(function(person) {
+                  person.img = peopleById[person.id] && peopleById[person.id].img;
+                  person.class = peopleById[person.id] && peopleById[person.id].class;
+                  return person;
+                });
+
+                //if (!block.subBlockTimingIndeterminate) {
+                subBlock.time = hour + ":" + formatMin(min);
+                //}
+                if (subBlock.minutes) {
+                  min += subBlock.minutes;
+                  if (min >= 60) {
+                      min -= 60;
+                      hour++;
+                  }
+                }
+              }
+              if (block.minutes) {
+                min += block.minutes;
                 if (min >= 60) {
                     min -= 60;
                     hour++;
                 }
               }
             }
+
             return block;
           });
       }

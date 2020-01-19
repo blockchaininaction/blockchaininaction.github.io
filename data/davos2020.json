@@ -8,13 +8,6 @@
       "bio": "<p>Rick Haythornthwaite currently serves as the Chairman of MasterCard Inc., Chairman of Centrica PLC, and Chairman and Founder of QiO Technologies Ltd. He has nearly 40 years of executive and non-executive experience, and has led numerous companies through mergers, acquisitions, and other complex transactions at nearly every stage of the business life cycle. He began his career at BP PLC, having held various executive roles throughout his 17-year tenure, including Chief Geologist at BP France, General Manager of Magnus Oilfield and President of BP Venezuela.  Following his work at BP, Mr. Haythornthwaite continued to build leadership experience in the energy and industrials sectors as Corporate and Commercial Director of Premier Oil PLC for two years and four years at Blue Circle Industries, latterly as CEO until its merger with Lafarge in 2001. He went on to serve as CEO of Invensys PLC between 2001 and 2005 and most recently as a Partner at Star Capital Partners Ltd. Mr. Haythornthwaite is an Advisory Partner at Moelis & Company, where he specializes in advising companies across the energy, industrial, and technology sectors.</p><p>Mr. Haythornthwaite holds a Bachelor's degree in Geology from The Queen's College at Oxford and a Master's degree in Management from the Sloan School of Management at MIT.</p>"
     },
     {
-      "img": "/images/davos_speakers/David_Kenny.jpg",
-      "href": "https://www.linkedin.com/in/davidkenny1/",
-      "name": "David Kenny",
-      "titles": "CEO, Nielsen Holdings",
-      "bio": "<p>Transformational President and CEO at Digitas, Akamai, Publicis, The Weather Company, IBM, and Nielsen. Three decades of consumer and media focused experience in Big Data, Analytics, AI/ML, and Cloud Technologies. Transformation skills include strategic focus, team development, client and partner development, marketing, and technical innovation.</p>"
-    },
-    {
       "img": "/images/davos_speakers/Randall_Lane.jpg",
       "href": "https://www.forbes.com/sites/randalllane",
       "name": "Randall Lane",
@@ -246,7 +239,7 @@
       "img": "images/Gilbert_Houngbo.jpg",
       "href": "https://www.ifad.org/en/president",
       "name": "Gilbert Houngbo",
-      "titles": "President of the International Fund for Agricultural Development (IFAD)",
+      "titles": "President of the International Fund for Agricultural Development (IFAD), former Prime Minister of Togo",
       "bio": "<p>Gilbert F. Houngbo became the sixth President of the International Fund for Agricultural Development (IFAD) on 1 April 2017. Born and raised in rural Togo, Houngbo has spent more than 30 years working to improve the lives of some of the world’s most vulnerable people, with extensive experience in political affairs, international development, diplomacy and financial management. Prior to his appointment as IFAD President, Houngbo was the Deputy Director-General of the International Labour Organization (ILO) where he led field operations in more than 100 countries and managed its bilateral and multilateral partnerships.</p><p>He served as Prime Minister of the Republic of Togo from 2008 to 2012, where he introduced economic reforms and enhanced the rule of law and civil liberties. From 1996 to 2008, he undertook a number of roles at the United Nations Development Programme (UNDP) including Chief of Staff and Assistant Secretary-General, Africa Regional Director, where he led poverty alleviation programmes in 45 countries in sub-Saharan Africa. Prior to this, he spent a decade in the private sector, including at Price Waterhouse, Canada, where he worked in Audit and Financial Advisory Services. Houngbo has a Matrîse en gestion des entreprises from the University of Lomé, Togo, and a Diplôme d’Etudes Supérieures Spécialisées in Specialised Accounting from the University of Québec, Canada. He is a member of the Canadian Institute of Chartered Professional Accountants.</p>",
       "class": "thumb-headspace"
     },
@@ -370,6 +363,13 @@
       "name": "ShaoLan Hsueh",
       "titles": "Author, Creator, & Founder of Chineasy",
       "bio": "<p>Being the daughter of a calligrapher and ceramic artist, I grew up immersed in art and with a deep appreciation of the beauty of the Chinese language. I was the youngest among three daughters, and there was a majority of women in my family, and I grew up to be more of the tomboy! I was very independent and slightly rebellious.</p><p>Everyone in my family is very artistic except me. In my youth, I was more into Taoism, Chinese acupuncture and science. There were a few nights that I even lost my sleep from reading Taoism classics and literature. As a Taoist, it was important for me to find my path and what could become a form of legacy. I always want to make sure that our existence contributes positively to the world.</p>"
+    },
+    {
+      "img": "/images/davos_speakers/David_Kenny.jpg",
+      "href": "https://www.linkedin.com/in/davidkenny1/",
+      "name": "David Kenny",
+      "titles": "CEO, Nielsen Holdings",
+      "bio": "<p>Transformational President and CEO at Digitas, Akamai, Publicis, The Weather Company, IBM, and Nielsen. Three decades of consumer and media focused experience in Big Data, Analytics, AI/ML, and Cloud Technologies. Transformation skills include strategic focus, team development, client and partner development, marketing, and technical innovation.</p>"
     }
   ],
   "demos": [
@@ -510,7 +510,7 @@
     {
       "title": "BLOCK 1: Reimagining Leadership",
       "color": "#4800be",
-      "minutes": 25,
+      "minutes": 10,
       "dsc": "How AI, IoT, and blockchain are making transactions safer, cheaper, and more transparent and understandable for consumers, small businesses, and established enterprises.  This is key to making GDPR and Calif. Priv. Protection work, as well as ensuring that there is no \"digital divide\"",
       "people2": [
         { "name": "Alex 'Sandy' Pentland" },
@@ -529,9 +529,9 @@
       "minutes": 0,
       "subBlocks": [
         {
-          "title": "2a. FINANCE",
+          "title": "FINANCE",
           "dsc": "The world is moving toward digital currencies, managed by AI and using unprecedented real-time detail from IoT. The result can be dramatic reductions in fraud, risk, and cost...as well as enabling \"big brother\" oversight by nations and platforms. What does this mean for financial institutions? For governments? For citizens?",
-          "minutes": 40,
+          "minutes": 28,
           "people": [
             { "name": "Kavita Gupta" },
             { "name": "Vanessa Colella" },
@@ -540,25 +540,26 @@
           ]
         },
         {
-          "title": "2b. TRADE",
+          "title": "TRADE",
           "dsc": "Transaction costs are dropping sharply due to technologies like AI and blockchain, and IoT is providing dramatic improvements in risk management, quality control, and efficiency. Does this mean the end of the core advantages of large companies: low internal transaction costs, consistent processes, and deep financial resources?",
-          "minutes": 20,
+          "minutes": 14,
           "people": [{ "name": "Nicole D'Avis" }, { "name": "Charles Chang" }]
         },
         {
-          "title": "2c. EDUCATION and RESEARCH",
+          "title": "EDUCATION and RESEARCH",
           "dsc": "How can we bring everyone the knowledge and tools they will need in this new world?",
-          "minutes": 21,
+          "minutes": 28,
           "people": [
             { "name": "Daniela Rus" },
             { "name": "Nuria Oliver" },
-            { "name": "Gordana Landen" }
+            { "name": "Gordana Landen" },
+            { "name": "Julie Bishop" }
           ]
         },
         {
-          "title": "2d. GOVERNEMNT",
+          "title": "GOVERNEMNT",
           "dsc": "Everywhere in the world lawmakers seem frozen by the rate of change, most institutions are outdated dinosaurs, and there is a sense that government is failing at even its basic functions. What can be done?",
-          "minutes": 20,
+          "minutes": 14,
           "people": [
             { "name": "Claire Melamed" },
             { "name": "Jeffrey Saviano" },
@@ -568,7 +569,7 @@
       ]
     },
 
-    { "transition": 4 },
+    { "transition": 36 },
 
     {
       "title": "BLOCK 3: Imaginative Ideas",
@@ -576,6 +577,7 @@
       "minutes": 60,
       "dsc": "5 minute Imaginative Talks, HOST: John Werner",
       "people2": [
+        { "name": "John Werner" },
         { "name": "Rick Haythornthwaite" },
         { "name": "Rima Qureshi" },
         { "name": "Tommy Nicholas" },
@@ -588,46 +590,39 @@
         { "name": "Santanu Bhattacharya" },
         { "name": "Krishnan Ramanujam" }
       ],
-      "panels": {
-        "title": "Reimaging Capitalism, HOST: Randall Lane",
-        "panels": [
-          {
-            "title": "PANEL 1",
-            "minutes": 15,
-            "people2": [
-              { "name": "Paul Tudor Jones" },
-              { "name": "Alison Omens" },
-              { "name": "Martin Whittaker" },
-              { "name": "Hans Vestberg" }
-            ]
-          },
-          {
-            "title": "PANEL 2: Forbes 30 under 30 panel",
-            "minutes": 15,
-            "people2": []
-          }
-        ]
-      }
+      "subBlocks": [
+        {
+          "title": "Panel: Reimaging Capitalism",
+          "minutes": -30,
+          "people": [
+            { "name": "Randall Lane" },
+            { "name": "Paul Tudor Jones" },
+            { "name": "Alison Omens" },
+            { "name": "Hans Vestberg" }
+          ]
+        }
+      ]
     },
 
     { "title": "NETWORKING & LUNCH", "minutes": 30 },
 
     {
-      "title": "BLOCK 4: Reimagining Global Challenges",
+      "title": "BLOCK 4: Reimagining the World's Biggest Challenges",
       "color": "#0082df",
-      "minutes": 90,
-      "subBlockTimingIndeterminate": true,
       "subBlocks": [
         {
           "title": "Open",
+          "minutes": 5,
           "people": [{ "name": "Randall Lane" }, { "name": "Moria Forbes" }]
         },
         {
           "title": "Welcome",
+          "minutes": 5,
           "people": [{ "name": "Declan Kelly" }, { "name": "Hugh Evans" }]
         },
         {
           "title": "Panel: Gender & Inclusivity",
+          "minutes": 15,
           "people": [
             { "name": "Moria Forbes" },
             { "name": "Marc Pritchard" },
@@ -637,6 +632,7 @@
         },
         {
           "title": "Panel: Human Capital",
+          "minutes": 15,
           "people": [
             { "name": "Randall Lane" },
             { "name": "Seema Kumar" },
@@ -648,6 +644,7 @@
         },
         {
           "title": "Panel: Sustainability",
+          "minutes": 15,
           "people": [
             { "name": "Moria Forbes" },
             { "name": "Anne Wawira Njiru" },
@@ -658,10 +655,12 @@
         },
         {
           "title": "Panel: Philanthropy",
+          "minutes": 10,
           "people": [{ "name": "Randall Lane" }, { "name": "Chris Stadler" }]
         },
         {
-          "title": "Moira Forbes Interview with Priyanka Chopra-Jonas",
+          "title": "Moira Forbes in conversation with Priyanka Chopra-Jones",
+          "minutes": 20,
           "people": [
             { "name": "Moria Forbes" },
             { "name": "Priyanka Chopra-Jonas" }

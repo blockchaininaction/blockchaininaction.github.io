@@ -512,6 +512,7 @@
   "schedule": [
     {
       "title": "Introduction",
+      "minutes": 5,
       "people2": [
         { "name": "John Werner" },
         { "name": "Alex 'Sandy' Pentland" }
@@ -547,10 +548,11 @@
 
     {
       "title": "Welcome from CEO, TCS",
-      "people2": [{ "name": "Rajesh Gopinathan", "minutes": 10 }]
+      "minutes": 10,
+      "people2": [{ "name": "Rajesh Gopinathan" }]
     },
 
-    { "transition": 10 },
+    { "transition": 5 },
 
     {
       "title": "Sustainability",

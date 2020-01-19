@@ -383,6 +383,7 @@
 
     {
       "title": "Introduction",
+      "minutes": 5,
       "people2": [
         { "name": "John Werner" },
         { "name": "Alex 'Sandy' Pentland" }

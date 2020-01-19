@@ -162,6 +162,86 @@
         </div>
       </div>
 
+
+
+      <h3 class="sticky" id="scheduleDavos" v-cloak>
+          <div class="max-width">
+              ↵ Schedule @ Davos 2020
+          </div>
+      </h3>
+
+      <div class="max-width davos-schedule davos-schedule-2020" v-cloak>
+        <div class="blocks">
+          <div v-if="!block.transition" v-for="block in scheduleDavos2020"
+            v-bind:class="'block ' + block.class"
+            v-bind:style="{ 'border-color': block.color }">
+            <div v-if="block.people" class="davos-block-title w-color" v-bind:style="{ 'background': block.color }">
+              <div class="time">{{block.time}}</div>
+              <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
+            </div>
+            <div v-else v-bind:class="'davos-block-title ' + (block.color && 'w-color')" v-bind:style="{ 'background': block.color }">
+              <div class="time">{{block.time}}</div>
+              <h4>{{block.title}}</h4>
+            </div>
+            <!-- <div v-if="block.people" class="people">
+              <div v-for="person in block.people" class="davos-speaker">
+                <div class="time">{{person.time}}</div>
+                <a
+                v-bind:class="'sm-thumb ' + person.class"
+                v-bind:title="person.name"
+                v-bind:href="'#' + person.id"
+                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                 <div>
+                  <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                  <p v-if="person.title" v-html="person.title"></pv-if></p>
+                </div>
+              </div>
+            </div> -->
+            <p v-if="block.dsc" >{{block.dsc}}</p>
+            <div v-if="block.people2" class="speakers">
+              <a
+              v-for="person in block.people2"
+              v-bind:class="'sm-thumb ' + person.class"
+              v-bind:title="person.name"
+              v-bind:href="'#' + person.id"
+              v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+              <!-- <div>
+                <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                <p v-if="person.title" v-html="person.title"></pv-if></p>
+              </div> -->
+            </div>
+
+
+            <div v-if="block.subBlocks" class="sub-blocks">
+              <div v-for="subBlock in block.subBlocks" class="sub-block">
+                <div class="davos-block-title">
+                  <div class="time">{{subBlock.time}}</div>
+                  <h5>{{subBlock.title}}</h5>
+                </div>
+                <p v-if="subBlock.dsc" >{{subBlock.dsc}}</p>
+                <div class="speakers">
+                    <a v-for="person in subBlock.people"
+                    v-bind:class="'sm-thumb ' + person.class"
+                    v-bind:title="person.name"
+                    v-bind:href="'#' + person.id"
+                    v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                    <!-- <div>
+                      <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
+                      <p v-if="person.title" v-html="person.title"></pv-if></p>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
       <h3 class="sticky" id="now" v-cloak>
         <div class="max-width">
           Speakers @ Davos 2020↴
@@ -339,7 +419,7 @@
               <div v-if="!block.transition" v-for="block in scheduleMIT2019"
                   v-bind:class="'block ' + block.class"
                   v-bind:style="{ 'border-color': block.color }">
-                  <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                  <div v-if="block.people" class="davos-block-title w-color" v-bind:style="{ 'background': block.color }">
                       <div class="time">{{block.time}}</div>
                       <h4><span class="block-num"></span>Block {{block.blockNum}}</h4>
                   </div>
@@ -470,7 +550,7 @@
                 <div v-if="!block.transition" v-for="block in scheduleDavos2019"
                     v-bind:class="'block ' + block.class"
                     v-bind:style="{ 'border-color': block.color }">
-                    <div v-if="block.people" class="davos-block-title w-people" v-bind:style="{ 'background': block.color }">
+                    <div v-if="block.people" class="davos-block-title w-color" v-bind:style="{ 'background': block.color }">
                         <div class="time">{{block.time}}</div>
                         <h4><span class="block-num">Block {{block.blockNum}}</span>{{block.title}}</h4>
                     </div>
@@ -751,7 +831,6 @@
 
       var alphabetize = function(a, b){
           // Nicole d'Avis => nicole_davis
-          console.log(a.name.replace(/'/g, ''))
           var namePartsA = a.name.toLowerCase().replace(/'/g, '').split(' ');
           var lastNameA = namePartsA[namePartsA.length - 1];
           var namePartsB = b.name.toLowerCase().replace(/'/g, '').split(' ');
@@ -761,18 +840,53 @@
           return 0;
       }
 
+      var formatMin = function(min) {
+        return min.toString().length == 2 ? min : "0" + min;
+      }
+
       var scheduleBlockMapper = function(schedule, hour, min) {
           var blockNum = 1;
           return schedule.map(function(block) {
-            if (block.people) {
+            if (block.subBlocks) {
+              // block.time = hour + ":" + formatMin(min);
+              if (block.subBlockTimingIndeterminate) {
+                block.time = hour + ":" + formatMin(min);
+              }
+              for (subBlock of block.subBlocks) {
+                // console.log(subBlock);
+                subBlock.people = subBlock.people.map(setId).map(function(person) {
+                  person.img = peopleById[person.id] && peopleById[person.id].img;
+                  person.class = peopleById[person.id] && peopleById[person.id].class;
+                  return person;
+                });
+
+                if (!block.subBlockTimingIndeterminate) {
+                  subBlock.time = hour + ":" + formatMin(min);
+                }
+                if (subBlock.minutes) {
+                  min += subBlock.minutes;
+                  if (min >= 60) {
+                      min -= 60;
+                      hour++;
+                  }
+                }
+              }
+              if (block.minutes) {
+                min += block.minutes;
+                if (min >= 60) {
+                    min -= 60;
+                    hour++;
+                }
+              }
+            } else if (block.people) {
                 block.people = block.people.map(setId).map(function(person) {
                     if (!peopleById[person.id]) {
                         console.log("missing: " + person.id);
                         return person;
                     }
                     person.img = peopleById[person.id].img;
-                    var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
-                    person.time = hour + ":" + minutes;
+                    person.class = peopleById[person.id] && peopleById[person.id].class;
+                    person.time = hour + ":" + formatMin(min);
                     min += 5;
                     if (min >= 60) {
                         min -= 60;
@@ -783,32 +897,41 @@
                 block.blockNum = blockNum;
                 blockNum++
             } else if (block.people2) {
+                // people2 don't have individual times - only blocks have times
                 block.people2 = block.people2.map(setId).map(function(person) {
                     person.img = peopleById[person.id] && peopleById[person.id].img;
+                    person.class = peopleById[person.id] && peopleById[person.id].class;
                     return person;
                 });
-                var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
-                block.time = hour + ":" + minutes;
-                min += 5;
+                block.time = hour + ":" + formatMin(min);
+                min += block.minutes;
                 if (min >= 60) {
                     min -= 60;
                     hour++;
                 }
             } else if (block.transition) {
-                block.time = hour + ":" + minutes;
+                block.time = hour + ":" + formatMin(min);
                 min += Number(block.transition);
                 if (min >= 60) {
                     min -= 60;
                     hour++;
                 }
             } else {
-                var minutes = min.toString().length == 2 ? min : min > 5 ? min + "0" : "0" + min;
-                block.time = hour + ":" + minutes;
+                block.time = hour + ":" + formatMin(min);
                 min += block.minutes || 5;
                 if (min >= 60) {
                     min -= 60;
                     hour++;
                 }
+            }
+            if (block.panels) {
+              for (panel of block.panels.panels) {
+                min += panel.minutes || 5;
+                if (min >= 60) {
+                    min -= 60;
+                    hour++;
+                }
+              }
             }
             return block;
           });
@@ -839,6 +962,7 @@
           peopleDavos2020: [],
           specialGuestsDavos2020: [],
           specialGuestsDavos2020b: [],
+          scheduleDavos2020: [],
 
           route: "/"
       };
@@ -882,9 +1006,14 @@
         data.specialGuestsDavos2020b = [self.peopleById["alexander_de_croo"], self.peopleById["gilbert_houngbo"]];
 
         // TODO: Reuse person objects throughout!
-        data.speakersDavos2020.push(self.peopleById["nicole_d'avis"]);
+        data.speakersDavos2020.push(self.peopleById["nicole_d'avis"], self.peopleById["tommy_nicholas"]);
         data.speakersDavos2020 = data.speakersDavos2020.sort(alphabetize);
         data.hostsDavos2020.push(self.peopleById.mike_federle, self.peopleById.randall_lane);
+
+        data.scheduleDavos2020 = scheduleBlockMapper( result.schedule, 8, 0);
+
+        console.log(data.scheduleDavos2020);
+
       }, function(error) {console.log(error)});
 
       loadJSON("/data/mit2019.json", function(result) {

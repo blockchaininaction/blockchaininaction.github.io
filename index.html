@@ -183,20 +183,7 @@
               <div class="time">{{block.time}}</div>
               <h4>{{block.title}}</h4>
             </div>
-            <!-- <div v-if="block.people" class="people">
-              <div v-for="person in block.people" class="davos-speaker">
-                <div class="time">{{person.time}}</div>
-                <a
-                v-bind:class="'sm-thumb ' + person.class"
-                v-bind:title="person.name"
-                v-bind:href="'#' + person.id"
-                v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-                 <div>
-                  <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
-                  <p v-if="person.title" v-html="person.title"></pv-if></p>
-                </div>
-              </div>
-            </div> -->
+
             <p v-if="block.dsc" >{{block.dsc}}</p>
             <div v-if="block.people2" class="speakers">
               <a
@@ -205,12 +192,7 @@
               v-bind:title="person.name"
               v-bind:href="'#' + person.id"
               v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-              <!-- <div>
-                <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
-                <p v-if="person.title" v-html="person.title"></pv-if></p>
-              </div> -->
             </div>
-
 
             <div v-if="block.subBlocks" class="sub-blocks">
               <div v-for="subBlock in block.subBlocks" class="sub-block">
@@ -218,17 +200,15 @@
                   <div class="time">{{subBlock.time}}</div>
                   <h5>{{subBlock.title}}</h5>
                 </div>
-                <p v-if="subBlock.dsc" >{{subBlock.dsc}}</p>
-                <div class="speakers">
-                    <a v-for="person in subBlock.people"
-                    v-bind:class="'sm-thumb ' + person.class"
-                    v-bind:title="person.name"
-                    v-bind:href="'#' + person.id"
-                    v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
-                    <!-- <div>
-                      <h5><a v-bind:href="'#' + person.id">{{person.name}}</a></h5>
-                      <p v-if="person.title" v-html="person.title"></pv-if></p>
-                    </div> -->
+                <div style="display: flex">
+                  <div class="speakers" style="flex-shrink: 0;">
+                      <a v-for="person in subBlock.people"
+                      v-bind:class="'sm-thumb ' + person.class"
+                      v-bind:title="person.name"
+                      v-bind:href="'#' + person.id"
+                      v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                  </div>
+                  <p v-if="subBlock.dsc" >{{subBlock.dsc}}</p>
                 </div>
               </div>
             </div>

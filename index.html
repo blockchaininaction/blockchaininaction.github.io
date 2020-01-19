@@ -179,11 +179,14 @@
                 </div>
                 <div style="display: flex">
                   <div class="speakers" style="flex-shrink: 0;">
-                      <a v-for="person in subBlock.people"
+                    <div v-for="person in subBlock.people">
+                      <span v-if="person.host" class="host">HOST: </span>
+                      <a
                       v-bind:class="'sm-thumb ' + person.class"
                       v-bind:title="person.name"
                       v-bind:href="'#' + person.id"
                       v-bind:style="{ backgroundImage: 'url(' + person.img + ')' }"></a>
+                    </div>
                   </div>
                   <p v-if="subBlock.dsc" >{{subBlock.dsc}}</p>
                 </div>

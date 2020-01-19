@@ -619,7 +619,7 @@
           "title": "Panel: Gender & Inclusivity",
           "minutes": 15,
           "people": [
-            { "name": "Moria Forbes" },
+            { "name": "Moria Forbes", "host": true },
             { "name": "Marc Pritchard" },
             { "name": "Eddie Ndopu" },
             { "name": "Winnie Byanyima" }
@@ -629,7 +629,7 @@
           "title": "Panel: Human Capital",
           "minutes": 15,
           "people": [
-            { "name": "Randall Lane" },
+            { "name": "Randall Lane", "host": true },
             { "name": "Seema Kumar" },
             { "name": "Mohammad Abdulla Al Gergawi" },
             { "name": "Ngozi Okonjo-Iweala" },
@@ -641,7 +641,7 @@
           "title": "Panel: Sustainability",
           "minutes": 15,
           "people": [
-            { "name": "Moria Forbes" },
+            { "name": "Moria Forbes", "host": true },
             { "name": "Anne Wawira Njiru" },
             { "name": "Alexander De Croo" },
             { "name": "Chuck Robbins" },
@@ -651,7 +651,10 @@
         {
           "title": "Panel: Philanthropy",
           "minutes": 10,
-          "people": [{ "name": "Randall Lane" }, { "name": "Chris Stadler" }]
+          "people": [
+            { "name": "Randall Lane", "host": true },
+            { "name": "Chris Stadler" }
+          ]
         },
         {
           "title": "Moira Forbes in conversation with Priyanka Chopra-Jones",

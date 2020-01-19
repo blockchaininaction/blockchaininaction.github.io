@@ -571,6 +571,18 @@ iframe {
   height: 60px;
   display: inline-block !important;
 }
+.davos-schedule-2020 .speakers > div {
+  display: inline-block !important;
+  position: relative;
+}
+.davos-schedule-2020 .host {
+  color: #8c8c8c;
+  font-size: 13px;
+  position: absolute;
+  left: -40px;
+  bottom: 1px;
+}
+
 .davos-schedule-2020 .block p {
   margin-top: 15px;
 }

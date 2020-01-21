@@ -149,12 +149,14 @@ i {
   font-style: italic;
 }
 
+a:hover {
+  cursor: pointer;
+}
 .nav {
   border-bottom: 4px solid #ffe100;
 }
 .nav a {
   letter-spacing: 1px;
-  cursor: pointer;
   padding: 0px 25px;
   line-height: 39px;
   font-size: 17px;

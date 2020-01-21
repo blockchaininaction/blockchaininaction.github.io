@@ -302,11 +302,11 @@
       "class": "thumb-headspace"
     },
     {
-      "img": "images/Moria_Forbes.jpg",
+      "img": "images/Moira_Forbes.jpg",
       "href": "https://www.forbes.com/sites/moiraforbes/",
-      "name": "Moria Forbes",
+      "name": "Moira Forbes",
       "titles": "Forbes Media Executive Vice President and Publisher for ForbesWoman",
-      "bio": "<p>Moria started at Forbes Media in 2001 in its London office and switched to NY in 2003 where she was named associate publisher of Forbes Life. In 2008 she helped launch ForbesWoman. The following year she founded the Forbes Executive Women's Board, a national organization dedicated to \"harnessing the collective power of women in business to drive sustainable change.\"</p><p>Currently she is a publisher of Forbes Women and a columnist who focuses on issues for career women and profiling women for Forbes Magazine's List of The World's 100 Most Powerful Women.</p><p>She hosts Success with Moria Forbes on the Forbes Video Network- featured guest include Sheryl Sandberg, Oprah Winfrey, Arianna Huffington, and Donna Karan.</p>",
+      "bio": "<p>Moira started at Forbes Media in 2001 in its London office and switched to NY in 2003 where she was named associate publisher of Forbes Life. In 2008 she helped launch ForbesWoman. The following year she founded the Forbes Executive Women's Board, a national organization dedicated to \"harnessing the collective power of women in business to drive sustainable change.\"</p><p>Currently she is a publisher of Forbes Women and a columnist who focuses on issues for career women and profiling women for Forbes Magazine's List of The World's 100 Most Powerful Women.</p><p>She hosts Success with Moira Forbes on the Forbes Video Network- featured guest include Sheryl Sandberg, Oprah Winfrey, Arianna Huffington, and Donna Karan.</p>",
       "class": "thumb-headspace"
     },
     {
@@ -615,7 +615,7 @@
         {
           "title": "Open",
           "minutes": 5,
-          "people": [{ "name": "Randall Lane" }, { "name": "Moria Forbes" }]
+          "people": [{ "name": "Randall Lane" }, { "name": "Moira Forbes" }]
         },
         {
           "title": "Welcome",
@@ -626,7 +626,7 @@
           "title": "Panel: Gender & Inclusivity",
           "minutes": 15,
           "people": [
-            { "name": "Moria Forbes", "host": true },
+            { "name": "Moira Forbes", "host": true },
             { "name": "Marc Pritchard" },
             { "name": "Eddie Ndopu" },
             { "name": "Winnie Byanyima" }
@@ -648,7 +648,7 @@
           "title": "Panel: Sustainability",
           "minutes": 15,
           "people": [
-            { "name": "Moria Forbes", "host": true },
+            { "name": "Moira Forbes", "host": true },
             { "name": "Anne Wawira Njiru" },
             { "name": "Alexander De Croo" },
             { "name": "Chuck Robbins" },
@@ -667,7 +667,7 @@
           "title": "Moira Forbes in conversation with Priyanka Chopra-Jones",
           "minutes": 20,
           "people": [
-            { "name": "Moria Forbes" },
+            { "name": "Moira Forbes" },
             { "name": "Priyanka Chopra-Jonas" }
           ]
         },

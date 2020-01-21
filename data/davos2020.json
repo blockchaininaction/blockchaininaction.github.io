@@ -215,13 +215,6 @@
       "bio": "<p>Marc Pritchard is responsible for P&G’s brand building disciplines worldwide. He sets theCompany’s multi-billion-dollar media, marketing and advertising strategies, and leads marketing innovations that guide communication and brand building for P&G’s portfolio of trusted, quality brands.</p><p>Marc is a veteran of P&G for more than three decades, joining the company in 1982 as a cost analyst in the Paper Division, followed by a move into marketing in 1987 on the Sure anti- perspirant/deodorant brand. He has 20+ years of progressive experience in the Beauty and Personal Care categories which earned his appointment to president of Global Cosmetics and Personal Care in 2003. Known for his pioneering approach to product, commercial and operational innovation, Marc served as president of Global Strategy for two years, driving expanded productivity for P&G. He was appointed P&G’s chief marketing officer in 2008.</p><p>As P&G’s top brand builder, Marc believes in the power of brands to serve people with superior- performing products, while being both a force for good and a force for growth through ethics and responsibility, community impact, diversity and inclusion, gender equality and environmental sustainability. He continually leads P&G’s brand building reinvention and is a leading voice in the media, marketing and creative industry.</p>"
     },
     {
-      "img": "images/Martin_Whittaker.jpg",
-      "href": "https://justcapital.com/about/team/martin-whittaker/",
-      "name": "Martin Whittaker",
-      "titles": "CEO of JUST Capital",
-      "bio": "<p>Martin Whittaker is the founding CEO of JUST Capital and is responsible for the overall leadership of the organization. He is also co-founder and Board member of the CREO Syndicate, a family office investment network; a Board member of the Carbon Disclosure Project U.S.; a member of the Forbes Finance Council and Forbes Contributor; and an advisor to Mission Driven Capital Partners, a private equity firm.</p><p>Previously, Martin was a founding partner and investment committee member at Sonen Capital, an impact investing firm, where he led private equity, real asset, and direct investing activities. Martin has also served as Director of MissionPoint Capital Partners, a family office-led private equity firm; Senior Vice President at Swiss Re, where he was part of the Environmental and Commodity Markets team; and Managing Director at Innovest Strategic Value Advisors, Inc., a pioneering sustainable investment advisory and research firm.</p>"
-    },
-    {
       "img": "images/Priyanka_Chopra-Jonas.jpg",
       "href": "https://en.wikipedia.org/wiki/Priyanka_Chopra",
       "name": "Priyanka Chopra-Jonas",
@@ -377,6 +370,13 @@
       "name": "Jim Ovia",
       "titles": "Founder of Zenith Bank",
       "bio": "<p>Jim Ovia is the founder and pioneer Group Managing Director / CEO of Zenith Bank Plc, Nigeria’s largest and Africa’s 6th largest bank by Shareholders’ Funds. He was at the helm of affairs, from inception, for 20 years until his resignation in July, 2010. He was reappointed the Chairman of the bank in 2014.</p><p>Jim Ovia was a member of the National Economic Management Team of Nigeria and he is a member of the Honorary International Investors’ Council.</p><p>Jim Ovia is a philanthropist and the founder and proprietor of James Hope College, Agbor, Delta State. His foundation, which focuses on providing scholarship to the less-privileged, has a number of beneficiaries that are now qualified medical doctors, engineers, etc.</p><p>He is also the Founder of several enterprises and philanthropic institutions including the Youth Empowerment & ICT Foundation, which focuses on improving the socio-economic welfare of Nigerian youths by empowering them to embrace Information and Communication Technology. The initiative holds annual Youth Empowerment seminars.</p>"
+    },
+    {
+      "img": "images/Martin_Whittaker.jpg",
+      "href": "https://justcapital.com/about/team/martin-whittaker/",
+      "name": "Martin Whittaker",
+      "titles": "CEO of JUST Capital",
+      "bio": "<p>Martin Whittaker is the founding CEO of JUST Capital and is responsible for the overall leadership of the organization. He is also co-founder and Board member of the CREO Syndicate, a family office investment network; a Board member of the Carbon Disclosure Project U.S.; a member of the Forbes Finance Council and Forbes Contributor; and an advisor to Mission Driven Capital Partners, a private equity firm.</p><p>Previously, Martin was a founding partner and investment committee member at Sonen Capital, an impact investing firm, where he led private equity, real asset, and direct investing activities. Martin has also served as Director of MissionPoint Capital Partners, a family office-led private equity firm; Senior Vice President at Swiss Re, where he was part of the Environmental and Commodity Markets team; and Managing Director at Innovest Strategic Value Advisors, Inc., a pioneering sustainable investment advisory and research firm.</p>"
     }
   ],
   "demos": [
@@ -577,7 +577,7 @@
       "title": "BLOCK 3: Imaginative Ideas",
       "color": "#0055be",
       "minutes": 60,
-      "dsc": "5 minute Imaginative Talks, HOST: John Werner",
+      "dsc": "5 minute Imaginative Talks, COHOSTs: John Werner & Mike Federle",
       "people2": [
         { "name": "John Werner" },
         { "name": "Mike Federle" },
@@ -638,7 +638,6 @@
           "people": [
             { "name": "Randall Lane", "host": true },
             { "name": "Seema Kumar" },
-            { "name": "Mohammad Abdulla Al Gergawi" },
             { "name": "Ngozi Okonjo-Iweala" },
             { "name": "Thomas Zeltner" },
             { "name": "Aigboje Aig-Imoukhuede" }
@@ -651,8 +650,7 @@
             { "name": "Moira Forbes", "host": true },
             { "name": "Anne Wawira Njiru" },
             { "name": "Alexander De Croo" },
-            { "name": "Chuck Robbins" },
-            { "name": "Gilbert Houngbo" }
+            { "name": "Chuck Robbins" }
           ]
         },
         {
